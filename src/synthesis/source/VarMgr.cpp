@@ -11,6 +11,40 @@ VarMgr::VarMgr() {
   mgr_ = std::make_shared<CUDD::Cudd>();
 }
 
+void VarMgr::print_mgr() const {
+  // prints the number of managed automata
+  std::cout << "Number of managed automata: " << state_variables_.size() << std::endl;
+
+  // prints number of vars
+  std::cout << "Number of variables: " << total_variable_count() << std::endl;
+
+  // prints named variables
+  std::cout << "Named variables (name, var): " << std::endl;
+
+  for (const auto& name_var : name_to_variable_)
+    std::cout << "Name: " << name_var.first << ". Var: " << name_var.second << std::endl;
+  
+  std::cout << "Var indexes (index, name): " << std::endl;
+
+  for (const auto& index_name: index_to_name_)
+    std::cout << "Index: " << index_name.first << ". Name: " << index_name.second << std::endl;
+
+  // prints X vars
+  std::cout << "Input variables: " << std::endl;
+  for (const auto& var: input_variables_) std::cout << "Var: " << var << std::endl;
+
+  // prints Y vars
+  std::cout << "Output variables: " << std::endl;
+  for (const auto& var: output_variables_) std::cout << "Var: " << var << std::endl;  
+
+  // prints Z vars for each managed automaton
+  for (int i = 0; i < state_variables_.size(); ++i) {
+    std::cout << "Automaton ID " << i << " state variables" << std::endl;
+    for (const auto& var: state_variables_[i]) std::cout << var << " ";
+    std::cout << std::endl;
+  }
+}
+
 void VarMgr::create_named_variables(
     const std::vector<std::string>& variable_names) {
   for (const std::string& name : variable_names) {
@@ -22,6 +56,22 @@ void VarMgr::create_named_variables(
       index_to_name_[new_index] = name;
     }
   }
+}
+
+void VarMgr::create_input_variables(
+  const std::vector<std::string>& input_vars
+) {
+  for (const std::string& input_var : input_vars) {
+    input_variables_.push_back(name_to_variable_[input_var]);
+    }
+}
+
+void VarMgr::create_output_variables(
+  const std::vector<std::string>& output_vars
+) {
+  for (const std::string& output_var : output_vars) {
+    output_variables_.push_back(name_to_variable_[output_var]);
+    }
 }
 
 std::size_t VarMgr::create_state_variables(std::size_t variable_count) {
@@ -45,6 +95,31 @@ std::size_t VarMgr::create_state_variables(std::size_t variable_count) {
 
   state_variable_count_ += variable_count;
 
+  return automaton_id;
+}
+
+std::size_t VarMgr::create_named_state_variables(const std::vector<std::string>& vars) {
+  std::size_t automaton_id = state_variables_.size();
+
+  // Creates an additional space for variables at index automaton_id,
+  // then reserves enough memory for all the new variables
+  state_variables_.emplace_back();
+  state_variables_[automaton_id].reserve(vars.size());
+
+  for (int i = 0; i < vars.size(); ++i) {
+    // Create a new variable if this named variable does not already exist
+    // add the new variable to the state variables of the automaton 
+    if (name_to_variable_.find(vars[i]) == name_to_variable_.end()) {
+        CUDD::BDD new_state_variable = mgr_->bddNewVarAtLevel(0);
+        state_variables_[automaton_id].push_back(new_state_variable);
+        name_to_variable_[vars[i]] = new_state_variable;
+        index_to_name_[new_state_variable.NodeReadIndex()] = vars[i]; 
+    } else { // Else add the existing variable to the state variables of the automaton
+      state_variables_[automaton_id].push_back(name_to_variable_[vars[i]]);
+    }
+  }
+
+  state_variable_count_ += vars.size();
   return automaton_id;
 }
 
@@ -163,6 +238,17 @@ CUDD::BDD VarMgr::input_cube() const {
 
 CUDD::BDD VarMgr::output_cube() const {
   return mgr_->computeCube(output_variables_);
+}
+
+bool VarMgr::is_input_variable(const std::string& var) const {
+  CUDD::BDD bdd_var = name_to_variable_.at(var);
+  if (std::find(input_variables_.begin(), input_variables_.end(), bdd_var) != input_variables_.end())
+    return true;
+  return false;
+}
+
+bool VarMgr::is_output_variable(const std::string& var) const {
+  return !(is_input_variable(var));
 }
 
 CUDD::BDD VarMgr::state_variables_cube(std::size_t automaton_id) const {

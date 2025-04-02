@@ -4,6 +4,7 @@
 #include <memory>
 #include <unordered_map>
 #include <vector>
+#include <iostream>
 
 #include "cuddObj.hh"
 
@@ -32,12 +33,33 @@ namespace Syft {
         VarMgr();
 
         /**
+        * \brief Prints the VarMgr
+        */
+        void print_mgr() const;
+
+        /**
          * \brief Creates BDD variables and associates each with a name.
          *
          * \param variable_names The names of the variables to create. A new variable
          *   is only created if a variable by that name does not already exist.
          */
         void create_named_variables(const std::vector<std::string> &variable_names);
+
+        /**
+        * \brief Create and store input variables
+        * 
+        * \param input_vars The input variables to create
+        * \return void. Adds input_vars to input variables
+        */
+        void create_input_variables(const std::vector<std::string>& input_vars);
+
+        /**
+        * \brief Create and store output variables
+        * 
+        * \param output_vars The input variables to create
+        * \return void. Adds output_vars to output variables
+        */
+        void create_output_variables(const std::vector<std::string>& output_vars);
 
         /**
          * \brief Creates and stores state variables.
@@ -50,6 +72,18 @@ namespace Syft {
          * \return The automaton ID the variables are associated with.
          */
         std::size_t create_state_variables(std::size_t variable_count);
+
+        /**
+         * \brief Creates and stores named state variables
+         * 
+         * Multiple calls of this function create separate groups of state variables.
+         * The call generates an ID for the automaton whose state space the variables
+         * represent, so that the correct group of variables can be retrieved later.
+         *
+         * \param variable_names The names of the variables being created.
+         * \return The automaton ID the variables are associated with.
+         */
+        std::size_t create_named_state_variables(const std::vector<std::string>& variable_names);
 
         /**
          * \brief Registers a new automaton ID associated with a product state space.
@@ -145,6 +179,18 @@ namespace Syft {
          * \brief Returns a BDD formed by the conjunction of all output variables.
          */
         CUDD::BDD output_cube() const;
+
+        /**
+        * @brief Determine whether a string is an input variable
+        * \param var. The name of a variable as a string
+        */
+        bool is_input_variable(const std::string& var) const;
+
+        /**
+        * @brief Determine whether a string is an output variable
+        * \param var. The name of a variable as a string
+        */
+        bool is_output_variable(const std::string& var) const;
 
         /**
          * \brief Returns a BDD formed by the conjunction of all state variables of automaton automaton_id.

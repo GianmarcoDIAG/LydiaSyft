@@ -5,6 +5,17 @@ namespace Syft {
     SymbolicStateDfa::SymbolicStateDfa(std::shared_ptr<VarMgr> var_mgr)
             : var_mgr_(std::move(var_mgr)) {}
 
+    SymbolicStateDfa::SymbolicStateDfa(std::shared_ptr<Syft::VarMgr> var_mgr,
+        std::size_t automaton_id,
+        const std::vector<int>& initial_state,
+        const std::vector<CUDD::BDD>& transition_function,
+        const CUDD::BDD& final_states) : 
+            var_mgr_(std::move(var_mgr)), 
+            automaton_id_(automaton_id),
+            initial_state_(initial_state),
+            transition_function_(transition_function),
+            final_states_(final_states) {}
+
     std::pair<std::size_t, std::size_t> SymbolicStateDfa::create_state_variables(
             std::shared_ptr<VarMgr> &var_mgr,
             std::size_t state_count) {

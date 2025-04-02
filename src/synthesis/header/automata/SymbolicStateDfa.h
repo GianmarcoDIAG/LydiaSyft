@@ -47,6 +47,23 @@ namespace Syft {
 
     public:
 
+        /**
+        * \brief Constructs a symbolic DFA
+        * 
+        * \param var_mgr. The variable manager of the DFA
+        * \param automaton_id. The ID of the DFA within the variable manager
+        * \param initial_state. The initial state of the DFA
+        * \param transition_function. The transition function of the DFA
+        * \param final_states. The final states of the DFA
+        */
+        SymbolicStateDfa(
+            std::shared_ptr<Syft::VarMgr> var_mgr,
+            std::size_t automaton_id,
+            const std::vector<int>& initial_state,
+            const std::vector<CUDD::BDD>& transition_function,
+            const CUDD::BDD& final_states
+        );
+
 
         /**
          * \brief Converts an explicit DFA to a symbolic representation.
