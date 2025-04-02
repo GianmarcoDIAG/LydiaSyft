@@ -107,6 +107,14 @@ namespace Syft {
         CUDD::BDD state_variable(std::size_t automaton_id, std::size_t i) const;
 
         /**
+        * \brief get the state variables of the automaton with the given automaton_id
+        * 
+        * \param automaton_id. The automaton_id of the DFA whose state variables are being returned
+        * \return std::vector<CUDD::BDD> of state variables
+        */
+        std::vector<CUDD::BDD> state_variables(std::size_t automaton_id) const;
+
+        /**
          * \brief Converts a state vector to a BDD.
          *
          * \param automaton_id The ID of the automaton whose variables to use.
