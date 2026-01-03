@@ -87,6 +87,15 @@ namespace Syft {
         static ExplicitStateDfa dfa_of_formula(const whitemech::lydia::LTLfFormula &formula);
 
         /**
+         * \brief Construct an explicit-state DFA from a given LDLf formula using Lydia.
+         * 
+         * 
+         * \param formula An LDLf formula.
+         * \return The corresponding explicit-state DFA.
+         */
+        static ExplicitStateDfa dfa_of_ldlf_formula(const whitemech::lydia::LDLfFormula& formula);
+
+        /**
          * \brief Take the product AND of a sequence of explicit-state DFAs.
          *
          * \param dfa_vector The DFAs to be processed.

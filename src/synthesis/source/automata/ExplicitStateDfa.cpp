@@ -36,7 +36,6 @@ namespace Syft {
 
         auto t_start = std::chrono::high_resolution_clock::now();
 
-//        logger.info("Transforming to DFA...");
         auto t_dfa_start = std::chrono::high_resolution_clock::now();
 
         auto ldlf_formula = whitemech::lydia::to_ldlf(formula);
@@ -51,6 +50,25 @@ namespace Syft {
         return exp_dfa;
     }
 
+    ExplicitStateDfa ExplicitStateDfa::dfa_of_ldlf_formula(const whitemech::lydia::LDLfFormula& ldlf_formula) {
+
+        auto dfa_strategy = whitemech::lydia::CompositionalStrategy();
+        auto translator = whitemech::lydia::Translator(dfa_strategy);
+
+        auto t_start = std::chrono::high_resolution_clock::now();
+
+        auto t_dfa_start = std::chrono::high_resolution_clock::now();
+
+        auto my_dfa = translator.to_dfa(ldlf_formula);
+
+        auto my_mona_dfa =
+                std::dynamic_pointer_cast<whitemech::lydia::mona_dfa>(my_dfa);
+
+        DFA *d = dfaCopy(my_mona_dfa->dfa_);
+
+        ExplicitStateDfa exp_dfa(d, my_mona_dfa->names);
+        return exp_dfa;
+    }
 
     ExplicitStateDfa
     ExplicitStateDfa::restrict_dfa_with_states(ExplicitStateDfa &d, std::vector<size_t> restricted_states) {
