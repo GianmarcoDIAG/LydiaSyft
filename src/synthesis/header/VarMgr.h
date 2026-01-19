@@ -154,6 +154,11 @@ namespace Syft {
         std::string index_to_name(int index) const;
 
         /**
+         * \brief Returns the map between integers and var names
+         */
+        std::unordered_map<int, std::string> get_index_to_name_map() const;
+
+        /**
          * \brief Returns the total number of variables, including named and state.
          */
         std::size_t total_variable_count() const;

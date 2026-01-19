@@ -216,6 +216,10 @@ std::string VarMgr::index_to_name(int index) const {
   return index_to_name_.at(index);
 }
 
+std::unordered_map<int, std::string> VarMgr::get_index_to_name_map() const {
+  return index_to_name_;
+}
+
 std::size_t VarMgr::total_variable_count() const {
   return name_to_variable_.size() + total_state_variable_count();
 }
