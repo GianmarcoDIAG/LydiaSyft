@@ -1,0 +1,9 @@
+[submodule "submodules/lydia"]
+	path = submodules/lydia
+	url = https://github.com/whitemech/lydia.git
+[submodule "submodules/slugs"]
+	path = submodules/slugs
+	url = https://github.com/VerifiableRobotics/slugs
+[submodule "submodules/doxygen-awesome-css"]
+	path = submodules/doxygen-awesome-css
+	url = https://github.com/jothepro/doxygen-awesome-css.git
