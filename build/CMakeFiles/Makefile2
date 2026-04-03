@@ -1331,6 +1331,7 @@ examples/all: examples/05_ltlf_synthesis_maximally_permissive/all
 examples/all: examples/06_ltlf_synthesis_with_fairness_conditions/all
 examples/all: examples/07_ltlf_synthesis_with_stability_conditions/all
 examples/all: examples/08_ltlf_synthesis_with_gr1_env_spec/all
+examples/all: examples/09_reachability/all
 .PHONY : examples/all
 
 # Recursive "preinstall" directory target.
@@ -1342,6 +1343,7 @@ examples/preinstall: examples/05_ltlf_synthesis_maximally_permissive/preinstall
 examples/preinstall: examples/06_ltlf_synthesis_with_fairness_conditions/preinstall
 examples/preinstall: examples/07_ltlf_synthesis_with_stability_conditions/preinstall
 examples/preinstall: examples/08_ltlf_synthesis_with_gr1_env_spec/preinstall
+examples/preinstall: examples/09_reachability/preinstall
 .PHONY : examples/preinstall
 
 # Recursive "clean" directory target.
@@ -1354,6 +1356,7 @@ examples/clean: examples/05_ltlf_synthesis_maximally_permissive/clean
 examples/clean: examples/06_ltlf_synthesis_with_fairness_conditions/clean
 examples/clean: examples/07_ltlf_synthesis_with_stability_conditions/clean
 examples/clean: examples/08_ltlf_synthesis_with_gr1_env_spec/clean
+examples/clean: examples/09_reachability/clean
 .PHONY : examples/clean
 
 #=============================================================================
@@ -1475,6 +1478,21 @@ examples/08_ltlf_synthesis_with_gr1_env_spec/preinstall:
 # Recursive "clean" directory target.
 examples/08_ltlf_synthesis_with_gr1_env_spec/clean: examples/08_ltlf_synthesis_with_gr1_env_spec/CMakeFiles/ltlf_synthesis_with_gr1_env_spec_example.dir/clean
 .PHONY : examples/08_ltlf_synthesis_with_gr1_env_spec/clean
+
+#=============================================================================
+# Directory level rules for directory examples/09_reachability
+
+# Recursive "all" directory target.
+examples/09_reachability/all: examples/09_reachability/CMakeFiles/reachability_example.dir/all
+.PHONY : examples/09_reachability/all
+
+# Recursive "preinstall" directory target.
+examples/09_reachability/preinstall:
+.PHONY : examples/09_reachability/preinstall
+
+# Recursive "clean" directory target.
+examples/09_reachability/clean: examples/09_reachability/CMakeFiles/reachability_example.dir/clean
+.PHONY : examples/09_reachability/clean
 
 #=============================================================================
 # Directory level rules for directory src
@@ -1712,7 +1730,7 @@ _deps/z3-build/src/CMakeFiles/libz3.dir/all: _deps/z3-build/src/api/dll/CMakeFil
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/CMakeFiles/libz3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 87
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 86
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/CMakeFiles/libz3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/CMakeFiles/libz3.dir/rule
@@ -1811,12 +1829,12 @@ _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/clean:
 _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/all: _deps/z3-build/src/util/CMakeFiles/util.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/build.make _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/build.make _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target hilbert"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=24 "Built target hilbert"
 .PHONY : _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/rule
@@ -1837,12 +1855,12 @@ _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/clean:
 _deps/z3-build/src/math/simplex/CMakeFiles/simplex.dir/all: _deps/z3-build/src/util/CMakeFiles/util.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/simplex/CMakeFiles/simplex.dir/build.make _deps/z3-build/src/math/simplex/CMakeFiles/simplex.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/simplex/CMakeFiles/simplex.dir/build.make _deps/z3-build/src/math/simplex/CMakeFiles/simplex.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target simplex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=67 "Built target simplex"
 .PHONY : _deps/z3-build/src/math/simplex/CMakeFiles/simplex.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/math/simplex/CMakeFiles/simplex.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/simplex/CMakeFiles/simplex.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/math/simplex/CMakeFiles/simplex.dir/rule
@@ -2057,12 +2075,12 @@ _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/all: _deps/z3-bu
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/all: _deps/z3-build/src/ast/rewriter/CMakeFiles/rewriter.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target normal_forms"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=42 "Built target normal_forms"
 .PHONY : _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/rule
@@ -2184,12 +2202,12 @@ _deps/z3-build/src/ast/substitution/CMakeFiles/substitution.dir/all: _deps/z3-bu
 _deps/z3-build/src/ast/substitution/CMakeFiles/substitution.dir/all: _deps/z3-build/src/ast/rewriter/CMakeFiles/rewriter.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/substitution/CMakeFiles/substitution.dir/build.make _deps/z3-build/src/ast/substitution/CMakeFiles/substitution.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/substitution/CMakeFiles/substitution.dir/build.make _deps/z3-build/src/ast/substitution/CMakeFiles/substitution.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=86 "Built target substitution"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target substitution"
 .PHONY : _deps/z3-build/src/ast/substitution/CMakeFiles/substitution.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/ast/substitution/CMakeFiles/substitution.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/substitution/CMakeFiles/substitution.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/ast/substitution/CMakeFiles/substitution.dir/rule
@@ -2267,12 +2285,12 @@ _deps/z3-build/src/parsers/util/CMakeFiles/parser_util.dir/all: _deps/z3-build/s
 _deps/z3-build/src/parsers/util/CMakeFiles/parser_util.dir/all: _deps/z3-build/src/ast/CMakeFiles/ast.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/parsers/util/CMakeFiles/parser_util.dir/build.make _deps/z3-build/src/parsers/util/CMakeFiles/parser_util.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/parsers/util/CMakeFiles/parser_util.dir/build.make _deps/z3-build/src/parsers/util/CMakeFiles/parser_util.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target parser_util"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=46 "Built target parser_util"
 .PHONY : _deps/z3-build/src/parsers/util/CMakeFiles/parser_util.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/parsers/util/CMakeFiles/parser_util.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/parsers/util/CMakeFiles/parser_util.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/parsers/util/CMakeFiles/parser_util.dir/rule
@@ -2297,7 +2315,7 @@ _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/all: _deps/z3-build/src/m
 _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/all: _deps/z3-build/src/ast/CMakeFiles/ast.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/build.make _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/build.make _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=24 "Built target grobner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target grobner"
 .PHONY : _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2360,12 +2378,12 @@ _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/all: _deps/z3-build/src/math/grobn
 _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/all: _deps/z3-build/src/sat/CMakeFiles/sat.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target nlsat"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=41 "Built target nlsat"
 .PHONY : _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/rule
@@ -2400,7 +2418,7 @@ _deps/z3-build/src/tactic/core/CMakeFiles/core_tactics.dir/all: _deps/z3-build/s
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/tactic/core/CMakeFiles/core_tactics.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/tactic/core/CMakeFiles/core_tactics.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/tactic/core/CMakeFiles/core_tactics.dir/rule
@@ -2438,7 +2456,7 @@ _deps/z3-build/src/math/subpaving/tactic/CMakeFiles/subpaving_tactic.dir/all: _d
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/math/subpaving/tactic/CMakeFiles/subpaving_tactic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 26
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/subpaving/tactic/CMakeFiles/subpaving_tactic.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/math/subpaving/tactic/CMakeFiles/subpaving_tactic.dir/rule
@@ -2467,12 +2485,12 @@ _deps/z3-build/src/tactic/aig/CMakeFiles/aig_tactic.dir/all: _deps/z3-build/src/
 _deps/z3-build/src/tactic/aig/CMakeFiles/aig_tactic.dir/all: _deps/z3-build/src/tactic/CMakeFiles/tactic.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/tactic/aig/CMakeFiles/aig_tactic.dir/build.make _deps/z3-build/src/tactic/aig/CMakeFiles/aig_tactic.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/tactic/aig/CMakeFiles/aig_tactic.dir/build.make _deps/z3-build/src/tactic/aig/CMakeFiles/aig_tactic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target aig_tactic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=2 "Built target aig_tactic"
 .PHONY : _deps/z3-build/src/tactic/aig/CMakeFiles/aig_tactic.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/tactic/aig/CMakeFiles/aig_tactic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/tactic/aig/CMakeFiles/aig_tactic.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/tactic/aig/CMakeFiles/aig_tactic.dir/rule
@@ -2512,7 +2530,7 @@ _deps/z3-build/src/tactic/arith/CMakeFiles/arith_tactics.dir/all: _deps/z3-build
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/tactic/arith/CMakeFiles/arith_tactics.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 34
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/tactic/arith/CMakeFiles/arith_tactics.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/tactic/arith/CMakeFiles/arith_tactics.dir/rule
@@ -2622,7 +2640,7 @@ _deps/z3-build/src/cmd_context/extra_cmds/CMakeFiles/extra_cmds.dir/all: _deps/z
 _deps/z3-build/src/cmd_context/extra_cmds/CMakeFiles/extra_cmds.dir/all: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/extra_cmds/CMakeFiles/extra_cmds.dir/build.make _deps/z3-build/src/cmd_context/extra_cmds/CMakeFiles/extra_cmds.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/extra_cmds/CMakeFiles/extra_cmds.dir/build.make _deps/z3-build/src/cmd_context/extra_cmds/CMakeFiles/extra_cmds.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=22 "Built target extra_cmds"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target extra_cmds"
 .PHONY : _deps/z3-build/src/cmd_context/extra_cmds/CMakeFiles/extra_cmds.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2664,7 +2682,7 @@ _deps/z3-build/src/parsers/smt2/CMakeFiles/smt2parser.dir/all: _deps/z3-build/sr
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/parsers/smt2/CMakeFiles/smt2parser.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/parsers/smt2/CMakeFiles/smt2parser.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/parsers/smt2/CMakeFiles/smt2parser.dir/rule
@@ -2703,7 +2721,7 @@ _deps/z3-build/src/solver/assertions/CMakeFiles/solver_assertions.dir/all: _deps
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/solver/assertions/CMakeFiles/solver_assertions.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 26
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/solver/assertions/CMakeFiles/solver_assertions.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/solver/assertions/CMakeFiles/solver_assertions.dir/rule
@@ -2742,7 +2760,7 @@ _deps/z3-build/src/ast/pattern/CMakeFiles/pattern.dir/all: _deps/z3-build/src/pa
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/ast/pattern/CMakeFiles/pattern.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 26
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/pattern/CMakeFiles/pattern.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/ast/pattern/CMakeFiles/pattern.dir/rule
@@ -2808,7 +2826,7 @@ _deps/z3-build/src/math/lp/CMakeFiles/lp.dir/all: _deps/z3-build/src/nlsat/CMake
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/math/lp/CMakeFiles/lp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/lp/CMakeFiles/lp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/math/lp/CMakeFiles/lp.dir/rule
@@ -2842,7 +2860,7 @@ _deps/z3-build/src/qe/mbp/CMakeFiles/mbp.dir/all: _deps/z3-build/src/model/CMake
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/qe/mbp/CMakeFiles/mbp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/qe/mbp/CMakeFiles/mbp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/qe/mbp/CMakeFiles/mbp.dir/rule
@@ -2920,12 +2938,12 @@ _deps/z3-build/src/sat/tactic/CMakeFiles/sat_tactic.dir/all: _deps/z3-build/src/
 _deps/z3-build/src/sat/tactic/CMakeFiles/sat_tactic.dir/all: _deps/z3-build/src/sat/smt/CMakeFiles/sat_smt.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/sat/tactic/CMakeFiles/sat_tactic.dir/build.make _deps/z3-build/src/sat/tactic/CMakeFiles/sat_tactic.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/sat/tactic/CMakeFiles/sat_tactic.dir/build.make _deps/z3-build/src/sat/tactic/CMakeFiles/sat_tactic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=67 "Built target sat_tactic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target sat_tactic"
 .PHONY : _deps/z3-build/src/sat/tactic/CMakeFiles/sat_tactic.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/sat/tactic/CMakeFiles/sat_tactic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 35
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 34
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/sat/tactic/CMakeFiles/sat_tactic.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/sat/tactic/CMakeFiles/sat_tactic.dir/rule
@@ -2968,7 +2986,7 @@ _deps/z3-build/src/nlsat/tactic/CMakeFiles/nlsat_tactic.dir/all: _deps/z3-build/
 _deps/z3-build/src/nlsat/tactic/CMakeFiles/nlsat_tactic.dir/all: _deps/z3-build/src/sat/tactic/CMakeFiles/sat_tactic.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/tactic/CMakeFiles/nlsat_tactic.dir/build.make _deps/z3-build/src/nlsat/tactic/CMakeFiles/nlsat_tactic.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/tactic/CMakeFiles/nlsat_tactic.dir/build.make _deps/z3-build/src/nlsat/tactic/CMakeFiles/nlsat_tactic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=42 "Built target nlsat_tactic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target nlsat_tactic"
 .PHONY : _deps/z3-build/src/nlsat/tactic/CMakeFiles/nlsat_tactic.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3003,12 +3021,12 @@ _deps/z3-build/src/ackermannization/CMakeFiles/ackermannization.dir/all: _deps/z
 _deps/z3-build/src/ackermannization/CMakeFiles/ackermannization.dir/all: _deps/z3-build/src/solver/CMakeFiles/solver.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ackermannization/CMakeFiles/ackermannization.dir/build.make _deps/z3-build/src/ackermannization/CMakeFiles/ackermannization.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ackermannization/CMakeFiles/ackermannization.dir/build.make _deps/z3-build/src/ackermannization/CMakeFiles/ackermannization.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=1,2 "Built target ackermannization"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=1 "Built target ackermannization"
 .PHONY : _deps/z3-build/src/ackermannization/CMakeFiles/ackermannization.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/ackermannization/CMakeFiles/ackermannization.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 24
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ackermannization/CMakeFiles/ackermannization.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/ackermannization/CMakeFiles/ackermannization.dir/rule
@@ -3034,12 +3052,12 @@ _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/all: _deps/z3-build/src/para
 _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/all: _deps/z3-build/src/ast/rewriter/CMakeFiles/rewriter.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/build.make _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/build.make _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target proofs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=48 "Built target proofs"
 .PHONY : _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/rule
@@ -3067,12 +3085,12 @@ _deps/z3-build/src/ast/fpa/CMakeFiles/fpa.dir/all: _deps/z3-build/src/ast/macros
 _deps/z3-build/src/ast/fpa/CMakeFiles/fpa.dir/all: _deps/z3-build/src/model/CMakeFiles/model.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/fpa/CMakeFiles/fpa.dir/build.make _deps/z3-build/src/ast/fpa/CMakeFiles/fpa.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/fpa/CMakeFiles/fpa.dir/build.make _deps/z3-build/src/ast/fpa/CMakeFiles/fpa.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target fpa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=23 "Built target fpa"
 .PHONY : _deps/z3-build/src/ast/fpa/CMakeFiles/fpa.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/ast/fpa/CMakeFiles/fpa.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/fpa/CMakeFiles/fpa.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/ast/fpa/CMakeFiles/fpa.dir/rule
@@ -3159,7 +3177,7 @@ _deps/z3-build/src/smt/CMakeFiles/smt.dir/all: _deps/z3-build/src/smt/proto_mode
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/smt/CMakeFiles/smt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 47
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 51
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/smt/CMakeFiles/smt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/smt/CMakeFiles/smt.dir/rule
@@ -3196,7 +3214,7 @@ _deps/z3-build/src/tactic/bv/CMakeFiles/bv_tactics.dir/all: _deps/z3-build/src/a
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/tactic/bv/CMakeFiles/bv_tactics.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 27
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/tactic/bv/CMakeFiles/bv_tactics.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/tactic/bv/CMakeFiles/bv_tactics.dir/rule
@@ -3250,7 +3268,7 @@ _deps/z3-build/src/smt/tactic/CMakeFiles/smt_tactic.dir/all: _deps/z3-build/src/
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/smt/tactic/CMakeFiles/smt_tactic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 48
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 52
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/smt/tactic/CMakeFiles/smt_tactic.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/smt/tactic/CMakeFiles/smt_tactic.dir/rule
@@ -3288,7 +3306,7 @@ _deps/z3-build/src/tactic/sls/CMakeFiles/sls_tactic.dir/all: _deps/z3-build/src/
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/tactic/sls/CMakeFiles/sls_tactic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 27
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/tactic/sls/CMakeFiles/sls_tactic.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/tactic/sls/CMakeFiles/sls_tactic.dir/rule
@@ -3344,12 +3362,12 @@ _deps/z3-build/src/qe/CMakeFiles/qe.dir/all: _deps/z3-build/src/smt/proto_model/
 _deps/z3-build/src/qe/CMakeFiles/qe.dir/all: _deps/z3-build/src/smt/CMakeFiles/smt.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/qe/CMakeFiles/qe.dir/build.make _deps/z3-build/src/qe/CMakeFiles/qe.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/qe/CMakeFiles/qe.dir/build.make _deps/z3-build/src/qe/CMakeFiles/qe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=49,50 "Built target qe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=49 "Built target qe"
 .PHONY : _deps/z3-build/src/qe/CMakeFiles/qe.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/qe/CMakeFiles/qe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 62
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/qe/CMakeFiles/qe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/qe/CMakeFiles/qe.dir/rule
@@ -3407,12 +3425,12 @@ _deps/z3-build/src/muz/base/CMakeFiles/muz.dir/all: _deps/z3-build/src/smt/CMake
 _deps/z3-build/src/muz/base/CMakeFiles/muz.dir/all: _deps/z3-build/src/qe/CMakeFiles/qe.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/muz/base/CMakeFiles/muz.dir/build.make _deps/z3-build/src/muz/base/CMakeFiles/muz.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/muz/base/CMakeFiles/muz.dir/build.make _deps/z3-build/src/muz/base/CMakeFiles/muz.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=40,41 "Built target muz"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=40 "Built target muz"
 .PHONY : _deps/z3-build/src/muz/base/CMakeFiles/muz.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/muz/base/CMakeFiles/muz.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 63
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 64
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/muz/base/CMakeFiles/muz.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/muz/base/CMakeFiles/muz.dir/rule
@@ -3476,7 +3494,7 @@ _deps/z3-build/src/muz/dataflow/CMakeFiles/dataflow.dir/all: _deps/z3-build/src/
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/muz/dataflow/CMakeFiles/dataflow.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 63
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 64
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/muz/dataflow/CMakeFiles/dataflow.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/muz/dataflow/CMakeFiles/dataflow.dir/rule
@@ -3542,7 +3560,7 @@ _deps/z3-build/src/muz/transforms/CMakeFiles/transforms.dir/all: _deps/z3-build/
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/muz/transforms/CMakeFiles/transforms.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 66
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/muz/transforms/CMakeFiles/transforms.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/muz/transforms/CMakeFiles/transforms.dir/rule
@@ -3609,7 +3627,7 @@ _deps/z3-build/src/muz/rel/CMakeFiles/rel.dir/all: _deps/z3-build/src/muz/transf
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/muz/rel/CMakeFiles/rel.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 69
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 71
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/muz/rel/CMakeFiles/rel.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/muz/rel/CMakeFiles/rel.dir/rule
@@ -3676,7 +3694,7 @@ _deps/z3-build/src/muz/clp/CMakeFiles/clp.dir/all: _deps/z3-build/src/muz/transf
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/muz/clp/CMakeFiles/clp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 66
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/muz/clp/CMakeFiles/clp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/muz/clp/CMakeFiles/clp.dir/rule
@@ -3743,7 +3761,7 @@ _deps/z3-build/src/muz/tab/CMakeFiles/tab.dir/all: _deps/z3-build/src/muz/transf
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/muz/tab/CMakeFiles/tab.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 66
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/muz/tab/CMakeFiles/tab.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/muz/tab/CMakeFiles/tab.dir/rule
@@ -3810,7 +3828,7 @@ _deps/z3-build/src/muz/bmc/CMakeFiles/bmc.dir/all: _deps/z3-build/src/muz/transf
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/muz/bmc/CMakeFiles/bmc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 66
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/muz/bmc/CMakeFiles/bmc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/muz/bmc/CMakeFiles/bmc.dir/rule
@@ -3878,7 +3896,7 @@ _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/all: _deps/z3-build/src/muz/rel/
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 69
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 71
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/rule
@@ -3946,7 +3964,7 @@ _deps/z3-build/src/muz/spacer/CMakeFiles/spacer.dir/all: _deps/z3-build/src/muz/
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/muz/spacer/CMakeFiles/spacer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 70
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 72
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/muz/spacer/CMakeFiles/spacer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/muz/spacer/CMakeFiles/spacer.dir/rule
@@ -4015,12 +4033,12 @@ _deps/z3-build/src/muz/fp/CMakeFiles/fp.dir/all: _deps/z3-build/src/muz/ddnf/CMa
 _deps/z3-build/src/muz/fp/CMakeFiles/fp.dir/all: _deps/z3-build/src/muz/spacer/CMakeFiles/spacer.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/muz/fp/CMakeFiles/fp.dir/build.make _deps/z3-build/src/muz/fp/CMakeFiles/fp.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/muz/fp/CMakeFiles/fp.dir/build.make _deps/z3-build/src/muz/fp/CMakeFiles/fp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=23 "Built target fp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target fp"
 .PHONY : _deps/z3-build/src/muz/fp/CMakeFiles/fp.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/muz/fp/CMakeFiles/fp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 74
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 75
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/muz/fp/CMakeFiles/fp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/muz/fp/CMakeFiles/fp.dir/rule
@@ -4076,7 +4094,7 @@ _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/all: _deps/z3-build/sr
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 51
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 55
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/rule
@@ -4126,7 +4144,7 @@ _deps/z3-build/src/sat/sat_solver/CMakeFiles/sat_solver.dir/all: _deps/z3-build/
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/sat/sat_solver/CMakeFiles/sat_solver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 43
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 44
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/sat/sat_solver/CMakeFiles/sat_solver.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/sat/sat_solver/CMakeFiles/sat_solver.dir/rule
@@ -4329,12 +4347,12 @@ _deps/z3-build/src/tactic/fd_solver/CMakeFiles/fd_solver.dir/all: _deps/z3-build
 _deps/z3-build/src/tactic/fd_solver/CMakeFiles/fd_solver.dir/all: _deps/z3-build/src/sat/sat_solver/CMakeFiles/sat_solver.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/tactic/fd_solver/CMakeFiles/fd_solver.dir/build.make _deps/z3-build/src/tactic/fd_solver/CMakeFiles/fd_solver.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/tactic/fd_solver/CMakeFiles/fd_solver.dir/build.make _deps/z3-build/src/tactic/fd_solver/CMakeFiles/fd_solver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target fd_solver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=22 "Built target fd_solver"
 .PHONY : _deps/z3-build/src/tactic/fd_solver/CMakeFiles/fd_solver.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/tactic/fd_solver/CMakeFiles/fd_solver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 43
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 45
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/tactic/fd_solver/CMakeFiles/fd_solver.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/tactic/fd_solver/CMakeFiles/fd_solver.dir/rule
@@ -4415,7 +4433,7 @@ _deps/z3-build/src/tactic/portfolio/CMakeFiles/portfolio.dir/all: _deps/z3-build
 _deps/z3-build/src/tactic/portfolio/CMakeFiles/portfolio.dir/all: _deps/z3-build/src/tactic/fd_solver/CMakeFiles/fd_solver.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/tactic/portfolio/CMakeFiles/portfolio.dir/build.make _deps/z3-build/src/tactic/portfolio/CMakeFiles/portfolio.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/z3-build/src/tactic/portfolio/CMakeFiles/portfolio.dir/build.make _deps/z3-build/src/tactic/portfolio/CMakeFiles/portfolio.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=48 "Built target portfolio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target portfolio"
 .PHONY : _deps/z3-build/src/tactic/portfolio/CMakeFiles/portfolio.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4680,7 +4698,7 @@ _deps/z3-build/src/api/dll/CMakeFiles/api_dll.dir/all: _deps/z3-build/src/api/CM
 
 # Build rule for subdir invocation for target.
 _deps/z3-build/src/api/dll/CMakeFiles/api_dll.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 87
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 86
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/api/dll/CMakeFiles/api_dll.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : _deps/z3-build/src/api/dll/CMakeFiles/api_dll.dir/rule
@@ -4736,7 +4754,7 @@ src/CMakeFiles/LydiaSyft.dir/all: src/synthesis/CMakeFiles/synthesis.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/LydiaSyft.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 97
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 96
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/LydiaSyft.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/LydiaSyft.dir/rule
@@ -4783,12 +4801,12 @@ src/utils/CMakeFiles/utils.dir/clean:
 src/parser/CMakeFiles/parser.dir/all: src/utils/CMakeFiles/utils.dir/all
 	$(MAKE) $(MAKESILENT) -f src/parser/CMakeFiles/parser.dir/build.make src/parser/CMakeFiles/parser.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/parser/CMakeFiles/parser.dir/build.make src/parser/CMakeFiles/parser.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=46 "Built target parser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target parser"
 .PHONY : src/parser/CMakeFiles/parser.dir/all
 
 # Build rule for subdir invocation for target.
 src/parser/CMakeFiles/parser.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/parser/CMakeFiles/parser.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : src/parser/CMakeFiles/parser.dir/rule
@@ -4812,12 +4830,12 @@ src/synthesis/CMakeFiles/synthesis.dir/all: src/utils/CMakeFiles/utils.dir/all
 src/synthesis/CMakeFiles/synthesis.dir/all: src/parser/CMakeFiles/parser.dir/all
 	$(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=87,88 "Built target synthesis"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=86,87,88 "Built target synthesis"
 .PHONY : src/synthesis/CMakeFiles/synthesis.dir/all
 
 # Build rule for subdir invocation for target.
 src/synthesis/CMakeFiles/synthesis.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 97
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 96
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/synthesis/CMakeFiles/synthesis.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : src/synthesis/CMakeFiles/synthesis.dir/rule
@@ -4843,6 +4861,7 @@ examples/CMakeFiles/examples.dir/all: examples/05_ltlf_synthesis_maximally_permi
 examples/CMakeFiles/examples.dir/all: examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/all
 examples/CMakeFiles/examples.dir/all: examples/07_ltlf_synthesis_with_stability_conditions/CMakeFiles/ltlf_synthesis_with_stability_conditions_example.dir/all
 examples/CMakeFiles/examples.dir/all: examples/08_ltlf_synthesis_with_gr1_env_spec/CMakeFiles/ltlf_synthesis_with_gr1_env_spec_example.dir/all
+examples/CMakeFiles/examples.dir/all: examples/09_reachability/CMakeFiles/reachability_example.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/examples.dir/build.make examples/CMakeFiles/examples.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/examples.dir/build.make examples/CMakeFiles/examples.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target examples"
@@ -4875,7 +4894,7 @@ examples/01_quickstart/CMakeFiles/quickstart_example.dir/all: src/parser/CMakeFi
 examples/01_quickstart/CMakeFiles/quickstart_example.dir/all: src/synthesis/CMakeFiles/synthesis.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/01_quickstart/CMakeFiles/quickstart_example.dir/build.make examples/01_quickstart/CMakeFiles/quickstart_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/01_quickstart/CMakeFiles/quickstart_example.dir/build.make examples/01_quickstart/CMakeFiles/quickstart_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target quickstart_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=50 "Built target quickstart_example"
 .PHONY : examples/01_quickstart/CMakeFiles/quickstart_example.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4905,7 +4924,7 @@ examples/02_dfa_representation/CMakeFiles/dfa_representation_example.dir/all: sr
 examples/02_dfa_representation/CMakeFiles/dfa_representation_example.dir/all: src/synthesis/CMakeFiles/synthesis.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/02_dfa_representation/CMakeFiles/dfa_representation_example.dir/build.make examples/02_dfa_representation/CMakeFiles/dfa_representation_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/02_dfa_representation/CMakeFiles/dfa_representation_example.dir/build.make examples/02_dfa_representation/CMakeFiles/dfa_representation_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target dfa_representation_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=21 "Built target dfa_representation_example"
 .PHONY : examples/02_dfa_representation/CMakeFiles/dfa_representation_example.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4935,12 +4954,12 @@ examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulati
 examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/all: src/synthesis/CMakeFiles/synthesis.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/build.make examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/build.make examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=21 "Built target dfa_creation_and_manipulation_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target dfa_creation_and_manipulation_example"
 .PHONY : examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/all
 
 # Build rule for subdir invocation for target.
 examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 98
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 96
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/rule
@@ -4965,12 +4984,12 @@ examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/all: src/parser
 examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/all: src/synthesis/CMakeFiles/synthesis.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/build.make examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/build.make examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=30 "Built target ltlf_synthesis_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target ltlf_synthesis_example"
 .PHONY : examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/all
 
 # Build rule for subdir invocation for target.
 examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 98
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 96
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/rule
@@ -4995,7 +5014,7 @@ examples/05_ltlf_synthesis_maximally_permissive/CMakeFiles/ltlf_synthesis_maxima
 examples/05_ltlf_synthesis_maximally_permissive/CMakeFiles/ltlf_synthesis_maximally_permissive_example.dir/all: src/synthesis/CMakeFiles/synthesis.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/05_ltlf_synthesis_maximally_permissive/CMakeFiles/ltlf_synthesis_maximally_permissive_example.dir/build.make examples/05_ltlf_synthesis_maximally_permissive/CMakeFiles/ltlf_synthesis_maximally_permissive_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/05_ltlf_synthesis_maximally_permissive/CMakeFiles/ltlf_synthesis_maximally_permissive_example.dir/build.make examples/05_ltlf_synthesis_maximally_permissive/CMakeFiles/ltlf_synthesis_maximally_permissive_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target ltlf_synthesis_maximally_permissive_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=30 "Built target ltlf_synthesis_maximally_permissive_example"
 .PHONY : examples/05_ltlf_synthesis_maximally_permissive/CMakeFiles/ltlf_synthesis_maximally_permissive_example.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5030,7 +5049,7 @@ examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_wi
 
 # Build rule for subdir invocation for target.
 examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 97
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 96
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/rule
@@ -5060,7 +5079,7 @@ examples/07_ltlf_synthesis_with_stability_conditions/CMakeFiles/ltlf_synthesis_w
 
 # Build rule for subdir invocation for target.
 examples/07_ltlf_synthesis_with_stability_conditions/CMakeFiles/ltlf_synthesis_with_stability_conditions_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 97
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 96
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/07_ltlf_synthesis_with_stability_conditions/CMakeFiles/ltlf_synthesis_with_stability_conditions_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : examples/07_ltlf_synthesis_with_stability_conditions/CMakeFiles/ltlf_synthesis_with_stability_conditions_example.dir/rule
@@ -5090,7 +5109,7 @@ examples/08_ltlf_synthesis_with_gr1_env_spec/CMakeFiles/ltlf_synthesis_with_gr1_
 
 # Build rule for subdir invocation for target.
 examples/08_ltlf_synthesis_with_gr1_env_spec/CMakeFiles/ltlf_synthesis_with_gr1_env_spec_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 97
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 96
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/08_ltlf_synthesis_with_gr1_env_spec/CMakeFiles/ltlf_synthesis_with_gr1_env_spec_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
 .PHONY : examples/08_ltlf_synthesis_with_gr1_env_spec/CMakeFiles/ltlf_synthesis_with_gr1_env_spec_example.dir/rule
@@ -5103,6 +5122,36 @@ ltlf_synthesis_with_gr1_env_spec_example: examples/08_ltlf_synthesis_with_gr1_en
 examples/08_ltlf_synthesis_with_gr1_env_spec/CMakeFiles/ltlf_synthesis_with_gr1_env_spec_example.dir/clean:
 	$(MAKE) $(MAKESILENT) -f examples/08_ltlf_synthesis_with_gr1_env_spec/CMakeFiles/ltlf_synthesis_with_gr1_env_spec_example.dir/build.make examples/08_ltlf_synthesis_with_gr1_env_spec/CMakeFiles/ltlf_synthesis_with_gr1_env_spec_example.dir/clean
 .PHONY : examples/08_ltlf_synthesis_with_gr1_env_spec/CMakeFiles/ltlf_synthesis_with_gr1_env_spec_example.dir/clean
+
+#=============================================================================
+# Target rules for target examples/09_reachability/CMakeFiles/reachability_example.dir
+
+# All Build rule for target.
+examples/09_reachability/CMakeFiles/reachability_example.dir/all: _deps/z3-build/src/CMakeFiles/libz3.dir/all
+examples/09_reachability/CMakeFiles/reachability_example.dir/all: submodules/lydia/lib/CMakeFiles/lydia.dir/all
+examples/09_reachability/CMakeFiles/reachability_example.dir/all: src/utils/CMakeFiles/utils.dir/all
+examples/09_reachability/CMakeFiles/reachability_example.dir/all: src/parser/CMakeFiles/parser.dir/all
+examples/09_reachability/CMakeFiles/reachability_example.dir/all: src/synthesis/CMakeFiles/synthesis.dir/all
+	$(MAKE) $(MAKESILENT) -f examples/09_reachability/CMakeFiles/reachability_example.dir/build.make examples/09_reachability/CMakeFiles/reachability_example.dir/depend
+	$(MAKE) $(MAKESILENT) -f examples/09_reachability/CMakeFiles/reachability_example.dir/build.make examples/09_reachability/CMakeFiles/reachability_example.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num= "Built target reachability_example"
+.PHONY : examples/09_reachability/CMakeFiles/reachability_example.dir/all
+
+# Build rule for subdir invocation for target.
+examples/09_reachability/CMakeFiles/reachability_example.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 96
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/09_reachability/CMakeFiles/reachability_example.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
+.PHONY : examples/09_reachability/CMakeFiles/reachability_example.dir/rule
+
+# Convenience name for target.
+reachability_example: examples/09_reachability/CMakeFiles/reachability_example.dir/rule
+.PHONY : reachability_example
+
+# clean rule for target.
+examples/09_reachability/CMakeFiles/reachability_example.dir/clean:
+	$(MAKE) $(MAKESILENT) -f examples/09_reachability/CMakeFiles/reachability_example.dir/build.make examples/09_reachability/CMakeFiles/reachability_example.dir/clean
+.PHONY : examples/09_reachability/CMakeFiles/reachability_example.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

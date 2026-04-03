@@ -6,5 +6,5 @@ CXX_DEFINES = -D__ROOT_DIRECTORY=\"/home/vboxuser/LydiaSyft\"
 
 CXX_INCLUDES = 
 
-CXX_FLAGS =  -std=c++17 -Werror=odr  -O2 -g -DNDEBUG -std=gnu++17
+CXX_FLAGS =  -std=c++17 -Werror=odr  -O3 -DNDEBUG -std=gnu++17
 

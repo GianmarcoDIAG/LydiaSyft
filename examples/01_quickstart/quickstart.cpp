@@ -18,8 +18,8 @@
 
 
 int main(int argc, char ** argv) {
-    std::string partition_file = "test_vars.part";
-    std::cout << "Generated clean file: " << partition_file << std::endl;
+    std::string partition_file = "/home/vboxuser/LydiaSyft/examples/01_quickstart/test_vars.part";
+    std::cout << "Open file: " << partition_file << std::endl;
     
     
     Syft::InputOutputPartition partition = Syft::InputOutputPartition::read_from_file(partition_file);

@@ -54,11 +54,11 @@ set_target_properties(z3::libz3 PROPERTIES
   INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:Threads::Threads>"
 )
 
-# Import target "z3::libz3" for configuration "RelWithDebInfo"
-set_property(TARGET z3::libz3 APPEND PROPERTY IMPORTED_CONFIGURATIONS RELWITHDEBINFO)
+# Import target "z3::libz3" for configuration "Release"
+set_property(TARGET z3::libz3 APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(z3::libz3 PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELWITHDEBINFO "CXX"
-  IMPORTED_LOCATION_RELWITHDEBINFO "/home/vboxuser/LydiaSyft/build/_deps/z3-build/libz3.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
+  IMPORTED_LOCATION_RELEASE "/home/vboxuser/LydiaSyft/build/_deps/z3-build/libz3.a"
   )
 
 # This file does not depend on other imported targets which have

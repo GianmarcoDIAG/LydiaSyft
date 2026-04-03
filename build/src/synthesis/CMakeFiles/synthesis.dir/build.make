@@ -69,10 +69,24 @@ include src/synthesis/CMakeFiles/synthesis.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/synthesis/CMakeFiles/synthesis.dir/flags.make
 
+src/synthesis/CMakeFiles/synthesis.dir/source/Actor.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
+src/synthesis/CMakeFiles/synthesis.dir/source/Actor.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/Actor.cpp
+src/synthesis/CMakeFiles/synthesis.dir/source/Actor.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/Actor.cpp.o"
+	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/Actor.cpp.o -MF CMakeFiles/synthesis.dir/source/Actor.cpp.o.d -o CMakeFiles/synthesis.dir/source/Actor.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/Actor.cpp
+
+src/synthesis/CMakeFiles/synthesis.dir/source/Actor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/synthesis.dir/source/Actor.cpp.i"
+	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/src/synthesis/source/Actor.cpp > CMakeFiles/synthesis.dir/source/Actor.cpp.i
+
+src/synthesis/CMakeFiles/synthesis.dir/source/Actor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/synthesis.dir/source/Actor.cpp.s"
+	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/src/synthesis/source/Actor.cpp -o CMakeFiles/synthesis.dir/source/Actor.cpp.s
+
 src/synthesis/CMakeFiles/synthesis.dir/source/OneStepRealizability.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/OneStepRealizability.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/OneStepRealizability.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/OneStepRealizability.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/OneStepRealizability.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/OneStepRealizability.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/OneStepRealizability.cpp.o -MF CMakeFiles/synthesis.dir/source/OneStepRealizability.cpp.o.d -o CMakeFiles/synthesis.dir/source/OneStepRealizability.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/OneStepRealizability.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/OneStepRealizability.cpp.i: cmake_force
@@ -86,7 +100,7 @@ src/synthesis/CMakeFiles/synthesis.dir/source/OneStepRealizability.cpp.s: cmake_
 src/synthesis/CMakeFiles/synthesis.dir/source/OneStepUnrealizability.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/OneStepUnrealizability.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/OneStepUnrealizability.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/OneStepUnrealizability.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/OneStepUnrealizability.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/OneStepUnrealizability.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/OneStepUnrealizability.cpp.o -MF CMakeFiles/synthesis.dir/source/OneStepUnrealizability.cpp.o.d -o CMakeFiles/synthesis.dir/source/OneStepUnrealizability.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/OneStepUnrealizability.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/OneStepUnrealizability.cpp.i: cmake_force
@@ -100,7 +114,7 @@ src/synthesis/CMakeFiles/synthesis.dir/source/OneStepUnrealizability.cpp.s: cmak
 src/synthesis/CMakeFiles/synthesis.dir/source/Preprocessing.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/Preprocessing.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/Preprocessing.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/Preprocessing.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/Preprocessing.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/Preprocessing.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/Preprocessing.cpp.o -MF CMakeFiles/synthesis.dir/source/Preprocessing.cpp.o.d -o CMakeFiles/synthesis.dir/source/Preprocessing.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/Preprocessing.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/Preprocessing.cpp.i: cmake_force
@@ -114,7 +128,7 @@ src/synthesis/CMakeFiles/synthesis.dir/source/Preprocessing.cpp.s: cmake_force
 src/synthesis/CMakeFiles/synthesis.dir/source/Stopwatch.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/Stopwatch.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/Stopwatch.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/Stopwatch.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/Stopwatch.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/Stopwatch.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/Stopwatch.cpp.o -MF CMakeFiles/synthesis.dir/source/Stopwatch.cpp.o.d -o CMakeFiles/synthesis.dir/source/Stopwatch.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/Stopwatch.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/Stopwatch.cpp.i: cmake_force
@@ -128,7 +142,7 @@ src/synthesis/CMakeFiles/synthesis.dir/source/Stopwatch.cpp.s: cmake_force
 src/synthesis/CMakeFiles/synthesis.dir/source/Utils.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/Utils.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/Utils.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/Utils.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/Utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/Utils.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/Utils.cpp.o -MF CMakeFiles/synthesis.dir/source/Utils.cpp.o.d -o CMakeFiles/synthesis.dir/source/Utils.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/Utils.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/Utils.cpp.i: cmake_force
@@ -142,7 +156,7 @@ src/synthesis/CMakeFiles/synthesis.dir/source/Utils.cpp.s: cmake_force
 src/synthesis/CMakeFiles/synthesis.dir/source/VarMgr.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/VarMgr.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/VarMgr.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/VarMgr.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/VarMgr.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/VarMgr.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/VarMgr.cpp.o -MF CMakeFiles/synthesis.dir/source/VarMgr.cpp.o.d -o CMakeFiles/synthesis.dir/source/VarMgr.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/VarMgr.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/VarMgr.cpp.i: cmake_force
@@ -156,7 +170,7 @@ src/synthesis/CMakeFiles/synthesis.dir/source/VarMgr.cpp.s: cmake_force
 src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfa.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfa.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/automata/ExplicitStateDfa.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfa.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfa.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfa.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfa.cpp.o -MF CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfa.cpp.o.d -o CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfa.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/automata/ExplicitStateDfa.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfa.cpp.i: cmake_force
@@ -170,7 +184,7 @@ src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfa.cpp.s: c
 src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfaAdd.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfaAdd.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/automata/ExplicitStateDfaAdd.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfaAdd.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfaAdd.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfaAdd.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfaAdd.cpp.o -MF CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfaAdd.cpp.o.d -o CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfaAdd.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/automata/ExplicitStateDfaAdd.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfaAdd.cpp.i: cmake_force
@@ -184,7 +198,7 @@ src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfaAdd.cpp.s
 src/synthesis/CMakeFiles/synthesis.dir/source/automata/SymbolicStateDfa.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/automata/SymbolicStateDfa.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/automata/SymbolicStateDfa.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/automata/SymbolicStateDfa.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/automata/SymbolicStateDfa.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/automata/SymbolicStateDfa.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/automata/SymbolicStateDfa.cpp.o -MF CMakeFiles/synthesis.dir/source/automata/SymbolicStateDfa.cpp.o.d -o CMakeFiles/synthesis.dir/source/automata/SymbolicStateDfa.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/automata/SymbolicStateDfa.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/automata/SymbolicStateDfa.cpp.i: cmake_force
@@ -198,7 +212,7 @@ src/synthesis/CMakeFiles/synthesis.dir/source/automata/SymbolicStateDfa.cpp.s: c
 src/synthesis/CMakeFiles/synthesis.dir/source/game/BuchiReachability.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/game/BuchiReachability.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/game/BuchiReachability.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/game/BuchiReachability.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/game/BuchiReachability.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/game/BuchiReachability.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/game/BuchiReachability.cpp.o -MF CMakeFiles/synthesis.dir/source/game/BuchiReachability.cpp.o.d -o CMakeFiles/synthesis.dir/source/game/BuchiReachability.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/game/BuchiReachability.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/game/BuchiReachability.cpp.i: cmake_force
@@ -212,7 +226,7 @@ src/synthesis/CMakeFiles/synthesis.dir/source/game/BuchiReachability.cpp.s: cmak
 src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/game/DfaGameSynthesizer.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.o -MF CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.o.d -o CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/game/DfaGameSynthesizer.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.i: cmake_force
@@ -223,10 +237,24 @@ src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.s: cma
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.s"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/src/synthesis/source/game/DfaGameSynthesizer.cpp -o CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.s
 
+src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
+src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/game/DfaGameSynthesizer_multiagent.cpp
+src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.o"
+	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.o -MF CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.o.d -o CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/game/DfaGameSynthesizer_multiagent.cpp
+
+src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.i"
+	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/src/synthesis/source/game/DfaGameSynthesizer_multiagent.cpp > CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.i
+
+src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.s"
+	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/src/synthesis/source/game/DfaGameSynthesizer_multiagent.cpp -o CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.s
+
 src/synthesis/CMakeFiles/synthesis.dir/source/game/InputOutputPartition.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/game/InputOutputPartition.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/game/InputOutputPartition.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/game/InputOutputPartition.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/game/InputOutputPartition.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/game/InputOutputPartition.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/game/InputOutputPartition.cpp.o -MF CMakeFiles/synthesis.dir/source/game/InputOutputPartition.cpp.o.d -o CMakeFiles/synthesis.dir/source/game/InputOutputPartition.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/game/InputOutputPartition.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/game/InputOutputPartition.cpp.i: cmake_force
@@ -240,7 +268,7 @@ src/synthesis/CMakeFiles/synthesis.dir/source/game/InputOutputPartition.cpp.s: c
 src/synthesis/CMakeFiles/synthesis.dir/source/game/Quantification.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/game/Quantification.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/game/Quantification.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/game/Quantification.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/game/Quantification.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/game/Quantification.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/game/Quantification.cpp.o -MF CMakeFiles/synthesis.dir/source/game/Quantification.cpp.o.d -o CMakeFiles/synthesis.dir/source/game/Quantification.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/game/Quantification.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/game/Quantification.cpp.i: cmake_force
@@ -254,7 +282,7 @@ src/synthesis/CMakeFiles/synthesis.dir/source/game/Quantification.cpp.s: cmake_f
 src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/game/Reachability.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability.cpp.o -MF CMakeFiles/synthesis.dir/source/game/Reachability.cpp.o.d -o CMakeFiles/synthesis.dir/source/game/Reachability.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/game/Reachability.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability.cpp.i: cmake_force
@@ -268,7 +296,7 @@ src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability.cpp.s: cmake_for
 src/synthesis/CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/game/ReachabilityMaxSet.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.o -MF CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.o.d -o CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/game/ReachabilityMaxSet.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.i: cmake_force
@@ -279,10 +307,24 @@ src/synthesis/CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.s: cma
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.s"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/src/synthesis/source/game/ReachabilityMaxSet.cpp -o CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.s
 
+src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
+src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/game/Reachability_multiagent.cpp
+src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.o"
+	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.o -MF CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.o.d -o CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/game/Reachability_multiagent.cpp
+
+src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.i"
+	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/src/synthesis/source/game/Reachability_multiagent.cpp > CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.i
+
+src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.s"
+	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/src/synthesis/source/game/Reachability_multiagent.cpp -o CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.s
+
 src/synthesis/CMakeFiles/synthesis.dir/source/game/Transducer.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/game/Transducer.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/game/Transducer.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/game/Transducer.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/game/Transducer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/game/Transducer.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/game/Transducer.cpp.o -MF CMakeFiles/synthesis.dir/source/game/Transducer.cpp.o.d -o CMakeFiles/synthesis.dir/source/game/Transducer.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/game/Transducer.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/game/Transducer.cpp.i: cmake_force
@@ -296,7 +338,7 @@ src/synthesis/CMakeFiles/synthesis.dir/source/game/Transducer.cpp.s: cmake_force
 src/synthesis/CMakeFiles/synthesis.dir/source/game/coBuchiReachability.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/game/coBuchiReachability.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/game/coBuchiReachability.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/game/coBuchiReachability.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/game/coBuchiReachability.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/game/coBuchiReachability.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/game/coBuchiReachability.cpp.o -MF CMakeFiles/synthesis.dir/source/game/coBuchiReachability.cpp.o.d -o CMakeFiles/synthesis.dir/source/game/coBuchiReachability.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/game/coBuchiReachability.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/game/coBuchiReachability.cpp.i: cmake_force
@@ -310,7 +352,7 @@ src/synthesis/CMakeFiles/synthesis.dir/source/game/coBuchiReachability.cpp.s: cm
 src/synthesis/CMakeFiles/synthesis.dir/source/game/coGR1Reachability.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/game/coGR1Reachability.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/game/coGR1Reachability.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/game/coGR1Reachability.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/game/coGR1Reachability.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/game/coGR1Reachability.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/game/coGR1Reachability.cpp.o -MF CMakeFiles/synthesis.dir/source/game/coGR1Reachability.cpp.o.d -o CMakeFiles/synthesis.dir/source/game/coGR1Reachability.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/game/coGR1Reachability.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/game/coGR1Reachability.cpp.i: cmake_force
@@ -324,7 +366,7 @@ src/synthesis/CMakeFiles/synthesis.dir/source/game/coGR1Reachability.cpp.s: cmak
 src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/FairnessLtlfSynthesizer.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/FairnessLtlfSynthesizer.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/synthesizer/FairnessLtlfSynthesizer.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/FairnessLtlfSynthesizer.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/FairnessLtlfSynthesizer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/FairnessLtlfSynthesizer.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/FairnessLtlfSynthesizer.cpp.o -MF CMakeFiles/synthesis.dir/source/synthesizer/FairnessLtlfSynthesizer.cpp.o.d -o CMakeFiles/synthesis.dir/source/synthesizer/FairnessLtlfSynthesizer.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/synthesizer/FairnessLtlfSynthesizer.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/FairnessLtlfSynthesizer.cpp.i: cmake_force
@@ -338,7 +380,7 @@ src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/FairnessLtlfSynthesize
 src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/GR1LTLfSynthesizer.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/GR1LTLfSynthesizer.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/synthesizer/GR1LTLfSynthesizer.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/GR1LTLfSynthesizer.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/GR1LTLfSynthesizer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/GR1LTLfSynthesizer.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/GR1LTLfSynthesizer.cpp.o -MF CMakeFiles/synthesis.dir/source/synthesizer/GR1LTLfSynthesizer.cpp.o.d -o CMakeFiles/synthesis.dir/source/synthesizer/GR1LTLfSynthesizer.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/synthesizer/GR1LTLfSynthesizer.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/GR1LTLfSynthesizer.cpp.i: cmake_force
@@ -352,7 +394,7 @@ src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/GR1LTLfSynthesizer.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfMaxSetSynthesizer.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfMaxSetSynthesizer.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/synthesizer/LTLfMaxSetSynthesizer.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfMaxSetSynthesizer.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfMaxSetSynthesizer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfMaxSetSynthesizer.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfMaxSetSynthesizer.cpp.o -MF CMakeFiles/synthesis.dir/source/synthesizer/LTLfMaxSetSynthesizer.cpp.o.d -o CMakeFiles/synthesis.dir/source/synthesizer/LTLfMaxSetSynthesizer.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/synthesizer/LTLfMaxSetSynthesizer.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfMaxSetSynthesizer.cpp.i: cmake_force
@@ -366,7 +408,7 @@ src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfMaxSetSynthesizer.
 src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfSynthesizer.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfSynthesizer.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/synthesizer/LTLfSynthesizer.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfSynthesizer.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfSynthesizer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfSynthesizer.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfSynthesizer.cpp.o -MF CMakeFiles/synthesis.dir/source/synthesizer/LTLfSynthesizer.cpp.o.d -o CMakeFiles/synthesis.dir/source/synthesizer/LTLfSynthesizer.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/synthesizer/LTLfSynthesizer.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfSynthesizer.cpp.i: cmake_force
@@ -380,7 +422,7 @@ src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfSynthesizer.cpp.s:
 src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/StabilityLtlfSynthesizer.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/flags.make
 src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/StabilityLtlfSynthesizer.cpp.o: /home/vboxuser/LydiaSyft/src/synthesis/source/synthesizer/StabilityLtlfSynthesizer.cpp
 src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/StabilityLtlfSynthesizer.cpp.o: src/synthesis/CMakeFiles/synthesis.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/StabilityLtlfSynthesizer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/StabilityLtlfSynthesizer.cpp.o"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/StabilityLtlfSynthesizer.cpp.o -MF CMakeFiles/synthesis.dir/source/synthesizer/StabilityLtlfSynthesizer.cpp.o.d -o CMakeFiles/synthesis.dir/source/synthesizer/StabilityLtlfSynthesizer.cpp.o -c /home/vboxuser/LydiaSyft/src/synthesis/source/synthesizer/StabilityLtlfSynthesizer.cpp
 
 src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/StabilityLtlfSynthesizer.cpp.i: cmake_force
@@ -393,6 +435,7 @@ src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/StabilityLtlfSynthesiz
 
 # Object files for target synthesis
 synthesis_OBJECTS = \
+"CMakeFiles/synthesis.dir/source/Actor.cpp.o" \
 "CMakeFiles/synthesis.dir/source/OneStepRealizability.cpp.o" \
 "CMakeFiles/synthesis.dir/source/OneStepUnrealizability.cpp.o" \
 "CMakeFiles/synthesis.dir/source/Preprocessing.cpp.o" \
@@ -404,10 +447,12 @@ synthesis_OBJECTS = \
 "CMakeFiles/synthesis.dir/source/automata/SymbolicStateDfa.cpp.o" \
 "CMakeFiles/synthesis.dir/source/game/BuchiReachability.cpp.o" \
 "CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.o" \
+"CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.o" \
 "CMakeFiles/synthesis.dir/source/game/InputOutputPartition.cpp.o" \
 "CMakeFiles/synthesis.dir/source/game/Quantification.cpp.o" \
 "CMakeFiles/synthesis.dir/source/game/Reachability.cpp.o" \
 "CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.o" \
+"CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.o" \
 "CMakeFiles/synthesis.dir/source/game/Transducer.cpp.o" \
 "CMakeFiles/synthesis.dir/source/game/coBuchiReachability.cpp.o" \
 "CMakeFiles/synthesis.dir/source/game/coGR1Reachability.cpp.o" \
@@ -420,6 +465,7 @@ synthesis_OBJECTS = \
 # External object files for target synthesis
 synthesis_EXTERNAL_OBJECTS =
 
+src/synthesis/libsynthesis.a: src/synthesis/CMakeFiles/synthesis.dir/source/Actor.cpp.o
 src/synthesis/libsynthesis.a: src/synthesis/CMakeFiles/synthesis.dir/source/OneStepRealizability.cpp.o
 src/synthesis/libsynthesis.a: src/synthesis/CMakeFiles/synthesis.dir/source/OneStepUnrealizability.cpp.o
 src/synthesis/libsynthesis.a: src/synthesis/CMakeFiles/synthesis.dir/source/Preprocessing.cpp.o
@@ -431,10 +477,12 @@ src/synthesis/libsynthesis.a: src/synthesis/CMakeFiles/synthesis.dir/source/auto
 src/synthesis/libsynthesis.a: src/synthesis/CMakeFiles/synthesis.dir/source/automata/SymbolicStateDfa.cpp.o
 src/synthesis/libsynthesis.a: src/synthesis/CMakeFiles/synthesis.dir/source/game/BuchiReachability.cpp.o
 src/synthesis/libsynthesis.a: src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.o
+src/synthesis/libsynthesis.a: src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.o
 src/synthesis/libsynthesis.a: src/synthesis/CMakeFiles/synthesis.dir/source/game/InputOutputPartition.cpp.o
 src/synthesis/libsynthesis.a: src/synthesis/CMakeFiles/synthesis.dir/source/game/Quantification.cpp.o
 src/synthesis/libsynthesis.a: src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability.cpp.o
 src/synthesis/libsynthesis.a: src/synthesis/CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.o
+src/synthesis/libsynthesis.a: src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.o
 src/synthesis/libsynthesis.a: src/synthesis/CMakeFiles/synthesis.dir/source/game/Transducer.cpp.o
 src/synthesis/libsynthesis.a: src/synthesis/CMakeFiles/synthesis.dir/source/game/coBuchiReachability.cpp.o
 src/synthesis/libsynthesis.a: src/synthesis/CMakeFiles/synthesis.dir/source/game/coGR1Reachability.cpp.o
@@ -445,7 +493,7 @@ src/synthesis/libsynthesis.a: src/synthesis/CMakeFiles/synthesis.dir/source/synt
 src/synthesis/libsynthesis.a: src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/StabilityLtlfSynthesizer.cpp.o
 src/synthesis/libsynthesis.a: src/synthesis/CMakeFiles/synthesis.dir/build.make
 src/synthesis/libsynthesis.a: src/synthesis/CMakeFiles/synthesis.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX static library libsynthesis.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX static library libsynthesis.a"
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && $(CMAKE_COMMAND) -P CMakeFiles/synthesis.dir/cmake_clean_target.cmake
 	cd /home/vboxuser/LydiaSyft/build/src/synthesis && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/synthesis.dir/link.txt --verbose=$(VERBOSE)
 

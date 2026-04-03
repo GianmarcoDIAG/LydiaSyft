@@ -180,9 +180,14 @@ namespace Syft {
         std::size_t input_variable_count() const;
 
         /**
-         * \brief Returns the number of agent for a given agent.
+         * \brief Returns the number of variables for a given agent.
          */
         std::size_t agent_variable_count(std::size_t agent_id) const;
+        
+        /**
+         * \brief Returns the number agents.
+         */
+        std::size_t agents_count(std::size_t agent_id) const;
 
         /**
          * \brief Returns a BDD formed by the conjunction of all input variables.
@@ -190,7 +195,7 @@ namespace Syft {
         CUDD::BDD input_cube() const;
 
         /**
-         * \brief Returns a BDD formed by the conjunction of all agent variables fo r a given agent.
+         * \brief Returns a BDD formed by the conjunction of all agent variables for a given agent.
          */
         CUDD::BDD agent_cube(std::size_t agent_id) const;
 

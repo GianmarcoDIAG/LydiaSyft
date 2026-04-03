@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "RelWithDebInfo")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -52,6 +52,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/vboxuser/LydiaSyft/build/examples/06_ltlf_synthesis_with_fairness_conditions/cmake_install.cmake")
   include("/home/vboxuser/LydiaSyft/build/examples/07_ltlf_synthesis_with_stability_conditions/cmake_install.cmake")
   include("/home/vboxuser/LydiaSyft/build/examples/08_ltlf_synthesis_with_gr1_env_spec/cmake_install.cmake")
+  include("/home/vboxuser/LydiaSyft/build/examples/09_reachability/cmake_install.cmake")
 
 endif()
 

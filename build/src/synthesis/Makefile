@@ -175,6 +175,30 @@ synthesis/fast:
 	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/build
 .PHONY : synthesis/fast
 
+source/Actor.o: source/Actor.cpp.o
+.PHONY : source/Actor.o
+
+# target to build an object file
+source/Actor.cpp.o:
+	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Actor.cpp.o
+.PHONY : source/Actor.cpp.o
+
+source/Actor.i: source/Actor.cpp.i
+.PHONY : source/Actor.i
+
+# target to preprocess a source file
+source/Actor.cpp.i:
+	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Actor.cpp.i
+.PHONY : source/Actor.cpp.i
+
+source/Actor.s: source/Actor.cpp.s
+.PHONY : source/Actor.s
+
+# target to generate assembly for a file
+source/Actor.cpp.s:
+	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Actor.cpp.s
+.PHONY : source/Actor.cpp.s
+
 source/OneStepRealizability.o: source/OneStepRealizability.cpp.o
 .PHONY : source/OneStepRealizability.o
 
@@ -439,6 +463,30 @@ source/game/DfaGameSynthesizer.cpp.s:
 	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.s
 .PHONY : source/game/DfaGameSynthesizer.cpp.s
 
+source/game/DfaGameSynthesizer_multiagent.o: source/game/DfaGameSynthesizer_multiagent.cpp.o
+.PHONY : source/game/DfaGameSynthesizer_multiagent.o
+
+# target to build an object file
+source/game/DfaGameSynthesizer_multiagent.cpp.o:
+	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.o
+.PHONY : source/game/DfaGameSynthesizer_multiagent.cpp.o
+
+source/game/DfaGameSynthesizer_multiagent.i: source/game/DfaGameSynthesizer_multiagent.cpp.i
+.PHONY : source/game/DfaGameSynthesizer_multiagent.i
+
+# target to preprocess a source file
+source/game/DfaGameSynthesizer_multiagent.cpp.i:
+	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.i
+.PHONY : source/game/DfaGameSynthesizer_multiagent.cpp.i
+
+source/game/DfaGameSynthesizer_multiagent.s: source/game/DfaGameSynthesizer_multiagent.cpp.s
+.PHONY : source/game/DfaGameSynthesizer_multiagent.s
+
+# target to generate assembly for a file
+source/game/DfaGameSynthesizer_multiagent.cpp.s:
+	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.s
+.PHONY : source/game/DfaGameSynthesizer_multiagent.cpp.s
+
 source/game/InputOutputPartition.o: source/game/InputOutputPartition.cpp.o
 .PHONY : source/game/InputOutputPartition.o
 
@@ -534,6 +582,30 @@ source/game/ReachabilityMaxSet.s: source/game/ReachabilityMaxSet.cpp.s
 source/game/ReachabilityMaxSet.cpp.s:
 	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.s
 .PHONY : source/game/ReachabilityMaxSet.cpp.s
+
+source/game/Reachability_multiagent.o: source/game/Reachability_multiagent.cpp.o
+.PHONY : source/game/Reachability_multiagent.o
+
+# target to build an object file
+source/game/Reachability_multiagent.cpp.o:
+	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.o
+.PHONY : source/game/Reachability_multiagent.cpp.o
+
+source/game/Reachability_multiagent.i: source/game/Reachability_multiagent.cpp.i
+.PHONY : source/game/Reachability_multiagent.i
+
+# target to preprocess a source file
+source/game/Reachability_multiagent.cpp.i:
+	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.i
+.PHONY : source/game/Reachability_multiagent.cpp.i
+
+source/game/Reachability_multiagent.s: source/game/Reachability_multiagent.cpp.s
+.PHONY : source/game/Reachability_multiagent.s
+
+# target to generate assembly for a file
+source/game/Reachability_multiagent.cpp.s:
+	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.s
+.PHONY : source/game/Reachability_multiagent.cpp.s
 
 source/game/Transducer.o: source/game/Transducer.cpp.o
 .PHONY : source/game/Transducer.o
@@ -740,6 +812,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... synthesis"
+	@echo "... source/Actor.o"
+	@echo "... source/Actor.i"
+	@echo "... source/Actor.s"
 	@echo "... source/OneStepRealizability.o"
 	@echo "... source/OneStepRealizability.i"
 	@echo "... source/OneStepRealizability.s"
@@ -773,6 +848,9 @@ help:
 	@echo "... source/game/DfaGameSynthesizer.o"
 	@echo "... source/game/DfaGameSynthesizer.i"
 	@echo "... source/game/DfaGameSynthesizer.s"
+	@echo "... source/game/DfaGameSynthesizer_multiagent.o"
+	@echo "... source/game/DfaGameSynthesizer_multiagent.i"
+	@echo "... source/game/DfaGameSynthesizer_multiagent.s"
 	@echo "... source/game/InputOutputPartition.o"
 	@echo "... source/game/InputOutputPartition.i"
 	@echo "... source/game/InputOutputPartition.s"
@@ -785,6 +863,9 @@ help:
 	@echo "... source/game/ReachabilityMaxSet.o"
 	@echo "... source/game/ReachabilityMaxSet.i"
 	@echo "... source/game/ReachabilityMaxSet.s"
+	@echo "... source/game/Reachability_multiagent.o"
+	@echo "... source/game/Reachability_multiagent.i"
+	@echo "... source/game/Reachability_multiagent.s"
 	@echo "... source/game/Transducer.o"
 	@echo "... source/game/Transducer.i"
 	@echo "... source/game/Transducer.s"

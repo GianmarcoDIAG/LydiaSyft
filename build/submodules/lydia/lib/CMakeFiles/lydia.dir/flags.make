@@ -6,5 +6,5 @@ CXX_DEFINES = -DLYDIA_VERSION=\"0.1.3\" -D__ROOT_DIRECTORY=\"/home/vboxuser/Lydi
 
 CXX_INCLUDES = -I/home/vboxuser/LydiaSyft/submodules/lydia/lib/include -I/home/vboxuser/LydiaSyft/submodules/lydia/third_party/spdlog/include -I/home/vboxuser/LydiaSyft/submodules/lydia/third_party/CLI11/include -I/home/vboxuser/LydiaSyft/build/submodules/lydia/lib -I/home/vboxuser/LydiaSyft/submodules/lydia/lib
 
-CXX_FLAGS =  -std=c++17 -O2 -g -DNDEBUG -std=gnu++17
+CXX_FLAGS =  -std=c++17 -O3 -DNDEBUG -std=gnu++17
 

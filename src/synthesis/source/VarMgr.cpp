@@ -265,6 +265,10 @@ std::size_t VarMgr::agent_variable_count(std::size_t agent_id) const {
   return agent_variables_[agent_id].size();
 }
 
+std::size_t VarMgr::agents_count(std::size_t agent_id) const {
+  return agent_variables_.size();
+}
+
 CUDD::BDD VarMgr::input_cube() const {
   return mgr_->computeCube(input_variables_);
 }

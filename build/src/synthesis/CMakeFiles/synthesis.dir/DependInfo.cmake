@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/vboxuser/LydiaSyft/src/synthesis/source/Actor.cpp" "src/synthesis/CMakeFiles/synthesis.dir/source/Actor.cpp.o" "gcc" "src/synthesis/CMakeFiles/synthesis.dir/source/Actor.cpp.o.d"
   "/home/vboxuser/LydiaSyft/src/synthesis/source/OneStepRealizability.cpp" "src/synthesis/CMakeFiles/synthesis.dir/source/OneStepRealizability.cpp.o" "gcc" "src/synthesis/CMakeFiles/synthesis.dir/source/OneStepRealizability.cpp.o.d"
   "/home/vboxuser/LydiaSyft/src/synthesis/source/OneStepUnrealizability.cpp" "src/synthesis/CMakeFiles/synthesis.dir/source/OneStepUnrealizability.cpp.o" "gcc" "src/synthesis/CMakeFiles/synthesis.dir/source/OneStepUnrealizability.cpp.o.d"
   "/home/vboxuser/LydiaSyft/src/synthesis/source/Preprocessing.cpp" "src/synthesis/CMakeFiles/synthesis.dir/source/Preprocessing.cpp.o" "gcc" "src/synthesis/CMakeFiles/synthesis.dir/source/Preprocessing.cpp.o.d"
@@ -19,10 +20,12 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/vboxuser/LydiaSyft/src/synthesis/source/automata/SymbolicStateDfa.cpp" "src/synthesis/CMakeFiles/synthesis.dir/source/automata/SymbolicStateDfa.cpp.o" "gcc" "src/synthesis/CMakeFiles/synthesis.dir/source/automata/SymbolicStateDfa.cpp.o.d"
   "/home/vboxuser/LydiaSyft/src/synthesis/source/game/BuchiReachability.cpp" "src/synthesis/CMakeFiles/synthesis.dir/source/game/BuchiReachability.cpp.o" "gcc" "src/synthesis/CMakeFiles/synthesis.dir/source/game/BuchiReachability.cpp.o.d"
   "/home/vboxuser/LydiaSyft/src/synthesis/source/game/DfaGameSynthesizer.cpp" "src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.o" "gcc" "src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.o.d"
+  "/home/vboxuser/LydiaSyft/src/synthesis/source/game/DfaGameSynthesizer_multiagent.cpp" "src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.o" "gcc" "src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.o.d"
   "/home/vboxuser/LydiaSyft/src/synthesis/source/game/InputOutputPartition.cpp" "src/synthesis/CMakeFiles/synthesis.dir/source/game/InputOutputPartition.cpp.o" "gcc" "src/synthesis/CMakeFiles/synthesis.dir/source/game/InputOutputPartition.cpp.o.d"
   "/home/vboxuser/LydiaSyft/src/synthesis/source/game/Quantification.cpp" "src/synthesis/CMakeFiles/synthesis.dir/source/game/Quantification.cpp.o" "gcc" "src/synthesis/CMakeFiles/synthesis.dir/source/game/Quantification.cpp.o.d"
   "/home/vboxuser/LydiaSyft/src/synthesis/source/game/Reachability.cpp" "src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability.cpp.o" "gcc" "src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability.cpp.o.d"
   "/home/vboxuser/LydiaSyft/src/synthesis/source/game/ReachabilityMaxSet.cpp" "src/synthesis/CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.o" "gcc" "src/synthesis/CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.o.d"
+  "/home/vboxuser/LydiaSyft/src/synthesis/source/game/Reachability_multiagent.cpp" "src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.o" "gcc" "src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.o.d"
   "/home/vboxuser/LydiaSyft/src/synthesis/source/game/Transducer.cpp" "src/synthesis/CMakeFiles/synthesis.dir/source/game/Transducer.cpp.o" "gcc" "src/synthesis/CMakeFiles/synthesis.dir/source/game/Transducer.cpp.o.d"
   "/home/vboxuser/LydiaSyft/src/synthesis/source/game/coBuchiReachability.cpp" "src/synthesis/CMakeFiles/synthesis.dir/source/game/coBuchiReachability.cpp.o" "gcc" "src/synthesis/CMakeFiles/synthesis.dir/source/game/coBuchiReachability.cpp.o.d"
   "/home/vboxuser/LydiaSyft/src/synthesis/source/game/coGR1Reachability.cpp" "src/synthesis/CMakeFiles/synthesis.dir/source/game/coGR1Reachability.cpp.o" "gcc" "src/synthesis/CMakeFiles/synthesis.dir/source/game/coGR1Reachability.cpp.o.d"

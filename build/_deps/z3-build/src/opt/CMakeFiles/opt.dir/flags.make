@@ -6,5 +6,5 @@ CXX_DEFINES = -D_EXTERNAL_RELEASE -D_LINUX_ -D_MP_INTERNAL -D_USE_THREAD_LOCAL -
 
 CXX_INCLUDES = -I/home/vboxuser/LydiaSyft/build/_deps/z3-build/src -I/home/vboxuser/LydiaSyft/build/_deps/z3-src/src
 
-CXX_FLAGS =  -std=c++17 -Werror=odr  -O2 -g -DNDEBUG -std=gnu++17 -mfpmath=sse -msse -msse2 -Wall -fvisibility=hidden -fvisibility-inlines-hidden -fPIC
+CXX_FLAGS =  -std=c++17 -Werror=odr  -O3 -DNDEBUG -std=gnu++17 -mfpmath=sse -msse -msse2 -Wall -fvisibility=hidden -fvisibility-inlines-hidden -fPIC
 

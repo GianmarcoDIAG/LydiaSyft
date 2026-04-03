@@ -1240,6 +1240,19 @@ ltlf_synthesis_with_gr1_env_spec_example/fast:
 	$(MAKE) $(MAKESILENT) -f examples/08_ltlf_synthesis_with_gr1_env_spec/CMakeFiles/ltlf_synthesis_with_gr1_env_spec_example.dir/build.make examples/08_ltlf_synthesis_with_gr1_env_spec/CMakeFiles/ltlf_synthesis_with_gr1_env_spec_example.dir/build
 .PHONY : ltlf_synthesis_with_gr1_env_spec_example/fast
 
+#=============================================================================
+# Target rules for targets named reachability_example
+
+# Build rule for target.
+reachability_example: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 reachability_example
+.PHONY : reachability_example
+
+# fast build rule for target.
+reachability_example/fast:
+	$(MAKE) $(MAKESILENT) -f examples/09_reachability/CMakeFiles/reachability_example.dir/build.make examples/09_reachability/CMakeFiles/reachability_example.dir/build
+.PHONY : reachability_example/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1308,6 +1321,7 @@ help:
 	@echo "... proto_model"
 	@echo "... qe"
 	@echo "... quickstart_example"
+	@echo "... reachability_example"
 	@echo "... realclosure"
 	@echo "... rel"
 	@echo "... rewriter"
