@@ -37,7 +37,27 @@ void VarMgr::print_mgr() const {
   for (std::size_t i = 0; i < agent_variables_.size(); ++i) {
     std::cout << "Agent " << i << " variables: " << std::endl;
     for (const auto& var: agent_variables_[i]) std::cout << "Var: " << var << std::endl;
-  }  
+  }
+  
+  std::cout << "\nCUBE TEST \n" << std::endl;
+  std::cout << "---Environment role---" << std::endl;
+  CUDD::BDD env_out = environment_output_cube();
+  CUDD::BDD env_in = environment_input_cube();
+  std::cout << "Env Output Cube controls: " << std::endl;
+  print_bdd_vars(env_out);
+  std::cout << "Env Input Cube see others moves: " << std::endl;
+  print_bdd_vars(env_in);
+
+  for(std::size_t i=0; i< agent_variables_.size(); ++i){
+    std::cout << "\n---Agent "<< i << " role---"<<std::endl;
+    CUDD::BDD ag_out = agent_output_cube(i);
+    CUDD::BDD ag_in = agent_input_cube(i);
+    std::cout << "Agent "<< i << " Output Cube controls: " << std::endl;
+    print_bdd_vars(ag_out);
+    std::cout << "Agent " << i << " Input Cube see others moves: " << std::endl;
+    print_bdd_vars(ag_in);
+    
+  }
 
   // prints Z vars for each managed automaton
   for (int i = 0; i < state_variables_.size(); ++i) {
@@ -45,6 +65,24 @@ void VarMgr::print_mgr() const {
     for (const auto& var: state_variables_[i]) std::cout << var << " ";
     std::cout << std::endl;
   }
+}
+
+void VarMgr::print_bdd_vars(CUDD::BDD cube)const{
+  if(cube.IsOne()){
+    std::cout << "Empty Cube" << std::endl;
+    return;
+  }
+  std::vector<unsigned int> indices = cube.SupportIndices();
+  std::cout << "{";
+  for(unsigned int idx : indices){
+    auto it= index_to_name_.find(idx);
+    if(it != index_to_name_.end()){
+      std::cout << it->second << "(v" << idx <<") ";
+    }else{
+      std::cout << "v" << idx << " ";
+    }
+  }
+  std::cout << "} (Tot: " << indices.size() << ")" << std::endl;
 }
 
 void VarMgr::create_named_variables(
@@ -269,13 +307,37 @@ std::size_t VarMgr::agents_count(std::size_t agent_id) const {
   return agent_variables_.size();
 }
 
-CUDD::BDD VarMgr::input_cube() const {
+// all agents variables
+CUDD::BDD VarMgr::environment_input_cube() const {
+  CUDD::BDD all_agents_cube = mgr_->bddOne();
+  for(std::size_t i = 0; i < agent_variables_.size(); ++i){
+    all_agents_cube &= agent_output_cube(i);
+  }
+  return all_agents_cube;  
+}
+
+CUDD::BDD VarMgr::environment_output_cube() const {
   return mgr_->computeCube(input_variables_);
 }
 
-CUDD::BDD VarMgr::agent_cube(std::size_t agent_id) const {
+//env variables + all agents variables, except agent with agent_id ones
+CUDD::BDD VarMgr::agent_input_cube(std::size_t agent_id)const{
+  CUDD::BDD combined_input = environment_output_cube();
+  for (std::size_t i = 0; i < agent_variables_.size(); ++i){
+    if((int)i == agent_id) continue;
+    combined_input &= agent_output_cube(i);
+  }
+  return combined_input;
+}
+
+CUDD::BDD VarMgr::agent_output_cube(std::size_t agent_id) const {
   if (agent_id >= agent_variables_.size()) return mgr_->bddOne();
   return mgr_->computeCube(agent_variables_[agent_id]);
+}
+
+//Backword compatibility
+CUDD::BDD VarMgr::input_cube() const {
+  return mgr_->computeCube(input_variables_);
 }
 
 bool VarMgr::is_input_variable(const std::string& var) const {

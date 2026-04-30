@@ -22,7 +22,7 @@ using namespace Syft;
 
 int main(int argc, char ** argv) {
     try {
-        std::string root_dir = "/home/vboxuser/LydiaSyft/examples/09_reachability/";
+        std::string root_dir = "/examples/09_reachability/";
         std::string part_file = (root_dir + "var.part");
         InputOutputPartition partition = InputOutputPartition::read_from_file(part_file);
         
@@ -78,7 +78,7 @@ int main(int argc, char ** argv) {
             }
 
             // Build Arena
-            SymbolicStateDfa arena = SymbolicStateDfa::product_AND(dfas);
+            SymbolicStateDfa arena = SymbolicStateDfa::product_OR(dfas);
 
             // Goal is based on protagonist's formula only
             size_t actor_dfa_index;

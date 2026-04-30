@@ -1,4 +1,4 @@
-# Install script for directory: /home/vboxuser/LydiaSyft/src/parser
+# Install script for directory: /home/stella/LydiaSyft/src/parser
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

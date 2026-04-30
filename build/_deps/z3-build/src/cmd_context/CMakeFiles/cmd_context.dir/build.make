@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 # Include any dependencies generated for this target.
 include _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/depend.make
@@ -72,156 +72,156 @@ include _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/flags.make
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/basic_cmds.cpp.o: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/flags.make
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/basic_cmds.cpp.o: _deps/z3-src/src/cmd_context/basic_cmds.cpp
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/basic_cmds.cpp.o: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/basic_cmds.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/basic_cmds.cpp.o -MF CMakeFiles/cmd_context.dir/basic_cmds.cpp.o.d -o CMakeFiles/cmd_context.dir/basic_cmds.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/basic_cmds.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/basic_cmds.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/basic_cmds.cpp.o -MF CMakeFiles/cmd_context.dir/basic_cmds.cpp.o.d -o CMakeFiles/cmd_context.dir/basic_cmds.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/basic_cmds.cpp
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/basic_cmds.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cmd_context.dir/basic_cmds.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/basic_cmds.cpp > CMakeFiles/cmd_context.dir/basic_cmds.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/basic_cmds.cpp > CMakeFiles/cmd_context.dir/basic_cmds.cpp.i
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/basic_cmds.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cmd_context.dir/basic_cmds.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/basic_cmds.cpp -o CMakeFiles/cmd_context.dir/basic_cmds.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/basic_cmds.cpp -o CMakeFiles/cmd_context.dir/basic_cmds.cpp.s
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context.cpp.o: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/flags.make
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context.cpp.o: _deps/z3-src/src/cmd_context/cmd_context.cpp
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context.cpp.o: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context.cpp.o -MF CMakeFiles/cmd_context.dir/cmd_context.cpp.o.d -o CMakeFiles/cmd_context.dir/cmd_context.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/cmd_context.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context.cpp.o -MF CMakeFiles/cmd_context.dir/cmd_context.cpp.o.d -o CMakeFiles/cmd_context.dir/cmd_context.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/cmd_context.cpp
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cmd_context.dir/cmd_context.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/cmd_context.cpp > CMakeFiles/cmd_context.dir/cmd_context.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/cmd_context.cpp > CMakeFiles/cmd_context.dir/cmd_context.cpp.i
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cmd_context.dir/cmd_context.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/cmd_context.cpp -o CMakeFiles/cmd_context.dir/cmd_context.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/cmd_context.cpp -o CMakeFiles/cmd_context.dir/cmd_context.cpp.s
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.o: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/flags.make
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.o: _deps/z3-src/src/cmd_context/cmd_context_to_goal.cpp
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.o: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.o -MF CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.o.d -o CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/cmd_context_to_goal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.o -MF CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.o.d -o CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/cmd_context_to_goal.cpp
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/cmd_context_to_goal.cpp > CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/cmd_context_to_goal.cpp > CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.i
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/cmd_context_to_goal.cpp -o CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/cmd_context_to_goal.cpp -o CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.s
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_util.cpp.o: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/flags.make
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_util.cpp.o: _deps/z3-src/src/cmd_context/cmd_util.cpp
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_util.cpp.o: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_util.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_util.cpp.o -MF CMakeFiles/cmd_context.dir/cmd_util.cpp.o.d -o CMakeFiles/cmd_context.dir/cmd_util.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/cmd_util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_util.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_util.cpp.o -MF CMakeFiles/cmd_context.dir/cmd_util.cpp.o.d -o CMakeFiles/cmd_context.dir/cmd_util.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/cmd_util.cpp
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_util.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cmd_context.dir/cmd_util.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/cmd_util.cpp > CMakeFiles/cmd_context.dir/cmd_util.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/cmd_util.cpp > CMakeFiles/cmd_context.dir/cmd_util.cpp.i
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cmd_context.dir/cmd_util.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/cmd_util.cpp -o CMakeFiles/cmd_context.dir/cmd_util.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/cmd_util.cpp -o CMakeFiles/cmd_context.dir/cmd_util.cpp.s
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/echo_tactic.cpp.o: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/flags.make
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/echo_tactic.cpp.o: _deps/z3-src/src/cmd_context/echo_tactic.cpp
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/echo_tactic.cpp.o: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/echo_tactic.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/echo_tactic.cpp.o -MF CMakeFiles/cmd_context.dir/echo_tactic.cpp.o.d -o CMakeFiles/cmd_context.dir/echo_tactic.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/echo_tactic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/echo_tactic.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/echo_tactic.cpp.o -MF CMakeFiles/cmd_context.dir/echo_tactic.cpp.o.d -o CMakeFiles/cmd_context.dir/echo_tactic.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/echo_tactic.cpp
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/echo_tactic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cmd_context.dir/echo_tactic.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/echo_tactic.cpp > CMakeFiles/cmd_context.dir/echo_tactic.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/echo_tactic.cpp > CMakeFiles/cmd_context.dir/echo_tactic.cpp.i
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/echo_tactic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cmd_context.dir/echo_tactic.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/echo_tactic.cpp -o CMakeFiles/cmd_context.dir/echo_tactic.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/echo_tactic.cpp -o CMakeFiles/cmd_context.dir/echo_tactic.cpp.s
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/eval_cmd.cpp.o: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/flags.make
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/eval_cmd.cpp.o: _deps/z3-src/src/cmd_context/eval_cmd.cpp
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/eval_cmd.cpp.o: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/eval_cmd.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/eval_cmd.cpp.o -MF CMakeFiles/cmd_context.dir/eval_cmd.cpp.o.d -o CMakeFiles/cmd_context.dir/eval_cmd.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/eval_cmd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/eval_cmd.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/eval_cmd.cpp.o -MF CMakeFiles/cmd_context.dir/eval_cmd.cpp.o.d -o CMakeFiles/cmd_context.dir/eval_cmd.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/eval_cmd.cpp
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/eval_cmd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cmd_context.dir/eval_cmd.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/eval_cmd.cpp > CMakeFiles/cmd_context.dir/eval_cmd.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/eval_cmd.cpp > CMakeFiles/cmd_context.dir/eval_cmd.cpp.i
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/eval_cmd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cmd_context.dir/eval_cmd.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/eval_cmd.cpp -o CMakeFiles/cmd_context.dir/eval_cmd.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/eval_cmd.cpp -o CMakeFiles/cmd_context.dir/eval_cmd.cpp.s
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/parametric_cmd.cpp.o: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/flags.make
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/parametric_cmd.cpp.o: _deps/z3-src/src/cmd_context/parametric_cmd.cpp
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/parametric_cmd.cpp.o: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/parametric_cmd.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/parametric_cmd.cpp.o -MF CMakeFiles/cmd_context.dir/parametric_cmd.cpp.o.d -o CMakeFiles/cmd_context.dir/parametric_cmd.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/parametric_cmd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/parametric_cmd.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/parametric_cmd.cpp.o -MF CMakeFiles/cmd_context.dir/parametric_cmd.cpp.o.d -o CMakeFiles/cmd_context.dir/parametric_cmd.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/parametric_cmd.cpp
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/parametric_cmd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cmd_context.dir/parametric_cmd.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/parametric_cmd.cpp > CMakeFiles/cmd_context.dir/parametric_cmd.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/parametric_cmd.cpp > CMakeFiles/cmd_context.dir/parametric_cmd.cpp.i
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/parametric_cmd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cmd_context.dir/parametric_cmd.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/parametric_cmd.cpp -o CMakeFiles/cmd_context.dir/parametric_cmd.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/parametric_cmd.cpp -o CMakeFiles/cmd_context.dir/parametric_cmd.cpp.s
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/pdecl.cpp.o: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/flags.make
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/pdecl.cpp.o: _deps/z3-src/src/cmd_context/pdecl.cpp
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/pdecl.cpp.o: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/pdecl.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/pdecl.cpp.o -MF CMakeFiles/cmd_context.dir/pdecl.cpp.o.d -o CMakeFiles/cmd_context.dir/pdecl.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/pdecl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/pdecl.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/pdecl.cpp.o -MF CMakeFiles/cmd_context.dir/pdecl.cpp.o.d -o CMakeFiles/cmd_context.dir/pdecl.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/pdecl.cpp
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/pdecl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cmd_context.dir/pdecl.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/pdecl.cpp > CMakeFiles/cmd_context.dir/pdecl.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/pdecl.cpp > CMakeFiles/cmd_context.dir/pdecl.cpp.i
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/pdecl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cmd_context.dir/pdecl.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/pdecl.cpp -o CMakeFiles/cmd_context.dir/pdecl.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/pdecl.cpp -o CMakeFiles/cmd_context.dir/pdecl.cpp.s
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/simplify_cmd.cpp.o: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/flags.make
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/simplify_cmd.cpp.o: _deps/z3-src/src/cmd_context/simplify_cmd.cpp
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/simplify_cmd.cpp.o: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/simplify_cmd.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/simplify_cmd.cpp.o -MF CMakeFiles/cmd_context.dir/simplify_cmd.cpp.o.d -o CMakeFiles/cmd_context.dir/simplify_cmd.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/simplify_cmd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/simplify_cmd.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/simplify_cmd.cpp.o -MF CMakeFiles/cmd_context.dir/simplify_cmd.cpp.o.d -o CMakeFiles/cmd_context.dir/simplify_cmd.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/simplify_cmd.cpp
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/simplify_cmd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cmd_context.dir/simplify_cmd.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/simplify_cmd.cpp > CMakeFiles/cmd_context.dir/simplify_cmd.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/simplify_cmd.cpp > CMakeFiles/cmd_context.dir/simplify_cmd.cpp.i
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/simplify_cmd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cmd_context.dir/simplify_cmd.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/simplify_cmd.cpp -o CMakeFiles/cmd_context.dir/simplify_cmd.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/simplify_cmd.cpp -o CMakeFiles/cmd_context.dir/simplify_cmd.cpp.s
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_cmds.cpp.o: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/flags.make
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_cmds.cpp.o: _deps/z3-src/src/cmd_context/tactic_cmds.cpp
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_cmds.cpp.o: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_cmds.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_cmds.cpp.o -MF CMakeFiles/cmd_context.dir/tactic_cmds.cpp.o.d -o CMakeFiles/cmd_context.dir/tactic_cmds.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/tactic_cmds.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_cmds.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_cmds.cpp.o -MF CMakeFiles/cmd_context.dir/tactic_cmds.cpp.o.d -o CMakeFiles/cmd_context.dir/tactic_cmds.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/tactic_cmds.cpp
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_cmds.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cmd_context.dir/tactic_cmds.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/tactic_cmds.cpp > CMakeFiles/cmd_context.dir/tactic_cmds.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/tactic_cmds.cpp > CMakeFiles/cmd_context.dir/tactic_cmds.cpp.i
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_cmds.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cmd_context.dir/tactic_cmds.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/tactic_cmds.cpp -o CMakeFiles/cmd_context.dir/tactic_cmds.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/tactic_cmds.cpp -o CMakeFiles/cmd_context.dir/tactic_cmds.cpp.s
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_manager.cpp.o: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/flags.make
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_manager.cpp.o: _deps/z3-src/src/cmd_context/tactic_manager.cpp
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_manager.cpp.o: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_manager.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_manager.cpp.o -MF CMakeFiles/cmd_context.dir/tactic_manager.cpp.o.d -o CMakeFiles/cmd_context.dir/tactic_manager.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/tactic_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_manager.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_manager.cpp.o -MF CMakeFiles/cmd_context.dir/tactic_manager.cpp.o.d -o CMakeFiles/cmd_context.dir/tactic_manager.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/tactic_manager.cpp
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cmd_context.dir/tactic_manager.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/tactic_manager.cpp > CMakeFiles/cmd_context.dir/tactic_manager.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/tactic_manager.cpp > CMakeFiles/cmd_context.dir/tactic_manager.cpp.i
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cmd_context.dir/tactic_manager.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context/tactic_manager.cpp -o CMakeFiles/cmd_context.dir/tactic_manager.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context/tactic_manager.cpp -o CMakeFiles/cmd_context.dir/tactic_manager.cpp.s
 
 cmd_context: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/basic_cmds.cpp.o
 cmd_context: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context.cpp.o
@@ -242,10 +242,10 @@ _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build: cmd_context
 .PHONY : _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/clean:
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context && $(CMAKE_COMMAND) -P CMakeFiles/cmd_context.dir/cmake_clean.cmake
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context && $(CMAKE_COMMAND) -P CMakeFiles/cmd_context.dir/cmake_clean.cmake
 .PHONY : _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/clean
 
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/LydiaSyft /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/cmd_context /home/vboxuser/LydiaSyft/build /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stella/LydiaSyft /home/stella/LydiaSyft/build/_deps/z3-src/src/cmd_context /home/stella/LydiaSyft/build /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/depend
 

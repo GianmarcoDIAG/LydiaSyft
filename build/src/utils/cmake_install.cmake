@@ -1,4 +1,4 @@
-# Install script for directory: /home/vboxuser/LydiaSyft/src/utils
+# Install script for directory: /home/stella/LydiaSyft/src/utils
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

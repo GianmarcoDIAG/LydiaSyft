@@ -1,4 +1,4 @@
-# Install script for directory: /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/muz/dataflow
+# Install script for directory: /home/stella/LydiaSyft/build/_deps/z3-src/src/muz/dataflow
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,4 +1,4 @@
-# Install script for directory: /home/vboxuser/LydiaSyft/examples/06_ltlf_synthesis_with_fairness_conditions
+# Install script for directory: /home/stella/LydiaSyft/examples/06_ltlf_synthesis_with_fairness_conditions
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

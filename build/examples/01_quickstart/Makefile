@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles /home/vboxuser/LydiaSyft/build/examples/01_quickstart//CMakeFiles/progress.marks
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/01_quickstart/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles /home/stella/LydiaSyft/build/examples/01_quickstart//CMakeFiles/progress.marks
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/01_quickstart/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/01_quickstart/clean
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/01_quickstart/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/01_quickstart/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/01_quickstart/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/01_quickstart/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/01_quickstart/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 examples/01_quickstart/CMakeFiles/quickstart_example.dir/rule:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/01_quickstart/CMakeFiles/quickstart_example.dir/rule
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/01_quickstart/CMakeFiles/quickstart_example.dir/rule
 .PHONY : examples/01_quickstart/CMakeFiles/quickstart_example.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ quickstart_example: examples/01_quickstart/CMakeFiles/quickstart_example.dir/rul
 
 # fast build rule for target.
 quickstart_example/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f examples/01_quickstart/CMakeFiles/quickstart_example.dir/build.make examples/01_quickstart/CMakeFiles/quickstart_example.dir/build
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f examples/01_quickstart/CMakeFiles/quickstart_example.dir/build.make examples/01_quickstart/CMakeFiles/quickstart_example.dir/build
 .PHONY : quickstart_example/fast
 
 quickstart.o: quickstart.cpp.o
@@ -180,7 +180,7 @@ quickstart.o: quickstart.cpp.o
 
 # target to build an object file
 quickstart.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f examples/01_quickstart/CMakeFiles/quickstart_example.dir/build.make examples/01_quickstart/CMakeFiles/quickstart_example.dir/quickstart.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f examples/01_quickstart/CMakeFiles/quickstart_example.dir/build.make examples/01_quickstart/CMakeFiles/quickstart_example.dir/quickstart.cpp.o
 .PHONY : quickstart.cpp.o
 
 quickstart.i: quickstart.cpp.i
@@ -188,7 +188,7 @@ quickstart.i: quickstart.cpp.i
 
 # target to preprocess a source file
 quickstart.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f examples/01_quickstart/CMakeFiles/quickstart_example.dir/build.make examples/01_quickstart/CMakeFiles/quickstart_example.dir/quickstart.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f examples/01_quickstart/CMakeFiles/quickstart_example.dir/build.make examples/01_quickstart/CMakeFiles/quickstart_example.dir/quickstart.cpp.i
 .PHONY : quickstart.cpp.i
 
 quickstart.s: quickstart.cpp.s
@@ -196,7 +196,7 @@ quickstart.s: quickstart.cpp.s
 
 # target to generate assembly for a file
 quickstart.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f examples/01_quickstart/CMakeFiles/quickstart_example.dir/build.make examples/01_quickstart/CMakeFiles/quickstart_example.dir/quickstart.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f examples/01_quickstart/CMakeFiles/quickstart_example.dir/build.make examples/01_quickstart/CMakeFiles/quickstart_example.dir/quickstart.cpp.s
 .PHONY : quickstart.cpp.s
 
 # Help Target
@@ -226,6 +226,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

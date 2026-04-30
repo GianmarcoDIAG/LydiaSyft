@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 # Utility rule file for uninstall.
 
@@ -67,8 +67,8 @@ include _deps/z3-build/CMakeFiles/uninstall.dir/compiler_depend.make
 include _deps/z3-build/CMakeFiles/uninstall.dir/progress.make
 
 _deps/z3-build/CMakeFiles/uninstall:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) Uninstalling...
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build && /usr/bin/cmake -P /home/vboxuser/LydiaSyft/build/_deps/z3-build/cmake_uninstall.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) Uninstalling...
+	cd /home/stella/LydiaSyft/build/_deps/z3-build && /usr/bin/cmake -P /home/stella/LydiaSyft/build/_deps/z3-build/cmake_uninstall.cmake
 
 uninstall: _deps/z3-build/CMakeFiles/uninstall
 uninstall: _deps/z3-build/CMakeFiles/uninstall.dir/build.make
@@ -79,10 +79,10 @@ _deps/z3-build/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : _deps/z3-build/CMakeFiles/uninstall.dir/build
 
 _deps/z3-build/CMakeFiles/uninstall.dir/clean:
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/stella/LydiaSyft/build/_deps/z3-build && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : _deps/z3-build/CMakeFiles/uninstall.dir/clean
 
 _deps/z3-build/CMakeFiles/uninstall.dir/depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/LydiaSyft /home/vboxuser/LydiaSyft/build/_deps/z3-src /home/vboxuser/LydiaSyft/build /home/vboxuser/LydiaSyft/build/_deps/z3-build /home/vboxuser/LydiaSyft/build/_deps/z3-build/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stella/LydiaSyft /home/stella/LydiaSyft/build/_deps/z3-src /home/stella/LydiaSyft/build /home/stella/LydiaSyft/build/_deps/z3-build /home/stella/LydiaSyft/build/_deps/z3-build/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/z3-build/CMakeFiles/uninstall.dir/depend
 

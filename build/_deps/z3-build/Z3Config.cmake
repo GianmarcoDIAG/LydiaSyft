@@ -48,7 +48,7 @@ set(Z3_VERSION_STRING "${Z3_VERSION_MAJOR}.${Z3_VERSION_MINOR}.${Z3_VERSION_PATC
 
 # NOTE: We can't use `set_and_check()` here because this a list of paths.
 # List of include directories
-set(Z3_C_INCLUDE_DIRS /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api)
-set(Z3_CXX_INCLUDE_DIRS /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/c++ ${Z3_C_INCLUDE_DIRS})
+set(Z3_C_INCLUDE_DIRS /home/stella/LydiaSyft/build/_deps/z3-build/src/api /home/stella/LydiaSyft/build/_deps/z3-src/src/api)
+set(Z3_CXX_INCLUDE_DIRS /home/stella/LydiaSyft/build/_deps/z3-src/src/api/c++ ${Z3_C_INCLUDE_DIRS})
 # List of libraries to link against
 set(Z3_LIBRARIES "z3::libz3")

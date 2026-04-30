@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 # Include any dependencies generated for this target.
 include _deps/z3-build/src/api/CMakeFiles/api.dir/depend.make
@@ -81,8 +81,8 @@ _deps/z3-build/src/api/api_commands.cpp: _deps/z3-src/src/api/z3_optimization.h
 _deps/z3-build/src/api/api_commands.cpp: _deps/z3-src/src/api/z3_fpa.h
 _deps/z3-build/src/api/api_commands.cpp: _deps/z3-src/src/api/z3_spacer.h
 _deps/z3-build/src/api/api_commands.cpp: _deps/z3-src/scripts/mk_util.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating api_commands.cpp;api_log_macros.cpp;api_log_macros.h"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/python3 /home/vboxuser/LydiaSyft/build/_deps/z3-src/scripts/update_api.py /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/z3_api.h /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/z3_ast_containers.h /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/z3_algebraic.h /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/z3_polynomial.h /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/z3_rcf.h /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/z3_fixedpoint.h /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/z3_optimization.h /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/z3_fpa.h /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/z3_spacer.h --api_output_dir /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating api_commands.cpp;api_log_macros.cpp;api_log_macros.h"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/python3 /home/stella/LydiaSyft/build/_deps/z3-src/scripts/update_api.py /home/stella/LydiaSyft/build/_deps/z3-src/src/api/z3_api.h /home/stella/LydiaSyft/build/_deps/z3-src/src/api/z3_ast_containers.h /home/stella/LydiaSyft/build/_deps/z3-src/src/api/z3_algebraic.h /home/stella/LydiaSyft/build/_deps/z3-src/src/api/z3_polynomial.h /home/stella/LydiaSyft/build/_deps/z3-src/src/api/z3_rcf.h /home/stella/LydiaSyft/build/_deps/z3-src/src/api/z3_fixedpoint.h /home/stella/LydiaSyft/build/_deps/z3-src/src/api/z3_optimization.h /home/stella/LydiaSyft/build/_deps/z3-src/src/api/z3_fpa.h /home/stella/LydiaSyft/build/_deps/z3-src/src/api/z3_spacer.h --api_output_dir /home/stella/LydiaSyft/build/_deps/z3-build/src/api
 
 _deps/z3-build/src/api/api_log_macros.cpp: _deps/z3-build/src/api/api_commands.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate _deps/z3-build/src/api/api_log_macros.cpp
@@ -93,450 +93,450 @@ _deps/z3-build/src/api/api_log_macros.h: _deps/z3-build/src/api/api_commands.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_algebraic.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_algebraic.cpp.o: _deps/z3-src/src/api/api_algebraic.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_algebraic.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_algebraic.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_algebraic.cpp.o -MF CMakeFiles/api.dir/api_algebraic.cpp.o.d -o CMakeFiles/api.dir/api_algebraic.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_algebraic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_algebraic.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_algebraic.cpp.o -MF CMakeFiles/api.dir/api_algebraic.cpp.o.d -o CMakeFiles/api.dir/api_algebraic.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_algebraic.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_algebraic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_algebraic.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_algebraic.cpp > CMakeFiles/api.dir/api_algebraic.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_algebraic.cpp > CMakeFiles/api.dir/api_algebraic.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_algebraic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_algebraic.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_algebraic.cpp -o CMakeFiles/api.dir/api_algebraic.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_algebraic.cpp -o CMakeFiles/api.dir/api_algebraic.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_arith.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_arith.cpp.o: _deps/z3-src/src/api/api_arith.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_arith.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_arith.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_arith.cpp.o -MF CMakeFiles/api.dir/api_arith.cpp.o.d -o CMakeFiles/api.dir/api_arith.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_arith.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_arith.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_arith.cpp.o -MF CMakeFiles/api.dir/api_arith.cpp.o.d -o CMakeFiles/api.dir/api_arith.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_arith.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_arith.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_arith.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_arith.cpp > CMakeFiles/api.dir/api_arith.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_arith.cpp > CMakeFiles/api.dir/api_arith.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_arith.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_arith.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_arith.cpp -o CMakeFiles/api.dir/api_arith.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_arith.cpp -o CMakeFiles/api.dir/api_arith.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_array.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_array.cpp.o: _deps/z3-src/src/api/api_array.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_array.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_array.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_array.cpp.o -MF CMakeFiles/api.dir/api_array.cpp.o.d -o CMakeFiles/api.dir/api_array.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_array.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_array.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_array.cpp.o -MF CMakeFiles/api.dir/api_array.cpp.o.d -o CMakeFiles/api.dir/api_array.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_array.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_array.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_array.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_array.cpp > CMakeFiles/api.dir/api_array.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_array.cpp > CMakeFiles/api.dir/api_array.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_array.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_array.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_array.cpp -o CMakeFiles/api.dir/api_array.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_array.cpp -o CMakeFiles/api.dir/api_array.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast.cpp.o: _deps/z3-src/src/api/api_ast.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast.cpp.o -MF CMakeFiles/api.dir/api_ast.cpp.o.d -o CMakeFiles/api.dir/api_ast.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_ast.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast.cpp.o -MF CMakeFiles/api.dir/api_ast.cpp.o.d -o CMakeFiles/api.dir/api_ast.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_ast.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_ast.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_ast.cpp > CMakeFiles/api.dir/api_ast.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_ast.cpp > CMakeFiles/api.dir/api_ast.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_ast.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_ast.cpp -o CMakeFiles/api.dir/api_ast.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_ast.cpp -o CMakeFiles/api.dir/api_ast.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast_map.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast_map.cpp.o: _deps/z3-src/src/api/api_ast_map.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast_map.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast_map.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast_map.cpp.o -MF CMakeFiles/api.dir/api_ast_map.cpp.o.d -o CMakeFiles/api.dir/api_ast_map.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_ast_map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast_map.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast_map.cpp.o -MF CMakeFiles/api.dir/api_ast_map.cpp.o.d -o CMakeFiles/api.dir/api_ast_map.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_ast_map.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast_map.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_ast_map.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_ast_map.cpp > CMakeFiles/api.dir/api_ast_map.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_ast_map.cpp > CMakeFiles/api.dir/api_ast_map.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast_map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_ast_map.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_ast_map.cpp -o CMakeFiles/api.dir/api_ast_map.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_ast_map.cpp -o CMakeFiles/api.dir/api_ast_map.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast_vector.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast_vector.cpp.o: _deps/z3-src/src/api/api_ast_vector.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast_vector.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast_vector.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast_vector.cpp.o -MF CMakeFiles/api.dir/api_ast_vector.cpp.o.d -o CMakeFiles/api.dir/api_ast_vector.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_ast_vector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast_vector.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast_vector.cpp.o -MF CMakeFiles/api.dir/api_ast_vector.cpp.o.d -o CMakeFiles/api.dir/api_ast_vector.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_ast_vector.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast_vector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_ast_vector.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_ast_vector.cpp > CMakeFiles/api.dir/api_ast_vector.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_ast_vector.cpp > CMakeFiles/api.dir/api_ast_vector.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_ast_vector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_ast_vector.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_ast_vector.cpp -o CMakeFiles/api.dir/api_ast_vector.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_ast_vector.cpp -o CMakeFiles/api.dir/api_ast_vector.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_bv.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_bv.cpp.o: _deps/z3-src/src/api/api_bv.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_bv.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_bv.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_bv.cpp.o -MF CMakeFiles/api.dir/api_bv.cpp.o.d -o CMakeFiles/api.dir/api_bv.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_bv.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_bv.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_bv.cpp.o -MF CMakeFiles/api.dir/api_bv.cpp.o.d -o CMakeFiles/api.dir/api_bv.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_bv.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_bv.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_bv.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_bv.cpp > CMakeFiles/api.dir/api_bv.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_bv.cpp > CMakeFiles/api.dir/api_bv.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_bv.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_bv.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_bv.cpp -o CMakeFiles/api.dir/api_bv.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_bv.cpp -o CMakeFiles/api.dir/api_bv.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_config_params.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_config_params.cpp.o: _deps/z3-src/src/api/api_config_params.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_config_params.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_config_params.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_config_params.cpp.o -MF CMakeFiles/api.dir/api_config_params.cpp.o.d -o CMakeFiles/api.dir/api_config_params.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_config_params.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_config_params.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_config_params.cpp.o -MF CMakeFiles/api.dir/api_config_params.cpp.o.d -o CMakeFiles/api.dir/api_config_params.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_config_params.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_config_params.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_config_params.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_config_params.cpp > CMakeFiles/api.dir/api_config_params.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_config_params.cpp > CMakeFiles/api.dir/api_config_params.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_config_params.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_config_params.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_config_params.cpp -o CMakeFiles/api.dir/api_config_params.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_config_params.cpp -o CMakeFiles/api.dir/api_config_params.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_context.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_context.cpp.o: _deps/z3-src/src/api/api_context.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_context.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_context.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_context.cpp.o -MF CMakeFiles/api.dir/api_context.cpp.o.d -o CMakeFiles/api.dir/api_context.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_context.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_context.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_context.cpp.o -MF CMakeFiles/api.dir/api_context.cpp.o.d -o CMakeFiles/api.dir/api_context.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_context.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_context.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_context.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_context.cpp > CMakeFiles/api.dir/api_context.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_context.cpp > CMakeFiles/api.dir/api_context.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_context.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_context.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_context.cpp -o CMakeFiles/api.dir/api_context.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_context.cpp -o CMakeFiles/api.dir/api_context.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_datalog.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_datalog.cpp.o: _deps/z3-src/src/api/api_datalog.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_datalog.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_datalog.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_datalog.cpp.o -MF CMakeFiles/api.dir/api_datalog.cpp.o.d -o CMakeFiles/api.dir/api_datalog.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_datalog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_datalog.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_datalog.cpp.o -MF CMakeFiles/api.dir/api_datalog.cpp.o.d -o CMakeFiles/api.dir/api_datalog.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_datalog.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_datalog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_datalog.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_datalog.cpp > CMakeFiles/api.dir/api_datalog.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_datalog.cpp > CMakeFiles/api.dir/api_datalog.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_datalog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_datalog.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_datalog.cpp -o CMakeFiles/api.dir/api_datalog.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_datalog.cpp -o CMakeFiles/api.dir/api_datalog.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_datatype.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_datatype.cpp.o: _deps/z3-src/src/api/api_datatype.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_datatype.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_datatype.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_datatype.cpp.o -MF CMakeFiles/api.dir/api_datatype.cpp.o.d -o CMakeFiles/api.dir/api_datatype.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_datatype.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_datatype.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_datatype.cpp.o -MF CMakeFiles/api.dir/api_datatype.cpp.o.d -o CMakeFiles/api.dir/api_datatype.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_datatype.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_datatype.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_datatype.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_datatype.cpp > CMakeFiles/api.dir/api_datatype.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_datatype.cpp > CMakeFiles/api.dir/api_datatype.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_datatype.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_datatype.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_datatype.cpp -o CMakeFiles/api.dir/api_datatype.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_datatype.cpp -o CMakeFiles/api.dir/api_datatype.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_fpa.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_fpa.cpp.o: _deps/z3-src/src/api/api_fpa.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_fpa.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_fpa.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_fpa.cpp.o -MF CMakeFiles/api.dir/api_fpa.cpp.o.d -o CMakeFiles/api.dir/api_fpa.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_fpa.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_fpa.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_fpa.cpp.o -MF CMakeFiles/api.dir/api_fpa.cpp.o.d -o CMakeFiles/api.dir/api_fpa.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_fpa.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_fpa.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_fpa.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_fpa.cpp > CMakeFiles/api.dir/api_fpa.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_fpa.cpp > CMakeFiles/api.dir/api_fpa.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_fpa.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_fpa.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_fpa.cpp -o CMakeFiles/api.dir/api_fpa.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_fpa.cpp -o CMakeFiles/api.dir/api_fpa.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_goal.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_goal.cpp.o: _deps/z3-src/src/api/api_goal.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_goal.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_goal.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_goal.cpp.o -MF CMakeFiles/api.dir/api_goal.cpp.o.d -o CMakeFiles/api.dir/api_goal.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_goal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_goal.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_goal.cpp.o -MF CMakeFiles/api.dir/api_goal.cpp.o.d -o CMakeFiles/api.dir/api_goal.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_goal.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_goal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_goal.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_goal.cpp > CMakeFiles/api.dir/api_goal.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_goal.cpp > CMakeFiles/api.dir/api_goal.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_goal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_goal.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_goal.cpp -o CMakeFiles/api.dir/api_goal.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_goal.cpp -o CMakeFiles/api.dir/api_goal.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_log.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_log.cpp.o: _deps/z3-src/src/api/api_log.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_log.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_log.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_log.cpp.o -MF CMakeFiles/api.dir/api_log.cpp.o.d -o CMakeFiles/api.dir/api_log.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_log.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_log.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_log.cpp.o -MF CMakeFiles/api.dir/api_log.cpp.o.d -o CMakeFiles/api.dir/api_log.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_log.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_log.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_log.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_log.cpp > CMakeFiles/api.dir/api_log.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_log.cpp > CMakeFiles/api.dir/api_log.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_log.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_log.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_log.cpp -o CMakeFiles/api.dir/api_log.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_log.cpp -o CMakeFiles/api.dir/api_log.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_model.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_model.cpp.o: _deps/z3-src/src/api/api_model.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_model.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_model.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_model.cpp.o -MF CMakeFiles/api.dir/api_model.cpp.o.d -o CMakeFiles/api.dir/api_model.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_model.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_model.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_model.cpp.o -MF CMakeFiles/api.dir/api_model.cpp.o.d -o CMakeFiles/api.dir/api_model.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_model.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_model.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_model.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_model.cpp > CMakeFiles/api.dir/api_model.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_model.cpp > CMakeFiles/api.dir/api_model.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_model.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_model.cpp -o CMakeFiles/api.dir/api_model.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_model.cpp -o CMakeFiles/api.dir/api_model.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_numeral.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_numeral.cpp.o: _deps/z3-src/src/api/api_numeral.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_numeral.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_numeral.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_numeral.cpp.o -MF CMakeFiles/api.dir/api_numeral.cpp.o.d -o CMakeFiles/api.dir/api_numeral.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_numeral.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_numeral.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_numeral.cpp.o -MF CMakeFiles/api.dir/api_numeral.cpp.o.d -o CMakeFiles/api.dir/api_numeral.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_numeral.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_numeral.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_numeral.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_numeral.cpp > CMakeFiles/api.dir/api_numeral.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_numeral.cpp > CMakeFiles/api.dir/api_numeral.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_numeral.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_numeral.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_numeral.cpp -o CMakeFiles/api.dir/api_numeral.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_numeral.cpp -o CMakeFiles/api.dir/api_numeral.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_opt.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_opt.cpp.o: _deps/z3-src/src/api/api_opt.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_opt.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_opt.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_opt.cpp.o -MF CMakeFiles/api.dir/api_opt.cpp.o.d -o CMakeFiles/api.dir/api_opt.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_opt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_opt.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_opt.cpp.o -MF CMakeFiles/api.dir/api_opt.cpp.o.d -o CMakeFiles/api.dir/api_opt.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_opt.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_opt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_opt.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_opt.cpp > CMakeFiles/api.dir/api_opt.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_opt.cpp > CMakeFiles/api.dir/api_opt.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_opt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_opt.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_opt.cpp -o CMakeFiles/api.dir/api_opt.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_opt.cpp -o CMakeFiles/api.dir/api_opt.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_params.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_params.cpp.o: _deps/z3-src/src/api/api_params.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_params.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_params.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_params.cpp.o -MF CMakeFiles/api.dir/api_params.cpp.o.d -o CMakeFiles/api.dir/api_params.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_params.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_params.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_params.cpp.o -MF CMakeFiles/api.dir/api_params.cpp.o.d -o CMakeFiles/api.dir/api_params.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_params.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_params.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_params.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_params.cpp > CMakeFiles/api.dir/api_params.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_params.cpp > CMakeFiles/api.dir/api_params.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_params.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_params.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_params.cpp -o CMakeFiles/api.dir/api_params.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_params.cpp -o CMakeFiles/api.dir/api_params.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_parsers.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_parsers.cpp.o: _deps/z3-src/src/api/api_parsers.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_parsers.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_parsers.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_parsers.cpp.o -MF CMakeFiles/api.dir/api_parsers.cpp.o.d -o CMakeFiles/api.dir/api_parsers.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_parsers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_parsers.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_parsers.cpp.o -MF CMakeFiles/api.dir/api_parsers.cpp.o.d -o CMakeFiles/api.dir/api_parsers.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_parsers.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_parsers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_parsers.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_parsers.cpp > CMakeFiles/api.dir/api_parsers.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_parsers.cpp > CMakeFiles/api.dir/api_parsers.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_parsers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_parsers.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_parsers.cpp -o CMakeFiles/api.dir/api_parsers.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_parsers.cpp -o CMakeFiles/api.dir/api_parsers.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_pb.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_pb.cpp.o: _deps/z3-src/src/api/api_pb.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_pb.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_pb.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_pb.cpp.o -MF CMakeFiles/api.dir/api_pb.cpp.o.d -o CMakeFiles/api.dir/api_pb.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_pb.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_pb.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_pb.cpp.o -MF CMakeFiles/api.dir/api_pb.cpp.o.d -o CMakeFiles/api.dir/api_pb.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_pb.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_pb.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_pb.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_pb.cpp > CMakeFiles/api.dir/api_pb.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_pb.cpp > CMakeFiles/api.dir/api_pb.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_pb.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_pb.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_pb.cpp -o CMakeFiles/api.dir/api_pb.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_pb.cpp -o CMakeFiles/api.dir/api_pb.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_polynomial.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_polynomial.cpp.o: _deps/z3-src/src/api/api_polynomial.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_polynomial.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_polynomial.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_polynomial.cpp.o -MF CMakeFiles/api.dir/api_polynomial.cpp.o.d -o CMakeFiles/api.dir/api_polynomial.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_polynomial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_polynomial.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_polynomial.cpp.o -MF CMakeFiles/api.dir/api_polynomial.cpp.o.d -o CMakeFiles/api.dir/api_polynomial.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_polynomial.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_polynomial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_polynomial.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_polynomial.cpp > CMakeFiles/api.dir/api_polynomial.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_polynomial.cpp > CMakeFiles/api.dir/api_polynomial.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_polynomial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_polynomial.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_polynomial.cpp -o CMakeFiles/api.dir/api_polynomial.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_polynomial.cpp -o CMakeFiles/api.dir/api_polynomial.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_qe.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_qe.cpp.o: _deps/z3-src/src/api/api_qe.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_qe.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_qe.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_qe.cpp.o -MF CMakeFiles/api.dir/api_qe.cpp.o.d -o CMakeFiles/api.dir/api_qe.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_qe.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_qe.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_qe.cpp.o -MF CMakeFiles/api.dir/api_qe.cpp.o.d -o CMakeFiles/api.dir/api_qe.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_qe.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_qe.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_qe.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_qe.cpp > CMakeFiles/api.dir/api_qe.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_qe.cpp > CMakeFiles/api.dir/api_qe.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_qe.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_qe.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_qe.cpp -o CMakeFiles/api.dir/api_qe.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_qe.cpp -o CMakeFiles/api.dir/api_qe.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_quant.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_quant.cpp.o: _deps/z3-src/src/api/api_quant.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_quant.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_quant.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_quant.cpp.o -MF CMakeFiles/api.dir/api_quant.cpp.o.d -o CMakeFiles/api.dir/api_quant.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_quant.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_quant.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_quant.cpp.o -MF CMakeFiles/api.dir/api_quant.cpp.o.d -o CMakeFiles/api.dir/api_quant.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_quant.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_quant.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_quant.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_quant.cpp > CMakeFiles/api.dir/api_quant.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_quant.cpp > CMakeFiles/api.dir/api_quant.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_quant.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_quant.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_quant.cpp -o CMakeFiles/api.dir/api_quant.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_quant.cpp -o CMakeFiles/api.dir/api_quant.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_rcf.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_rcf.cpp.o: _deps/z3-src/src/api/api_rcf.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_rcf.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_rcf.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_rcf.cpp.o -MF CMakeFiles/api.dir/api_rcf.cpp.o.d -o CMakeFiles/api.dir/api_rcf.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_rcf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_rcf.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_rcf.cpp.o -MF CMakeFiles/api.dir/api_rcf.cpp.o.d -o CMakeFiles/api.dir/api_rcf.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_rcf.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_rcf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_rcf.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_rcf.cpp > CMakeFiles/api.dir/api_rcf.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_rcf.cpp > CMakeFiles/api.dir/api_rcf.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_rcf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_rcf.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_rcf.cpp -o CMakeFiles/api.dir/api_rcf.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_rcf.cpp -o CMakeFiles/api.dir/api_rcf.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_seq.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_seq.cpp.o: _deps/z3-src/src/api/api_seq.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_seq.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_seq.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_seq.cpp.o -MF CMakeFiles/api.dir/api_seq.cpp.o.d -o CMakeFiles/api.dir/api_seq.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_seq.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_seq.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_seq.cpp.o -MF CMakeFiles/api.dir/api_seq.cpp.o.d -o CMakeFiles/api.dir/api_seq.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_seq.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_seq.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_seq.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_seq.cpp > CMakeFiles/api.dir/api_seq.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_seq.cpp > CMakeFiles/api.dir/api_seq.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_seq.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_seq.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_seq.cpp -o CMakeFiles/api.dir/api_seq.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_seq.cpp -o CMakeFiles/api.dir/api_seq.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_solver.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_solver.cpp.o: _deps/z3-src/src/api/api_solver.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_solver.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_solver.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_solver.cpp.o -MF CMakeFiles/api.dir/api_solver.cpp.o.d -o CMakeFiles/api.dir/api_solver.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_solver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_solver.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_solver.cpp.o -MF CMakeFiles/api.dir/api_solver.cpp.o.d -o CMakeFiles/api.dir/api_solver.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_solver.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_solver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_solver.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_solver.cpp > CMakeFiles/api.dir/api_solver.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_solver.cpp > CMakeFiles/api.dir/api_solver.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_solver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_solver.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_solver.cpp -o CMakeFiles/api.dir/api_solver.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_solver.cpp -o CMakeFiles/api.dir/api_solver.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_special_relations.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_special_relations.cpp.o: _deps/z3-src/src/api/api_special_relations.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_special_relations.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_special_relations.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_special_relations.cpp.o -MF CMakeFiles/api.dir/api_special_relations.cpp.o.d -o CMakeFiles/api.dir/api_special_relations.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_special_relations.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_special_relations.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_special_relations.cpp.o -MF CMakeFiles/api.dir/api_special_relations.cpp.o.d -o CMakeFiles/api.dir/api_special_relations.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_special_relations.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_special_relations.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_special_relations.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_special_relations.cpp > CMakeFiles/api.dir/api_special_relations.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_special_relations.cpp > CMakeFiles/api.dir/api_special_relations.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_special_relations.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_special_relations.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_special_relations.cpp -o CMakeFiles/api.dir/api_special_relations.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_special_relations.cpp -o CMakeFiles/api.dir/api_special_relations.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_stats.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_stats.cpp.o: _deps/z3-src/src/api/api_stats.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_stats.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_stats.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_stats.cpp.o -MF CMakeFiles/api.dir/api_stats.cpp.o.d -o CMakeFiles/api.dir/api_stats.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_stats.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_stats.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_stats.cpp.o -MF CMakeFiles/api.dir/api_stats.cpp.o.d -o CMakeFiles/api.dir/api_stats.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_stats.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_stats.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_stats.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_stats.cpp > CMakeFiles/api.dir/api_stats.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_stats.cpp > CMakeFiles/api.dir/api_stats.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_stats.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_stats.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_stats.cpp -o CMakeFiles/api.dir/api_stats.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_stats.cpp -o CMakeFiles/api.dir/api_stats.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_tactic.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_tactic.cpp.o: _deps/z3-src/src/api/api_tactic.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_tactic.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_tactic.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_tactic.cpp.o -MF CMakeFiles/api.dir/api_tactic.cpp.o.d -o CMakeFiles/api.dir/api_tactic.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_tactic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_tactic.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_tactic.cpp.o -MF CMakeFiles/api.dir/api_tactic.cpp.o.d -o CMakeFiles/api.dir/api_tactic.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_tactic.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_tactic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_tactic.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_tactic.cpp > CMakeFiles/api.dir/api_tactic.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_tactic.cpp > CMakeFiles/api.dir/api_tactic.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_tactic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_tactic.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/api_tactic.cpp -o CMakeFiles/api.dir/api_tactic.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/api_tactic.cpp -o CMakeFiles/api.dir/api_tactic.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/z3_replayer.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/z3_replayer.cpp.o: _deps/z3-src/src/api/z3_replayer.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/z3_replayer.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/z3_replayer.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/z3_replayer.cpp.o -MF CMakeFiles/api.dir/z3_replayer.cpp.o.d -o CMakeFiles/api.dir/z3_replayer.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/z3_replayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/z3_replayer.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/z3_replayer.cpp.o -MF CMakeFiles/api.dir/z3_replayer.cpp.o.d -o CMakeFiles/api.dir/z3_replayer.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/api/z3_replayer.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/z3_replayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/z3_replayer.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/z3_replayer.cpp > CMakeFiles/api.dir/z3_replayer.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/api/z3_replayer.cpp > CMakeFiles/api.dir/z3_replayer.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/z3_replayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/z3_replayer.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api/z3_replayer.cpp -o CMakeFiles/api.dir/z3_replayer.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/api/z3_replayer.cpp -o CMakeFiles/api.dir/z3_replayer.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_commands.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_commands.cpp.o: _deps/z3-build/src/api/api_commands.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_commands.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_commands.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_commands.cpp.o -MF CMakeFiles/api.dir/api_commands.cpp.o.d -o CMakeFiles/api.dir/api_commands.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api/api_commands.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_commands.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_commands.cpp.o -MF CMakeFiles/api.dir/api_commands.cpp.o.d -o CMakeFiles/api.dir/api_commands.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-build/src/api/api_commands.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_commands.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_commands.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api/api_commands.cpp > CMakeFiles/api.dir/api_commands.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-build/src/api/api_commands.cpp > CMakeFiles/api.dir/api_commands.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_commands.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_commands.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api/api_commands.cpp -o CMakeFiles/api.dir/api_commands.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-build/src/api/api_commands.cpp -o CMakeFiles/api.dir/api_commands.cpp.s
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_log_macros.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/flags.make
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_log_macros.cpp.o: _deps/z3-build/src/api/api_log_macros.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_log_macros.cpp.o: _deps/z3-build/src/api/CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_log_macros.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_log_macros.cpp.o -MF CMakeFiles/api.dir/api_log_macros.cpp.o.d -o CMakeFiles/api.dir/api_log_macros.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api/api_log_macros.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object _deps/z3-build/src/api/CMakeFiles/api.dir/api_log_macros.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/api/CMakeFiles/api.dir/api_log_macros.cpp.o -MF CMakeFiles/api.dir/api_log_macros.cpp.o.d -o CMakeFiles/api.dir/api_log_macros.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-build/src/api/api_log_macros.cpp
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_log_macros.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/api_log_macros.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api/api_log_macros.cpp > CMakeFiles/api.dir/api_log_macros.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-build/src/api/api_log_macros.cpp > CMakeFiles/api.dir/api_log_macros.cpp.i
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/api_log_macros.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/api_log_macros.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api/api_log_macros.cpp -o CMakeFiles/api.dir/api_log_macros.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-build/src/api/api_log_macros.cpp -o CMakeFiles/api.dir/api_log_macros.cpp.s
 
 api: _deps/z3-build/src/api/CMakeFiles/api.dir/api_algebraic.cpp.o
 api: _deps/z3-build/src/api/CMakeFiles/api.dir/api_arith.cpp.o
@@ -578,12 +578,12 @@ _deps/z3-build/src/api/CMakeFiles/api.dir/build: api
 .PHONY : _deps/z3-build/src/api/CMakeFiles/api.dir/build
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/clean:
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api && $(CMAKE_COMMAND) -P CMakeFiles/api.dir/cmake_clean.cmake
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/api && $(CMAKE_COMMAND) -P CMakeFiles/api.dir/cmake_clean.cmake
 .PHONY : _deps/z3-build/src/api/CMakeFiles/api.dir/clean
 
 _deps/z3-build/src/api/CMakeFiles/api.dir/depend: _deps/z3-build/src/api/api_commands.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/depend: _deps/z3-build/src/api/api_log_macros.cpp
 _deps/z3-build/src/api/CMakeFiles/api.dir/depend: _deps/z3-build/src/api/api_log_macros.h
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/LydiaSyft /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api /home/vboxuser/LydiaSyft/build /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/api/CMakeFiles/api.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stella/LydiaSyft /home/stella/LydiaSyft/build/_deps/z3-src/src/api /home/stella/LydiaSyft/build /home/stella/LydiaSyft/build/_deps/z3-build/src/api /home/stella/LydiaSyft/build/_deps/z3-build/src/api/CMakeFiles/api.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/z3-build/src/api/CMakeFiles/api.dir/depend
 

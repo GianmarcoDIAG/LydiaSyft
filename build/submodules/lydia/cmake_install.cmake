@@ -1,4 +1,4 @@
-# Install script for directory: /home/vboxuser/LydiaSyft/submodules/lydia
+# Install script for directory: /home/stella/LydiaSyft/submodules/lydia
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,8 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/vboxuser/LydiaSyft/build/submodules/lydia/lib/cmake_install.cmake")
-  include("/home/vboxuser/LydiaSyft/build/submodules/lydia/app/cmake_install.cmake")
+  include("/home/stella/LydiaSyft/build/submodules/lydia/lib/cmake_install.cmake")
+  include("/home/stella/LydiaSyft/build/submodules/lydia/app/cmake_install.cmake")
 
 endif()
 

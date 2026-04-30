@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles /home/vboxuser/LydiaSyft/build/src//CMakeFiles/progress.marks
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles /home/stella/LydiaSyft/build/src//CMakeFiles/progress.marks
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/LydiaSyft.dir/rule:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/LydiaSyft.dir/rule
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/LydiaSyft.dir/rule
 .PHONY : src/CMakeFiles/LydiaSyft.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ LydiaSyft: src/CMakeFiles/LydiaSyft.dir/rule
 
 # fast build rule for target.
 LydiaSyft/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/build
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/build
 .PHONY : LydiaSyft/fast
 
 Main.o: Main.cpp.o
@@ -180,7 +180,7 @@ Main.o: Main.cpp.o
 
 # target to build an object file
 Main.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/Main.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/Main.cpp.o
 .PHONY : Main.cpp.o
 
 Main.i: Main.cpp.i
@@ -188,7 +188,7 @@ Main.i: Main.cpp.i
 
 # target to preprocess a source file
 Main.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/Main.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/Main.cpp.i
 .PHONY : Main.cpp.i
 
 Main.s: Main.cpp.s
@@ -196,7 +196,7 @@ Main.s: Main.cpp.s
 
 # target to generate assembly for a file
 Main.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/Main.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/Main.cpp.s
 .PHONY : Main.cpp.s
 
 cli/base.o: cli/base.cpp.o
@@ -204,7 +204,7 @@ cli/base.o: cli/base.cpp.o
 
 # target to build an object file
 cli/base.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/base.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/base.cpp.o
 .PHONY : cli/base.cpp.o
 
 cli/base.i: cli/base.cpp.i
@@ -212,7 +212,7 @@ cli/base.i: cli/base.cpp.i
 
 # target to preprocess a source file
 cli/base.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/base.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/base.cpp.i
 .PHONY : cli/base.cpp.i
 
 cli/base.s: cli/base.cpp.s
@@ -220,7 +220,7 @@ cli/base.s: cli/base.cpp.s
 
 # target to generate assembly for a file
 cli/base.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/base.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/base.cpp.s
 .PHONY : cli/base.cpp.s
 
 cli/fairness.o: cli/fairness.cpp.o
@@ -228,7 +228,7 @@ cli/fairness.o: cli/fairness.cpp.o
 
 # target to build an object file
 cli/fairness.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.o
 .PHONY : cli/fairness.cpp.o
 
 cli/fairness.i: cli/fairness.cpp.i
@@ -236,7 +236,7 @@ cli/fairness.i: cli/fairness.cpp.i
 
 # target to preprocess a source file
 cli/fairness.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.i
 .PHONY : cli/fairness.cpp.i
 
 cli/fairness.s: cli/fairness.cpp.s
@@ -244,7 +244,7 @@ cli/fairness.s: cli/fairness.cpp.s
 
 # target to generate assembly for a file
 cli/fairness.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.s
 .PHONY : cli/fairness.cpp.s
 
 cli/gr1.o: cli/gr1.cpp.o
@@ -252,7 +252,7 @@ cli/gr1.o: cli/gr1.cpp.o
 
 # target to build an object file
 cli/gr1.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.o
 .PHONY : cli/gr1.cpp.o
 
 cli/gr1.i: cli/gr1.cpp.i
@@ -260,7 +260,7 @@ cli/gr1.i: cli/gr1.cpp.i
 
 # target to preprocess a source file
 cli/gr1.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.i
 .PHONY : cli/gr1.cpp.i
 
 cli/gr1.s: cli/gr1.cpp.s
@@ -268,7 +268,7 @@ cli/gr1.s: cli/gr1.cpp.s
 
 # target to generate assembly for a file
 cli/gr1.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.s
 .PHONY : cli/gr1.cpp.s
 
 cli/maxset.o: cli/maxset.cpp.o
@@ -276,7 +276,7 @@ cli/maxset.o: cli/maxset.cpp.o
 
 # target to build an object file
 cli/maxset.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.o
 .PHONY : cli/maxset.cpp.o
 
 cli/maxset.i: cli/maxset.cpp.i
@@ -284,7 +284,7 @@ cli/maxset.i: cli/maxset.cpp.i
 
 # target to preprocess a source file
 cli/maxset.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.i
 .PHONY : cli/maxset.cpp.i
 
 cli/maxset.s: cli/maxset.cpp.s
@@ -292,7 +292,7 @@ cli/maxset.s: cli/maxset.cpp.s
 
 # target to generate assembly for a file
 cli/maxset.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.s
 .PHONY : cli/maxset.cpp.s
 
 cli/stability.o: cli/stability.cpp.o
@@ -300,7 +300,7 @@ cli/stability.o: cli/stability.cpp.o
 
 # target to build an object file
 cli/stability.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/stability.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/stability.cpp.o
 .PHONY : cli/stability.cpp.o
 
 cli/stability.i: cli/stability.cpp.i
@@ -308,7 +308,7 @@ cli/stability.i: cli/stability.cpp.i
 
 # target to preprocess a source file
 cli/stability.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/stability.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/stability.cpp.i
 .PHONY : cli/stability.cpp.i
 
 cli/stability.s: cli/stability.cpp.s
@@ -316,7 +316,7 @@ cli/stability.s: cli/stability.cpp.s
 
 # target to generate assembly for a file
 cli/stability.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/stability.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/stability.cpp.s
 .PHONY : cli/stability.cpp.s
 
 cli/synthesis.o: cli/synthesis.cpp.o
@@ -324,7 +324,7 @@ cli/synthesis.o: cli/synthesis.cpp.o
 
 # target to build an object file
 cli/synthesis.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.o
 .PHONY : cli/synthesis.cpp.o
 
 cli/synthesis.i: cli/synthesis.cpp.i
@@ -332,7 +332,7 @@ cli/synthesis.i: cli/synthesis.cpp.i
 
 # target to preprocess a source file
 cli/synthesis.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.i
 .PHONY : cli/synthesis.cpp.i
 
 cli/synthesis.s: cli/synthesis.cpp.s
@@ -340,7 +340,7 @@ cli/synthesis.s: cli/synthesis.cpp.s
 
 # target to generate assembly for a file
 cli/synthesis.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LydiaSyft.dir/build.make src/CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.s
 .PHONY : cli/synthesis.cpp.s
 
 # Help Target
@@ -388,6 +388,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

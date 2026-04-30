@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms//CMakeFiles/progress.marks
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/normal_forms/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms//CMakeFiles/progress.marks
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/normal_forms/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/normal_forms/clean
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/normal_forms/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/normal_forms/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/normal_forms/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/normal_forms/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/normal_forms/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/rule:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/rule
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/rule
 .PHONY : _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ normal_forms: _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/ru
 
 # fast build rule for target.
 normal_forms/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build
 .PHONY : normal_forms/fast
 
 defined_names.o: defined_names.cpp.o
@@ -180,7 +180,7 @@ defined_names.o: defined_names.cpp.o
 
 # target to build an object file
 defined_names.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/defined_names.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/defined_names.cpp.o
 .PHONY : defined_names.cpp.o
 
 defined_names.i: defined_names.cpp.i
@@ -188,7 +188,7 @@ defined_names.i: defined_names.cpp.i
 
 # target to preprocess a source file
 defined_names.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/defined_names.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/defined_names.cpp.i
 .PHONY : defined_names.cpp.i
 
 defined_names.s: defined_names.cpp.s
@@ -196,7 +196,7 @@ defined_names.s: defined_names.cpp.s
 
 # target to generate assembly for a file
 defined_names.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/defined_names.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/defined_names.cpp.s
 .PHONY : defined_names.cpp.s
 
 elim_term_ite.o: elim_term_ite.cpp.o
@@ -204,7 +204,7 @@ elim_term_ite.o: elim_term_ite.cpp.o
 
 # target to build an object file
 elim_term_ite.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/elim_term_ite.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/elim_term_ite.cpp.o
 .PHONY : elim_term_ite.cpp.o
 
 elim_term_ite.i: elim_term_ite.cpp.i
@@ -212,7 +212,7 @@ elim_term_ite.i: elim_term_ite.cpp.i
 
 # target to preprocess a source file
 elim_term_ite.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/elim_term_ite.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/elim_term_ite.cpp.i
 .PHONY : elim_term_ite.cpp.i
 
 elim_term_ite.s: elim_term_ite.cpp.s
@@ -220,7 +220,7 @@ elim_term_ite.s: elim_term_ite.cpp.s
 
 # target to generate assembly for a file
 elim_term_ite.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/elim_term_ite.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/elim_term_ite.cpp.s
 .PHONY : elim_term_ite.cpp.s
 
 name_exprs.o: name_exprs.cpp.o
@@ -228,7 +228,7 @@ name_exprs.o: name_exprs.cpp.o
 
 # target to build an object file
 name_exprs.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/name_exprs.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/name_exprs.cpp.o
 .PHONY : name_exprs.cpp.o
 
 name_exprs.i: name_exprs.cpp.i
@@ -236,7 +236,7 @@ name_exprs.i: name_exprs.cpp.i
 
 # target to preprocess a source file
 name_exprs.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/name_exprs.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/name_exprs.cpp.i
 .PHONY : name_exprs.cpp.i
 
 name_exprs.s: name_exprs.cpp.s
@@ -244,7 +244,7 @@ name_exprs.s: name_exprs.cpp.s
 
 # target to generate assembly for a file
 name_exprs.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/name_exprs.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/name_exprs.cpp.s
 .PHONY : name_exprs.cpp.s
 
 nnf.o: nnf.cpp.o
@@ -252,7 +252,7 @@ nnf.o: nnf.cpp.o
 
 # target to build an object file
 nnf.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/nnf.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/nnf.cpp.o
 .PHONY : nnf.cpp.o
 
 nnf.i: nnf.cpp.i
@@ -260,7 +260,7 @@ nnf.i: nnf.cpp.i
 
 # target to preprocess a source file
 nnf.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/nnf.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/nnf.cpp.i
 .PHONY : nnf.cpp.i
 
 nnf.s: nnf.cpp.s
@@ -268,7 +268,7 @@ nnf.s: nnf.cpp.s
 
 # target to generate assembly for a file
 nnf.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/nnf.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/nnf.cpp.s
 .PHONY : nnf.cpp.s
 
 pull_quant.o: pull_quant.cpp.o
@@ -276,7 +276,7 @@ pull_quant.o: pull_quant.cpp.o
 
 # target to build an object file
 pull_quant.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/pull_quant.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/pull_quant.cpp.o
 .PHONY : pull_quant.cpp.o
 
 pull_quant.i: pull_quant.cpp.i
@@ -284,7 +284,7 @@ pull_quant.i: pull_quant.cpp.i
 
 # target to preprocess a source file
 pull_quant.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/pull_quant.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/pull_quant.cpp.i
 .PHONY : pull_quant.cpp.i
 
 pull_quant.s: pull_quant.cpp.s
@@ -292,7 +292,7 @@ pull_quant.s: pull_quant.cpp.s
 
 # target to generate assembly for a file
 pull_quant.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/pull_quant.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build.make _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/pull_quant.cpp.s
 .PHONY : pull_quant.cpp.s
 
 # Help Target
@@ -334,6 +334,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

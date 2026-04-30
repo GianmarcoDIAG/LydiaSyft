@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/interval//CMakeFiles/progress.marks
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/interval/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles /home/stella/LydiaSyft/build/_deps/z3-build/src/math/interval//CMakeFiles/progress.marks
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/interval/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/interval/clean
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/interval/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/interval/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/interval/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/interval/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/interval/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/rule:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/rule
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/rule
 .PHONY : _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ interval: _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/rule
 
 # fast build rule for target.
 interval/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/build.make _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/build
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/build.make _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/build
 .PHONY : interval/fast
 
 dep_intervals.o: dep_intervals.cpp.o
@@ -180,7 +180,7 @@ dep_intervals.o: dep_intervals.cpp.o
 
 # target to build an object file
 dep_intervals.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/build.make _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/dep_intervals.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/build.make _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/dep_intervals.cpp.o
 .PHONY : dep_intervals.cpp.o
 
 dep_intervals.i: dep_intervals.cpp.i
@@ -188,7 +188,7 @@ dep_intervals.i: dep_intervals.cpp.i
 
 # target to preprocess a source file
 dep_intervals.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/build.make _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/dep_intervals.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/build.make _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/dep_intervals.cpp.i
 .PHONY : dep_intervals.cpp.i
 
 dep_intervals.s: dep_intervals.cpp.s
@@ -196,7 +196,7 @@ dep_intervals.s: dep_intervals.cpp.s
 
 # target to generate assembly for a file
 dep_intervals.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/build.make _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/dep_intervals.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/build.make _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/dep_intervals.cpp.s
 .PHONY : dep_intervals.cpp.s
 
 interval_mpq.o: interval_mpq.cpp.o
@@ -204,7 +204,7 @@ interval_mpq.o: interval_mpq.cpp.o
 
 # target to build an object file
 interval_mpq.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/build.make _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/interval_mpq.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/build.make _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/interval_mpq.cpp.o
 .PHONY : interval_mpq.cpp.o
 
 interval_mpq.i: interval_mpq.cpp.i
@@ -212,7 +212,7 @@ interval_mpq.i: interval_mpq.cpp.i
 
 # target to preprocess a source file
 interval_mpq.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/build.make _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/interval_mpq.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/build.make _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/interval_mpq.cpp.i
 .PHONY : interval_mpq.cpp.i
 
 interval_mpq.s: interval_mpq.cpp.s
@@ -220,7 +220,7 @@ interval_mpq.s: interval_mpq.cpp.s
 
 # target to generate assembly for a file
 interval_mpq.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/build.make _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/interval_mpq.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/build.make _deps/z3-build/src/math/interval/CMakeFiles/interval.dir/interval_mpq.cpp.s
 .PHONY : interval_mpq.cpp.s
 
 # Help Target
@@ -253,6 +253,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

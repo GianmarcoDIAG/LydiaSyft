@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles /home/vboxuser/LydiaSyft/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles /home/stella/LydiaSyft/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1253,6 +1253,19 @@ reachability_example/fast:
 	$(MAKE) $(MAKESILENT) -f examples/09_reachability/CMakeFiles/reachability_example.dir/build.make examples/09_reachability/CMakeFiles/reachability_example.dir/build
 .PHONY : reachability_example/fast
 
+#=============================================================================
+# Target rules for targets named buchi_reachability_example
+
+# Build rule for target.
+buchi_reachability_example: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 buchi_reachability_example
+.PHONY : buchi_reachability_example
+
+# fast build rule for target.
+buchi_reachability_example/fast:
+	$(MAKE) $(MAKESILENT) -f examples/10_buchi_reachability/CMakeFiles/buchi_reachability_example.dir/build.make examples/10_buchi_reachability/CMakeFiles/buchi_reachability_example.dir/build
+.PHONY : buchi_reachability_example/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1277,6 +1290,7 @@ help:
 	@echo "... automata"
 	@echo "... bit_blaster"
 	@echo "... bmc"
+	@echo "... buchi_reachability_example"
 	@echo "... bv_tactics"
 	@echo "... clp"
 	@echo "... cmd_context"

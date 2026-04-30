@@ -1,4 +1,4 @@
-# Install script for directory: /home/vboxuser/LydiaSyft/examples/02_dfa_representation
+# Install script for directory: /home/stella/LydiaSyft/examples/02_dfa_representation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

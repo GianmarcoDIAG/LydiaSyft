@@ -1,4 +1,4 @@
-# Install script for directory: /home/vboxuser/LydiaSyft/examples
+# Install script for directory: /home/stella/LydiaSyft/examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,15 +44,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/vboxuser/LydiaSyft/build/examples/01_quickstart/cmake_install.cmake")
-  include("/home/vboxuser/LydiaSyft/build/examples/02_dfa_representation/cmake_install.cmake")
-  include("/home/vboxuser/LydiaSyft/build/examples/03_dfa_creation_and_manipulation/cmake_install.cmake")
-  include("/home/vboxuser/LydiaSyft/build/examples/04_ltlf_synthesis/cmake_install.cmake")
-  include("/home/vboxuser/LydiaSyft/build/examples/05_ltlf_synthesis_maximally_permissive/cmake_install.cmake")
-  include("/home/vboxuser/LydiaSyft/build/examples/06_ltlf_synthesis_with_fairness_conditions/cmake_install.cmake")
-  include("/home/vboxuser/LydiaSyft/build/examples/07_ltlf_synthesis_with_stability_conditions/cmake_install.cmake")
-  include("/home/vboxuser/LydiaSyft/build/examples/08_ltlf_synthesis_with_gr1_env_spec/cmake_install.cmake")
-  include("/home/vboxuser/LydiaSyft/build/examples/09_reachability/cmake_install.cmake")
+  include("/home/stella/LydiaSyft/build/examples/01_quickstart/cmake_install.cmake")
+  include("/home/stella/LydiaSyft/build/examples/02_dfa_representation/cmake_install.cmake")
+  include("/home/stella/LydiaSyft/build/examples/03_dfa_creation_and_manipulation/cmake_install.cmake")
+  include("/home/stella/LydiaSyft/build/examples/04_ltlf_synthesis/cmake_install.cmake")
+  include("/home/stella/LydiaSyft/build/examples/05_ltlf_synthesis_maximally_permissive/cmake_install.cmake")
+  include("/home/stella/LydiaSyft/build/examples/06_ltlf_synthesis_with_fairness_conditions/cmake_install.cmake")
+  include("/home/stella/LydiaSyft/build/examples/07_ltlf_synthesis_with_stability_conditions/cmake_install.cmake")
+  include("/home/stella/LydiaSyft/build/examples/08_ltlf_synthesis_with_gr1_env_spec/cmake_install.cmake")
+  include("/home/stella/LydiaSyft/build/examples/09_reachability/cmake_install.cmake")
+  include("/home/stella/LydiaSyft/build/examples/10_buchi_reachability/cmake_install.cmake")
 
 endif()
 

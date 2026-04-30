@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 # Include any dependencies generated for this target.
 include _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/depend.make
@@ -72,72 +72,72 @@ include _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/flags.make
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/macro_finder_tactic.cpp.o: _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/flags.make
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/macro_finder_tactic.cpp.o: _deps/z3-src/src/tactic/ufbv/macro_finder_tactic.cpp
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/macro_finder_tactic.cpp.o: _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/macro_finder_tactic.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/macro_finder_tactic.cpp.o -MF CMakeFiles/ufbv_tactic.dir/macro_finder_tactic.cpp.o.d -o CMakeFiles/ufbv_tactic.dir/macro_finder_tactic.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/macro_finder_tactic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/macro_finder_tactic.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/macro_finder_tactic.cpp.o -MF CMakeFiles/ufbv_tactic.dir/macro_finder_tactic.cpp.o.d -o CMakeFiles/ufbv_tactic.dir/macro_finder_tactic.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/macro_finder_tactic.cpp
 
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/macro_finder_tactic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ufbv_tactic.dir/macro_finder_tactic.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/macro_finder_tactic.cpp > CMakeFiles/ufbv_tactic.dir/macro_finder_tactic.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/macro_finder_tactic.cpp > CMakeFiles/ufbv_tactic.dir/macro_finder_tactic.cpp.i
 
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/macro_finder_tactic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ufbv_tactic.dir/macro_finder_tactic.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/macro_finder_tactic.cpp -o CMakeFiles/ufbv_tactic.dir/macro_finder_tactic.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/macro_finder_tactic.cpp -o CMakeFiles/ufbv_tactic.dir/macro_finder_tactic.cpp.s
 
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/quasi_macros_tactic.cpp.o: _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/flags.make
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/quasi_macros_tactic.cpp.o: _deps/z3-src/src/tactic/ufbv/quasi_macros_tactic.cpp
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/quasi_macros_tactic.cpp.o: _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/quasi_macros_tactic.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/quasi_macros_tactic.cpp.o -MF CMakeFiles/ufbv_tactic.dir/quasi_macros_tactic.cpp.o.d -o CMakeFiles/ufbv_tactic.dir/quasi_macros_tactic.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/quasi_macros_tactic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/quasi_macros_tactic.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/quasi_macros_tactic.cpp.o -MF CMakeFiles/ufbv_tactic.dir/quasi_macros_tactic.cpp.o.d -o CMakeFiles/ufbv_tactic.dir/quasi_macros_tactic.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/quasi_macros_tactic.cpp
 
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/quasi_macros_tactic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ufbv_tactic.dir/quasi_macros_tactic.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/quasi_macros_tactic.cpp > CMakeFiles/ufbv_tactic.dir/quasi_macros_tactic.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/quasi_macros_tactic.cpp > CMakeFiles/ufbv_tactic.dir/quasi_macros_tactic.cpp.i
 
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/quasi_macros_tactic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ufbv_tactic.dir/quasi_macros_tactic.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/quasi_macros_tactic.cpp -o CMakeFiles/ufbv_tactic.dir/quasi_macros_tactic.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/quasi_macros_tactic.cpp -o CMakeFiles/ufbv_tactic.dir/quasi_macros_tactic.cpp.s
 
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_rewriter.cpp.o: _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/flags.make
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_rewriter.cpp.o: _deps/z3-src/src/tactic/ufbv/ufbv_rewriter.cpp
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_rewriter.cpp.o: _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_rewriter.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_rewriter.cpp.o -MF CMakeFiles/ufbv_tactic.dir/ufbv_rewriter.cpp.o.d -o CMakeFiles/ufbv_tactic.dir/ufbv_rewriter.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/ufbv_rewriter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_rewriter.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_rewriter.cpp.o -MF CMakeFiles/ufbv_tactic.dir/ufbv_rewriter.cpp.o.d -o CMakeFiles/ufbv_tactic.dir/ufbv_rewriter.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/ufbv_rewriter.cpp
 
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_rewriter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ufbv_tactic.dir/ufbv_rewriter.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/ufbv_rewriter.cpp > CMakeFiles/ufbv_tactic.dir/ufbv_rewriter.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/ufbv_rewriter.cpp > CMakeFiles/ufbv_tactic.dir/ufbv_rewriter.cpp.i
 
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_rewriter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ufbv_tactic.dir/ufbv_rewriter.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/ufbv_rewriter.cpp -o CMakeFiles/ufbv_tactic.dir/ufbv_rewriter.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/ufbv_rewriter.cpp -o CMakeFiles/ufbv_tactic.dir/ufbv_rewriter.cpp.s
 
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_rewriter_tactic.cpp.o: _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/flags.make
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_rewriter_tactic.cpp.o: _deps/z3-src/src/tactic/ufbv/ufbv_rewriter_tactic.cpp
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_rewriter_tactic.cpp.o: _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_rewriter_tactic.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_rewriter_tactic.cpp.o -MF CMakeFiles/ufbv_tactic.dir/ufbv_rewriter_tactic.cpp.o.d -o CMakeFiles/ufbv_tactic.dir/ufbv_rewriter_tactic.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/ufbv_rewriter_tactic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_rewriter_tactic.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_rewriter_tactic.cpp.o -MF CMakeFiles/ufbv_tactic.dir/ufbv_rewriter_tactic.cpp.o.d -o CMakeFiles/ufbv_tactic.dir/ufbv_rewriter_tactic.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/ufbv_rewriter_tactic.cpp
 
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_rewriter_tactic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ufbv_tactic.dir/ufbv_rewriter_tactic.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/ufbv_rewriter_tactic.cpp > CMakeFiles/ufbv_tactic.dir/ufbv_rewriter_tactic.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/ufbv_rewriter_tactic.cpp > CMakeFiles/ufbv_tactic.dir/ufbv_rewriter_tactic.cpp.i
 
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_rewriter_tactic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ufbv_tactic.dir/ufbv_rewriter_tactic.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/ufbv_rewriter_tactic.cpp -o CMakeFiles/ufbv_tactic.dir/ufbv_rewriter_tactic.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/ufbv_rewriter_tactic.cpp -o CMakeFiles/ufbv_tactic.dir/ufbv_rewriter_tactic.cpp.s
 
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_tactic.cpp.o: _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/flags.make
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_tactic.cpp.o: _deps/z3-src/src/tactic/ufbv/ufbv_tactic.cpp
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_tactic.cpp.o: _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_tactic.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_tactic.cpp.o -MF CMakeFiles/ufbv_tactic.dir/ufbv_tactic.cpp.o.d -o CMakeFiles/ufbv_tactic.dir/ufbv_tactic.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/ufbv_tactic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_tactic.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_tactic.cpp.o -MF CMakeFiles/ufbv_tactic.dir/ufbv_tactic.cpp.o.d -o CMakeFiles/ufbv_tactic.dir/ufbv_tactic.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/ufbv_tactic.cpp
 
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_tactic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ufbv_tactic.dir/ufbv_tactic.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/ufbv_tactic.cpp > CMakeFiles/ufbv_tactic.dir/ufbv_tactic.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/ufbv_tactic.cpp > CMakeFiles/ufbv_tactic.dir/ufbv_tactic.cpp.i
 
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/ufbv_tactic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ufbv_tactic.dir/ufbv_tactic.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/ufbv_tactic.cpp -o CMakeFiles/ufbv_tactic.dir/ufbv_tactic.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv/ufbv_tactic.cpp -o CMakeFiles/ufbv_tactic.dir/ufbv_tactic.cpp.s
 
 ufbv_tactic: _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/macro_finder_tactic.cpp.o
 ufbv_tactic: _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/quasi_macros_tactic.cpp.o
@@ -152,10 +152,10 @@ _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/build: ufbv_tactic
 .PHONY : _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/build
 
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/clean:
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && $(CMAKE_COMMAND) -P CMakeFiles/ufbv_tactic.dir/cmake_clean.cmake
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv && $(CMAKE_COMMAND) -P CMakeFiles/ufbv_tactic.dir/cmake_clean.cmake
 .PHONY : _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/clean
 
 _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/LydiaSyft /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv /home/vboxuser/LydiaSyft/build /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stella/LydiaSyft /home/stella/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv /home/stella/LydiaSyft/build /home/stella/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv /home/stella/LydiaSyft/build/_deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/z3-build/src/tactic/ufbv/CMakeFiles/ufbv_tactic.dir/depend
 

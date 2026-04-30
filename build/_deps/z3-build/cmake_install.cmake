@@ -1,4 +1,4 @@
-# Install script for directory: /home/vboxuser/LydiaSyft/build/_deps/z3-src
+# Install script for directory: /home/stella/LydiaSyft/build/_deps/z3-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -46,7 +46,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/z3/Z3Targets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/z3/Z3Targets.cmake"
-         "/home/vboxuser/LydiaSyft/build/_deps/z3-build/CMakeFiles/Export/510587b08ee6a8c844e7ca782f91c0c5/Z3Targets.cmake")
+         "/home/stella/LydiaSyft/build/_deps/z3-build/CMakeFiles/Export/510587b08ee6a8c844e7ca782f91c0c5/Z3Targets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/z3/Z3Targets-*.cmake")
       if(_cmake_old_config_files)
@@ -59,27 +59,27 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/z3" TYPE FILE FILES "/home/vboxuser/LydiaSyft/build/_deps/z3-build/CMakeFiles/Export/510587b08ee6a8c844e7ca782f91c0c5/Z3Targets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/z3" TYPE FILE FILES "/home/stella/LydiaSyft/build/_deps/z3-build/CMakeFiles/Export/510587b08ee6a8c844e7ca782f91c0c5/Z3Targets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/z3" TYPE FILE FILES "/home/vboxuser/LydiaSyft/build/_deps/z3-build/CMakeFiles/Export/510587b08ee6a8c844e7ca782f91c0c5/Z3Targets-release.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/z3" TYPE FILE FILES "/home/stella/LydiaSyft/build/_deps/z3-build/CMakeFiles/Export/510587b08ee6a8c844e7ca782f91c0c5/Z3Targets-release.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/z3" TYPE FILE FILES "/home/vboxuser/LydiaSyft/build/_deps/z3-build/cmake/Z3Config.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/z3" TYPE FILE FILES "/home/stella/LydiaSyft/build/_deps/z3-build/cmake/Z3Config.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/z3" TYPE FILE FILES "/home/vboxuser/LydiaSyft/build/_deps/z3-build/Z3ConfigVersion.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/z3" TYPE FILE FILES "/home/stella/LydiaSyft/build/_deps/z3-build/Z3ConfigVersion.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vboxuser/LydiaSyft/build/_deps/z3-build/z3.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/stella/LydiaSyft/build/_deps/z3-build/z3.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmake_install.cmake")
+  include("/home/stella/LydiaSyft/build/_deps/z3-build/src/cmake_install.cmake")
 
 endif()
 

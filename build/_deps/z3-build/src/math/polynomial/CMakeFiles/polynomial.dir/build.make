@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 # Include any dependencies generated for this target.
 include _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/depend.make
@@ -72,106 +72,106 @@ include _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/flags.make
 _deps/z3-build/src/math/polynomial/algebraic_params.hpp: _deps/z3-src/src/math/polynomial/algebraic_params.pyg
 _deps/z3-build/src/math/polynomial/algebraic_params.hpp: _deps/z3-src/scripts/pyg2hpp.py
 _deps/z3-build/src/math/polynomial/algebraic_params.hpp: _deps/z3-src/scripts/mk_genfile_common.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating \"/home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial/algebraic_params.hpp\" from \"algebraic_params.pyg\""
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/python3 /home/vboxuser/LydiaSyft/build/_deps/z3-src/scripts/pyg2hpp.py /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial/algebraic_params.pyg /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating \"/home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial/algebraic_params.hpp\" from \"algebraic_params.pyg\""
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/python3 /home/stella/LydiaSyft/build/_deps/z3-src/scripts/pyg2hpp.py /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial/algebraic_params.pyg /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/algebraic_numbers.cpp.o: _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/flags.make
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/algebraic_numbers.cpp.o: _deps/z3-src/src/math/polynomial/algebraic_numbers.cpp
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/algebraic_numbers.cpp.o: _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/algebraic_numbers.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/algebraic_numbers.cpp.o -MF CMakeFiles/polynomial.dir/algebraic_numbers.cpp.o.d -o CMakeFiles/polynomial.dir/algebraic_numbers.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial/algebraic_numbers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/algebraic_numbers.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/algebraic_numbers.cpp.o -MF CMakeFiles/polynomial.dir/algebraic_numbers.cpp.o.d -o CMakeFiles/polynomial.dir/algebraic_numbers.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial/algebraic_numbers.cpp
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/algebraic_numbers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/polynomial.dir/algebraic_numbers.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial/algebraic_numbers.cpp > CMakeFiles/polynomial.dir/algebraic_numbers.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial/algebraic_numbers.cpp > CMakeFiles/polynomial.dir/algebraic_numbers.cpp.i
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/algebraic_numbers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/polynomial.dir/algebraic_numbers.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial/algebraic_numbers.cpp -o CMakeFiles/polynomial.dir/algebraic_numbers.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial/algebraic_numbers.cpp -o CMakeFiles/polynomial.dir/algebraic_numbers.cpp.s
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/polynomial_cache.cpp.o: _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/flags.make
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/polynomial_cache.cpp.o: _deps/z3-src/src/math/polynomial/polynomial_cache.cpp
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/polynomial_cache.cpp.o: _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/polynomial_cache.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/polynomial_cache.cpp.o -MF CMakeFiles/polynomial.dir/polynomial_cache.cpp.o.d -o CMakeFiles/polynomial.dir/polynomial_cache.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial/polynomial_cache.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/polynomial_cache.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/polynomial_cache.cpp.o -MF CMakeFiles/polynomial.dir/polynomial_cache.cpp.o.d -o CMakeFiles/polynomial.dir/polynomial_cache.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial/polynomial_cache.cpp
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/polynomial_cache.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/polynomial.dir/polynomial_cache.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial/polynomial_cache.cpp > CMakeFiles/polynomial.dir/polynomial_cache.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial/polynomial_cache.cpp > CMakeFiles/polynomial.dir/polynomial_cache.cpp.i
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/polynomial_cache.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/polynomial.dir/polynomial_cache.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial/polynomial_cache.cpp -o CMakeFiles/polynomial.dir/polynomial_cache.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial/polynomial_cache.cpp -o CMakeFiles/polynomial.dir/polynomial_cache.cpp.s
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/polynomial.cpp.o: _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/flags.make
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/polynomial.cpp.o: _deps/z3-src/src/math/polynomial/polynomial.cpp
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/polynomial.cpp.o: _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/polynomial.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/polynomial.cpp.o -MF CMakeFiles/polynomial.dir/polynomial.cpp.o.d -o CMakeFiles/polynomial.dir/polynomial.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial/polynomial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/polynomial.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/polynomial.cpp.o -MF CMakeFiles/polynomial.dir/polynomial.cpp.o.d -o CMakeFiles/polynomial.dir/polynomial.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial/polynomial.cpp
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/polynomial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/polynomial.dir/polynomial.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial/polynomial.cpp > CMakeFiles/polynomial.dir/polynomial.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial/polynomial.cpp > CMakeFiles/polynomial.dir/polynomial.cpp.i
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/polynomial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/polynomial.dir/polynomial.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial/polynomial.cpp -o CMakeFiles/polynomial.dir/polynomial.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial/polynomial.cpp -o CMakeFiles/polynomial.dir/polynomial.cpp.s
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/rpolynomial.cpp.o: _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/flags.make
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/rpolynomial.cpp.o: _deps/z3-src/src/math/polynomial/rpolynomial.cpp
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/rpolynomial.cpp.o: _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/rpolynomial.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/rpolynomial.cpp.o -MF CMakeFiles/polynomial.dir/rpolynomial.cpp.o.d -o CMakeFiles/polynomial.dir/rpolynomial.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial/rpolynomial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/rpolynomial.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/rpolynomial.cpp.o -MF CMakeFiles/polynomial.dir/rpolynomial.cpp.o.d -o CMakeFiles/polynomial.dir/rpolynomial.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial/rpolynomial.cpp
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/rpolynomial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/polynomial.dir/rpolynomial.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial/rpolynomial.cpp > CMakeFiles/polynomial.dir/rpolynomial.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial/rpolynomial.cpp > CMakeFiles/polynomial.dir/rpolynomial.cpp.i
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/rpolynomial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/polynomial.dir/rpolynomial.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial/rpolynomial.cpp -o CMakeFiles/polynomial.dir/rpolynomial.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial/rpolynomial.cpp -o CMakeFiles/polynomial.dir/rpolynomial.cpp.s
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/sexpr2upolynomial.cpp.o: _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/flags.make
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/sexpr2upolynomial.cpp.o: _deps/z3-src/src/math/polynomial/sexpr2upolynomial.cpp
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/sexpr2upolynomial.cpp.o: _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/sexpr2upolynomial.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/sexpr2upolynomial.cpp.o -MF CMakeFiles/polynomial.dir/sexpr2upolynomial.cpp.o.d -o CMakeFiles/polynomial.dir/sexpr2upolynomial.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial/sexpr2upolynomial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/sexpr2upolynomial.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/sexpr2upolynomial.cpp.o -MF CMakeFiles/polynomial.dir/sexpr2upolynomial.cpp.o.d -o CMakeFiles/polynomial.dir/sexpr2upolynomial.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial/sexpr2upolynomial.cpp
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/sexpr2upolynomial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/polynomial.dir/sexpr2upolynomial.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial/sexpr2upolynomial.cpp > CMakeFiles/polynomial.dir/sexpr2upolynomial.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial/sexpr2upolynomial.cpp > CMakeFiles/polynomial.dir/sexpr2upolynomial.cpp.i
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/sexpr2upolynomial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/polynomial.dir/sexpr2upolynomial.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial/sexpr2upolynomial.cpp -o CMakeFiles/polynomial.dir/sexpr2upolynomial.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial/sexpr2upolynomial.cpp -o CMakeFiles/polynomial.dir/sexpr2upolynomial.cpp.s
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/upolynomial.cpp.o: _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/flags.make
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/upolynomial.cpp.o: _deps/z3-src/src/math/polynomial/upolynomial.cpp
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/upolynomial.cpp.o: _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/upolynomial.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/upolynomial.cpp.o -MF CMakeFiles/polynomial.dir/upolynomial.cpp.o.d -o CMakeFiles/polynomial.dir/upolynomial.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial/upolynomial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/upolynomial.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/upolynomial.cpp.o -MF CMakeFiles/polynomial.dir/upolynomial.cpp.o.d -o CMakeFiles/polynomial.dir/upolynomial.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial/upolynomial.cpp
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/upolynomial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/polynomial.dir/upolynomial.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial/upolynomial.cpp > CMakeFiles/polynomial.dir/upolynomial.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial/upolynomial.cpp > CMakeFiles/polynomial.dir/upolynomial.cpp.i
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/upolynomial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/polynomial.dir/upolynomial.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial/upolynomial.cpp -o CMakeFiles/polynomial.dir/upolynomial.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial/upolynomial.cpp -o CMakeFiles/polynomial.dir/upolynomial.cpp.s
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/upolynomial_factorization.cpp.o: _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/flags.make
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/upolynomial_factorization.cpp.o: _deps/z3-src/src/math/polynomial/upolynomial_factorization.cpp
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/upolynomial_factorization.cpp.o: _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/upolynomial_factorization.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/upolynomial_factorization.cpp.o -MF CMakeFiles/polynomial.dir/upolynomial_factorization.cpp.o.d -o CMakeFiles/polynomial.dir/upolynomial_factorization.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial/upolynomial_factorization.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/upolynomial_factorization.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/upolynomial_factorization.cpp.o -MF CMakeFiles/polynomial.dir/upolynomial_factorization.cpp.o.d -o CMakeFiles/polynomial.dir/upolynomial_factorization.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial/upolynomial_factorization.cpp
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/upolynomial_factorization.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/polynomial.dir/upolynomial_factorization.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial/upolynomial_factorization.cpp > CMakeFiles/polynomial.dir/upolynomial_factorization.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial/upolynomial_factorization.cpp > CMakeFiles/polynomial.dir/upolynomial_factorization.cpp.i
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/upolynomial_factorization.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/polynomial.dir/upolynomial_factorization.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial/upolynomial_factorization.cpp -o CMakeFiles/polynomial.dir/upolynomial_factorization.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial/upolynomial_factorization.cpp -o CMakeFiles/polynomial.dir/upolynomial_factorization.cpp.s
 
 polynomial: _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/algebraic_numbers.cpp.o
 polynomial: _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/polynomial_cache.cpp.o
@@ -188,10 +188,10 @@ _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/build: polynomial
 .PHONY : _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/build
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/clean:
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial && $(CMAKE_COMMAND) -P CMakeFiles/polynomial.dir/cmake_clean.cmake
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial && $(CMAKE_COMMAND) -P CMakeFiles/polynomial.dir/cmake_clean.cmake
 .PHONY : _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/clean
 
 _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/depend: _deps/z3-build/src/math/polynomial/algebraic_params.hpp
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/LydiaSyft /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/polynomial /home/vboxuser/LydiaSyft/build /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stella/LydiaSyft /home/stella/LydiaSyft/build/_deps/z3-src/src/math/polynomial /home/stella/LydiaSyft/build /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial /home/stella/LydiaSyft/build/_deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/z3-build/src/math/polynomial/CMakeFiles/polynomial.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 # Include any dependencies generated for this target.
 include examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/depend.make
@@ -70,18 +70,18 @@ include examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_ma
 include examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/flags.make
 
 examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/dfa_creation_and_manipulation.cpp.o: examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/flags.make
-examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/dfa_creation_and_manipulation.cpp.o: /home/vboxuser/LydiaSyft/examples/03_dfa_creation_and_manipulation/dfa_creation_and_manipulation.cpp
+examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/dfa_creation_and_manipulation.cpp.o: /home/stella/LydiaSyft/examples/03_dfa_creation_and_manipulation/dfa_creation_and_manipulation.cpp
 examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/dfa_creation_and_manipulation.cpp.o: examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/dfa_creation_and_manipulation.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/examples/03_dfa_creation_and_manipulation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/dfa_creation_and_manipulation.cpp.o -MF CMakeFiles/dfa_creation_and_manipulation_example.dir/dfa_creation_and_manipulation.cpp.o.d -o CMakeFiles/dfa_creation_and_manipulation_example.dir/dfa_creation_and_manipulation.cpp.o -c /home/vboxuser/LydiaSyft/examples/03_dfa_creation_and_manipulation/dfa_creation_and_manipulation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/dfa_creation_and_manipulation.cpp.o"
+	cd /home/stella/LydiaSyft/build/examples/03_dfa_creation_and_manipulation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/dfa_creation_and_manipulation.cpp.o -MF CMakeFiles/dfa_creation_and_manipulation_example.dir/dfa_creation_and_manipulation.cpp.o.d -o CMakeFiles/dfa_creation_and_manipulation_example.dir/dfa_creation_and_manipulation.cpp.o -c /home/stella/LydiaSyft/examples/03_dfa_creation_and_manipulation/dfa_creation_and_manipulation.cpp
 
 examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/dfa_creation_and_manipulation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/dfa_creation_and_manipulation_example.dir/dfa_creation_and_manipulation.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/examples/03_dfa_creation_and_manipulation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/examples/03_dfa_creation_and_manipulation/dfa_creation_and_manipulation.cpp > CMakeFiles/dfa_creation_and_manipulation_example.dir/dfa_creation_and_manipulation.cpp.i
+	cd /home/stella/LydiaSyft/build/examples/03_dfa_creation_and_manipulation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/examples/03_dfa_creation_and_manipulation/dfa_creation_and_manipulation.cpp > CMakeFiles/dfa_creation_and_manipulation_example.dir/dfa_creation_and_manipulation.cpp.i
 
 examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/dfa_creation_and_manipulation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/dfa_creation_and_manipulation_example.dir/dfa_creation_and_manipulation.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/examples/03_dfa_creation_and_manipulation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/examples/03_dfa_creation_and_manipulation/dfa_creation_and_manipulation.cpp -o CMakeFiles/dfa_creation_and_manipulation_example.dir/dfa_creation_and_manipulation.cpp.s
+	cd /home/stella/LydiaSyft/build/examples/03_dfa_creation_and_manipulation && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/examples/03_dfa_creation_and_manipulation/dfa_creation_and_manipulation.cpp -o CMakeFiles/dfa_creation_and_manipulation_example.dir/dfa_creation_and_manipulation.cpp.s
 
 # Object files for target dfa_creation_and_manipulation_example
 dfa_creation_and_manipulation_example_OBJECTS = \
@@ -110,18 +110,18 @@ bin/dfa_creation_and_manipulation_example: /usr/local/lib/libmonabdd.a
 bin/dfa_creation_and_manipulation_example: /usr/local/lib/libmonamem.a
 bin/dfa_creation_and_manipulation_example: _deps/z3-build/libz3.a
 bin/dfa_creation_and_manipulation_example: examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/dfa_creation_and_manipulation_example"
-	cd /home/vboxuser/LydiaSyft/build/examples/03_dfa_creation_and_manipulation && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dfa_creation_and_manipulation_example.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/dfa_creation_and_manipulation_example"
+	cd /home/stella/LydiaSyft/build/examples/03_dfa_creation_and_manipulation && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dfa_creation_and_manipulation_example.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/build: bin/dfa_creation_and_manipulation_example
 .PHONY : examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/build
 
 examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/clean:
-	cd /home/vboxuser/LydiaSyft/build/examples/03_dfa_creation_and_manipulation && $(CMAKE_COMMAND) -P CMakeFiles/dfa_creation_and_manipulation_example.dir/cmake_clean.cmake
+	cd /home/stella/LydiaSyft/build/examples/03_dfa_creation_and_manipulation && $(CMAKE_COMMAND) -P CMakeFiles/dfa_creation_and_manipulation_example.dir/cmake_clean.cmake
 .PHONY : examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/clean
 
 examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/LydiaSyft /home/vboxuser/LydiaSyft/examples/03_dfa_creation_and_manipulation /home/vboxuser/LydiaSyft/build /home/vboxuser/LydiaSyft/build/examples/03_dfa_creation_and_manipulation /home/vboxuser/LydiaSyft/build/examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stella/LydiaSyft /home/stella/LydiaSyft/examples/03_dfa_creation_and_manipulation /home/stella/LydiaSyft/build /home/stella/LydiaSyft/build/examples/03_dfa_creation_and_manipulation /home/stella/LydiaSyft/build/examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : examples/03_dfa_creation_and_manipulation/CMakeFiles/dfa_creation_and_manipulation_example.dir/depend
 

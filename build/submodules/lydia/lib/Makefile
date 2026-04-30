@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles /home/vboxuser/LydiaSyft/build/submodules/lydia/lib//CMakeFiles/progress.marks
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 submodules/lydia/lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles /home/stella/LydiaSyft/build/submodules/lydia/lib//CMakeFiles/progress.marks
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 submodules/lydia/lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 submodules/lydia/lib/clean
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 submodules/lydia/lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 submodules/lydia/lib/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 submodules/lydia/lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 submodules/lydia/lib/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 submodules/lydia/lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 submodules/lydia/lib/CMakeFiles/lydia.dir/rule:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 submodules/lydia/lib/CMakeFiles/lydia.dir/rule
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 submodules/lydia/lib/CMakeFiles/lydia.dir/rule
 .PHONY : submodules/lydia/lib/CMakeFiles/lydia.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ lydia: submodules/lydia/lib/CMakeFiles/lydia.dir/rule
 
 # fast build rule for target.
 lydia/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/build
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/build
 .PHONY : lydia/fast
 
 include/lydia/parser/ldlf/driver.o: include/lydia/parser/ldlf/driver.cpp.o
@@ -180,7 +180,7 @@ include/lydia/parser/ldlf/driver.o: include/lydia/parser/ldlf/driver.cpp.o
 
 # target to build an object file
 include/lydia/parser/ldlf/driver.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ldlf/driver.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ldlf/driver.cpp.o
 .PHONY : include/lydia/parser/ldlf/driver.cpp.o
 
 include/lydia/parser/ldlf/driver.i: include/lydia/parser/ldlf/driver.cpp.i
@@ -188,7 +188,7 @@ include/lydia/parser/ldlf/driver.i: include/lydia/parser/ldlf/driver.cpp.i
 
 # target to preprocess a source file
 include/lydia/parser/ldlf/driver.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ldlf/driver.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ldlf/driver.cpp.i
 .PHONY : include/lydia/parser/ldlf/driver.cpp.i
 
 include/lydia/parser/ldlf/driver.s: include/lydia/parser/ldlf/driver.cpp.s
@@ -196,7 +196,7 @@ include/lydia/parser/ldlf/driver.s: include/lydia/parser/ldlf/driver.cpp.s
 
 # target to generate assembly for a file
 include/lydia/parser/ldlf/driver.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ldlf/driver.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ldlf/driver.cpp.s
 .PHONY : include/lydia/parser/ldlf/driver.cpp.s
 
 include/lydia/parser/ldlf/lexer.yy.o: include/lydia/parser/ldlf/lexer.yy.cc.o
@@ -204,7 +204,7 @@ include/lydia/parser/ldlf/lexer.yy.o: include/lydia/parser/ldlf/lexer.yy.cc.o
 
 # target to build an object file
 include/lydia/parser/ldlf/lexer.yy.cc.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ldlf/lexer.yy.cc.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ldlf/lexer.yy.cc.o
 .PHONY : include/lydia/parser/ldlf/lexer.yy.cc.o
 
 include/lydia/parser/ldlf/lexer.yy.i: include/lydia/parser/ldlf/lexer.yy.cc.i
@@ -212,7 +212,7 @@ include/lydia/parser/ldlf/lexer.yy.i: include/lydia/parser/ldlf/lexer.yy.cc.i
 
 # target to preprocess a source file
 include/lydia/parser/ldlf/lexer.yy.cc.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ldlf/lexer.yy.cc.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ldlf/lexer.yy.cc.i
 .PHONY : include/lydia/parser/ldlf/lexer.yy.cc.i
 
 include/lydia/parser/ldlf/lexer.yy.s: include/lydia/parser/ldlf/lexer.yy.cc.s
@@ -220,7 +220,7 @@ include/lydia/parser/ldlf/lexer.yy.s: include/lydia/parser/ldlf/lexer.yy.cc.s
 
 # target to generate assembly for a file
 include/lydia/parser/ldlf/lexer.yy.cc.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ldlf/lexer.yy.cc.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ldlf/lexer.yy.cc.s
 .PHONY : include/lydia/parser/ldlf/lexer.yy.cc.s
 
 include/lydia/parser/ldlf/parser.tab.o: include/lydia/parser/ldlf/parser.tab.cc.o
@@ -228,7 +228,7 @@ include/lydia/parser/ldlf/parser.tab.o: include/lydia/parser/ldlf/parser.tab.cc.
 
 # target to build an object file
 include/lydia/parser/ldlf/parser.tab.cc.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ldlf/parser.tab.cc.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ldlf/parser.tab.cc.o
 .PHONY : include/lydia/parser/ldlf/parser.tab.cc.o
 
 include/lydia/parser/ldlf/parser.tab.i: include/lydia/parser/ldlf/parser.tab.cc.i
@@ -236,7 +236,7 @@ include/lydia/parser/ldlf/parser.tab.i: include/lydia/parser/ldlf/parser.tab.cc.
 
 # target to preprocess a source file
 include/lydia/parser/ldlf/parser.tab.cc.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ldlf/parser.tab.cc.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ldlf/parser.tab.cc.i
 .PHONY : include/lydia/parser/ldlf/parser.tab.cc.i
 
 include/lydia/parser/ldlf/parser.tab.s: include/lydia/parser/ldlf/parser.tab.cc.s
@@ -244,7 +244,7 @@ include/lydia/parser/ldlf/parser.tab.s: include/lydia/parser/ldlf/parser.tab.cc.
 
 # target to generate assembly for a file
 include/lydia/parser/ldlf/parser.tab.cc.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ldlf/parser.tab.cc.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ldlf/parser.tab.cc.s
 .PHONY : include/lydia/parser/ldlf/parser.tab.cc.s
 
 include/lydia/parser/ltlf/driver.o: include/lydia/parser/ltlf/driver.cpp.o
@@ -252,7 +252,7 @@ include/lydia/parser/ltlf/driver.o: include/lydia/parser/ltlf/driver.cpp.o
 
 # target to build an object file
 include/lydia/parser/ltlf/driver.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ltlf/driver.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ltlf/driver.cpp.o
 .PHONY : include/lydia/parser/ltlf/driver.cpp.o
 
 include/lydia/parser/ltlf/driver.i: include/lydia/parser/ltlf/driver.cpp.i
@@ -260,7 +260,7 @@ include/lydia/parser/ltlf/driver.i: include/lydia/parser/ltlf/driver.cpp.i
 
 # target to preprocess a source file
 include/lydia/parser/ltlf/driver.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ltlf/driver.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ltlf/driver.cpp.i
 .PHONY : include/lydia/parser/ltlf/driver.cpp.i
 
 include/lydia/parser/ltlf/driver.s: include/lydia/parser/ltlf/driver.cpp.s
@@ -268,7 +268,7 @@ include/lydia/parser/ltlf/driver.s: include/lydia/parser/ltlf/driver.cpp.s
 
 # target to generate assembly for a file
 include/lydia/parser/ltlf/driver.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ltlf/driver.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ltlf/driver.cpp.s
 .PHONY : include/lydia/parser/ltlf/driver.cpp.s
 
 include/lydia/parser/ltlf/lexer.yy.o: include/lydia/parser/ltlf/lexer.yy.cc.o
@@ -276,7 +276,7 @@ include/lydia/parser/ltlf/lexer.yy.o: include/lydia/parser/ltlf/lexer.yy.cc.o
 
 # target to build an object file
 include/lydia/parser/ltlf/lexer.yy.cc.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ltlf/lexer.yy.cc.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ltlf/lexer.yy.cc.o
 .PHONY : include/lydia/parser/ltlf/lexer.yy.cc.o
 
 include/lydia/parser/ltlf/lexer.yy.i: include/lydia/parser/ltlf/lexer.yy.cc.i
@@ -284,7 +284,7 @@ include/lydia/parser/ltlf/lexer.yy.i: include/lydia/parser/ltlf/lexer.yy.cc.i
 
 # target to preprocess a source file
 include/lydia/parser/ltlf/lexer.yy.cc.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ltlf/lexer.yy.cc.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ltlf/lexer.yy.cc.i
 .PHONY : include/lydia/parser/ltlf/lexer.yy.cc.i
 
 include/lydia/parser/ltlf/lexer.yy.s: include/lydia/parser/ltlf/lexer.yy.cc.s
@@ -292,7 +292,7 @@ include/lydia/parser/ltlf/lexer.yy.s: include/lydia/parser/ltlf/lexer.yy.cc.s
 
 # target to generate assembly for a file
 include/lydia/parser/ltlf/lexer.yy.cc.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ltlf/lexer.yy.cc.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ltlf/lexer.yy.cc.s
 .PHONY : include/lydia/parser/ltlf/lexer.yy.cc.s
 
 include/lydia/parser/ltlf/parser.tab.o: include/lydia/parser/ltlf/parser.tab.cc.o
@@ -300,7 +300,7 @@ include/lydia/parser/ltlf/parser.tab.o: include/lydia/parser/ltlf/parser.tab.cc.
 
 # target to build an object file
 include/lydia/parser/ltlf/parser.tab.cc.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ltlf/parser.tab.cc.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ltlf/parser.tab.cc.o
 .PHONY : include/lydia/parser/ltlf/parser.tab.cc.o
 
 include/lydia/parser/ltlf/parser.tab.i: include/lydia/parser/ltlf/parser.tab.cc.i
@@ -308,7 +308,7 @@ include/lydia/parser/ltlf/parser.tab.i: include/lydia/parser/ltlf/parser.tab.cc.
 
 # target to preprocess a source file
 include/lydia/parser/ltlf/parser.tab.cc.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ltlf/parser.tab.cc.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ltlf/parser.tab.cc.i
 .PHONY : include/lydia/parser/ltlf/parser.tab.cc.i
 
 include/lydia/parser/ltlf/parser.tab.s: include/lydia/parser/ltlf/parser.tab.cc.s
@@ -316,7 +316,7 @@ include/lydia/parser/ltlf/parser.tab.s: include/lydia/parser/ltlf/parser.tab.cc.
 
 # target to generate assembly for a file
 include/lydia/parser/ltlf/parser.tab.cc.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ltlf/parser.tab.cc.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/include/lydia/parser/ltlf/parser.tab.cc.s
 .PHONY : include/lydia/parser/ltlf/parser.tab.cc.s
 
 src/ast/base.o: src/ast/base.cpp.o
@@ -324,7 +324,7 @@ src/ast/base.o: src/ast/base.cpp.o
 
 # target to build an object file
 src/ast/base.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/base.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/base.cpp.o
 .PHONY : src/ast/base.cpp.o
 
 src/ast/base.i: src/ast/base.cpp.i
@@ -332,7 +332,7 @@ src/ast/base.i: src/ast/base.cpp.i
 
 # target to preprocess a source file
 src/ast/base.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/base.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/base.cpp.i
 .PHONY : src/ast/base.cpp.i
 
 src/ast/base.s: src/ast/base.cpp.s
@@ -340,7 +340,7 @@ src/ast/base.s: src/ast/base.cpp.s
 
 # target to generate assembly for a file
 src/ast/base.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/base.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/base.cpp.s
 .PHONY : src/ast/base.cpp.s
 
 src/ast/ldlf.o: src/ast/ldlf.cpp.o
@@ -348,7 +348,7 @@ src/ast/ldlf.o: src/ast/ldlf.cpp.o
 
 # target to build an object file
 src/ast/ldlf.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/ldlf.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/ldlf.cpp.o
 .PHONY : src/ast/ldlf.cpp.o
 
 src/ast/ldlf.i: src/ast/ldlf.cpp.i
@@ -356,7 +356,7 @@ src/ast/ldlf.i: src/ast/ldlf.cpp.i
 
 # target to preprocess a source file
 src/ast/ldlf.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/ldlf.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/ldlf.cpp.i
 .PHONY : src/ast/ldlf.cpp.i
 
 src/ast/ldlf.s: src/ast/ldlf.cpp.s
@@ -364,7 +364,7 @@ src/ast/ldlf.s: src/ast/ldlf.cpp.s
 
 # target to generate assembly for a file
 src/ast/ldlf.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/ldlf.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/ldlf.cpp.s
 .PHONY : src/ast/ldlf.cpp.s
 
 src/ast/ltlf.o: src/ast/ltlf.cpp.o
@@ -372,7 +372,7 @@ src/ast/ltlf.o: src/ast/ltlf.cpp.o
 
 # target to build an object file
 src/ast/ltlf.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/ltlf.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/ltlf.cpp.o
 .PHONY : src/ast/ltlf.cpp.o
 
 src/ast/ltlf.i: src/ast/ltlf.cpp.i
@@ -380,7 +380,7 @@ src/ast/ltlf.i: src/ast/ltlf.cpp.i
 
 # target to preprocess a source file
 src/ast/ltlf.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/ltlf.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/ltlf.cpp.i
 .PHONY : src/ast/ltlf.cpp.i
 
 src/ast/ltlf.s: src/ast/ltlf.cpp.s
@@ -388,7 +388,7 @@ src/ast/ltlf.s: src/ast/ltlf.cpp.s
 
 # target to generate assembly for a file
 src/ast/ltlf.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/ltlf.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/ltlf.cpp.s
 .PHONY : src/ast/ltlf.cpp.s
 
 src/ast/pl.o: src/ast/pl.cpp.o
@@ -396,7 +396,7 @@ src/ast/pl.o: src/ast/pl.cpp.o
 
 # target to build an object file
 src/ast/pl.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/pl.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/pl.cpp.o
 .PHONY : src/ast/pl.cpp.o
 
 src/ast/pl.i: src/ast/pl.cpp.i
@@ -404,7 +404,7 @@ src/ast/pl.i: src/ast/pl.cpp.i
 
 # target to preprocess a source file
 src/ast/pl.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/pl.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/pl.cpp.i
 .PHONY : src/ast/pl.cpp.i
 
 src/ast/pl.s: src/ast/pl.cpp.s
@@ -412,7 +412,7 @@ src/ast/pl.s: src/ast/pl.cpp.s
 
 # target to generate assembly for a file
 src/ast/pl.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/pl.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/pl.cpp.s
 .PHONY : src/ast/pl.cpp.s
 
 src/ast/regex.o: src/ast/regex.cpp.o
@@ -420,7 +420,7 @@ src/ast/regex.o: src/ast/regex.cpp.o
 
 # target to build an object file
 src/ast/regex.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/regex.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/regex.cpp.o
 .PHONY : src/ast/regex.cpp.o
 
 src/ast/regex.i: src/ast/regex.cpp.i
@@ -428,7 +428,7 @@ src/ast/regex.i: src/ast/regex.cpp.i
 
 # target to preprocess a source file
 src/ast/regex.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/regex.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/regex.cpp.i
 .PHONY : src/ast/regex.cpp.i
 
 src/ast/regex.s: src/ast/regex.cpp.s
@@ -436,7 +436,7 @@ src/ast/regex.s: src/ast/regex.cpp.s
 
 # target to generate assembly for a file
 src/ast/regex.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/regex.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/ast/regex.cpp.s
 .PHONY : src/ast/regex.cpp.s
 
 src/atom_visitor.o: src/atom_visitor.cpp.o
@@ -444,7 +444,7 @@ src/atom_visitor.o: src/atom_visitor.cpp.o
 
 # target to build an object file
 src/atom_visitor.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/atom_visitor.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/atom_visitor.cpp.o
 .PHONY : src/atom_visitor.cpp.o
 
 src/atom_visitor.i: src/atom_visitor.cpp.i
@@ -452,7 +452,7 @@ src/atom_visitor.i: src/atom_visitor.cpp.i
 
 # target to preprocess a source file
 src/atom_visitor.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/atom_visitor.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/atom_visitor.cpp.i
 .PHONY : src/atom_visitor.cpp.i
 
 src/atom_visitor.s: src/atom_visitor.cpp.s
@@ -460,7 +460,7 @@ src/atom_visitor.s: src/atom_visitor.cpp.s
 
 # target to generate assembly for a file
 src/atom_visitor.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/atom_visitor.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/atom_visitor.cpp.s
 .PHONY : src/atom_visitor.cpp.s
 
 src/basic.o: src/basic.cpp.o
@@ -468,7 +468,7 @@ src/basic.o: src/basic.cpp.o
 
 # target to build an object file
 src/basic.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/basic.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/basic.cpp.o
 .PHONY : src/basic.cpp.o
 
 src/basic.i: src/basic.cpp.i
@@ -476,7 +476,7 @@ src/basic.i: src/basic.cpp.i
 
 # target to preprocess a source file
 src/basic.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/basic.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/basic.cpp.i
 .PHONY : src/basic.cpp.i
 
 src/basic.s: src/basic.cpp.s
@@ -484,7 +484,7 @@ src/basic.s: src/basic.cpp.s
 
 # target to generate assembly for a file
 src/basic.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/basic.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/basic.cpp.s
 .PHONY : src/basic.cpp.s
 
 src/dfa/dfa.o: src/dfa/dfa.cpp.o
@@ -492,7 +492,7 @@ src/dfa/dfa.o: src/dfa/dfa.cpp.o
 
 # target to build an object file
 src/dfa/dfa.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/dfa/dfa.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/dfa/dfa.cpp.o
 .PHONY : src/dfa/dfa.cpp.o
 
 src/dfa/dfa.i: src/dfa/dfa.cpp.i
@@ -500,7 +500,7 @@ src/dfa/dfa.i: src/dfa/dfa.cpp.i
 
 # target to preprocess a source file
 src/dfa/dfa.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/dfa/dfa.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/dfa/dfa.cpp.i
 .PHONY : src/dfa/dfa.cpp.i
 
 src/dfa/dfa.s: src/dfa/dfa.cpp.s
@@ -508,7 +508,7 @@ src/dfa/dfa.s: src/dfa/dfa.cpp.s
 
 # target to generate assembly for a file
 src/dfa/dfa.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/dfa/dfa.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/dfa/dfa.cpp.s
 .PHONY : src/dfa/dfa.cpp.s
 
 src/dfa/mona_dfa.o: src/dfa/mona_dfa.cpp.o
@@ -516,7 +516,7 @@ src/dfa/mona_dfa.o: src/dfa/mona_dfa.cpp.o
 
 # target to build an object file
 src/dfa/mona_dfa.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/dfa/mona_dfa.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/dfa/mona_dfa.cpp.o
 .PHONY : src/dfa/mona_dfa.cpp.o
 
 src/dfa/mona_dfa.i: src/dfa/mona_dfa.cpp.i
@@ -524,7 +524,7 @@ src/dfa/mona_dfa.i: src/dfa/mona_dfa.cpp.i
 
 # target to preprocess a source file
 src/dfa/mona_dfa.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/dfa/mona_dfa.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/dfa/mona_dfa.cpp.i
 .PHONY : src/dfa/mona_dfa.cpp.i
 
 src/dfa/mona_dfa.s: src/dfa/mona_dfa.cpp.s
@@ -532,7 +532,7 @@ src/dfa/mona_dfa.s: src/dfa/mona_dfa.cpp.s
 
 # target to generate assembly for a file
 src/dfa/mona_dfa.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/dfa/mona_dfa.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/dfa/mona_dfa.cpp.s
 .PHONY : src/dfa/mona_dfa.cpp.s
 
 src/logger.o: src/logger.cpp.o
@@ -540,7 +540,7 @@ src/logger.o: src/logger.cpp.o
 
 # target to build an object file
 src/logger.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logger.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logger.cpp.o
 .PHONY : src/logger.cpp.o
 
 src/logger.i: src/logger.cpp.i
@@ -548,7 +548,7 @@ src/logger.i: src/logger.cpp.i
 
 # target to preprocess a source file
 src/logger.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logger.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logger.cpp.i
 .PHONY : src/logger.cpp.i
 
 src/logger.s: src/logger.cpp.s
@@ -556,7 +556,7 @@ src/logger.s: src/logger.cpp.s
 
 # target to generate assembly for a file
 src/logger.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logger.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logger.cpp.s
 .PHONY : src/logger.cpp.s
 
 src/logic/ldlf/base.o: src/logic/ldlf/base.cpp.o
@@ -564,7 +564,7 @@ src/logic/ldlf/base.o: src/logic/ldlf/base.cpp.o
 
 # target to build an object file
 src/logic/ldlf/base.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ldlf/base.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ldlf/base.cpp.o
 .PHONY : src/logic/ldlf/base.cpp.o
 
 src/logic/ldlf/base.i: src/logic/ldlf/base.cpp.i
@@ -572,7 +572,7 @@ src/logic/ldlf/base.i: src/logic/ldlf/base.cpp.i
 
 # target to preprocess a source file
 src/logic/ldlf/base.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ldlf/base.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ldlf/base.cpp.i
 .PHONY : src/logic/ldlf/base.cpp.i
 
 src/logic/ldlf/base.s: src/logic/ldlf/base.cpp.s
@@ -580,7 +580,7 @@ src/logic/ldlf/base.s: src/logic/ldlf/base.cpp.s
 
 # target to generate assembly for a file
 src/logic/ldlf/base.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ldlf/base.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ldlf/base.cpp.s
 .PHONY : src/logic/ldlf/base.cpp.s
 
 src/logic/ldlf/only_test.o: src/logic/ldlf/only_test.cpp.o
@@ -588,7 +588,7 @@ src/logic/ldlf/only_test.o: src/logic/ldlf/only_test.cpp.o
 
 # target to build an object file
 src/logic/ldlf/only_test.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ldlf/only_test.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ldlf/only_test.cpp.o
 .PHONY : src/logic/ldlf/only_test.cpp.o
 
 src/logic/ldlf/only_test.i: src/logic/ldlf/only_test.cpp.i
@@ -596,7 +596,7 @@ src/logic/ldlf/only_test.i: src/logic/ldlf/only_test.cpp.i
 
 # target to preprocess a source file
 src/logic/ldlf/only_test.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ldlf/only_test.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ldlf/only_test.cpp.i
 .PHONY : src/logic/ldlf/only_test.cpp.i
 
 src/logic/ldlf/only_test.s: src/logic/ldlf/only_test.cpp.s
@@ -604,7 +604,7 @@ src/logic/ldlf/only_test.s: src/logic/ldlf/only_test.cpp.s
 
 # target to generate assembly for a file
 src/logic/ldlf/only_test.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ldlf/only_test.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ldlf/only_test.cpp.s
 .PHONY : src/logic/ldlf/only_test.cpp.s
 
 src/logic/ldlf/test_free.o: src/logic/ldlf/test_free.cpp.o
@@ -612,7 +612,7 @@ src/logic/ldlf/test_free.o: src/logic/ldlf/test_free.cpp.o
 
 # target to build an object file
 src/logic/ldlf/test_free.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ldlf/test_free.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ldlf/test_free.cpp.o
 .PHONY : src/logic/ldlf/test_free.cpp.o
 
 src/logic/ldlf/test_free.i: src/logic/ldlf/test_free.cpp.i
@@ -620,7 +620,7 @@ src/logic/ldlf/test_free.i: src/logic/ldlf/test_free.cpp.i
 
 # target to preprocess a source file
 src/logic/ldlf/test_free.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ldlf/test_free.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ldlf/test_free.cpp.i
 .PHONY : src/logic/ldlf/test_free.cpp.i
 
 src/logic/ldlf/test_free.s: src/logic/ldlf/test_free.cpp.s
@@ -628,7 +628,7 @@ src/logic/ldlf/test_free.s: src/logic/ldlf/test_free.cpp.s
 
 # target to generate assembly for a file
 src/logic/ldlf/test_free.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ldlf/test_free.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ldlf/test_free.cpp.s
 .PHONY : src/logic/ldlf/test_free.cpp.s
 
 src/logic/ltlf/base.o: src/logic/ltlf/base.cpp.o
@@ -636,7 +636,7 @@ src/logic/ltlf/base.o: src/logic/ltlf/base.cpp.o
 
 # target to build an object file
 src/logic/ltlf/base.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ltlf/base.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ltlf/base.cpp.o
 .PHONY : src/logic/ltlf/base.cpp.o
 
 src/logic/ltlf/base.i: src/logic/ltlf/base.cpp.i
@@ -644,7 +644,7 @@ src/logic/ltlf/base.i: src/logic/ltlf/base.cpp.i
 
 # target to preprocess a source file
 src/logic/ltlf/base.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ltlf/base.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ltlf/base.cpp.i
 .PHONY : src/logic/ltlf/base.cpp.i
 
 src/logic/ltlf/base.s: src/logic/ltlf/base.cpp.s
@@ -652,7 +652,7 @@ src/logic/ltlf/base.s: src/logic/ltlf/base.cpp.s
 
 # target to generate assembly for a file
 src/logic/ltlf/base.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ltlf/base.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ltlf/base.cpp.s
 .PHONY : src/logic/ltlf/base.cpp.s
 
 src/logic/ltlf/duality.o: src/logic/ltlf/duality.cpp.o
@@ -660,7 +660,7 @@ src/logic/ltlf/duality.o: src/logic/ltlf/duality.cpp.o
 
 # target to build an object file
 src/logic/ltlf/duality.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ltlf/duality.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ltlf/duality.cpp.o
 .PHONY : src/logic/ltlf/duality.cpp.o
 
 src/logic/ltlf/duality.i: src/logic/ltlf/duality.cpp.i
@@ -668,7 +668,7 @@ src/logic/ltlf/duality.i: src/logic/ltlf/duality.cpp.i
 
 # target to preprocess a source file
 src/logic/ltlf/duality.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ltlf/duality.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ltlf/duality.cpp.i
 .PHONY : src/logic/ltlf/duality.cpp.i
 
 src/logic/ltlf/duality.s: src/logic/ltlf/duality.cpp.s
@@ -676,7 +676,7 @@ src/logic/ltlf/duality.s: src/logic/ltlf/duality.cpp.s
 
 # target to generate assembly for a file
 src/logic/ltlf/duality.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ltlf/duality.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/ltlf/duality.cpp.s
 .PHONY : src/logic/ltlf/duality.cpp.s
 
 src/logic/pl/base.o: src/logic/pl/base.cpp.o
@@ -684,7 +684,7 @@ src/logic/pl/base.o: src/logic/pl/base.cpp.o
 
 # target to build an object file
 src/logic/pl/base.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/base.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/base.cpp.o
 .PHONY : src/logic/pl/base.cpp.o
 
 src/logic/pl/base.i: src/logic/pl/base.cpp.i
@@ -692,7 +692,7 @@ src/logic/pl/base.i: src/logic/pl/base.cpp.i
 
 # target to preprocess a source file
 src/logic/pl/base.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/base.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/base.cpp.i
 .PHONY : src/logic/pl/base.cpp.i
 
 src/logic/pl/base.s: src/logic/pl/base.cpp.s
@@ -700,7 +700,7 @@ src/logic/pl/base.s: src/logic/pl/base.cpp.s
 
 # target to generate assembly for a file
 src/logic/pl/base.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/base.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/base.cpp.s
 .PHONY : src/logic/pl/base.cpp.s
 
 src/logic/pl/cnf.o: src/logic/pl/cnf.cpp.o
@@ -708,7 +708,7 @@ src/logic/pl/cnf.o: src/logic/pl/cnf.cpp.o
 
 # target to build an object file
 src/logic/pl/cnf.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/cnf.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/cnf.cpp.o
 .PHONY : src/logic/pl/cnf.cpp.o
 
 src/logic/pl/cnf.i: src/logic/pl/cnf.cpp.i
@@ -716,7 +716,7 @@ src/logic/pl/cnf.i: src/logic/pl/cnf.cpp.i
 
 # target to preprocess a source file
 src/logic/pl/cnf.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/cnf.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/cnf.cpp.i
 .PHONY : src/logic/pl/cnf.cpp.i
 
 src/logic/pl/cnf.s: src/logic/pl/cnf.cpp.s
@@ -724,7 +724,7 @@ src/logic/pl/cnf.s: src/logic/pl/cnf.cpp.s
 
 # target to generate assembly for a file
 src/logic/pl/cnf.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/cnf.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/cnf.cpp.s
 .PHONY : src/logic/pl/cnf.cpp.s
 
 src/logic/pl/eval.o: src/logic/pl/eval.cpp.o
@@ -732,7 +732,7 @@ src/logic/pl/eval.o: src/logic/pl/eval.cpp.o
 
 # target to build an object file
 src/logic/pl/eval.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/eval.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/eval.cpp.o
 .PHONY : src/logic/pl/eval.cpp.o
 
 src/logic/pl/eval.i: src/logic/pl/eval.cpp.i
@@ -740,7 +740,7 @@ src/logic/pl/eval.i: src/logic/pl/eval.cpp.i
 
 # target to preprocess a source file
 src/logic/pl/eval.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/eval.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/eval.cpp.i
 .PHONY : src/logic/pl/eval.cpp.i
 
 src/logic/pl/eval.s: src/logic/pl/eval.cpp.s
@@ -748,7 +748,7 @@ src/logic/pl/eval.s: src/logic/pl/eval.cpp.s
 
 # target to generate assembly for a file
 src/logic/pl/eval.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/eval.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/eval.cpp.s
 .PHONY : src/logic/pl/eval.cpp.s
 
 src/logic/pl/prop_to_bdd.o: src/logic/pl/prop_to_bdd.cpp.o
@@ -756,7 +756,7 @@ src/logic/pl/prop_to_bdd.o: src/logic/pl/prop_to_bdd.cpp.o
 
 # target to build an object file
 src/logic/pl/prop_to_bdd.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/prop_to_bdd.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/prop_to_bdd.cpp.o
 .PHONY : src/logic/pl/prop_to_bdd.cpp.o
 
 src/logic/pl/prop_to_bdd.i: src/logic/pl/prop_to_bdd.cpp.i
@@ -764,7 +764,7 @@ src/logic/pl/prop_to_bdd.i: src/logic/pl/prop_to_bdd.cpp.i
 
 # target to preprocess a source file
 src/logic/pl/prop_to_bdd.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/prop_to_bdd.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/prop_to_bdd.cpp.i
 .PHONY : src/logic/pl/prop_to_bdd.cpp.i
 
 src/logic/pl/prop_to_bdd.s: src/logic/pl/prop_to_bdd.cpp.s
@@ -772,7 +772,7 @@ src/logic/pl/prop_to_bdd.s: src/logic/pl/prop_to_bdd.cpp.s
 
 # target to generate assembly for a file
 src/logic/pl/prop_to_bdd.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/prop_to_bdd.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/prop_to_bdd.cpp.s
 .PHONY : src/logic/pl/prop_to_bdd.cpp.s
 
 src/logic/pl/replace.o: src/logic/pl/replace.cpp.o
@@ -780,7 +780,7 @@ src/logic/pl/replace.o: src/logic/pl/replace.cpp.o
 
 # target to build an object file
 src/logic/pl/replace.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/replace.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/replace.cpp.o
 .PHONY : src/logic/pl/replace.cpp.o
 
 src/logic/pl/replace.i: src/logic/pl/replace.cpp.i
@@ -788,7 +788,7 @@ src/logic/pl/replace.i: src/logic/pl/replace.cpp.i
 
 # target to preprocess a source file
 src/logic/pl/replace.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/replace.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/replace.cpp.i
 .PHONY : src/logic/pl/replace.cpp.i
 
 src/logic/pl/replace.s: src/logic/pl/replace.cpp.s
@@ -796,7 +796,7 @@ src/logic/pl/replace.s: src/logic/pl/replace.cpp.s
 
 # target to generate assembly for a file
 src/logic/pl/replace.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/replace.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/pl/replace.cpp.s
 .PHONY : src/logic/pl/replace.cpp.s
 
 src/logic/to_ldlf.o: src/logic/to_ldlf.cpp.o
@@ -804,7 +804,7 @@ src/logic/to_ldlf.o: src/logic/to_ldlf.cpp.o
 
 # target to build an object file
 src/logic/to_ldlf.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/to_ldlf.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/to_ldlf.cpp.o
 .PHONY : src/logic/to_ldlf.cpp.o
 
 src/logic/to_ldlf.i: src/logic/to_ldlf.cpp.i
@@ -812,7 +812,7 @@ src/logic/to_ldlf.i: src/logic/to_ldlf.cpp.i
 
 # target to preprocess a source file
 src/logic/to_ldlf.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/to_ldlf.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/to_ldlf.cpp.i
 .PHONY : src/logic/to_ldlf.cpp.i
 
 src/logic/to_ldlf.s: src/logic/to_ldlf.cpp.s
@@ -820,7 +820,7 @@ src/logic/to_ldlf.s: src/logic/to_ldlf.cpp.s
 
 # target to generate assembly for a file
 src/logic/to_ldlf.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/to_ldlf.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/logic/to_ldlf.cpp.s
 .PHONY : src/logic/to_ldlf.cpp.s
 
 src/mona_ext/mona_ext_base.o: src/mona_ext/mona_ext_base.cpp.o
@@ -828,7 +828,7 @@ src/mona_ext/mona_ext_base.o: src/mona_ext/mona_ext_base.cpp.o
 
 # target to build an object file
 src/mona_ext/mona_ext_base.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/mona_ext/mona_ext_base.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/mona_ext/mona_ext_base.cpp.o
 .PHONY : src/mona_ext/mona_ext_base.cpp.o
 
 src/mona_ext/mona_ext_base.i: src/mona_ext/mona_ext_base.cpp.i
@@ -836,7 +836,7 @@ src/mona_ext/mona_ext_base.i: src/mona_ext/mona_ext_base.cpp.i
 
 # target to preprocess a source file
 src/mona_ext/mona_ext_base.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/mona_ext/mona_ext_base.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/mona_ext/mona_ext_base.cpp.i
 .PHONY : src/mona_ext/mona_ext_base.cpp.i
 
 src/mona_ext/mona_ext_base.s: src/mona_ext/mona_ext_base.cpp.s
@@ -844,7 +844,7 @@ src/mona_ext/mona_ext_base.s: src/mona_ext/mona_ext_base.cpp.s
 
 # target to generate assembly for a file
 src/mona_ext/mona_ext_base.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/mona_ext/mona_ext_base.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/mona_ext/mona_ext_base.cpp.s
 .PHONY : src/mona_ext/mona_ext_base.cpp.s
 
 src/mona_ext/project.o: src/mona_ext/project.cpp.o
@@ -852,7 +852,7 @@ src/mona_ext/project.o: src/mona_ext/project.cpp.o
 
 # target to build an object file
 src/mona_ext/project.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/mona_ext/project.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/mona_ext/project.cpp.o
 .PHONY : src/mona_ext/project.cpp.o
 
 src/mona_ext/project.i: src/mona_ext/project.cpp.i
@@ -860,7 +860,7 @@ src/mona_ext/project.i: src/mona_ext/project.cpp.i
 
 # target to preprocess a source file
 src/mona_ext/project.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/mona_ext/project.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/mona_ext/project.cpp.i
 .PHONY : src/mona_ext/project.cpp.i
 
 src/mona_ext/project.s: src/mona_ext/project.cpp.s
@@ -868,7 +868,7 @@ src/mona_ext/project.s: src/mona_ext/project.cpp.s
 
 # target to generate assembly for a file
 src/mona_ext/project.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/mona_ext/project.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/mona_ext/project.cpp.s
 .PHONY : src/mona_ext/project.cpp.s
 
 src/nnf.o: src/nnf.cpp.o
@@ -876,7 +876,7 @@ src/nnf.o: src/nnf.cpp.o
 
 # target to build an object file
 src/nnf.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/nnf.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/nnf.cpp.o
 .PHONY : src/nnf.cpp.o
 
 src/nnf.i: src/nnf.cpp.i
@@ -884,7 +884,7 @@ src/nnf.i: src/nnf.cpp.i
 
 # target to preprocess a source file
 src/nnf.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/nnf.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/nnf.cpp.i
 .PHONY : src/nnf.cpp.i
 
 src/nnf.s: src/nnf.cpp.s
@@ -892,7 +892,7 @@ src/nnf.s: src/nnf.cpp.s
 
 # target to generate assembly for a file
 src/nnf.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/nnf.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/nnf.cpp.s
 .PHONY : src/nnf.cpp.s
 
 src/symbol.o: src/symbol.cpp.o
@@ -900,7 +900,7 @@ src/symbol.o: src/symbol.cpp.o
 
 # target to build an object file
 src/symbol.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/symbol.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/symbol.cpp.o
 .PHONY : src/symbol.cpp.o
 
 src/symbol.i: src/symbol.cpp.i
@@ -908,7 +908,7 @@ src/symbol.i: src/symbol.cpp.i
 
 # target to preprocess a source file
 src/symbol.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/symbol.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/symbol.cpp.i
 .PHONY : src/symbol.cpp.i
 
 src/symbol.s: src/symbol.cpp.s
@@ -916,7 +916,7 @@ src/symbol.s: src/symbol.cpp.s
 
 # target to generate assembly for a file
 src/symbol.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/symbol.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/symbol.cpp.s
 .PHONY : src/symbol.cpp.s
 
 src/to_dfa/core.o: src/to_dfa/core.cpp.o
@@ -924,7 +924,7 @@ src/to_dfa/core.o: src/to_dfa/core.cpp.o
 
 # target to build an object file
 src/to_dfa/core.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/core.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/core.cpp.o
 .PHONY : src/to_dfa/core.cpp.o
 
 src/to_dfa/core.i: src/to_dfa/core.cpp.i
@@ -932,7 +932,7 @@ src/to_dfa/core.i: src/to_dfa/core.cpp.i
 
 # target to preprocess a source file
 src/to_dfa/core.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/core.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/core.cpp.i
 .PHONY : src/to_dfa/core.cpp.i
 
 src/to_dfa/core.s: src/to_dfa/core.cpp.s
@@ -940,7 +940,7 @@ src/to_dfa/core.s: src/to_dfa/core.cpp.s
 
 # target to generate assembly for a file
 src/to_dfa/core.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/core.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/core.cpp.s
 .PHONY : src/to_dfa/core.cpp.s
 
 src/to_dfa/delta.o: src/to_dfa/delta.cpp.o
@@ -948,7 +948,7 @@ src/to_dfa/delta.o: src/to_dfa/delta.cpp.o
 
 # target to build an object file
 src/to_dfa/delta.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/delta.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/delta.cpp.o
 .PHONY : src/to_dfa/delta.cpp.o
 
 src/to_dfa/delta.i: src/to_dfa/delta.cpp.i
@@ -956,7 +956,7 @@ src/to_dfa/delta.i: src/to_dfa/delta.cpp.i
 
 # target to preprocess a source file
 src/to_dfa/delta.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/delta.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/delta.cpp.i
 .PHONY : src/to_dfa/delta.cpp.i
 
 src/to_dfa/delta.s: src/to_dfa/delta.cpp.s
@@ -964,7 +964,7 @@ src/to_dfa/delta.s: src/to_dfa/delta.cpp.s
 
 # target to generate assembly for a file
 src/to_dfa/delta.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/delta.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/delta.cpp.s
 .PHONY : src/to_dfa/delta.cpp.s
 
 src/to_dfa/delta_symbolic.o: src/to_dfa/delta_symbolic.cpp.o
@@ -972,7 +972,7 @@ src/to_dfa/delta_symbolic.o: src/to_dfa/delta_symbolic.cpp.o
 
 # target to build an object file
 src/to_dfa/delta_symbolic.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/delta_symbolic.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/delta_symbolic.cpp.o
 .PHONY : src/to_dfa/delta_symbolic.cpp.o
 
 src/to_dfa/delta_symbolic.i: src/to_dfa/delta_symbolic.cpp.i
@@ -980,7 +980,7 @@ src/to_dfa/delta_symbolic.i: src/to_dfa/delta_symbolic.cpp.i
 
 # target to preprocess a source file
 src/to_dfa/delta_symbolic.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/delta_symbolic.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/delta_symbolic.cpp.i
 .PHONY : src/to_dfa/delta_symbolic.cpp.i
 
 src/to_dfa/delta_symbolic.s: src/to_dfa/delta_symbolic.cpp.s
@@ -988,7 +988,7 @@ src/to_dfa/delta_symbolic.s: src/to_dfa/delta_symbolic.cpp.s
 
 # target to generate assembly for a file
 src/to_dfa/delta_symbolic.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/delta_symbolic.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/delta_symbolic.cpp.s
 .PHONY : src/to_dfa/delta_symbolic.cpp.s
 
 src/to_dfa/dfa_state.o: src/to_dfa/dfa_state.cpp.o
@@ -996,7 +996,7 @@ src/to_dfa/dfa_state.o: src/to_dfa/dfa_state.cpp.o
 
 # target to build an object file
 src/to_dfa/dfa_state.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/dfa_state.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/dfa_state.cpp.o
 .PHONY : src/to_dfa/dfa_state.cpp.o
 
 src/to_dfa/dfa_state.i: src/to_dfa/dfa_state.cpp.i
@@ -1004,7 +1004,7 @@ src/to_dfa/dfa_state.i: src/to_dfa/dfa_state.cpp.i
 
 # target to preprocess a source file
 src/to_dfa/dfa_state.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/dfa_state.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/dfa_state.cpp.i
 .PHONY : src/to_dfa/dfa_state.cpp.i
 
 src/to_dfa/dfa_state.s: src/to_dfa/dfa_state.cpp.s
@@ -1012,7 +1012,7 @@ src/to_dfa/dfa_state.s: src/to_dfa/dfa_state.cpp.s
 
 # target to generate assembly for a file
 src/to_dfa/dfa_state.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/dfa_state.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/dfa_state.cpp.s
 .PHONY : src/to_dfa/dfa_state.cpp.s
 
 src/to_dfa/nfa_state.o: src/to_dfa/nfa_state.cpp.o
@@ -1020,7 +1020,7 @@ src/to_dfa/nfa_state.o: src/to_dfa/nfa_state.cpp.o
 
 # target to build an object file
 src/to_dfa/nfa_state.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/nfa_state.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/nfa_state.cpp.o
 .PHONY : src/to_dfa/nfa_state.cpp.o
 
 src/to_dfa/nfa_state.i: src/to_dfa/nfa_state.cpp.i
@@ -1028,7 +1028,7 @@ src/to_dfa/nfa_state.i: src/to_dfa/nfa_state.cpp.i
 
 # target to preprocess a source file
 src/to_dfa/nfa_state.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/nfa_state.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/nfa_state.cpp.i
 .PHONY : src/to_dfa/nfa_state.cpp.i
 
 src/to_dfa/nfa_state.s: src/to_dfa/nfa_state.cpp.s
@@ -1036,7 +1036,7 @@ src/to_dfa/nfa_state.s: src/to_dfa/nfa_state.cpp.s
 
 # target to generate assembly for a file
 src/to_dfa/nfa_state.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/nfa_state.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/nfa_state.cpp.s
 .PHONY : src/to_dfa/nfa_state.cpp.s
 
 src/to_dfa/strategies/bdd/base.o: src/to_dfa/strategies/bdd/base.cpp.o
@@ -1044,7 +1044,7 @@ src/to_dfa/strategies/bdd/base.o: src/to_dfa/strategies/bdd/base.cpp.o
 
 # target to build an object file
 src/to_dfa/strategies/bdd/base.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/bdd/base.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/bdd/base.cpp.o
 .PHONY : src/to_dfa/strategies/bdd/base.cpp.o
 
 src/to_dfa/strategies/bdd/base.i: src/to_dfa/strategies/bdd/base.cpp.i
@@ -1052,7 +1052,7 @@ src/to_dfa/strategies/bdd/base.i: src/to_dfa/strategies/bdd/base.cpp.i
 
 # target to preprocess a source file
 src/to_dfa/strategies/bdd/base.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/bdd/base.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/bdd/base.cpp.i
 .PHONY : src/to_dfa/strategies/bdd/base.cpp.i
 
 src/to_dfa/strategies/bdd/base.s: src/to_dfa/strategies/bdd/base.cpp.s
@@ -1060,7 +1060,7 @@ src/to_dfa/strategies/bdd/base.s: src/to_dfa/strategies/bdd/base.cpp.s
 
 # target to generate assembly for a file
 src/to_dfa/strategies/bdd/base.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/bdd/base.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/bdd/base.cpp.s
 .PHONY : src/to_dfa/strategies/bdd/base.cpp.s
 
 src/to_dfa/strategies/bdd/delta_bdd.o: src/to_dfa/strategies/bdd/delta_bdd.cpp.o
@@ -1068,7 +1068,7 @@ src/to_dfa/strategies/bdd/delta_bdd.o: src/to_dfa/strategies/bdd/delta_bdd.cpp.o
 
 # target to build an object file
 src/to_dfa/strategies/bdd/delta_bdd.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/bdd/delta_bdd.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/bdd/delta_bdd.cpp.o
 .PHONY : src/to_dfa/strategies/bdd/delta_bdd.cpp.o
 
 src/to_dfa/strategies/bdd/delta_bdd.i: src/to_dfa/strategies/bdd/delta_bdd.cpp.i
@@ -1076,7 +1076,7 @@ src/to_dfa/strategies/bdd/delta_bdd.i: src/to_dfa/strategies/bdd/delta_bdd.cpp.i
 
 # target to preprocess a source file
 src/to_dfa/strategies/bdd/delta_bdd.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/bdd/delta_bdd.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/bdd/delta_bdd.cpp.i
 .PHONY : src/to_dfa/strategies/bdd/delta_bdd.cpp.i
 
 src/to_dfa/strategies/bdd/delta_bdd.s: src/to_dfa/strategies/bdd/delta_bdd.cpp.s
@@ -1084,7 +1084,7 @@ src/to_dfa/strategies/bdd/delta_bdd.s: src/to_dfa/strategies/bdd/delta_bdd.cpp.s
 
 # target to generate assembly for a file
 src/to_dfa/strategies/bdd/delta_bdd.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/bdd/delta_bdd.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/bdd/delta_bdd.cpp.s
 .PHONY : src/to_dfa/strategies/bdd/delta_bdd.cpp.s
 
 src/to_dfa/strategies/compositional/base.o: src/to_dfa/strategies/compositional/base.cpp.o
@@ -1092,7 +1092,7 @@ src/to_dfa/strategies/compositional/base.o: src/to_dfa/strategies/compositional/
 
 # target to build an object file
 src/to_dfa/strategies/compositional/base.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/compositional/base.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/compositional/base.cpp.o
 .PHONY : src/to_dfa/strategies/compositional/base.cpp.o
 
 src/to_dfa/strategies/compositional/base.i: src/to_dfa/strategies/compositional/base.cpp.i
@@ -1100,7 +1100,7 @@ src/to_dfa/strategies/compositional/base.i: src/to_dfa/strategies/compositional/
 
 # target to preprocess a source file
 src/to_dfa/strategies/compositional/base.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/compositional/base.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/compositional/base.cpp.i
 .PHONY : src/to_dfa/strategies/compositional/base.cpp.i
 
 src/to_dfa/strategies/compositional/base.s: src/to_dfa/strategies/compositional/base.cpp.s
@@ -1108,7 +1108,7 @@ src/to_dfa/strategies/compositional/base.s: src/to_dfa/strategies/compositional/
 
 # target to generate assembly for a file
 src/to_dfa/strategies/compositional/base.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/compositional/base.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/compositional/base.cpp.s
 .PHONY : src/to_dfa/strategies/compositional/base.cpp.s
 
 src/to_dfa/strategies/compositional/delta_compositional.o: src/to_dfa/strategies/compositional/delta_compositional.cpp.o
@@ -1116,7 +1116,7 @@ src/to_dfa/strategies/compositional/delta_compositional.o: src/to_dfa/strategies
 
 # target to build an object file
 src/to_dfa/strategies/compositional/delta_compositional.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/compositional/delta_compositional.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/compositional/delta_compositional.cpp.o
 .PHONY : src/to_dfa/strategies/compositional/delta_compositional.cpp.o
 
 src/to_dfa/strategies/compositional/delta_compositional.i: src/to_dfa/strategies/compositional/delta_compositional.cpp.i
@@ -1124,7 +1124,7 @@ src/to_dfa/strategies/compositional/delta_compositional.i: src/to_dfa/strategies
 
 # target to preprocess a source file
 src/to_dfa/strategies/compositional/delta_compositional.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/compositional/delta_compositional.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/compositional/delta_compositional.cpp.i
 .PHONY : src/to_dfa/strategies/compositional/delta_compositional.cpp.i
 
 src/to_dfa/strategies/compositional/delta_compositional.s: src/to_dfa/strategies/compositional/delta_compositional.cpp.s
@@ -1132,7 +1132,7 @@ src/to_dfa/strategies/compositional/delta_compositional.s: src/to_dfa/strategies
 
 # target to generate assembly for a file
 src/to_dfa/strategies/compositional/delta_compositional.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/compositional/delta_compositional.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/compositional/delta_compositional.cpp.s
 .PHONY : src/to_dfa/strategies/compositional/delta_compositional.cpp.s
 
 src/to_dfa/strategies/compositional/star.o: src/to_dfa/strategies/compositional/star.cpp.o
@@ -1140,7 +1140,7 @@ src/to_dfa/strategies/compositional/star.o: src/to_dfa/strategies/compositional/
 
 # target to build an object file
 src/to_dfa/strategies/compositional/star.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/compositional/star.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/compositional/star.cpp.o
 .PHONY : src/to_dfa/strategies/compositional/star.cpp.o
 
 src/to_dfa/strategies/compositional/star.i: src/to_dfa/strategies/compositional/star.cpp.i
@@ -1148,7 +1148,7 @@ src/to_dfa/strategies/compositional/star.i: src/to_dfa/strategies/compositional/
 
 # target to preprocess a source file
 src/to_dfa/strategies/compositional/star.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/compositional/star.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/compositional/star.cpp.i
 .PHONY : src/to_dfa/strategies/compositional/star.cpp.i
 
 src/to_dfa/strategies/compositional/star.s: src/to_dfa/strategies/compositional/star.cpp.s
@@ -1156,7 +1156,7 @@ src/to_dfa/strategies/compositional/star.s: src/to_dfa/strategies/compositional/
 
 # target to generate assembly for a file
 src/to_dfa/strategies/compositional/star.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/compositional/star.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/compositional/star.cpp.s
 .PHONY : src/to_dfa/strategies/compositional/star.cpp.s
 
 src/to_dfa/strategies/naive.o: src/to_dfa/strategies/naive.cpp.o
@@ -1164,7 +1164,7 @@ src/to_dfa/strategies/naive.o: src/to_dfa/strategies/naive.cpp.o
 
 # target to build an object file
 src/to_dfa/strategies/naive.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/naive.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/naive.cpp.o
 .PHONY : src/to_dfa/strategies/naive.cpp.o
 
 src/to_dfa/strategies/naive.i: src/to_dfa/strategies/naive.cpp.i
@@ -1172,7 +1172,7 @@ src/to_dfa/strategies/naive.i: src/to_dfa/strategies/naive.cpp.i
 
 # target to preprocess a source file
 src/to_dfa/strategies/naive.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/naive.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/naive.cpp.i
 .PHONY : src/to_dfa/strategies/naive.cpp.i
 
 src/to_dfa/strategies/naive.s: src/to_dfa/strategies/naive.cpp.s
@@ -1180,7 +1180,7 @@ src/to_dfa/strategies/naive.s: src/to_dfa/strategies/naive.cpp.s
 
 # target to generate assembly for a file
 src/to_dfa/strategies/naive.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/naive.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/to_dfa/strategies/naive.cpp.s
 .PHONY : src/to_dfa/strategies/naive.cpp.s
 
 src/utils/cudd.o: src/utils/cudd.cpp.o
@@ -1188,7 +1188,7 @@ src/utils/cudd.o: src/utils/cudd.cpp.o
 
 # target to build an object file
 src/utils/cudd.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/cudd.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/cudd.cpp.o
 .PHONY : src/utils/cudd.cpp.o
 
 src/utils/cudd.i: src/utils/cudd.cpp.i
@@ -1196,7 +1196,7 @@ src/utils/cudd.i: src/utils/cudd.cpp.i
 
 # target to preprocess a source file
 src/utils/cudd.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/cudd.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/cudd.cpp.i
 .PHONY : src/utils/cudd.cpp.i
 
 src/utils/cudd.s: src/utils/cudd.cpp.s
@@ -1204,7 +1204,7 @@ src/utils/cudd.s: src/utils/cudd.cpp.s
 
 # target to generate assembly for a file
 src/utils/cudd.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/cudd.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/cudd.cpp.s
 .PHONY : src/utils/cudd.cpp.s
 
 src/utils/dfa_transform.o: src/utils/dfa_transform.cpp.o
@@ -1212,7 +1212,7 @@ src/utils/dfa_transform.o: src/utils/dfa_transform.cpp.o
 
 # target to build an object file
 src/utils/dfa_transform.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/dfa_transform.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/dfa_transform.cpp.o
 .PHONY : src/utils/dfa_transform.cpp.o
 
 src/utils/dfa_transform.i: src/utils/dfa_transform.cpp.i
@@ -1220,7 +1220,7 @@ src/utils/dfa_transform.i: src/utils/dfa_transform.cpp.i
 
 # target to preprocess a source file
 src/utils/dfa_transform.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/dfa_transform.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/dfa_transform.cpp.i
 .PHONY : src/utils/dfa_transform.cpp.i
 
 src/utils/dfa_transform.s: src/utils/dfa_transform.cpp.s
@@ -1228,7 +1228,7 @@ src/utils/dfa_transform.s: src/utils/dfa_transform.cpp.s
 
 # target to generate assembly for a file
 src/utils/dfa_transform.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/dfa_transform.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/dfa_transform.cpp.s
 .PHONY : src/utils/dfa_transform.cpp.s
 
 src/utils/print.o: src/utils/print.cpp.o
@@ -1236,7 +1236,7 @@ src/utils/print.o: src/utils/print.cpp.o
 
 # target to build an object file
 src/utils/print.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/print.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/print.cpp.o
 .PHONY : src/utils/print.cpp.o
 
 src/utils/print.i: src/utils/print.cpp.i
@@ -1244,7 +1244,7 @@ src/utils/print.i: src/utils/print.cpp.i
 
 # target to preprocess a source file
 src/utils/print.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/print.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/print.cpp.i
 .PHONY : src/utils/print.cpp.i
 
 src/utils/print.s: src/utils/print.cpp.s
@@ -1252,7 +1252,7 @@ src/utils/print.s: src/utils/print.cpp.s
 
 # target to generate assembly for a file
 src/utils/print.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/print.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/print.cpp.s
 .PHONY : src/utils/print.cpp.s
 
 src/utils/strings.o: src/utils/strings.cpp.o
@@ -1260,7 +1260,7 @@ src/utils/strings.o: src/utils/strings.cpp.o
 
 # target to build an object file
 src/utils/strings.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/strings.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/strings.cpp.o
 .PHONY : src/utils/strings.cpp.o
 
 src/utils/strings.i: src/utils/strings.cpp.i
@@ -1268,7 +1268,7 @@ src/utils/strings.i: src/utils/strings.cpp.i
 
 # target to preprocess a source file
 src/utils/strings.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/strings.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/strings.cpp.i
 .PHONY : src/utils/strings.cpp.i
 
 src/utils/strings.s: src/utils/strings.cpp.s
@@ -1276,7 +1276,7 @@ src/utils/strings.s: src/utils/strings.cpp.s
 
 # target to generate assembly for a file
 src/utils/strings.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/strings.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/utils/strings.cpp.s
 .PHONY : src/utils/strings.cpp.s
 
 src/visitor.o: src/visitor.cpp.o
@@ -1284,7 +1284,7 @@ src/visitor.o: src/visitor.cpp.o
 
 # target to build an object file
 src/visitor.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/visitor.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/visitor.cpp.o
 .PHONY : src/visitor.cpp.o
 
 src/visitor.i: src/visitor.cpp.i
@@ -1292,7 +1292,7 @@ src/visitor.i: src/visitor.cpp.i
 
 # target to preprocess a source file
 src/visitor.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/visitor.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/visitor.cpp.i
 .PHONY : src/visitor.cpp.i
 
 src/visitor.s: src/visitor.cpp.s
@@ -1300,7 +1300,7 @@ src/visitor.s: src/visitor.cpp.s
 
 # target to generate assembly for a file
 src/visitor.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/visitor.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f submodules/lydia/lib/CMakeFiles/lydia.dir/build.make submodules/lydia/lib/CMakeFiles/lydia.dir/src/visitor.cpp.s
 .PHONY : src/visitor.cpp.s
 
 # Help Target
@@ -1468,6 +1468,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/muz/bmc
+# Install script for directory: /home/stella/LydiaSyft/build/_deps/z3-src/src/muz/bmc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

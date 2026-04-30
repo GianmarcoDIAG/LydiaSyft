@@ -38,6 +38,11 @@ namespace Syft {
         void print_mgr() const;
 
         /**
+        * \brief Prints BDD variables
+        */
+        void print_bdd_vars(CUDD::BDD cube) const;
+
+        /**
          * \brief Creates BDD variables and associates each with a name.
          *
          * \param variable_names The names of the variables to create. A new variable
@@ -190,14 +195,30 @@ namespace Syft {
         std::size_t agents_count(std::size_t agent_id) const;
 
         /**
-         * \brief Returns a BDD formed by the conjunction of all input variables.
+         * \brief Backword compatibility: Returns a BDD formed by the conjunction of all environment variables.
          */
         CUDD::BDD input_cube() const;
 
         /**
+         * \brief Returns a BDD formed by the conjunction of all agents variables.
+         */
+        CUDD::BDD environment_input_cube() const;
+
+        /**
+         * \brief Returns a BDD formed by the conjunction of all environment variables.
+         */
+        CUDD::BDD environment_output_cube() const;
+
+
+        /**
+         * \brief Returns a BDD formed by the conjunction of all the variables wich are not under the control of agent with ID agent_id.
+         */
+        CUDD::BDD agent_input_cube(std::size_t agent_id) const;
+
+        /**
          * \brief Returns a BDD formed by the conjunction of all agent variables for a given agent.
          */
-        CUDD::BDD agent_cube(std::size_t agent_id) const;
+        CUDD::BDD agent_output_cube(std::size_t agent_id) const;
 
         /**
         * @brief Determine whether a string is an input variable
@@ -356,7 +377,7 @@ namespace Syft {
             return agent_variable_count(0);
         }
         CUDD::BDD output_cube() const {
-            return agent_cube(0);
+            return agent_output_cube(0);
         }
         bool is_output_variable(const std::string& var) const {
             return is_agent_variable(var, 0);

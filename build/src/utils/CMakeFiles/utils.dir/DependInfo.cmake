@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/vboxuser/LydiaSyft/src/utils/misc.cpp" "src/utils/CMakeFiles/utils.dir/misc.cpp.o" "gcc" "src/utils/CMakeFiles/utils.dir/misc.cpp.o.d"
-  "/home/vboxuser/LydiaSyft/src/utils/string_utilities.cpp" "src/utils/CMakeFiles/utils.dir/string_utilities.cpp.o" "gcc" "src/utils/CMakeFiles/utils.dir/string_utilities.cpp.o.d"
+  "/home/stella/LydiaSyft/src/utils/misc.cpp" "src/utils/CMakeFiles/utils.dir/misc.cpp.o" "gcc" "src/utils/CMakeFiles/utils.dir/misc.cpp.o.d"
+  "/home/stella/LydiaSyft/src/utils/string_utilities.cpp" "src/utils/CMakeFiles/utils.dir/string_utilities.cpp.o" "gcc" "src/utils/CMakeFiles/utils.dir/string_utilities.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

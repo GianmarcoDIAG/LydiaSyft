@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 # Include any dependencies generated for this target.
 include examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/depend.make
@@ -70,18 +70,18 @@ include examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/progres
 include examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/flags.make
 
 examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/ltlf_synthesis.cpp.o: examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/flags.make
-examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/ltlf_synthesis.cpp.o: /home/vboxuser/LydiaSyft/examples/04_ltlf_synthesis/ltlf_synthesis.cpp
+examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/ltlf_synthesis.cpp.o: /home/stella/LydiaSyft/examples/04_ltlf_synthesis/ltlf_synthesis.cpp
 examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/ltlf_synthesis.cpp.o: examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/ltlf_synthesis.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/examples/04_ltlf_synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/ltlf_synthesis.cpp.o -MF CMakeFiles/ltlf_synthesis_example.dir/ltlf_synthesis.cpp.o.d -o CMakeFiles/ltlf_synthesis_example.dir/ltlf_synthesis.cpp.o -c /home/vboxuser/LydiaSyft/examples/04_ltlf_synthesis/ltlf_synthesis.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/ltlf_synthesis.cpp.o"
+	cd /home/stella/LydiaSyft/build/examples/04_ltlf_synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/ltlf_synthesis.cpp.o -MF CMakeFiles/ltlf_synthesis_example.dir/ltlf_synthesis.cpp.o.d -o CMakeFiles/ltlf_synthesis_example.dir/ltlf_synthesis.cpp.o -c /home/stella/LydiaSyft/examples/04_ltlf_synthesis/ltlf_synthesis.cpp
 
 examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/ltlf_synthesis.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ltlf_synthesis_example.dir/ltlf_synthesis.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/examples/04_ltlf_synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/examples/04_ltlf_synthesis/ltlf_synthesis.cpp > CMakeFiles/ltlf_synthesis_example.dir/ltlf_synthesis.cpp.i
+	cd /home/stella/LydiaSyft/build/examples/04_ltlf_synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/examples/04_ltlf_synthesis/ltlf_synthesis.cpp > CMakeFiles/ltlf_synthesis_example.dir/ltlf_synthesis.cpp.i
 
 examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/ltlf_synthesis.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ltlf_synthesis_example.dir/ltlf_synthesis.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/examples/04_ltlf_synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/examples/04_ltlf_synthesis/ltlf_synthesis.cpp -o CMakeFiles/ltlf_synthesis_example.dir/ltlf_synthesis.cpp.s
+	cd /home/stella/LydiaSyft/build/examples/04_ltlf_synthesis && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/examples/04_ltlf_synthesis/ltlf_synthesis.cpp -o CMakeFiles/ltlf_synthesis_example.dir/ltlf_synthesis.cpp.s
 
 # Object files for target ltlf_synthesis_example
 ltlf_synthesis_example_OBJECTS = \
@@ -110,18 +110,18 @@ bin/ltlf_synthesis_example: /usr/local/lib/libmonabdd.a
 bin/ltlf_synthesis_example: /usr/local/lib/libmonamem.a
 bin/ltlf_synthesis_example: _deps/z3-build/libz3.a
 bin/ltlf_synthesis_example: examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/ltlf_synthesis_example"
-	cd /home/vboxuser/LydiaSyft/build/examples/04_ltlf_synthesis && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ltlf_synthesis_example.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/ltlf_synthesis_example"
+	cd /home/stella/LydiaSyft/build/examples/04_ltlf_synthesis && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ltlf_synthesis_example.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/build: bin/ltlf_synthesis_example
 .PHONY : examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/build
 
 examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/clean:
-	cd /home/vboxuser/LydiaSyft/build/examples/04_ltlf_synthesis && $(CMAKE_COMMAND) -P CMakeFiles/ltlf_synthesis_example.dir/cmake_clean.cmake
+	cd /home/stella/LydiaSyft/build/examples/04_ltlf_synthesis && $(CMAKE_COMMAND) -P CMakeFiles/ltlf_synthesis_example.dir/cmake_clean.cmake
 .PHONY : examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/clean
 
 examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/LydiaSyft /home/vboxuser/LydiaSyft/examples/04_ltlf_synthesis /home/vboxuser/LydiaSyft/build /home/vboxuser/LydiaSyft/build/examples/04_ltlf_synthesis /home/vboxuser/LydiaSyft/build/examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stella/LydiaSyft /home/stella/LydiaSyft/examples/04_ltlf_synthesis /home/stella/LydiaSyft/build /home/stella/LydiaSyft/build/examples/04_ltlf_synthesis /home/stella/LydiaSyft/build/examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : examples/04_ltlf_synthesis/CMakeFiles/ltlf_synthesis_example.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 # Include any dependencies generated for this target.
 include _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/depend.make
@@ -72,78 +72,78 @@ include _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/flags.ma
 _deps/z3-build/src/ast/normal_forms/nnf_params.hpp: _deps/z3-src/src/ast/normal_forms/nnf_params.pyg
 _deps/z3-build/src/ast/normal_forms/nnf_params.hpp: _deps/z3-src/scripts/pyg2hpp.py
 _deps/z3-build/src/ast/normal_forms/nnf_params.hpp: _deps/z3-src/scripts/mk_genfile_common.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating \"/home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms/nnf_params.hpp\" from \"nnf_params.pyg\""
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/python3 /home/vboxuser/LydiaSyft/build/_deps/z3-src/scripts/pyg2hpp.py /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/nnf_params.pyg /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating \"/home/stella/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms/nnf_params.hpp\" from \"nnf_params.pyg\""
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/python3 /home/stella/LydiaSyft/build/_deps/z3-src/scripts/pyg2hpp.py /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/nnf_params.pyg /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms
 
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/defined_names.cpp.o: _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/flags.make
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/defined_names.cpp.o: _deps/z3-src/src/ast/normal_forms/defined_names.cpp
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/defined_names.cpp.o: _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/defined_names.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/defined_names.cpp.o -MF CMakeFiles/normal_forms.dir/defined_names.cpp.o.d -o CMakeFiles/normal_forms.dir/defined_names.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/defined_names.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/defined_names.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/defined_names.cpp.o -MF CMakeFiles/normal_forms.dir/defined_names.cpp.o.d -o CMakeFiles/normal_forms.dir/defined_names.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/defined_names.cpp
 
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/defined_names.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/normal_forms.dir/defined_names.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/defined_names.cpp > CMakeFiles/normal_forms.dir/defined_names.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/defined_names.cpp > CMakeFiles/normal_forms.dir/defined_names.cpp.i
 
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/defined_names.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/normal_forms.dir/defined_names.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/defined_names.cpp -o CMakeFiles/normal_forms.dir/defined_names.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/defined_names.cpp -o CMakeFiles/normal_forms.dir/defined_names.cpp.s
 
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/elim_term_ite.cpp.o: _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/flags.make
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/elim_term_ite.cpp.o: _deps/z3-src/src/ast/normal_forms/elim_term_ite.cpp
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/elim_term_ite.cpp.o: _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/elim_term_ite.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/elim_term_ite.cpp.o -MF CMakeFiles/normal_forms.dir/elim_term_ite.cpp.o.d -o CMakeFiles/normal_forms.dir/elim_term_ite.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/elim_term_ite.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/elim_term_ite.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/elim_term_ite.cpp.o -MF CMakeFiles/normal_forms.dir/elim_term_ite.cpp.o.d -o CMakeFiles/normal_forms.dir/elim_term_ite.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/elim_term_ite.cpp
 
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/elim_term_ite.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/normal_forms.dir/elim_term_ite.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/elim_term_ite.cpp > CMakeFiles/normal_forms.dir/elim_term_ite.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/elim_term_ite.cpp > CMakeFiles/normal_forms.dir/elim_term_ite.cpp.i
 
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/elim_term_ite.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/normal_forms.dir/elim_term_ite.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/elim_term_ite.cpp -o CMakeFiles/normal_forms.dir/elim_term_ite.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/elim_term_ite.cpp -o CMakeFiles/normal_forms.dir/elim_term_ite.cpp.s
 
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/name_exprs.cpp.o: _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/flags.make
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/name_exprs.cpp.o: _deps/z3-src/src/ast/normal_forms/name_exprs.cpp
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/name_exprs.cpp.o: _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/name_exprs.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/name_exprs.cpp.o -MF CMakeFiles/normal_forms.dir/name_exprs.cpp.o.d -o CMakeFiles/normal_forms.dir/name_exprs.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/name_exprs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/name_exprs.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/name_exprs.cpp.o -MF CMakeFiles/normal_forms.dir/name_exprs.cpp.o.d -o CMakeFiles/normal_forms.dir/name_exprs.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/name_exprs.cpp
 
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/name_exprs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/normal_forms.dir/name_exprs.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/name_exprs.cpp > CMakeFiles/normal_forms.dir/name_exprs.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/name_exprs.cpp > CMakeFiles/normal_forms.dir/name_exprs.cpp.i
 
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/name_exprs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/normal_forms.dir/name_exprs.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/name_exprs.cpp -o CMakeFiles/normal_forms.dir/name_exprs.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/name_exprs.cpp -o CMakeFiles/normal_forms.dir/name_exprs.cpp.s
 
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/nnf.cpp.o: _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/flags.make
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/nnf.cpp.o: _deps/z3-src/src/ast/normal_forms/nnf.cpp
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/nnf.cpp.o: _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/nnf.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/nnf.cpp.o -MF CMakeFiles/normal_forms.dir/nnf.cpp.o.d -o CMakeFiles/normal_forms.dir/nnf.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/nnf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/nnf.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/nnf.cpp.o -MF CMakeFiles/normal_forms.dir/nnf.cpp.o.d -o CMakeFiles/normal_forms.dir/nnf.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/nnf.cpp
 
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/nnf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/normal_forms.dir/nnf.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/nnf.cpp > CMakeFiles/normal_forms.dir/nnf.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/nnf.cpp > CMakeFiles/normal_forms.dir/nnf.cpp.i
 
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/nnf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/normal_forms.dir/nnf.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/nnf.cpp -o CMakeFiles/normal_forms.dir/nnf.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/nnf.cpp -o CMakeFiles/normal_forms.dir/nnf.cpp.s
 
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/pull_quant.cpp.o: _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/flags.make
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/pull_quant.cpp.o: _deps/z3-src/src/ast/normal_forms/pull_quant.cpp
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/pull_quant.cpp.o: _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/pull_quant.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/pull_quant.cpp.o -MF CMakeFiles/normal_forms.dir/pull_quant.cpp.o.d -o CMakeFiles/normal_forms.dir/pull_quant.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/pull_quant.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/pull_quant.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/pull_quant.cpp.o -MF CMakeFiles/normal_forms.dir/pull_quant.cpp.o.d -o CMakeFiles/normal_forms.dir/pull_quant.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/pull_quant.cpp
 
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/pull_quant.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/normal_forms.dir/pull_quant.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/pull_quant.cpp > CMakeFiles/normal_forms.dir/pull_quant.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/pull_quant.cpp > CMakeFiles/normal_forms.dir/pull_quant.cpp.i
 
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/pull_quant.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/normal_forms.dir/pull_quant.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/pull_quant.cpp -o CMakeFiles/normal_forms.dir/pull_quant.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms/pull_quant.cpp -o CMakeFiles/normal_forms.dir/pull_quant.cpp.s
 
 normal_forms: _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/defined_names.cpp.o
 normal_forms: _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/elim_term_ite.cpp.o
@@ -158,10 +158,10 @@ _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build: normal_fo
 .PHONY : _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/build
 
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/clean:
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && $(CMAKE_COMMAND) -P CMakeFiles/normal_forms.dir/cmake_clean.cmake
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms && $(CMAKE_COMMAND) -P CMakeFiles/normal_forms.dir/cmake_clean.cmake
 .PHONY : _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/clean
 
 _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/depend: _deps/z3-build/src/ast/normal_forms/nnf_params.hpp
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/LydiaSyft /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms /home/vboxuser/LydiaSyft/build /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stella/LydiaSyft /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/normal_forms /home/stella/LydiaSyft/build /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/z3-build/src/ast/normal_forms/CMakeFiles/normal_forms.dir/depend
 

@@ -28,8 +28,8 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 include(ExternalProject)
 ExternalProject_Add(z3-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/Z3Prover/z3" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "z3-4.8.12"
-                    SOURCE_DIR          "/home/vboxuser/LydiaSyft/build/_deps/z3-src"
-                    BINARY_DIR          "/home/vboxuser/LydiaSyft/build/_deps/z3-build"
+                    SOURCE_DIR          "/home/stella/LydiaSyft/build/_deps/z3-src"
+                    BINARY_DIR          "/home/stella/LydiaSyft/build/_deps/z3-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

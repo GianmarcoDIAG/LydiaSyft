@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/cmd_context//CMakeFiles/progress.marks
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/cmd_context/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles /home/stella/LydiaSyft/build/_deps/z3-build/src/cmd_context//CMakeFiles/progress.marks
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/cmd_context/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/cmd_context/clean
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/cmd_context/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/cmd_context/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/cmd_context/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/cmd_context/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/cmd_context/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/rule:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/rule
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/rule
 .PHONY : _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ cmd_context: _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/rule
 
 # fast build rule for target.
 cmd_context/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build
 .PHONY : cmd_context/fast
 
 basic_cmds.o: basic_cmds.cpp.o
@@ -180,7 +180,7 @@ basic_cmds.o: basic_cmds.cpp.o
 
 # target to build an object file
 basic_cmds.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/basic_cmds.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/basic_cmds.cpp.o
 .PHONY : basic_cmds.cpp.o
 
 basic_cmds.i: basic_cmds.cpp.i
@@ -188,7 +188,7 @@ basic_cmds.i: basic_cmds.cpp.i
 
 # target to preprocess a source file
 basic_cmds.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/basic_cmds.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/basic_cmds.cpp.i
 .PHONY : basic_cmds.cpp.i
 
 basic_cmds.s: basic_cmds.cpp.s
@@ -196,7 +196,7 @@ basic_cmds.s: basic_cmds.cpp.s
 
 # target to generate assembly for a file
 basic_cmds.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/basic_cmds.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/basic_cmds.cpp.s
 .PHONY : basic_cmds.cpp.s
 
 cmd_context.o: cmd_context.cpp.o
@@ -204,7 +204,7 @@ cmd_context.o: cmd_context.cpp.o
 
 # target to build an object file
 cmd_context.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context.cpp.o
 .PHONY : cmd_context.cpp.o
 
 cmd_context.i: cmd_context.cpp.i
@@ -212,7 +212,7 @@ cmd_context.i: cmd_context.cpp.i
 
 # target to preprocess a source file
 cmd_context.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context.cpp.i
 .PHONY : cmd_context.cpp.i
 
 cmd_context.s: cmd_context.cpp.s
@@ -220,7 +220,7 @@ cmd_context.s: cmd_context.cpp.s
 
 # target to generate assembly for a file
 cmd_context.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context.cpp.s
 .PHONY : cmd_context.cpp.s
 
 cmd_context_to_goal.o: cmd_context_to_goal.cpp.o
@@ -228,7 +228,7 @@ cmd_context_to_goal.o: cmd_context_to_goal.cpp.o
 
 # target to build an object file
 cmd_context_to_goal.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.o
 .PHONY : cmd_context_to_goal.cpp.o
 
 cmd_context_to_goal.i: cmd_context_to_goal.cpp.i
@@ -236,7 +236,7 @@ cmd_context_to_goal.i: cmd_context_to_goal.cpp.i
 
 # target to preprocess a source file
 cmd_context_to_goal.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.i
 .PHONY : cmd_context_to_goal.cpp.i
 
 cmd_context_to_goal.s: cmd_context_to_goal.cpp.s
@@ -244,7 +244,7 @@ cmd_context_to_goal.s: cmd_context_to_goal.cpp.s
 
 # target to generate assembly for a file
 cmd_context_to_goal.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_context_to_goal.cpp.s
 .PHONY : cmd_context_to_goal.cpp.s
 
 cmd_util.o: cmd_util.cpp.o
@@ -252,7 +252,7 @@ cmd_util.o: cmd_util.cpp.o
 
 # target to build an object file
 cmd_util.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_util.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_util.cpp.o
 .PHONY : cmd_util.cpp.o
 
 cmd_util.i: cmd_util.cpp.i
@@ -260,7 +260,7 @@ cmd_util.i: cmd_util.cpp.i
 
 # target to preprocess a source file
 cmd_util.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_util.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_util.cpp.i
 .PHONY : cmd_util.cpp.i
 
 cmd_util.s: cmd_util.cpp.s
@@ -268,7 +268,7 @@ cmd_util.s: cmd_util.cpp.s
 
 # target to generate assembly for a file
 cmd_util.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_util.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/cmd_util.cpp.s
 .PHONY : cmd_util.cpp.s
 
 echo_tactic.o: echo_tactic.cpp.o
@@ -276,7 +276,7 @@ echo_tactic.o: echo_tactic.cpp.o
 
 # target to build an object file
 echo_tactic.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/echo_tactic.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/echo_tactic.cpp.o
 .PHONY : echo_tactic.cpp.o
 
 echo_tactic.i: echo_tactic.cpp.i
@@ -284,7 +284,7 @@ echo_tactic.i: echo_tactic.cpp.i
 
 # target to preprocess a source file
 echo_tactic.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/echo_tactic.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/echo_tactic.cpp.i
 .PHONY : echo_tactic.cpp.i
 
 echo_tactic.s: echo_tactic.cpp.s
@@ -292,7 +292,7 @@ echo_tactic.s: echo_tactic.cpp.s
 
 # target to generate assembly for a file
 echo_tactic.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/echo_tactic.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/echo_tactic.cpp.s
 .PHONY : echo_tactic.cpp.s
 
 eval_cmd.o: eval_cmd.cpp.o
@@ -300,7 +300,7 @@ eval_cmd.o: eval_cmd.cpp.o
 
 # target to build an object file
 eval_cmd.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/eval_cmd.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/eval_cmd.cpp.o
 .PHONY : eval_cmd.cpp.o
 
 eval_cmd.i: eval_cmd.cpp.i
@@ -308,7 +308,7 @@ eval_cmd.i: eval_cmd.cpp.i
 
 # target to preprocess a source file
 eval_cmd.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/eval_cmd.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/eval_cmd.cpp.i
 .PHONY : eval_cmd.cpp.i
 
 eval_cmd.s: eval_cmd.cpp.s
@@ -316,7 +316,7 @@ eval_cmd.s: eval_cmd.cpp.s
 
 # target to generate assembly for a file
 eval_cmd.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/eval_cmd.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/eval_cmd.cpp.s
 .PHONY : eval_cmd.cpp.s
 
 parametric_cmd.o: parametric_cmd.cpp.o
@@ -324,7 +324,7 @@ parametric_cmd.o: parametric_cmd.cpp.o
 
 # target to build an object file
 parametric_cmd.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/parametric_cmd.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/parametric_cmd.cpp.o
 .PHONY : parametric_cmd.cpp.o
 
 parametric_cmd.i: parametric_cmd.cpp.i
@@ -332,7 +332,7 @@ parametric_cmd.i: parametric_cmd.cpp.i
 
 # target to preprocess a source file
 parametric_cmd.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/parametric_cmd.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/parametric_cmd.cpp.i
 .PHONY : parametric_cmd.cpp.i
 
 parametric_cmd.s: parametric_cmd.cpp.s
@@ -340,7 +340,7 @@ parametric_cmd.s: parametric_cmd.cpp.s
 
 # target to generate assembly for a file
 parametric_cmd.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/parametric_cmd.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/parametric_cmd.cpp.s
 .PHONY : parametric_cmd.cpp.s
 
 pdecl.o: pdecl.cpp.o
@@ -348,7 +348,7 @@ pdecl.o: pdecl.cpp.o
 
 # target to build an object file
 pdecl.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/pdecl.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/pdecl.cpp.o
 .PHONY : pdecl.cpp.o
 
 pdecl.i: pdecl.cpp.i
@@ -356,7 +356,7 @@ pdecl.i: pdecl.cpp.i
 
 # target to preprocess a source file
 pdecl.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/pdecl.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/pdecl.cpp.i
 .PHONY : pdecl.cpp.i
 
 pdecl.s: pdecl.cpp.s
@@ -364,7 +364,7 @@ pdecl.s: pdecl.cpp.s
 
 # target to generate assembly for a file
 pdecl.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/pdecl.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/pdecl.cpp.s
 .PHONY : pdecl.cpp.s
 
 simplify_cmd.o: simplify_cmd.cpp.o
@@ -372,7 +372,7 @@ simplify_cmd.o: simplify_cmd.cpp.o
 
 # target to build an object file
 simplify_cmd.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/simplify_cmd.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/simplify_cmd.cpp.o
 .PHONY : simplify_cmd.cpp.o
 
 simplify_cmd.i: simplify_cmd.cpp.i
@@ -380,7 +380,7 @@ simplify_cmd.i: simplify_cmd.cpp.i
 
 # target to preprocess a source file
 simplify_cmd.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/simplify_cmd.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/simplify_cmd.cpp.i
 .PHONY : simplify_cmd.cpp.i
 
 simplify_cmd.s: simplify_cmd.cpp.s
@@ -388,7 +388,7 @@ simplify_cmd.s: simplify_cmd.cpp.s
 
 # target to generate assembly for a file
 simplify_cmd.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/simplify_cmd.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/simplify_cmd.cpp.s
 .PHONY : simplify_cmd.cpp.s
 
 tactic_cmds.o: tactic_cmds.cpp.o
@@ -396,7 +396,7 @@ tactic_cmds.o: tactic_cmds.cpp.o
 
 # target to build an object file
 tactic_cmds.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_cmds.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_cmds.cpp.o
 .PHONY : tactic_cmds.cpp.o
 
 tactic_cmds.i: tactic_cmds.cpp.i
@@ -404,7 +404,7 @@ tactic_cmds.i: tactic_cmds.cpp.i
 
 # target to preprocess a source file
 tactic_cmds.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_cmds.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_cmds.cpp.i
 .PHONY : tactic_cmds.cpp.i
 
 tactic_cmds.s: tactic_cmds.cpp.s
@@ -412,7 +412,7 @@ tactic_cmds.s: tactic_cmds.cpp.s
 
 # target to generate assembly for a file
 tactic_cmds.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_cmds.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_cmds.cpp.s
 .PHONY : tactic_cmds.cpp.s
 
 tactic_manager.o: tactic_manager.cpp.o
@@ -420,7 +420,7 @@ tactic_manager.o: tactic_manager.cpp.o
 
 # target to build an object file
 tactic_manager.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_manager.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_manager.cpp.o
 .PHONY : tactic_manager.cpp.o
 
 tactic_manager.i: tactic_manager.cpp.i
@@ -428,7 +428,7 @@ tactic_manager.i: tactic_manager.cpp.i
 
 # target to preprocess a source file
 tactic_manager.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_manager.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_manager.cpp.i
 .PHONY : tactic_manager.cpp.i
 
 tactic_manager.s: tactic_manager.cpp.s
@@ -436,7 +436,7 @@ tactic_manager.s: tactic_manager.cpp.s
 
 # target to generate assembly for a file
 tactic_manager.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_manager.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/build.make _deps/z3-build/src/cmd_context/CMakeFiles/cmd_context.dir/tactic_manager.cpp.s
 .PHONY : tactic_manager.cpp.s
 
 # Help Target
@@ -496,6 +496,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

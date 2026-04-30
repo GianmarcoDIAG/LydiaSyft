@@ -18,7 +18,7 @@
 
 
 int main(int argc, char ** argv) {
-    std::string partition_file = "/home/vboxuser/LydiaSyft/examples/01_quickstart/test_vars.part";
+    std::string partition_file = "/examples/01_quickstart/test_vars.part";
     std::cout << "Open file: " << partition_file << std::endl;
     
     

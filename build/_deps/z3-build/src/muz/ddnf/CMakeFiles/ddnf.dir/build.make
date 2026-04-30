@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 # Include any dependencies generated for this target.
 include _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/depend.make
@@ -72,16 +72,16 @@ include _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/flags.make
 _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/ddnf.cpp.o: _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/flags.make
 _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/ddnf.cpp.o: _deps/z3-src/src/muz/ddnf/ddnf.cpp
 _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/ddnf.cpp.o: _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/ddnf.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/muz/ddnf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/ddnf.cpp.o -MF CMakeFiles/ddnf.dir/ddnf.cpp.o.d -o CMakeFiles/ddnf.dir/ddnf.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/muz/ddnf/ddnf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/ddnf.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/muz/ddnf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/ddnf.cpp.o -MF CMakeFiles/ddnf.dir/ddnf.cpp.o.d -o CMakeFiles/ddnf.dir/ddnf.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/muz/ddnf/ddnf.cpp
 
 _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/ddnf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ddnf.dir/ddnf.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/muz/ddnf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/muz/ddnf/ddnf.cpp > CMakeFiles/ddnf.dir/ddnf.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/muz/ddnf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/muz/ddnf/ddnf.cpp > CMakeFiles/ddnf.dir/ddnf.cpp.i
 
 _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/ddnf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ddnf.dir/ddnf.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/muz/ddnf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/muz/ddnf/ddnf.cpp -o CMakeFiles/ddnf.dir/ddnf.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/muz/ddnf && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/muz/ddnf/ddnf.cpp -o CMakeFiles/ddnf.dir/ddnf.cpp.s
 
 ddnf: _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/ddnf.cpp.o
 ddnf: _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/build.make
@@ -92,10 +92,10 @@ _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/build: ddnf
 .PHONY : _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/build
 
 _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/clean:
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/muz/ddnf && $(CMAKE_COMMAND) -P CMakeFiles/ddnf.dir/cmake_clean.cmake
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/muz/ddnf && $(CMAKE_COMMAND) -P CMakeFiles/ddnf.dir/cmake_clean.cmake
 .PHONY : _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/clean
 
 _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/LydiaSyft /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/muz/ddnf /home/vboxuser/LydiaSyft/build /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/muz/ddnf /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stella/LydiaSyft /home/stella/LydiaSyft/build/_deps/z3-src/src/muz/ddnf /home/stella/LydiaSyft/build /home/stella/LydiaSyft/build/_deps/z3-build/src/muz/ddnf /home/stella/LydiaSyft/build/_deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/z3-build/src/muz/ddnf/CMakeFiles/ddnf.dir/depend
 

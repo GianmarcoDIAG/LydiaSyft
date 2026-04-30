@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/nlsat//CMakeFiles/progress.marks
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/nlsat/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles /home/stella/LydiaSyft/build/_deps/z3-build/src/nlsat//CMakeFiles/progress.marks
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/nlsat/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/nlsat/clean
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/nlsat/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/nlsat/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/nlsat/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/nlsat/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/nlsat/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/rule:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/rule
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/rule
 .PHONY : _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ nlsat: _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/rule
 
 # fast build rule for target.
 nlsat/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build
 .PHONY : nlsat/fast
 
 nlsat_clause.o: nlsat_clause.cpp.o
@@ -180,7 +180,7 @@ nlsat_clause.o: nlsat_clause.cpp.o
 
 # target to build an object file
 nlsat_clause.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_clause.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_clause.cpp.o
 .PHONY : nlsat_clause.cpp.o
 
 nlsat_clause.i: nlsat_clause.cpp.i
@@ -188,7 +188,7 @@ nlsat_clause.i: nlsat_clause.cpp.i
 
 # target to preprocess a source file
 nlsat_clause.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_clause.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_clause.cpp.i
 .PHONY : nlsat_clause.cpp.i
 
 nlsat_clause.s: nlsat_clause.cpp.s
@@ -196,7 +196,7 @@ nlsat_clause.s: nlsat_clause.cpp.s
 
 # target to generate assembly for a file
 nlsat_clause.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_clause.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_clause.cpp.s
 .PHONY : nlsat_clause.cpp.s
 
 nlsat_evaluator.o: nlsat_evaluator.cpp.o
@@ -204,7 +204,7 @@ nlsat_evaluator.o: nlsat_evaluator.cpp.o
 
 # target to build an object file
 nlsat_evaluator.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_evaluator.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_evaluator.cpp.o
 .PHONY : nlsat_evaluator.cpp.o
 
 nlsat_evaluator.i: nlsat_evaluator.cpp.i
@@ -212,7 +212,7 @@ nlsat_evaluator.i: nlsat_evaluator.cpp.i
 
 # target to preprocess a source file
 nlsat_evaluator.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_evaluator.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_evaluator.cpp.i
 .PHONY : nlsat_evaluator.cpp.i
 
 nlsat_evaluator.s: nlsat_evaluator.cpp.s
@@ -220,7 +220,7 @@ nlsat_evaluator.s: nlsat_evaluator.cpp.s
 
 # target to generate assembly for a file
 nlsat_evaluator.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_evaluator.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_evaluator.cpp.s
 .PHONY : nlsat_evaluator.cpp.s
 
 nlsat_explain.o: nlsat_explain.cpp.o
@@ -228,7 +228,7 @@ nlsat_explain.o: nlsat_explain.cpp.o
 
 # target to build an object file
 nlsat_explain.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_explain.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_explain.cpp.o
 .PHONY : nlsat_explain.cpp.o
 
 nlsat_explain.i: nlsat_explain.cpp.i
@@ -236,7 +236,7 @@ nlsat_explain.i: nlsat_explain.cpp.i
 
 # target to preprocess a source file
 nlsat_explain.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_explain.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_explain.cpp.i
 .PHONY : nlsat_explain.cpp.i
 
 nlsat_explain.s: nlsat_explain.cpp.s
@@ -244,7 +244,7 @@ nlsat_explain.s: nlsat_explain.cpp.s
 
 # target to generate assembly for a file
 nlsat_explain.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_explain.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_explain.cpp.s
 .PHONY : nlsat_explain.cpp.s
 
 nlsat_interval_set.o: nlsat_interval_set.cpp.o
@@ -252,7 +252,7 @@ nlsat_interval_set.o: nlsat_interval_set.cpp.o
 
 # target to build an object file
 nlsat_interval_set.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_interval_set.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_interval_set.cpp.o
 .PHONY : nlsat_interval_set.cpp.o
 
 nlsat_interval_set.i: nlsat_interval_set.cpp.i
@@ -260,7 +260,7 @@ nlsat_interval_set.i: nlsat_interval_set.cpp.i
 
 # target to preprocess a source file
 nlsat_interval_set.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_interval_set.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_interval_set.cpp.i
 .PHONY : nlsat_interval_set.cpp.i
 
 nlsat_interval_set.s: nlsat_interval_set.cpp.s
@@ -268,7 +268,7 @@ nlsat_interval_set.s: nlsat_interval_set.cpp.s
 
 # target to generate assembly for a file
 nlsat_interval_set.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_interval_set.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_interval_set.cpp.s
 .PHONY : nlsat_interval_set.cpp.s
 
 nlsat_solver.o: nlsat_solver.cpp.o
@@ -276,7 +276,7 @@ nlsat_solver.o: nlsat_solver.cpp.o
 
 # target to build an object file
 nlsat_solver.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_solver.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_solver.cpp.o
 .PHONY : nlsat_solver.cpp.o
 
 nlsat_solver.i: nlsat_solver.cpp.i
@@ -284,7 +284,7 @@ nlsat_solver.i: nlsat_solver.cpp.i
 
 # target to preprocess a source file
 nlsat_solver.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_solver.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_solver.cpp.i
 .PHONY : nlsat_solver.cpp.i
 
 nlsat_solver.s: nlsat_solver.cpp.s
@@ -292,7 +292,7 @@ nlsat_solver.s: nlsat_solver.cpp.s
 
 # target to generate assembly for a file
 nlsat_solver.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_solver.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_solver.cpp.s
 .PHONY : nlsat_solver.cpp.s
 
 nlsat_types.o: nlsat_types.cpp.o
@@ -300,7 +300,7 @@ nlsat_types.o: nlsat_types.cpp.o
 
 # target to build an object file
 nlsat_types.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_types.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_types.cpp.o
 .PHONY : nlsat_types.cpp.o
 
 nlsat_types.i: nlsat_types.cpp.i
@@ -308,7 +308,7 @@ nlsat_types.i: nlsat_types.cpp.i
 
 # target to preprocess a source file
 nlsat_types.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_types.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_types.cpp.i
 .PHONY : nlsat_types.cpp.i
 
 nlsat_types.s: nlsat_types.cpp.s
@@ -316,7 +316,7 @@ nlsat_types.s: nlsat_types.cpp.s
 
 # target to generate assembly for a file
 nlsat_types.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_types.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/build.make _deps/z3-build/src/nlsat/CMakeFiles/nlsat.dir/nlsat_types.cpp.s
 .PHONY : nlsat_types.cpp.s
 
 # Help Target
@@ -361,6 +361,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

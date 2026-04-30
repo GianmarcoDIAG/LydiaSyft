@@ -1,4 +1,4 @@
-# Install script for directory: /home/vboxuser/LydiaSyft/examples/01_quickstart
+# Install script for directory: /home/stella/LydiaSyft/examples/01_quickstart
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

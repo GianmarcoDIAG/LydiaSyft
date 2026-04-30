@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/LydiaSyft.dir/depend.make
@@ -70,102 +70,102 @@ include src/CMakeFiles/LydiaSyft.dir/progress.make
 include src/CMakeFiles/LydiaSyft.dir/flags.make
 
 src/CMakeFiles/LydiaSyft.dir/Main.cpp.o: src/CMakeFiles/LydiaSyft.dir/flags.make
-src/CMakeFiles/LydiaSyft.dir/Main.cpp.o: /home/vboxuser/LydiaSyft/src/Main.cpp
+src/CMakeFiles/LydiaSyft.dir/Main.cpp.o: /home/stella/LydiaSyft/src/Main.cpp
 src/CMakeFiles/LydiaSyft.dir/Main.cpp.o: src/CMakeFiles/LydiaSyft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/LydiaSyft.dir/Main.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/LydiaSyft.dir/Main.cpp.o -MF CMakeFiles/LydiaSyft.dir/Main.cpp.o.d -o CMakeFiles/LydiaSyft.dir/Main.cpp.o -c /home/vboxuser/LydiaSyft/src/Main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/LydiaSyft.dir/Main.cpp.o"
+	cd /home/stella/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/LydiaSyft.dir/Main.cpp.o -MF CMakeFiles/LydiaSyft.dir/Main.cpp.o.d -o CMakeFiles/LydiaSyft.dir/Main.cpp.o -c /home/stella/LydiaSyft/src/Main.cpp
 
 src/CMakeFiles/LydiaSyft.dir/Main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LydiaSyft.dir/Main.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/src/Main.cpp > CMakeFiles/LydiaSyft.dir/Main.cpp.i
+	cd /home/stella/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/src/Main.cpp > CMakeFiles/LydiaSyft.dir/Main.cpp.i
 
 src/CMakeFiles/LydiaSyft.dir/Main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LydiaSyft.dir/Main.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/src/Main.cpp -o CMakeFiles/LydiaSyft.dir/Main.cpp.s
+	cd /home/stella/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/src/Main.cpp -o CMakeFiles/LydiaSyft.dir/Main.cpp.s
 
 src/CMakeFiles/LydiaSyft.dir/cli/base.cpp.o: src/CMakeFiles/LydiaSyft.dir/flags.make
-src/CMakeFiles/LydiaSyft.dir/cli/base.cpp.o: /home/vboxuser/LydiaSyft/src/cli/base.cpp
+src/CMakeFiles/LydiaSyft.dir/cli/base.cpp.o: /home/stella/LydiaSyft/src/cli/base.cpp
 src/CMakeFiles/LydiaSyft.dir/cli/base.cpp.o: src/CMakeFiles/LydiaSyft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/LydiaSyft.dir/cli/base.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/LydiaSyft.dir/cli/base.cpp.o -MF CMakeFiles/LydiaSyft.dir/cli/base.cpp.o.d -o CMakeFiles/LydiaSyft.dir/cli/base.cpp.o -c /home/vboxuser/LydiaSyft/src/cli/base.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/LydiaSyft.dir/cli/base.cpp.o"
+	cd /home/stella/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/LydiaSyft.dir/cli/base.cpp.o -MF CMakeFiles/LydiaSyft.dir/cli/base.cpp.o.d -o CMakeFiles/LydiaSyft.dir/cli/base.cpp.o -c /home/stella/LydiaSyft/src/cli/base.cpp
 
 src/CMakeFiles/LydiaSyft.dir/cli/base.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LydiaSyft.dir/cli/base.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/src/cli/base.cpp > CMakeFiles/LydiaSyft.dir/cli/base.cpp.i
+	cd /home/stella/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/src/cli/base.cpp > CMakeFiles/LydiaSyft.dir/cli/base.cpp.i
 
 src/CMakeFiles/LydiaSyft.dir/cli/base.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LydiaSyft.dir/cli/base.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/src/cli/base.cpp -o CMakeFiles/LydiaSyft.dir/cli/base.cpp.s
+	cd /home/stella/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/src/cli/base.cpp -o CMakeFiles/LydiaSyft.dir/cli/base.cpp.s
 
 src/CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.o: src/CMakeFiles/LydiaSyft.dir/flags.make
-src/CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.o: /home/vboxuser/LydiaSyft/src/cli/fairness.cpp
+src/CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.o: /home/stella/LydiaSyft/src/cli/fairness.cpp
 src/CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.o: src/CMakeFiles/LydiaSyft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.o -MF CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.o.d -o CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.o -c /home/vboxuser/LydiaSyft/src/cli/fairness.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.o"
+	cd /home/stella/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.o -MF CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.o.d -o CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.o -c /home/stella/LydiaSyft/src/cli/fairness.cpp
 
 src/CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/src/cli/fairness.cpp > CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.i
+	cd /home/stella/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/src/cli/fairness.cpp > CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.i
 
 src/CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/src/cli/fairness.cpp -o CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.s
+	cd /home/stella/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/src/cli/fairness.cpp -o CMakeFiles/LydiaSyft.dir/cli/fairness.cpp.s
 
 src/CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.o: src/CMakeFiles/LydiaSyft.dir/flags.make
-src/CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.o: /home/vboxuser/LydiaSyft/src/cli/gr1.cpp
+src/CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.o: /home/stella/LydiaSyft/src/cli/gr1.cpp
 src/CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.o: src/CMakeFiles/LydiaSyft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.o -MF CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.o.d -o CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.o -c /home/vboxuser/LydiaSyft/src/cli/gr1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.o"
+	cd /home/stella/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.o -MF CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.o.d -o CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.o -c /home/stella/LydiaSyft/src/cli/gr1.cpp
 
 src/CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/src/cli/gr1.cpp > CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.i
+	cd /home/stella/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/src/cli/gr1.cpp > CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.i
 
 src/CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/src/cli/gr1.cpp -o CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.s
+	cd /home/stella/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/src/cli/gr1.cpp -o CMakeFiles/LydiaSyft.dir/cli/gr1.cpp.s
 
 src/CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.o: src/CMakeFiles/LydiaSyft.dir/flags.make
-src/CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.o: /home/vboxuser/LydiaSyft/src/cli/maxset.cpp
+src/CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.o: /home/stella/LydiaSyft/src/cli/maxset.cpp
 src/CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.o: src/CMakeFiles/LydiaSyft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.o -MF CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.o.d -o CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.o -c /home/vboxuser/LydiaSyft/src/cli/maxset.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.o"
+	cd /home/stella/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.o -MF CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.o.d -o CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.o -c /home/stella/LydiaSyft/src/cli/maxset.cpp
 
 src/CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/src/cli/maxset.cpp > CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.i
+	cd /home/stella/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/src/cli/maxset.cpp > CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.i
 
 src/CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/src/cli/maxset.cpp -o CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.s
+	cd /home/stella/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/src/cli/maxset.cpp -o CMakeFiles/LydiaSyft.dir/cli/maxset.cpp.s
 
 src/CMakeFiles/LydiaSyft.dir/cli/stability.cpp.o: src/CMakeFiles/LydiaSyft.dir/flags.make
-src/CMakeFiles/LydiaSyft.dir/cli/stability.cpp.o: /home/vboxuser/LydiaSyft/src/cli/stability.cpp
+src/CMakeFiles/LydiaSyft.dir/cli/stability.cpp.o: /home/stella/LydiaSyft/src/cli/stability.cpp
 src/CMakeFiles/LydiaSyft.dir/cli/stability.cpp.o: src/CMakeFiles/LydiaSyft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/LydiaSyft.dir/cli/stability.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/LydiaSyft.dir/cli/stability.cpp.o -MF CMakeFiles/LydiaSyft.dir/cli/stability.cpp.o.d -o CMakeFiles/LydiaSyft.dir/cli/stability.cpp.o -c /home/vboxuser/LydiaSyft/src/cli/stability.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/LydiaSyft.dir/cli/stability.cpp.o"
+	cd /home/stella/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/LydiaSyft.dir/cli/stability.cpp.o -MF CMakeFiles/LydiaSyft.dir/cli/stability.cpp.o.d -o CMakeFiles/LydiaSyft.dir/cli/stability.cpp.o -c /home/stella/LydiaSyft/src/cli/stability.cpp
 
 src/CMakeFiles/LydiaSyft.dir/cli/stability.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LydiaSyft.dir/cli/stability.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/src/cli/stability.cpp > CMakeFiles/LydiaSyft.dir/cli/stability.cpp.i
+	cd /home/stella/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/src/cli/stability.cpp > CMakeFiles/LydiaSyft.dir/cli/stability.cpp.i
 
 src/CMakeFiles/LydiaSyft.dir/cli/stability.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LydiaSyft.dir/cli/stability.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/src/cli/stability.cpp -o CMakeFiles/LydiaSyft.dir/cli/stability.cpp.s
+	cd /home/stella/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/src/cli/stability.cpp -o CMakeFiles/LydiaSyft.dir/cli/stability.cpp.s
 
 src/CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.o: src/CMakeFiles/LydiaSyft.dir/flags.make
-src/CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.o: /home/vboxuser/LydiaSyft/src/cli/synthesis.cpp
+src/CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.o: /home/stella/LydiaSyft/src/cli/synthesis.cpp
 src/CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.o: src/CMakeFiles/LydiaSyft.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.o -MF CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.o.d -o CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.o -c /home/vboxuser/LydiaSyft/src/cli/synthesis.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.o"
+	cd /home/stella/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.o -MF CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.o.d -o CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.o -c /home/stella/LydiaSyft/src/cli/synthesis.cpp
 
 src/CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/src/cli/synthesis.cpp > CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.i
+	cd /home/stella/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/src/cli/synthesis.cpp > CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.i
 
 src/CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/src/cli/synthesis.cpp -o CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.s
+	cd /home/stella/LydiaSyft/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/src/cli/synthesis.cpp -o CMakeFiles/LydiaSyft.dir/cli/synthesis.cpp.s
 
 # Object files for target LydiaSyft
 LydiaSyft_OBJECTS = \
@@ -206,18 +206,18 @@ bin/LydiaSyft: /usr/local/lib/libmonabdd.a
 bin/LydiaSyft: /usr/local/lib/libmonamem.a
 bin/LydiaSyft: _deps/z3-build/libz3.a
 bin/LydiaSyft: src/CMakeFiles/LydiaSyft.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ../bin/LydiaSyft"
-	cd /home/vboxuser/LydiaSyft/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LydiaSyft.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ../bin/LydiaSyft"
+	cd /home/stella/LydiaSyft/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LydiaSyft.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/LydiaSyft.dir/build: bin/LydiaSyft
 .PHONY : src/CMakeFiles/LydiaSyft.dir/build
 
 src/CMakeFiles/LydiaSyft.dir/clean:
-	cd /home/vboxuser/LydiaSyft/build/src && $(CMAKE_COMMAND) -P CMakeFiles/LydiaSyft.dir/cmake_clean.cmake
+	cd /home/stella/LydiaSyft/build/src && $(CMAKE_COMMAND) -P CMakeFiles/LydiaSyft.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/LydiaSyft.dir/clean
 
 src/CMakeFiles/LydiaSyft.dir/depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/LydiaSyft /home/vboxuser/LydiaSyft/src /home/vboxuser/LydiaSyft/build /home/vboxuser/LydiaSyft/build/src /home/vboxuser/LydiaSyft/build/src/CMakeFiles/LydiaSyft.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stella/LydiaSyft /home/stella/LydiaSyft/src /home/stella/LydiaSyft/build /home/stella/LydiaSyft/build/src /home/stella/LydiaSyft/build/src/CMakeFiles/LydiaSyft.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/CMakeFiles/LydiaSyft.dir/depend
 

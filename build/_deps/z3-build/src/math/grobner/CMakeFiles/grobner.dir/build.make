@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 # Include any dependencies generated for this target.
 include _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/depend.make
@@ -72,44 +72,44 @@ include _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/flags.make
 _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/grobner.cpp.o: _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/flags.make
 _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/grobner.cpp.o: _deps/z3-src/src/math/grobner/grobner.cpp
 _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/grobner.cpp.o: _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/grobner.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/grobner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/grobner.cpp.o -MF CMakeFiles/grobner.dir/grobner.cpp.o.d -o CMakeFiles/grobner.dir/grobner.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/grobner/grobner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/grobner.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/grobner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/grobner.cpp.o -MF CMakeFiles/grobner.dir/grobner.cpp.o.d -o CMakeFiles/grobner.dir/grobner.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/math/grobner/grobner.cpp
 
 _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/grobner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/grobner.dir/grobner.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/grobner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/grobner/grobner.cpp > CMakeFiles/grobner.dir/grobner.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/grobner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/math/grobner/grobner.cpp > CMakeFiles/grobner.dir/grobner.cpp.i
 
 _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/grobner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/grobner.dir/grobner.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/grobner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/grobner/grobner.cpp -o CMakeFiles/grobner.dir/grobner.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/grobner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/math/grobner/grobner.cpp -o CMakeFiles/grobner.dir/grobner.cpp.s
 
 _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_simplifier.cpp.o: _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/flags.make
 _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_simplifier.cpp.o: _deps/z3-src/src/math/grobner/pdd_simplifier.cpp
 _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_simplifier.cpp.o: _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_simplifier.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/grobner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_simplifier.cpp.o -MF CMakeFiles/grobner.dir/pdd_simplifier.cpp.o.d -o CMakeFiles/grobner.dir/pdd_simplifier.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/grobner/pdd_simplifier.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_simplifier.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/grobner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_simplifier.cpp.o -MF CMakeFiles/grobner.dir/pdd_simplifier.cpp.o.d -o CMakeFiles/grobner.dir/pdd_simplifier.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/math/grobner/pdd_simplifier.cpp
 
 _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_simplifier.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/grobner.dir/pdd_simplifier.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/grobner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/grobner/pdd_simplifier.cpp > CMakeFiles/grobner.dir/pdd_simplifier.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/grobner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/math/grobner/pdd_simplifier.cpp > CMakeFiles/grobner.dir/pdd_simplifier.cpp.i
 
 _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_simplifier.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/grobner.dir/pdd_simplifier.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/grobner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/grobner/pdd_simplifier.cpp -o CMakeFiles/grobner.dir/pdd_simplifier.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/grobner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/math/grobner/pdd_simplifier.cpp -o CMakeFiles/grobner.dir/pdd_simplifier.cpp.s
 
 _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_solver.cpp.o: _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/flags.make
 _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_solver.cpp.o: _deps/z3-src/src/math/grobner/pdd_solver.cpp
 _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_solver.cpp.o: _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_solver.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/grobner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_solver.cpp.o -MF CMakeFiles/grobner.dir/pdd_solver.cpp.o.d -o CMakeFiles/grobner.dir/pdd_solver.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/grobner/pdd_solver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_solver.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/grobner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_solver.cpp.o -MF CMakeFiles/grobner.dir/pdd_solver.cpp.o.d -o CMakeFiles/grobner.dir/pdd_solver.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/math/grobner/pdd_solver.cpp
 
 _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_solver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/grobner.dir/pdd_solver.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/grobner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/grobner/pdd_solver.cpp > CMakeFiles/grobner.dir/pdd_solver.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/grobner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/math/grobner/pdd_solver.cpp > CMakeFiles/grobner.dir/pdd_solver.cpp.i
 
 _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_solver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/grobner.dir/pdd_solver.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/grobner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/grobner/pdd_solver.cpp -o CMakeFiles/grobner.dir/pdd_solver.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/grobner && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/math/grobner/pdd_solver.cpp -o CMakeFiles/grobner.dir/pdd_solver.cpp.s
 
 grobner: _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/grobner.cpp.o
 grobner: _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_simplifier.cpp.o
@@ -122,10 +122,10 @@ _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/build: grobner
 .PHONY : _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/build
 
 _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/clean:
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/grobner && $(CMAKE_COMMAND) -P CMakeFiles/grobner.dir/cmake_clean.cmake
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/grobner && $(CMAKE_COMMAND) -P CMakeFiles/grobner.dir/cmake_clean.cmake
 .PHONY : _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/clean
 
 _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/LydiaSyft /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/grobner /home/vboxuser/LydiaSyft/build /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/grobner /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stella/LydiaSyft /home/stella/LydiaSyft/build/_deps/z3-src/src/math/grobner /home/stella/LydiaSyft/build /home/stella/LydiaSyft/build/_deps/z3-build/src/math/grobner /home/stella/LydiaSyft/build/_deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/depend
 

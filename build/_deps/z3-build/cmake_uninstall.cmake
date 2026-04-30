@@ -1,9 +1,9 @@
-if(NOT EXISTS "/home/vboxuser/LydiaSyft/build/_deps/z3-build/install_manifest.txt")
+if(NOT EXISTS "/home/stella/LydiaSyft/build/_deps/z3-build/install_manifest.txt")
   message(FATAL_ERROR "Cannot find install manifest: "
-          "/home/vboxuser/LydiaSyft/build/_deps/z3-build/install_manifest.txt")
+          "/home/stella/LydiaSyft/build/_deps/z3-build/install_manifest.txt")
 endif()
 
-file(READ "/home/vboxuser/LydiaSyft/build/_deps/z3-build/install_manifest.txt" files)
+file(READ "/home/stella/LydiaSyft/build/_deps/z3-build/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach(file ${files})
   set(_full_file_path "$ENV{DESTDIR}${file}")

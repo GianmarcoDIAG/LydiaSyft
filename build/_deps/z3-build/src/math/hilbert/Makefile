@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/hilbert//CMakeFiles/progress.marks
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/hilbert/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles /home/stella/LydiaSyft/build/_deps/z3-build/src/math/hilbert//CMakeFiles/progress.marks
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/hilbert/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/hilbert/clean
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/hilbert/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/hilbert/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/hilbert/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/hilbert/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/hilbert/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/rule:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/rule
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/rule
 .PHONY : _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ hilbert: _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/rule
 
 # fast build rule for target.
 hilbert/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/build.make _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/build
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/build.make _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/build
 .PHONY : hilbert/fast
 
 hilbert_basis.o: hilbert_basis.cpp.o
@@ -180,7 +180,7 @@ hilbert_basis.o: hilbert_basis.cpp.o
 
 # target to build an object file
 hilbert_basis.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/build.make _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/hilbert_basis.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/build.make _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/hilbert_basis.cpp.o
 .PHONY : hilbert_basis.cpp.o
 
 hilbert_basis.i: hilbert_basis.cpp.i
@@ -188,7 +188,7 @@ hilbert_basis.i: hilbert_basis.cpp.i
 
 # target to preprocess a source file
 hilbert_basis.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/build.make _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/hilbert_basis.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/build.make _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/hilbert_basis.cpp.i
 .PHONY : hilbert_basis.cpp.i
 
 hilbert_basis.s: hilbert_basis.cpp.s
@@ -196,7 +196,7 @@ hilbert_basis.s: hilbert_basis.cpp.s
 
 # target to generate assembly for a file
 hilbert_basis.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/build.make _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/hilbert_basis.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/build.make _deps/z3-build/src/math/hilbert/CMakeFiles/hilbert.dir/hilbert_basis.cpp.s
 .PHONY : hilbert_basis.cpp.s
 
 # Help Target
@@ -226,6 +226,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

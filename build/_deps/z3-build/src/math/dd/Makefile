@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/dd//CMakeFiles/progress.marks
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/dd/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles /home/stella/LydiaSyft/build/_deps/z3-build/src/math/dd//CMakeFiles/progress.marks
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/dd/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/dd/clean
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/dd/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/dd/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/dd/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/dd/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/dd/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/rule:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/rule
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/rule
 .PHONY : _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ dd: _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/rule
 
 # fast build rule for target.
 dd/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/build.make _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/build
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/build.make _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/build
 .PHONY : dd/fast
 
 dd_bdd.o: dd_bdd.cpp.o
@@ -180,7 +180,7 @@ dd_bdd.o: dd_bdd.cpp.o
 
 # target to build an object file
 dd_bdd.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/build.make _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/dd_bdd.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/build.make _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/dd_bdd.cpp.o
 .PHONY : dd_bdd.cpp.o
 
 dd_bdd.i: dd_bdd.cpp.i
@@ -188,7 +188,7 @@ dd_bdd.i: dd_bdd.cpp.i
 
 # target to preprocess a source file
 dd_bdd.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/build.make _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/dd_bdd.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/build.make _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/dd_bdd.cpp.i
 .PHONY : dd_bdd.cpp.i
 
 dd_bdd.s: dd_bdd.cpp.s
@@ -196,7 +196,7 @@ dd_bdd.s: dd_bdd.cpp.s
 
 # target to generate assembly for a file
 dd_bdd.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/build.make _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/dd_bdd.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/build.make _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/dd_bdd.cpp.s
 .PHONY : dd_bdd.cpp.s
 
 dd_pdd.o: dd_pdd.cpp.o
@@ -204,7 +204,7 @@ dd_pdd.o: dd_pdd.cpp.o
 
 # target to build an object file
 dd_pdd.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/build.make _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/dd_pdd.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/build.make _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/dd_pdd.cpp.o
 .PHONY : dd_pdd.cpp.o
 
 dd_pdd.i: dd_pdd.cpp.i
@@ -212,7 +212,7 @@ dd_pdd.i: dd_pdd.cpp.i
 
 # target to preprocess a source file
 dd_pdd.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/build.make _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/dd_pdd.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/build.make _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/dd_pdd.cpp.i
 .PHONY : dd_pdd.cpp.i
 
 dd_pdd.s: dd_pdd.cpp.s
@@ -220,7 +220,7 @@ dd_pdd.s: dd_pdd.cpp.s
 
 # target to generate assembly for a file
 dd_pdd.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/build.make _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/dd_pdd.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/build.make _deps/z3-build/src/math/dd/CMakeFiles/dd.dir/dd_pdd.cpp.s
 .PHONY : dd_pdd.cpp.s
 
 # Help Target
@@ -253,6 +253,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

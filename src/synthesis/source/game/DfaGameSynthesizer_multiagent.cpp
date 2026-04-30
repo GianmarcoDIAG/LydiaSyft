@@ -1,4 +1,4 @@
-#include "/home/vboxuser/LydiaSyft/src/synthesis/header/game/DfaGameSynthesizer_multiagent.h"
+#include "game/DfaGameSynthesizer_multiagent.h"
 #include "Actor.h"
 #include "game/Quantification.h"
 #include <cassert>
@@ -20,39 +20,40 @@ namespace Syft {
         transition_vector_ = var_mgr_->make_compose_vector(
                 spec_.automaton_id(), spec_.transition_function());
 
-        CUDD::BDD env_cube = var_mgr_->input_cube();
-        CUDD::BDD cube_A; //Adam
-        CUDD::BDD cube_B = var_mgr_->cudd_mgr()->bddOne(); //Eve
 
-        if (protagonist_actor.is_agent()){
-            // v is an agent: Adam = v, Eve= (other agents + env)
-            cube_A = var_mgr_->agent_cube(protagonist_actor_.id());
-            cube_B &= env_cube;
-            for (size_t i = 0; i<num_total_agents_; ++i){
-                if(i != (size_t) protagonist_actor_.id()){
-                    cube_B &= var_mgr_->agent_cube(i);
-                }
-            }
+        CUDD::BDD input_cube = var_mgr_->cudd_mgr()->bddOne();
+        CUDD::BDD output_cube = var_mgr_->cudd_mgr()->bddOne();
+
+        if(protagonist_actor_.is_environment()){
+            //the protagonist is env
+            input_cube = var_mgr_->environment_input_cube();
+            output_cube = var_mgr_->environment_output_cube();
         }else{
-            // v is env: Eve = v, Adam(main agent + peer agents)
-            cube_A = var_mgr_ -> cudd_mgr() -> bddOne();
-            for (size_t i = 0; i<num_total_agents_; ++i){
-                cube_A &= var_mgr_->agent_cube(i);
-            }
-            cube_B = var_mgr_->input_cube();
+            //the protagonist is an agent
+            std::size_t id = protagonist_actor.id();
+            input_cube = var_mgr_->agent_input_cube(id);
+            output_cube = var_mgr_->agent_output_cube(id);
         }
 
-        //If the starting actor is the protagonist (Adam), Eve will see the move
-        if(starting_actor_ == protagonist_actor_){
-            quantify_independent_variables_ = std::make_unique<Forall>(cube_B);
-            quantify_non_state_variables_ = std::make_unique<Exists>(cube_A);
+        if (starting_actor_.is_environment()) {
+            if (protagonist_actor_.is_environment()) {
+                quantify_independent_variables_ = std::make_unique<Forall>(output_cube);
+                quantify_non_state_variables_ = std::make_unique<Exists>(input_cube);
+            } else {
+                quantify_independent_variables_ = std::make_unique<NoQuantification>();
+                quantify_non_state_variables_ = std::make_unique<ForallExists>(input_cube,
+                                                                               output_cube);
+            }
         } else {
-            quantify_independent_variables_ = std::make_unique<NoQuantification>();
-            quantify_non_state_variables_ =std::make_unique<ForallExists>(cube_B, cube_A);
-        } 
-        
-
-
+            if (protagonist_actor_.is_environment()) {
+                quantify_independent_variables_ = std::make_unique<NoQuantification>();
+                quantify_non_state_variables_ = std::make_unique<ForallExists>(output_cube,
+                                                                               input_cube);
+            } else {
+                quantify_independent_variables_ = std::make_unique<Forall>(input_cube);
+                quantify_non_state_variables_ = std::make_unique<Exists>(output_cube);
+            }
+        }
     }
 
     CUDD::BDD DfaGameSynthesizer_multiagent::preimage(
@@ -82,20 +83,32 @@ namespace Syft {
     std::unordered_map<int, CUDD::BDD> DfaGameSynthesizer_multiagent::synthesize_strategy(const CUDD::BDD &winning_moves,
                                                                                const std::shared_ptr<VarMgr> &var_mgr) const {
         std::vector<CUDD::BDD> parameterized_output_function;
-        int *output_indices;
-        CUDD::BDD output_cube = var_mgr->output_cube();
-        std::size_t output_count = var_mgr->output_variable_count();
+        int *output_indices = nullptr;
+
+        //Identify the target (Adam)
+        CUDD::BDD target_cube;
+        std::size_t target_count;
+
+        if(protagonist_actor_.is_agent()){
+            target_cube = var_mgr->agent_output_cube(protagonist_actor_.id());
+            target_count = var_mgr->agent_variable_count(protagonist_actor_.id());
+        } else {
+            target_cube = var_mgr->environment_input_cube();
+            target_count = var_mgr->input_variable_count();
+        }
+
+        if(target_count == 0) return {};   
 
         // Need to negate the BDD because b.SolveEqn(...) solves the equation b = 0
-        CUDD::BDD pre = (!winning_moves).SolveEqn(output_cube,
+        CUDD::BDD pre = (!winning_moves).SolveEqn(target_cube,
                                                   parameterized_output_function,
                                                   &output_indices,
-                                                  output_count);
+                                                  (int)target_count);
 
         // Copy the index since it will be necessary in the last step
-        std::vector<int> index_copy(output_count);
+        std::vector<int> index_copy(target_count);
 
-        for (std::size_t i = 0; i < output_count; ++i) {
+        for (std::size_t i = 0; i < target_count; ++i) {
             index_copy[i] = output_indices[i];
         }
 
@@ -105,6 +118,7 @@ namespace Syft {
 
         assert(pre == verified);
 
+        //Build strategic map
         std::unordered_map<int, CUDD::BDD> output_function;
 
         // Let y_i be the i-th output variable in the BDD ordering. The parameterized
@@ -113,12 +127,12 @@ namespace Syft {
         // f_i are such that no matter what we replace p_i, ..., p_n with, the result
         // is a valid output function. We replace the parameters with 1 so that all
         // f_i are dependent only on the input and state variables.
-        for (int i = output_count - 1; i >= 0; --i) {
+        for (int i = (int)target_count - 1; i >= 0; --i) {
             int output_index = index_copy[i];
 
             output_function[output_index] = parameterized_output_function[i];
 
-            for (int j = output_count - 1; j >= i; --j) {
+            for (int j = (int)target_count - 1; j >= i; --j) {
                 int parameter_index = index_copy[j];
 
                 // Can be anything, set to the constant 1 for simplicity
@@ -130,24 +144,27 @@ namespace Syft {
             }
         }
 
+        //if(output_indices != nullptr) free(output_indices);
+
         return output_function;
     }
 
-    //std::unique_ptr<Transducer> DfaGameSynthesizer_multiagent::AbstractSingleStrategy(const SynthesisResult &result) const {
-    //    return abstract_single_strategy(result.winning_moves, var_mgr_, initial_vector_, spec_.transition_function(),
-    //                                    starting_actor_);
-    //}
+    std::unique_ptr<Transducer_multiagent> DfaGameSynthesizer_multiagent::AbstractSingleStrategy(const SynthesisResult &result) const {
+        return abstract_single_strategy(result.winning_moves, var_mgr_, initial_vector_, spec_.transition_function(),
+                                        starting_actor_, protagonist_actor_);
+    }
 
-    //std::unique_ptr<Transducer> DfaGameSynthesizer::abstract_single_strategy(
-    //        const CUDD::BDD &winning_moves,
-    //       const std::shared_ptr<VarMgr>& var_mgr,
-    //        const std::vector<int>& initial_vector,
-    //       const std::vector<CUDD::BDD>& transition_vector,
-    //        Actor starting_actor) const {
-    //   std::unordered_map<int, CUDD::BDD> strategy = synthesize_strategy(winning_moves, var_mgr);
-    //    auto transducer = std::make_unique<Transducer>(var_mgr, initial_vector, strategy, transition_vector,
-    //                                                   starting_actor);
-    //    return transducer;
-    //}
+    std::unique_ptr<Transducer_multiagent> DfaGameSynthesizer_multiagent::abstract_single_strategy(
+            const CUDD::BDD &winning_moves,
+           const std::shared_ptr<VarMgr>& var_mgr,
+            const std::vector<int>& initial_vector,
+           const std::vector<CUDD::BDD>& transition_vector,
+            Actor starting_actor,
+            Actor protagonist_actor) const {
+        std::unordered_map<int, CUDD::BDD> strategy = synthesize_strategy(winning_moves, var_mgr);
+        auto transducer_multiagent = std::make_unique<Transducer_multiagent>(var_mgr, initial_vector, strategy, transition_vector, starting_actor,
+                                                       protagonist_actor);
+        return transducer_multiagent;
+    }
 
 }

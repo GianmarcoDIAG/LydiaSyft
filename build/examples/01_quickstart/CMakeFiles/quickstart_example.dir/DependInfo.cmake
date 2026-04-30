@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/vboxuser/LydiaSyft/examples/01_quickstart/quickstart.cpp" "examples/01_quickstart/CMakeFiles/quickstart_example.dir/quickstart.cpp.o" "gcc" "examples/01_quickstart/CMakeFiles/quickstart_example.dir/quickstart.cpp.o.d"
+  "/home/stella/LydiaSyft/examples/01_quickstart/quickstart.cpp" "examples/01_quickstart/CMakeFiles/quickstart_example.dir/quickstart.cpp.o" "gcc" "examples/01_quickstart/CMakeFiles/quickstart_example.dir/quickstart.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

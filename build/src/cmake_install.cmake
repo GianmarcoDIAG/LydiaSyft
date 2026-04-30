@@ -1,4 +1,4 @@
-# Install script for directory: /home/vboxuser/LydiaSyft/src
+# Install script for directory: /home/stella/LydiaSyft/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -49,7 +49,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/LydiaSyft"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/vboxuser/LydiaSyft/build/bin/LydiaSyft")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/stella/LydiaSyft/build/bin/LydiaSyft")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/LydiaSyft" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/LydiaSyft")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -59,14 +59,14 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/lydiasyft" TYPE DIRECTORY FILES "/home/vboxuser/LydiaSyft/src/" FILES_MATCHING REGEX "/[^/]*\\.h[^/]*$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/lydiasyft" TYPE DIRECTORY FILES "/home/stella/LydiaSyft/src/" FILES_MATCHING REGEX "/[^/]*\\.h[^/]*$")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/vboxuser/LydiaSyft/build/src/utils/cmake_install.cmake")
-  include("/home/vboxuser/LydiaSyft/build/src/parser/cmake_install.cmake")
-  include("/home/vboxuser/LydiaSyft/build/src/synthesis/cmake_install.cmake")
+  include("/home/stella/LydiaSyft/build/src/utils/cmake_install.cmake")
+  include("/home/stella/LydiaSyft/build/src/parser/cmake_install.cmake")
+  include("/home/stella/LydiaSyft/build/src/synthesis/cmake_install.cmake")
 
 endif()
 

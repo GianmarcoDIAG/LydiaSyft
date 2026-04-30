@@ -50,7 +50,7 @@ unset(_cmake_expected_targets)
 add_library(z3::libz3 STATIC IMPORTED)
 
 set_target_properties(z3::libz3 PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/vboxuser/LydiaSyft/build/_deps/z3-src/src/api"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/stella/LydiaSyft/build/_deps/z3-src/src/api"
   INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:Threads::Threads>"
 )
 
@@ -58,7 +58,7 @@ set_target_properties(z3::libz3 PROPERTIES
 set_property(TARGET z3::libz3 APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(z3::libz3 PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/vboxuser/LydiaSyft/build/_deps/z3-build/libz3.a"
+  IMPORTED_LOCATION_RELEASE "/home/stella/LydiaSyft/build/_deps/z3-build/libz3.a"
   )
 
 # This file does not depend on other imported targets which have

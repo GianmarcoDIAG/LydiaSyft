@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 # Include any dependencies generated for this target.
 include examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/depend.make
@@ -70,18 +70,18 @@ include examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synt
 include examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/flags.make
 
 examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/ltlf_synthesis_with_fairness_constraints.cpp.o: examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/flags.make
-examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/ltlf_synthesis_with_fairness_constraints.cpp.o: /home/vboxuser/LydiaSyft/examples/06_ltlf_synthesis_with_fairness_conditions/ltlf_synthesis_with_fairness_constraints.cpp
+examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/ltlf_synthesis_with_fairness_constraints.cpp.o: /home/stella/LydiaSyft/examples/06_ltlf_synthesis_with_fairness_conditions/ltlf_synthesis_with_fairness_constraints.cpp
 examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/ltlf_synthesis_with_fairness_constraints.cpp.o: examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/ltlf_synthesis_with_fairness_constraints.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/examples/06_ltlf_synthesis_with_fairness_conditions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/ltlf_synthesis_with_fairness_constraints.cpp.o -MF CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/ltlf_synthesis_with_fairness_constraints.cpp.o.d -o CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/ltlf_synthesis_with_fairness_constraints.cpp.o -c /home/vboxuser/LydiaSyft/examples/06_ltlf_synthesis_with_fairness_conditions/ltlf_synthesis_with_fairness_constraints.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/ltlf_synthesis_with_fairness_constraints.cpp.o"
+	cd /home/stella/LydiaSyft/build/examples/06_ltlf_synthesis_with_fairness_conditions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/ltlf_synthesis_with_fairness_constraints.cpp.o -MF CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/ltlf_synthesis_with_fairness_constraints.cpp.o.d -o CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/ltlf_synthesis_with_fairness_constraints.cpp.o -c /home/stella/LydiaSyft/examples/06_ltlf_synthesis_with_fairness_conditions/ltlf_synthesis_with_fairness_constraints.cpp
 
 examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/ltlf_synthesis_with_fairness_constraints.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/ltlf_synthesis_with_fairness_constraints.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/examples/06_ltlf_synthesis_with_fairness_conditions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/examples/06_ltlf_synthesis_with_fairness_conditions/ltlf_synthesis_with_fairness_constraints.cpp > CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/ltlf_synthesis_with_fairness_constraints.cpp.i
+	cd /home/stella/LydiaSyft/build/examples/06_ltlf_synthesis_with_fairness_conditions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/examples/06_ltlf_synthesis_with_fairness_conditions/ltlf_synthesis_with_fairness_constraints.cpp > CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/ltlf_synthesis_with_fairness_constraints.cpp.i
 
 examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/ltlf_synthesis_with_fairness_constraints.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/ltlf_synthesis_with_fairness_constraints.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/examples/06_ltlf_synthesis_with_fairness_conditions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/examples/06_ltlf_synthesis_with_fairness_conditions/ltlf_synthesis_with_fairness_constraints.cpp -o CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/ltlf_synthesis_with_fairness_constraints.cpp.s
+	cd /home/stella/LydiaSyft/build/examples/06_ltlf_synthesis_with_fairness_conditions && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/examples/06_ltlf_synthesis_with_fairness_conditions/ltlf_synthesis_with_fairness_constraints.cpp -o CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/ltlf_synthesis_with_fairness_constraints.cpp.s
 
 # Object files for target ltlf_synthesis_with_fairness_conditions_example
 ltlf_synthesis_with_fairness_conditions_example_OBJECTS = \
@@ -110,18 +110,18 @@ bin/ltlf_synthesis_with_fairness_conditions_example: /usr/local/lib/libmonabdd.a
 bin/ltlf_synthesis_with_fairness_conditions_example: /usr/local/lib/libmonamem.a
 bin/ltlf_synthesis_with_fairness_conditions_example: _deps/z3-build/libz3.a
 bin/ltlf_synthesis_with_fairness_conditions_example: examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/ltlf_synthesis_with_fairness_conditions_example"
-	cd /home/vboxuser/LydiaSyft/build/examples/06_ltlf_synthesis_with_fairness_conditions && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/ltlf_synthesis_with_fairness_conditions_example"
+	cd /home/stella/LydiaSyft/build/examples/06_ltlf_synthesis_with_fairness_conditions && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/build: bin/ltlf_synthesis_with_fairness_conditions_example
 .PHONY : examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/build
 
 examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/clean:
-	cd /home/vboxuser/LydiaSyft/build/examples/06_ltlf_synthesis_with_fairness_conditions && $(CMAKE_COMMAND) -P CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/cmake_clean.cmake
+	cd /home/stella/LydiaSyft/build/examples/06_ltlf_synthesis_with_fairness_conditions && $(CMAKE_COMMAND) -P CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/cmake_clean.cmake
 .PHONY : examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/clean
 
 examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/LydiaSyft /home/vboxuser/LydiaSyft/examples/06_ltlf_synthesis_with_fairness_conditions /home/vboxuser/LydiaSyft/build /home/vboxuser/LydiaSyft/build/examples/06_ltlf_synthesis_with_fairness_conditions /home/vboxuser/LydiaSyft/build/examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stella/LydiaSyft /home/stella/LydiaSyft/examples/06_ltlf_synthesis_with_fairness_conditions /home/stella/LydiaSyft/build /home/stella/LydiaSyft/build/examples/06_ltlf_synthesis_with_fairness_conditions /home/stella/LydiaSyft/build/examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : examples/06_ltlf_synthesis_with_fairness_conditions/CMakeFiles/ltlf_synthesis_with_fairness_conditions_example.dir/depend
 

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/proofs//CMakeFiles/progress.marks
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/proofs/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/proofs//CMakeFiles/progress.marks
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/proofs/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/proofs/clean
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/proofs/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/proofs/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/proofs/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/proofs/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/proofs/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/rule:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/rule
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/rule
 .PHONY : _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ proofs: _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/rule
 
 # fast build rule for target.
 proofs/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/build.make _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/build
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/build.make _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/build
 .PHONY : proofs/fast
 
 proof_checker.o: proof_checker.cpp.o
@@ -180,7 +180,7 @@ proof_checker.o: proof_checker.cpp.o
 
 # target to build an object file
 proof_checker.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/build.make _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/proof_checker.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/build.make _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/proof_checker.cpp.o
 .PHONY : proof_checker.cpp.o
 
 proof_checker.i: proof_checker.cpp.i
@@ -188,7 +188,7 @@ proof_checker.i: proof_checker.cpp.i
 
 # target to preprocess a source file
 proof_checker.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/build.make _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/proof_checker.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/build.make _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/proof_checker.cpp.i
 .PHONY : proof_checker.cpp.i
 
 proof_checker.s: proof_checker.cpp.s
@@ -196,7 +196,7 @@ proof_checker.s: proof_checker.cpp.s
 
 # target to generate assembly for a file
 proof_checker.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/build.make _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/proof_checker.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/build.make _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/proof_checker.cpp.s
 .PHONY : proof_checker.cpp.s
 
 proof_utils.o: proof_utils.cpp.o
@@ -204,7 +204,7 @@ proof_utils.o: proof_utils.cpp.o
 
 # target to build an object file
 proof_utils.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/build.make _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/proof_utils.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/build.make _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/proof_utils.cpp.o
 .PHONY : proof_utils.cpp.o
 
 proof_utils.i: proof_utils.cpp.i
@@ -212,7 +212,7 @@ proof_utils.i: proof_utils.cpp.i
 
 # target to preprocess a source file
 proof_utils.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/build.make _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/proof_utils.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/build.make _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/proof_utils.cpp.i
 .PHONY : proof_utils.cpp.i
 
 proof_utils.s: proof_utils.cpp.s
@@ -220,7 +220,7 @@ proof_utils.s: proof_utils.cpp.s
 
 # target to generate assembly for a file
 proof_utils.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/build.make _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/proof_utils.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/build.make _deps/z3-build/src/ast/proofs/CMakeFiles/proofs.dir/proof_utils.cpp.s
 .PHONY : proof_utils.cpp.s
 
 # Help Target
@@ -253,6 +253,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

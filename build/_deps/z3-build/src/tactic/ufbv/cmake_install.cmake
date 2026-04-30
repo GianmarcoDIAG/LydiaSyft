@@ -1,4 +1,4 @@
-# Install script for directory: /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv
+# Install script for directory: /home/stella/LydiaSyft/build/_deps/z3-src/src/tactic/ufbv
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

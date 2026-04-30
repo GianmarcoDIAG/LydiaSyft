@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 # Utility rule file for examples.
 
@@ -74,10 +74,10 @@ examples/CMakeFiles/examples.dir/build: examples
 .PHONY : examples/CMakeFiles/examples.dir/build
 
 examples/CMakeFiles/examples.dir/clean:
-	cd /home/vboxuser/LydiaSyft/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/examples.dir/cmake_clean.cmake
+	cd /home/stella/LydiaSyft/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/examples.dir/cmake_clean.cmake
 .PHONY : examples/CMakeFiles/examples.dir/clean
 
 examples/CMakeFiles/examples.dir/depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/LydiaSyft /home/vboxuser/LydiaSyft/examples /home/vboxuser/LydiaSyft/build /home/vboxuser/LydiaSyft/build/examples /home/vboxuser/LydiaSyft/build/examples/CMakeFiles/examples.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stella/LydiaSyft /home/stella/LydiaSyft/examples /home/stella/LydiaSyft/build /home/stella/LydiaSyft/build/examples /home/stella/LydiaSyft/build/examples/CMakeFiles/examples.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : examples/CMakeFiles/examples.dir/depend
 

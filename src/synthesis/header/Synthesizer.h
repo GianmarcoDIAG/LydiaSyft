@@ -4,6 +4,7 @@
 #include <memory>
 
 #include "game/Transducer.h"
+#include "game/Transducer_multiagent.h"
 #include <tuple>
 #include <optional>
 
@@ -18,6 +19,7 @@ namespace Syft {
         CUDD::BDD winning_states;
         CUDD::BDD winning_moves;
         std::unique_ptr<Transducer> transducer;
+        std::unique_ptr<Transducer_multiagent> transducer_multiagent;
         CUDD::BDD safe_states;
     };
 
@@ -62,6 +64,7 @@ namespace Syft {
          * a transducer representing a winning strategy for the specification or nullptr if the specification is unrealizable.
          */
         virtual SynthesisResult run() const = 0;
+
     };
 
 }

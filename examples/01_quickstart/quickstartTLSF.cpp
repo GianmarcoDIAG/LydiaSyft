@@ -17,7 +17,7 @@
 #include "synthesizer/LTLfSynthesizer.h"
 
 int main(int argc, char ** argv) {
-    auto parser = Syft::Parser::read_from_file("/home/vboxuser/LydiaSyft/syfco", "/home/vboxuser/LydiaSyft/examples/01_quickstart/test_multi.tlsf");
+    auto parser = Syft::Parser::read_from_file("/LydiaSyft/syfco", "/examples/01_quickstart/test_multi.tlsf");
     auto input = parser.get_input_variables();
     auto agents = parser.get_agent_variables();
     auto formulas = parser.get_agent_formulas();

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles /home/vboxuser/LydiaSyft/build/src/synthesis//CMakeFiles/progress.marks
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/synthesis/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles /home/stella/LydiaSyft/build/src/synthesis//CMakeFiles/progress.marks
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/synthesis/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/synthesis/clean
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/synthesis/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/synthesis/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/synthesis/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/synthesis/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/synthesis/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/synthesis/CMakeFiles/synthesis.dir/rule:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/synthesis/CMakeFiles/synthesis.dir/rule
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/synthesis/CMakeFiles/synthesis.dir/rule
 .PHONY : src/synthesis/CMakeFiles/synthesis.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ synthesis: src/synthesis/CMakeFiles/synthesis.dir/rule
 
 # fast build rule for target.
 synthesis/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/build
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/build
 .PHONY : synthesis/fast
 
 source/Actor.o: source/Actor.cpp.o
@@ -180,7 +180,7 @@ source/Actor.o: source/Actor.cpp.o
 
 # target to build an object file
 source/Actor.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Actor.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Actor.cpp.o
 .PHONY : source/Actor.cpp.o
 
 source/Actor.i: source/Actor.cpp.i
@@ -188,7 +188,7 @@ source/Actor.i: source/Actor.cpp.i
 
 # target to preprocess a source file
 source/Actor.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Actor.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Actor.cpp.i
 .PHONY : source/Actor.cpp.i
 
 source/Actor.s: source/Actor.cpp.s
@@ -196,7 +196,7 @@ source/Actor.s: source/Actor.cpp.s
 
 # target to generate assembly for a file
 source/Actor.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Actor.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Actor.cpp.s
 .PHONY : source/Actor.cpp.s
 
 source/OneStepRealizability.o: source/OneStepRealizability.cpp.o
@@ -204,7 +204,7 @@ source/OneStepRealizability.o: source/OneStepRealizability.cpp.o
 
 # target to build an object file
 source/OneStepRealizability.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/OneStepRealizability.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/OneStepRealizability.cpp.o
 .PHONY : source/OneStepRealizability.cpp.o
 
 source/OneStepRealizability.i: source/OneStepRealizability.cpp.i
@@ -212,7 +212,7 @@ source/OneStepRealizability.i: source/OneStepRealizability.cpp.i
 
 # target to preprocess a source file
 source/OneStepRealizability.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/OneStepRealizability.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/OneStepRealizability.cpp.i
 .PHONY : source/OneStepRealizability.cpp.i
 
 source/OneStepRealizability.s: source/OneStepRealizability.cpp.s
@@ -220,7 +220,7 @@ source/OneStepRealizability.s: source/OneStepRealizability.cpp.s
 
 # target to generate assembly for a file
 source/OneStepRealizability.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/OneStepRealizability.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/OneStepRealizability.cpp.s
 .PHONY : source/OneStepRealizability.cpp.s
 
 source/OneStepUnrealizability.o: source/OneStepUnrealizability.cpp.o
@@ -228,7 +228,7 @@ source/OneStepUnrealizability.o: source/OneStepUnrealizability.cpp.o
 
 # target to build an object file
 source/OneStepUnrealizability.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/OneStepUnrealizability.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/OneStepUnrealizability.cpp.o
 .PHONY : source/OneStepUnrealizability.cpp.o
 
 source/OneStepUnrealizability.i: source/OneStepUnrealizability.cpp.i
@@ -236,7 +236,7 @@ source/OneStepUnrealizability.i: source/OneStepUnrealizability.cpp.i
 
 # target to preprocess a source file
 source/OneStepUnrealizability.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/OneStepUnrealizability.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/OneStepUnrealizability.cpp.i
 .PHONY : source/OneStepUnrealizability.cpp.i
 
 source/OneStepUnrealizability.s: source/OneStepUnrealizability.cpp.s
@@ -244,7 +244,7 @@ source/OneStepUnrealizability.s: source/OneStepUnrealizability.cpp.s
 
 # target to generate assembly for a file
 source/OneStepUnrealizability.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/OneStepUnrealizability.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/OneStepUnrealizability.cpp.s
 .PHONY : source/OneStepUnrealizability.cpp.s
 
 source/Preprocessing.o: source/Preprocessing.cpp.o
@@ -252,7 +252,7 @@ source/Preprocessing.o: source/Preprocessing.cpp.o
 
 # target to build an object file
 source/Preprocessing.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Preprocessing.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Preprocessing.cpp.o
 .PHONY : source/Preprocessing.cpp.o
 
 source/Preprocessing.i: source/Preprocessing.cpp.i
@@ -260,7 +260,7 @@ source/Preprocessing.i: source/Preprocessing.cpp.i
 
 # target to preprocess a source file
 source/Preprocessing.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Preprocessing.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Preprocessing.cpp.i
 .PHONY : source/Preprocessing.cpp.i
 
 source/Preprocessing.s: source/Preprocessing.cpp.s
@@ -268,7 +268,7 @@ source/Preprocessing.s: source/Preprocessing.cpp.s
 
 # target to generate assembly for a file
 source/Preprocessing.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Preprocessing.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Preprocessing.cpp.s
 .PHONY : source/Preprocessing.cpp.s
 
 source/Stopwatch.o: source/Stopwatch.cpp.o
@@ -276,7 +276,7 @@ source/Stopwatch.o: source/Stopwatch.cpp.o
 
 # target to build an object file
 source/Stopwatch.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Stopwatch.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Stopwatch.cpp.o
 .PHONY : source/Stopwatch.cpp.o
 
 source/Stopwatch.i: source/Stopwatch.cpp.i
@@ -284,7 +284,7 @@ source/Stopwatch.i: source/Stopwatch.cpp.i
 
 # target to preprocess a source file
 source/Stopwatch.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Stopwatch.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Stopwatch.cpp.i
 .PHONY : source/Stopwatch.cpp.i
 
 source/Stopwatch.s: source/Stopwatch.cpp.s
@@ -292,7 +292,7 @@ source/Stopwatch.s: source/Stopwatch.cpp.s
 
 # target to generate assembly for a file
 source/Stopwatch.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Stopwatch.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Stopwatch.cpp.s
 .PHONY : source/Stopwatch.cpp.s
 
 source/Utils.o: source/Utils.cpp.o
@@ -300,7 +300,7 @@ source/Utils.o: source/Utils.cpp.o
 
 # target to build an object file
 source/Utils.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Utils.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Utils.cpp.o
 .PHONY : source/Utils.cpp.o
 
 source/Utils.i: source/Utils.cpp.i
@@ -308,7 +308,7 @@ source/Utils.i: source/Utils.cpp.i
 
 # target to preprocess a source file
 source/Utils.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Utils.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Utils.cpp.i
 .PHONY : source/Utils.cpp.i
 
 source/Utils.s: source/Utils.cpp.s
@@ -316,7 +316,7 @@ source/Utils.s: source/Utils.cpp.s
 
 # target to generate assembly for a file
 source/Utils.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Utils.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/Utils.cpp.s
 .PHONY : source/Utils.cpp.s
 
 source/VarMgr.o: source/VarMgr.cpp.o
@@ -324,7 +324,7 @@ source/VarMgr.o: source/VarMgr.cpp.o
 
 # target to build an object file
 source/VarMgr.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/VarMgr.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/VarMgr.cpp.o
 .PHONY : source/VarMgr.cpp.o
 
 source/VarMgr.i: source/VarMgr.cpp.i
@@ -332,7 +332,7 @@ source/VarMgr.i: source/VarMgr.cpp.i
 
 # target to preprocess a source file
 source/VarMgr.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/VarMgr.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/VarMgr.cpp.i
 .PHONY : source/VarMgr.cpp.i
 
 source/VarMgr.s: source/VarMgr.cpp.s
@@ -340,7 +340,7 @@ source/VarMgr.s: source/VarMgr.cpp.s
 
 # target to generate assembly for a file
 source/VarMgr.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/VarMgr.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/VarMgr.cpp.s
 .PHONY : source/VarMgr.cpp.s
 
 source/automata/ExplicitStateDfa.o: source/automata/ExplicitStateDfa.cpp.o
@@ -348,7 +348,7 @@ source/automata/ExplicitStateDfa.o: source/automata/ExplicitStateDfa.cpp.o
 
 # target to build an object file
 source/automata/ExplicitStateDfa.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfa.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfa.cpp.o
 .PHONY : source/automata/ExplicitStateDfa.cpp.o
 
 source/automata/ExplicitStateDfa.i: source/automata/ExplicitStateDfa.cpp.i
@@ -356,7 +356,7 @@ source/automata/ExplicitStateDfa.i: source/automata/ExplicitStateDfa.cpp.i
 
 # target to preprocess a source file
 source/automata/ExplicitStateDfa.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfa.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfa.cpp.i
 .PHONY : source/automata/ExplicitStateDfa.cpp.i
 
 source/automata/ExplicitStateDfa.s: source/automata/ExplicitStateDfa.cpp.s
@@ -364,7 +364,7 @@ source/automata/ExplicitStateDfa.s: source/automata/ExplicitStateDfa.cpp.s
 
 # target to generate assembly for a file
 source/automata/ExplicitStateDfa.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfa.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfa.cpp.s
 .PHONY : source/automata/ExplicitStateDfa.cpp.s
 
 source/automata/ExplicitStateDfaAdd.o: source/automata/ExplicitStateDfaAdd.cpp.o
@@ -372,7 +372,7 @@ source/automata/ExplicitStateDfaAdd.o: source/automata/ExplicitStateDfaAdd.cpp.o
 
 # target to build an object file
 source/automata/ExplicitStateDfaAdd.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfaAdd.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfaAdd.cpp.o
 .PHONY : source/automata/ExplicitStateDfaAdd.cpp.o
 
 source/automata/ExplicitStateDfaAdd.i: source/automata/ExplicitStateDfaAdd.cpp.i
@@ -380,7 +380,7 @@ source/automata/ExplicitStateDfaAdd.i: source/automata/ExplicitStateDfaAdd.cpp.i
 
 # target to preprocess a source file
 source/automata/ExplicitStateDfaAdd.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfaAdd.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfaAdd.cpp.i
 .PHONY : source/automata/ExplicitStateDfaAdd.cpp.i
 
 source/automata/ExplicitStateDfaAdd.s: source/automata/ExplicitStateDfaAdd.cpp.s
@@ -388,7 +388,7 @@ source/automata/ExplicitStateDfaAdd.s: source/automata/ExplicitStateDfaAdd.cpp.s
 
 # target to generate assembly for a file
 source/automata/ExplicitStateDfaAdd.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfaAdd.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/automata/ExplicitStateDfaAdd.cpp.s
 .PHONY : source/automata/ExplicitStateDfaAdd.cpp.s
 
 source/automata/SymbolicStateDfa.o: source/automata/SymbolicStateDfa.cpp.o
@@ -396,7 +396,7 @@ source/automata/SymbolicStateDfa.o: source/automata/SymbolicStateDfa.cpp.o
 
 # target to build an object file
 source/automata/SymbolicStateDfa.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/automata/SymbolicStateDfa.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/automata/SymbolicStateDfa.cpp.o
 .PHONY : source/automata/SymbolicStateDfa.cpp.o
 
 source/automata/SymbolicStateDfa.i: source/automata/SymbolicStateDfa.cpp.i
@@ -404,7 +404,7 @@ source/automata/SymbolicStateDfa.i: source/automata/SymbolicStateDfa.cpp.i
 
 # target to preprocess a source file
 source/automata/SymbolicStateDfa.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/automata/SymbolicStateDfa.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/automata/SymbolicStateDfa.cpp.i
 .PHONY : source/automata/SymbolicStateDfa.cpp.i
 
 source/automata/SymbolicStateDfa.s: source/automata/SymbolicStateDfa.cpp.s
@@ -412,7 +412,7 @@ source/automata/SymbolicStateDfa.s: source/automata/SymbolicStateDfa.cpp.s
 
 # target to generate assembly for a file
 source/automata/SymbolicStateDfa.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/automata/SymbolicStateDfa.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/automata/SymbolicStateDfa.cpp.s
 .PHONY : source/automata/SymbolicStateDfa.cpp.s
 
 source/game/BuchiReachability.o: source/game/BuchiReachability.cpp.o
@@ -420,7 +420,7 @@ source/game/BuchiReachability.o: source/game/BuchiReachability.cpp.o
 
 # target to build an object file
 source/game/BuchiReachability.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/BuchiReachability.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/BuchiReachability.cpp.o
 .PHONY : source/game/BuchiReachability.cpp.o
 
 source/game/BuchiReachability.i: source/game/BuchiReachability.cpp.i
@@ -428,7 +428,7 @@ source/game/BuchiReachability.i: source/game/BuchiReachability.cpp.i
 
 # target to preprocess a source file
 source/game/BuchiReachability.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/BuchiReachability.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/BuchiReachability.cpp.i
 .PHONY : source/game/BuchiReachability.cpp.i
 
 source/game/BuchiReachability.s: source/game/BuchiReachability.cpp.s
@@ -436,15 +436,39 @@ source/game/BuchiReachability.s: source/game/BuchiReachability.cpp.s
 
 # target to generate assembly for a file
 source/game/BuchiReachability.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/BuchiReachability.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/BuchiReachability.cpp.s
 .PHONY : source/game/BuchiReachability.cpp.s
+
+source/game/BuchiReachability_multiagent.o: source/game/BuchiReachability_multiagent.cpp.o
+.PHONY : source/game/BuchiReachability_multiagent.o
+
+# target to build an object file
+source/game/BuchiReachability_multiagent.cpp.o:
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/BuchiReachability_multiagent.cpp.o
+.PHONY : source/game/BuchiReachability_multiagent.cpp.o
+
+source/game/BuchiReachability_multiagent.i: source/game/BuchiReachability_multiagent.cpp.i
+.PHONY : source/game/BuchiReachability_multiagent.i
+
+# target to preprocess a source file
+source/game/BuchiReachability_multiagent.cpp.i:
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/BuchiReachability_multiagent.cpp.i
+.PHONY : source/game/BuchiReachability_multiagent.cpp.i
+
+source/game/BuchiReachability_multiagent.s: source/game/BuchiReachability_multiagent.cpp.s
+.PHONY : source/game/BuchiReachability_multiagent.s
+
+# target to generate assembly for a file
+source/game/BuchiReachability_multiagent.cpp.s:
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/BuchiReachability_multiagent.cpp.s
+.PHONY : source/game/BuchiReachability_multiagent.cpp.s
 
 source/game/DfaGameSynthesizer.o: source/game/DfaGameSynthesizer.cpp.o
 .PHONY : source/game/DfaGameSynthesizer.o
 
 # target to build an object file
 source/game/DfaGameSynthesizer.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.o
 .PHONY : source/game/DfaGameSynthesizer.cpp.o
 
 source/game/DfaGameSynthesizer.i: source/game/DfaGameSynthesizer.cpp.i
@@ -452,7 +476,7 @@ source/game/DfaGameSynthesizer.i: source/game/DfaGameSynthesizer.cpp.i
 
 # target to preprocess a source file
 source/game/DfaGameSynthesizer.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.i
 .PHONY : source/game/DfaGameSynthesizer.cpp.i
 
 source/game/DfaGameSynthesizer.s: source/game/DfaGameSynthesizer.cpp.s
@@ -460,7 +484,7 @@ source/game/DfaGameSynthesizer.s: source/game/DfaGameSynthesizer.cpp.s
 
 # target to generate assembly for a file
 source/game/DfaGameSynthesizer.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer.cpp.s
 .PHONY : source/game/DfaGameSynthesizer.cpp.s
 
 source/game/DfaGameSynthesizer_multiagent.o: source/game/DfaGameSynthesizer_multiagent.cpp.o
@@ -468,7 +492,7 @@ source/game/DfaGameSynthesizer_multiagent.o: source/game/DfaGameSynthesizer_mult
 
 # target to build an object file
 source/game/DfaGameSynthesizer_multiagent.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.o
 .PHONY : source/game/DfaGameSynthesizer_multiagent.cpp.o
 
 source/game/DfaGameSynthesizer_multiagent.i: source/game/DfaGameSynthesizer_multiagent.cpp.i
@@ -476,7 +500,7 @@ source/game/DfaGameSynthesizer_multiagent.i: source/game/DfaGameSynthesizer_mult
 
 # target to preprocess a source file
 source/game/DfaGameSynthesizer_multiagent.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.i
 .PHONY : source/game/DfaGameSynthesizer_multiagent.cpp.i
 
 source/game/DfaGameSynthesizer_multiagent.s: source/game/DfaGameSynthesizer_multiagent.cpp.s
@@ -484,7 +508,7 @@ source/game/DfaGameSynthesizer_multiagent.s: source/game/DfaGameSynthesizer_mult
 
 # target to generate assembly for a file
 source/game/DfaGameSynthesizer_multiagent.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/DfaGameSynthesizer_multiagent.cpp.s
 .PHONY : source/game/DfaGameSynthesizer_multiagent.cpp.s
 
 source/game/InputOutputPartition.o: source/game/InputOutputPartition.cpp.o
@@ -492,7 +516,7 @@ source/game/InputOutputPartition.o: source/game/InputOutputPartition.cpp.o
 
 # target to build an object file
 source/game/InputOutputPartition.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/InputOutputPartition.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/InputOutputPartition.cpp.o
 .PHONY : source/game/InputOutputPartition.cpp.o
 
 source/game/InputOutputPartition.i: source/game/InputOutputPartition.cpp.i
@@ -500,7 +524,7 @@ source/game/InputOutputPartition.i: source/game/InputOutputPartition.cpp.i
 
 # target to preprocess a source file
 source/game/InputOutputPartition.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/InputOutputPartition.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/InputOutputPartition.cpp.i
 .PHONY : source/game/InputOutputPartition.cpp.i
 
 source/game/InputOutputPartition.s: source/game/InputOutputPartition.cpp.s
@@ -508,7 +532,7 @@ source/game/InputOutputPartition.s: source/game/InputOutputPartition.cpp.s
 
 # target to generate assembly for a file
 source/game/InputOutputPartition.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/InputOutputPartition.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/InputOutputPartition.cpp.s
 .PHONY : source/game/InputOutputPartition.cpp.s
 
 source/game/Quantification.o: source/game/Quantification.cpp.o
@@ -516,7 +540,7 @@ source/game/Quantification.o: source/game/Quantification.cpp.o
 
 # target to build an object file
 source/game/Quantification.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Quantification.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Quantification.cpp.o
 .PHONY : source/game/Quantification.cpp.o
 
 source/game/Quantification.i: source/game/Quantification.cpp.i
@@ -524,7 +548,7 @@ source/game/Quantification.i: source/game/Quantification.cpp.i
 
 # target to preprocess a source file
 source/game/Quantification.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Quantification.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Quantification.cpp.i
 .PHONY : source/game/Quantification.cpp.i
 
 source/game/Quantification.s: source/game/Quantification.cpp.s
@@ -532,7 +556,7 @@ source/game/Quantification.s: source/game/Quantification.cpp.s
 
 # target to generate assembly for a file
 source/game/Quantification.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Quantification.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Quantification.cpp.s
 .PHONY : source/game/Quantification.cpp.s
 
 source/game/Reachability.o: source/game/Reachability.cpp.o
@@ -540,7 +564,7 @@ source/game/Reachability.o: source/game/Reachability.cpp.o
 
 # target to build an object file
 source/game/Reachability.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability.cpp.o
 .PHONY : source/game/Reachability.cpp.o
 
 source/game/Reachability.i: source/game/Reachability.cpp.i
@@ -548,7 +572,7 @@ source/game/Reachability.i: source/game/Reachability.cpp.i
 
 # target to preprocess a source file
 source/game/Reachability.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability.cpp.i
 .PHONY : source/game/Reachability.cpp.i
 
 source/game/Reachability.s: source/game/Reachability.cpp.s
@@ -556,7 +580,7 @@ source/game/Reachability.s: source/game/Reachability.cpp.s
 
 # target to generate assembly for a file
 source/game/Reachability.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability.cpp.s
 .PHONY : source/game/Reachability.cpp.s
 
 source/game/ReachabilityMaxSet.o: source/game/ReachabilityMaxSet.cpp.o
@@ -564,7 +588,7 @@ source/game/ReachabilityMaxSet.o: source/game/ReachabilityMaxSet.cpp.o
 
 # target to build an object file
 source/game/ReachabilityMaxSet.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.o
 .PHONY : source/game/ReachabilityMaxSet.cpp.o
 
 source/game/ReachabilityMaxSet.i: source/game/ReachabilityMaxSet.cpp.i
@@ -572,7 +596,7 @@ source/game/ReachabilityMaxSet.i: source/game/ReachabilityMaxSet.cpp.i
 
 # target to preprocess a source file
 source/game/ReachabilityMaxSet.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.i
 .PHONY : source/game/ReachabilityMaxSet.cpp.i
 
 source/game/ReachabilityMaxSet.s: source/game/ReachabilityMaxSet.cpp.s
@@ -580,7 +604,7 @@ source/game/ReachabilityMaxSet.s: source/game/ReachabilityMaxSet.cpp.s
 
 # target to generate assembly for a file
 source/game/ReachabilityMaxSet.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/ReachabilityMaxSet.cpp.s
 .PHONY : source/game/ReachabilityMaxSet.cpp.s
 
 source/game/Reachability_multiagent.o: source/game/Reachability_multiagent.cpp.o
@@ -588,7 +612,7 @@ source/game/Reachability_multiagent.o: source/game/Reachability_multiagent.cpp.o
 
 # target to build an object file
 source/game/Reachability_multiagent.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.o
 .PHONY : source/game/Reachability_multiagent.cpp.o
 
 source/game/Reachability_multiagent.i: source/game/Reachability_multiagent.cpp.i
@@ -596,7 +620,7 @@ source/game/Reachability_multiagent.i: source/game/Reachability_multiagent.cpp.i
 
 # target to preprocess a source file
 source/game/Reachability_multiagent.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.i
 .PHONY : source/game/Reachability_multiagent.cpp.i
 
 source/game/Reachability_multiagent.s: source/game/Reachability_multiagent.cpp.s
@@ -604,7 +628,7 @@ source/game/Reachability_multiagent.s: source/game/Reachability_multiagent.cpp.s
 
 # target to generate assembly for a file
 source/game/Reachability_multiagent.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Reachability_multiagent.cpp.s
 .PHONY : source/game/Reachability_multiagent.cpp.s
 
 source/game/Transducer.o: source/game/Transducer.cpp.o
@@ -612,7 +636,7 @@ source/game/Transducer.o: source/game/Transducer.cpp.o
 
 # target to build an object file
 source/game/Transducer.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Transducer.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Transducer.cpp.o
 .PHONY : source/game/Transducer.cpp.o
 
 source/game/Transducer.i: source/game/Transducer.cpp.i
@@ -620,7 +644,7 @@ source/game/Transducer.i: source/game/Transducer.cpp.i
 
 # target to preprocess a source file
 source/game/Transducer.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Transducer.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Transducer.cpp.i
 .PHONY : source/game/Transducer.cpp.i
 
 source/game/Transducer.s: source/game/Transducer.cpp.s
@@ -628,15 +652,39 @@ source/game/Transducer.s: source/game/Transducer.cpp.s
 
 # target to generate assembly for a file
 source/game/Transducer.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Transducer.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Transducer.cpp.s
 .PHONY : source/game/Transducer.cpp.s
+
+source/game/Transducer_multiagent.o: source/game/Transducer_multiagent.cpp.o
+.PHONY : source/game/Transducer_multiagent.o
+
+# target to build an object file
+source/game/Transducer_multiagent.cpp.o:
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Transducer_multiagent.cpp.o
+.PHONY : source/game/Transducer_multiagent.cpp.o
+
+source/game/Transducer_multiagent.i: source/game/Transducer_multiagent.cpp.i
+.PHONY : source/game/Transducer_multiagent.i
+
+# target to preprocess a source file
+source/game/Transducer_multiagent.cpp.i:
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Transducer_multiagent.cpp.i
+.PHONY : source/game/Transducer_multiagent.cpp.i
+
+source/game/Transducer_multiagent.s: source/game/Transducer_multiagent.cpp.s
+.PHONY : source/game/Transducer_multiagent.s
+
+# target to generate assembly for a file
+source/game/Transducer_multiagent.cpp.s:
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/Transducer_multiagent.cpp.s
+.PHONY : source/game/Transducer_multiagent.cpp.s
 
 source/game/coBuchiReachability.o: source/game/coBuchiReachability.cpp.o
 .PHONY : source/game/coBuchiReachability.o
 
 # target to build an object file
 source/game/coBuchiReachability.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/coBuchiReachability.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/coBuchiReachability.cpp.o
 .PHONY : source/game/coBuchiReachability.cpp.o
 
 source/game/coBuchiReachability.i: source/game/coBuchiReachability.cpp.i
@@ -644,7 +692,7 @@ source/game/coBuchiReachability.i: source/game/coBuchiReachability.cpp.i
 
 # target to preprocess a source file
 source/game/coBuchiReachability.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/coBuchiReachability.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/coBuchiReachability.cpp.i
 .PHONY : source/game/coBuchiReachability.cpp.i
 
 source/game/coBuchiReachability.s: source/game/coBuchiReachability.cpp.s
@@ -652,7 +700,7 @@ source/game/coBuchiReachability.s: source/game/coBuchiReachability.cpp.s
 
 # target to generate assembly for a file
 source/game/coBuchiReachability.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/coBuchiReachability.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/coBuchiReachability.cpp.s
 .PHONY : source/game/coBuchiReachability.cpp.s
 
 source/game/coGR1Reachability.o: source/game/coGR1Reachability.cpp.o
@@ -660,7 +708,7 @@ source/game/coGR1Reachability.o: source/game/coGR1Reachability.cpp.o
 
 # target to build an object file
 source/game/coGR1Reachability.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/coGR1Reachability.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/coGR1Reachability.cpp.o
 .PHONY : source/game/coGR1Reachability.cpp.o
 
 source/game/coGR1Reachability.i: source/game/coGR1Reachability.cpp.i
@@ -668,7 +716,7 @@ source/game/coGR1Reachability.i: source/game/coGR1Reachability.cpp.i
 
 # target to preprocess a source file
 source/game/coGR1Reachability.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/coGR1Reachability.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/coGR1Reachability.cpp.i
 .PHONY : source/game/coGR1Reachability.cpp.i
 
 source/game/coGR1Reachability.s: source/game/coGR1Reachability.cpp.s
@@ -676,7 +724,7 @@ source/game/coGR1Reachability.s: source/game/coGR1Reachability.cpp.s
 
 # target to generate assembly for a file
 source/game/coGR1Reachability.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/coGR1Reachability.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/game/coGR1Reachability.cpp.s
 .PHONY : source/game/coGR1Reachability.cpp.s
 
 source/synthesizer/FairnessLtlfSynthesizer.o: source/synthesizer/FairnessLtlfSynthesizer.cpp.o
@@ -684,7 +732,7 @@ source/synthesizer/FairnessLtlfSynthesizer.o: source/synthesizer/FairnessLtlfSyn
 
 # target to build an object file
 source/synthesizer/FairnessLtlfSynthesizer.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/FairnessLtlfSynthesizer.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/FairnessLtlfSynthesizer.cpp.o
 .PHONY : source/synthesizer/FairnessLtlfSynthesizer.cpp.o
 
 source/synthesizer/FairnessLtlfSynthesizer.i: source/synthesizer/FairnessLtlfSynthesizer.cpp.i
@@ -692,7 +740,7 @@ source/synthesizer/FairnessLtlfSynthesizer.i: source/synthesizer/FairnessLtlfSyn
 
 # target to preprocess a source file
 source/synthesizer/FairnessLtlfSynthesizer.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/FairnessLtlfSynthesizer.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/FairnessLtlfSynthesizer.cpp.i
 .PHONY : source/synthesizer/FairnessLtlfSynthesizer.cpp.i
 
 source/synthesizer/FairnessLtlfSynthesizer.s: source/synthesizer/FairnessLtlfSynthesizer.cpp.s
@@ -700,7 +748,7 @@ source/synthesizer/FairnessLtlfSynthesizer.s: source/synthesizer/FairnessLtlfSyn
 
 # target to generate assembly for a file
 source/synthesizer/FairnessLtlfSynthesizer.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/FairnessLtlfSynthesizer.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/FairnessLtlfSynthesizer.cpp.s
 .PHONY : source/synthesizer/FairnessLtlfSynthesizer.cpp.s
 
 source/synthesizer/GR1LTLfSynthesizer.o: source/synthesizer/GR1LTLfSynthesizer.cpp.o
@@ -708,7 +756,7 @@ source/synthesizer/GR1LTLfSynthesizer.o: source/synthesizer/GR1LTLfSynthesizer.c
 
 # target to build an object file
 source/synthesizer/GR1LTLfSynthesizer.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/GR1LTLfSynthesizer.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/GR1LTLfSynthesizer.cpp.o
 .PHONY : source/synthesizer/GR1LTLfSynthesizer.cpp.o
 
 source/synthesizer/GR1LTLfSynthesizer.i: source/synthesizer/GR1LTLfSynthesizer.cpp.i
@@ -716,7 +764,7 @@ source/synthesizer/GR1LTLfSynthesizer.i: source/synthesizer/GR1LTLfSynthesizer.c
 
 # target to preprocess a source file
 source/synthesizer/GR1LTLfSynthesizer.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/GR1LTLfSynthesizer.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/GR1LTLfSynthesizer.cpp.i
 .PHONY : source/synthesizer/GR1LTLfSynthesizer.cpp.i
 
 source/synthesizer/GR1LTLfSynthesizer.s: source/synthesizer/GR1LTLfSynthesizer.cpp.s
@@ -724,7 +772,7 @@ source/synthesizer/GR1LTLfSynthesizer.s: source/synthesizer/GR1LTLfSynthesizer.c
 
 # target to generate assembly for a file
 source/synthesizer/GR1LTLfSynthesizer.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/GR1LTLfSynthesizer.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/GR1LTLfSynthesizer.cpp.s
 .PHONY : source/synthesizer/GR1LTLfSynthesizer.cpp.s
 
 source/synthesizer/LTLfMaxSetSynthesizer.o: source/synthesizer/LTLfMaxSetSynthesizer.cpp.o
@@ -732,7 +780,7 @@ source/synthesizer/LTLfMaxSetSynthesizer.o: source/synthesizer/LTLfMaxSetSynthes
 
 # target to build an object file
 source/synthesizer/LTLfMaxSetSynthesizer.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfMaxSetSynthesizer.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfMaxSetSynthesizer.cpp.o
 .PHONY : source/synthesizer/LTLfMaxSetSynthesizer.cpp.o
 
 source/synthesizer/LTLfMaxSetSynthesizer.i: source/synthesizer/LTLfMaxSetSynthesizer.cpp.i
@@ -740,7 +788,7 @@ source/synthesizer/LTLfMaxSetSynthesizer.i: source/synthesizer/LTLfMaxSetSynthes
 
 # target to preprocess a source file
 source/synthesizer/LTLfMaxSetSynthesizer.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfMaxSetSynthesizer.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfMaxSetSynthesizer.cpp.i
 .PHONY : source/synthesizer/LTLfMaxSetSynthesizer.cpp.i
 
 source/synthesizer/LTLfMaxSetSynthesizer.s: source/synthesizer/LTLfMaxSetSynthesizer.cpp.s
@@ -748,7 +796,7 @@ source/synthesizer/LTLfMaxSetSynthesizer.s: source/synthesizer/LTLfMaxSetSynthes
 
 # target to generate assembly for a file
 source/synthesizer/LTLfMaxSetSynthesizer.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfMaxSetSynthesizer.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfMaxSetSynthesizer.cpp.s
 .PHONY : source/synthesizer/LTLfMaxSetSynthesizer.cpp.s
 
 source/synthesizer/LTLfSynthesizer.o: source/synthesizer/LTLfSynthesizer.cpp.o
@@ -756,7 +804,7 @@ source/synthesizer/LTLfSynthesizer.o: source/synthesizer/LTLfSynthesizer.cpp.o
 
 # target to build an object file
 source/synthesizer/LTLfSynthesizer.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfSynthesizer.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfSynthesizer.cpp.o
 .PHONY : source/synthesizer/LTLfSynthesizer.cpp.o
 
 source/synthesizer/LTLfSynthesizer.i: source/synthesizer/LTLfSynthesizer.cpp.i
@@ -764,7 +812,7 @@ source/synthesizer/LTLfSynthesizer.i: source/synthesizer/LTLfSynthesizer.cpp.i
 
 # target to preprocess a source file
 source/synthesizer/LTLfSynthesizer.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfSynthesizer.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfSynthesizer.cpp.i
 .PHONY : source/synthesizer/LTLfSynthesizer.cpp.i
 
 source/synthesizer/LTLfSynthesizer.s: source/synthesizer/LTLfSynthesizer.cpp.s
@@ -772,7 +820,7 @@ source/synthesizer/LTLfSynthesizer.s: source/synthesizer/LTLfSynthesizer.cpp.s
 
 # target to generate assembly for a file
 source/synthesizer/LTLfSynthesizer.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfSynthesizer.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/LTLfSynthesizer.cpp.s
 .PHONY : source/synthesizer/LTLfSynthesizer.cpp.s
 
 source/synthesizer/StabilityLtlfSynthesizer.o: source/synthesizer/StabilityLtlfSynthesizer.cpp.o
@@ -780,7 +828,7 @@ source/synthesizer/StabilityLtlfSynthesizer.o: source/synthesizer/StabilityLtlfS
 
 # target to build an object file
 source/synthesizer/StabilityLtlfSynthesizer.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/StabilityLtlfSynthesizer.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/StabilityLtlfSynthesizer.cpp.o
 .PHONY : source/synthesizer/StabilityLtlfSynthesizer.cpp.o
 
 source/synthesizer/StabilityLtlfSynthesizer.i: source/synthesizer/StabilityLtlfSynthesizer.cpp.i
@@ -788,7 +836,7 @@ source/synthesizer/StabilityLtlfSynthesizer.i: source/synthesizer/StabilityLtlfS
 
 # target to preprocess a source file
 source/synthesizer/StabilityLtlfSynthesizer.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/StabilityLtlfSynthesizer.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/StabilityLtlfSynthesizer.cpp.i
 .PHONY : source/synthesizer/StabilityLtlfSynthesizer.cpp.i
 
 source/synthesizer/StabilityLtlfSynthesizer.s: source/synthesizer/StabilityLtlfSynthesizer.cpp.s
@@ -796,7 +844,7 @@ source/synthesizer/StabilityLtlfSynthesizer.s: source/synthesizer/StabilityLtlfS
 
 # target to generate assembly for a file
 source/synthesizer/StabilityLtlfSynthesizer.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/StabilityLtlfSynthesizer.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f src/synthesis/CMakeFiles/synthesis.dir/build.make src/synthesis/CMakeFiles/synthesis.dir/source/synthesizer/StabilityLtlfSynthesizer.cpp.s
 .PHONY : source/synthesizer/StabilityLtlfSynthesizer.cpp.s
 
 # Help Target
@@ -845,6 +893,9 @@ help:
 	@echo "... source/game/BuchiReachability.o"
 	@echo "... source/game/BuchiReachability.i"
 	@echo "... source/game/BuchiReachability.s"
+	@echo "... source/game/BuchiReachability_multiagent.o"
+	@echo "... source/game/BuchiReachability_multiagent.i"
+	@echo "... source/game/BuchiReachability_multiagent.s"
 	@echo "... source/game/DfaGameSynthesizer.o"
 	@echo "... source/game/DfaGameSynthesizer.i"
 	@echo "... source/game/DfaGameSynthesizer.s"
@@ -869,6 +920,9 @@ help:
 	@echo "... source/game/Transducer.o"
 	@echo "... source/game/Transducer.i"
 	@echo "... source/game/Transducer.s"
+	@echo "... source/game/Transducer_multiagent.o"
+	@echo "... source/game/Transducer_multiagent.i"
+	@echo "... source/game/Transducer_multiagent.s"
 	@echo "... source/game/coBuchiReachability.o"
 	@echo "... source/game/coBuchiReachability.i"
 	@echo "... source/game/coBuchiReachability.s"
@@ -901,6 +955,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

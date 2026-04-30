@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/grobner/grobner.cpp" "_deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/grobner.cpp.o" "gcc" "_deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/grobner.cpp.o.d"
-  "/home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/grobner/pdd_simplifier.cpp" "_deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_simplifier.cpp.o" "gcc" "_deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_simplifier.cpp.o.d"
-  "/home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/grobner/pdd_solver.cpp" "_deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_solver.cpp.o" "gcc" "_deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_solver.cpp.o.d"
+  "/home/stella/LydiaSyft/build/_deps/z3-src/src/math/grobner/grobner.cpp" "_deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/grobner.cpp.o" "gcc" "_deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/grobner.cpp.o.d"
+  "/home/stella/LydiaSyft/build/_deps/z3-src/src/math/grobner/pdd_simplifier.cpp" "_deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_simplifier.cpp.o" "gcc" "_deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_simplifier.cpp.o.d"
+  "/home/stella/LydiaSyft/build/_deps/z3-src/src/math/grobner/pdd_solver.cpp" "_deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_solver.cpp.o" "gcc" "_deps/z3-build/src/math/grobner/CMakeFiles/grobner.dir/pdd_solver.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

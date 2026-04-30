@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 # Include any dependencies generated for this target.
 include _deps/z3-build/src/math/automata/CMakeFiles/automata.dir/depend.make
@@ -72,16 +72,16 @@ include _deps/z3-build/src/math/automata/CMakeFiles/automata.dir/flags.make
 _deps/z3-build/src/math/automata/CMakeFiles/automata.dir/automaton.cpp.o: _deps/z3-build/src/math/automata/CMakeFiles/automata.dir/flags.make
 _deps/z3-build/src/math/automata/CMakeFiles/automata.dir/automaton.cpp.o: _deps/z3-src/src/math/automata/automaton.cpp
 _deps/z3-build/src/math/automata/CMakeFiles/automata.dir/automaton.cpp.o: _deps/z3-build/src/math/automata/CMakeFiles/automata.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/z3-build/src/math/automata/CMakeFiles/automata.dir/automaton.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/automata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/math/automata/CMakeFiles/automata.dir/automaton.cpp.o -MF CMakeFiles/automata.dir/automaton.cpp.o.d -o CMakeFiles/automata.dir/automaton.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/automata/automaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/z3-build/src/math/automata/CMakeFiles/automata.dir/automaton.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/automata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/math/automata/CMakeFiles/automata.dir/automaton.cpp.o -MF CMakeFiles/automata.dir/automaton.cpp.o.d -o CMakeFiles/automata.dir/automaton.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/math/automata/automaton.cpp
 
 _deps/z3-build/src/math/automata/CMakeFiles/automata.dir/automaton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/automata.dir/automaton.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/automata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/automata/automaton.cpp > CMakeFiles/automata.dir/automaton.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/automata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/math/automata/automaton.cpp > CMakeFiles/automata.dir/automaton.cpp.i
 
 _deps/z3-build/src/math/automata/CMakeFiles/automata.dir/automaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/automata.dir/automaton.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/automata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/automata/automaton.cpp -o CMakeFiles/automata.dir/automaton.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/automata && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/math/automata/automaton.cpp -o CMakeFiles/automata.dir/automaton.cpp.s
 
 automata: _deps/z3-build/src/math/automata/CMakeFiles/automata.dir/automaton.cpp.o
 automata: _deps/z3-build/src/math/automata/CMakeFiles/automata.dir/build.make
@@ -92,10 +92,10 @@ _deps/z3-build/src/math/automata/CMakeFiles/automata.dir/build: automata
 .PHONY : _deps/z3-build/src/math/automata/CMakeFiles/automata.dir/build
 
 _deps/z3-build/src/math/automata/CMakeFiles/automata.dir/clean:
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/automata && $(CMAKE_COMMAND) -P CMakeFiles/automata.dir/cmake_clean.cmake
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/math/automata && $(CMAKE_COMMAND) -P CMakeFiles/automata.dir/cmake_clean.cmake
 .PHONY : _deps/z3-build/src/math/automata/CMakeFiles/automata.dir/clean
 
 _deps/z3-build/src/math/automata/CMakeFiles/automata.dir/depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/LydiaSyft /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/math/automata /home/vboxuser/LydiaSyft/build /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/automata /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/automata/CMakeFiles/automata.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stella/LydiaSyft /home/stella/LydiaSyft/build/_deps/z3-src/src/math/automata /home/stella/LydiaSyft/build /home/stella/LydiaSyft/build/_deps/z3-build/src/math/automata /home/stella/LydiaSyft/build/_deps/z3-build/src/math/automata/CMakeFiles/automata.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/z3-build/src/math/automata/CMakeFiles/automata.dir/depend
 

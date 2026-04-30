@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/math/realclosure//CMakeFiles/progress.marks
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/realclosure/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vboxuser/LydiaSyft/build/CMakeFiles 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles /home/stella/LydiaSyft/build/_deps/z3-build/src/math/realclosure//CMakeFiles/progress.marks
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/realclosure/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stella/LydiaSyft/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/realclosure/clean
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/realclosure/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/realclosure/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/realclosure/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/realclosure/preinstall
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/realclosure/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/rule:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/rule
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/rule
 .PHONY : _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ realclosure: _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/rule
 
 # fast build rule for target.
 realclosure/fast:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/build.make _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/build
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/build.make _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/build
 .PHONY : realclosure/fast
 
 mpz_matrix.o: mpz_matrix.cpp.o
@@ -180,7 +180,7 @@ mpz_matrix.o: mpz_matrix.cpp.o
 
 # target to build an object file
 mpz_matrix.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/build.make _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/mpz_matrix.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/build.make _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/mpz_matrix.cpp.o
 .PHONY : mpz_matrix.cpp.o
 
 mpz_matrix.i: mpz_matrix.cpp.i
@@ -188,7 +188,7 @@ mpz_matrix.i: mpz_matrix.cpp.i
 
 # target to preprocess a source file
 mpz_matrix.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/build.make _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/mpz_matrix.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/build.make _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/mpz_matrix.cpp.i
 .PHONY : mpz_matrix.cpp.i
 
 mpz_matrix.s: mpz_matrix.cpp.s
@@ -196,7 +196,7 @@ mpz_matrix.s: mpz_matrix.cpp.s
 
 # target to generate assembly for a file
 mpz_matrix.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/build.make _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/mpz_matrix.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/build.make _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/mpz_matrix.cpp.s
 .PHONY : mpz_matrix.cpp.s
 
 realclosure.o: realclosure.cpp.o
@@ -204,7 +204,7 @@ realclosure.o: realclosure.cpp.o
 
 # target to build an object file
 realclosure.cpp.o:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/build.make _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/realclosure.cpp.o
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/build.make _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/realclosure.cpp.o
 .PHONY : realclosure.cpp.o
 
 realclosure.i: realclosure.cpp.i
@@ -212,7 +212,7 @@ realclosure.i: realclosure.cpp.i
 
 # target to preprocess a source file
 realclosure.cpp.i:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/build.make _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/realclosure.cpp.i
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/build.make _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/realclosure.cpp.i
 .PHONY : realclosure.cpp.i
 
 realclosure.s: realclosure.cpp.s
@@ -220,7 +220,7 @@ realclosure.s: realclosure.cpp.s
 
 # target to generate assembly for a file
 realclosure.cpp.s:
-	cd /home/vboxuser/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/build.make _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/realclosure.cpp.s
+	cd /home/stella/LydiaSyft/build && $(MAKE) $(MAKESILENT) -f _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/build.make _deps/z3-build/src/math/realclosure/CMakeFiles/realclosure.dir/realclosure.cpp.s
 .PHONY : realclosure.cpp.s
 
 # Help Target
@@ -253,6 +253,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

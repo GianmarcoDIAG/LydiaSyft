@@ -1,4 +1,4 @@
-# Install script for directory: /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/pattern
+# Install script for directory: /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/pattern
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

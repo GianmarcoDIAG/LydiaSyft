@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 # Include any dependencies generated for this target.
 include examples/01_quickstart/CMakeFiles/quickstart_example.dir/depend.make
@@ -70,18 +70,18 @@ include examples/01_quickstart/CMakeFiles/quickstart_example.dir/progress.make
 include examples/01_quickstart/CMakeFiles/quickstart_example.dir/flags.make
 
 examples/01_quickstart/CMakeFiles/quickstart_example.dir/quickstart.cpp.o: examples/01_quickstart/CMakeFiles/quickstart_example.dir/flags.make
-examples/01_quickstart/CMakeFiles/quickstart_example.dir/quickstart.cpp.o: /home/vboxuser/LydiaSyft/examples/01_quickstart/quickstart.cpp
+examples/01_quickstart/CMakeFiles/quickstart_example.dir/quickstart.cpp.o: /home/stella/LydiaSyft/examples/01_quickstart/quickstart.cpp
 examples/01_quickstart/CMakeFiles/quickstart_example.dir/quickstart.cpp.o: examples/01_quickstart/CMakeFiles/quickstart_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/01_quickstart/CMakeFiles/quickstart_example.dir/quickstart.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/examples/01_quickstart && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/01_quickstart/CMakeFiles/quickstart_example.dir/quickstart.cpp.o -MF CMakeFiles/quickstart_example.dir/quickstart.cpp.o.d -o CMakeFiles/quickstart_example.dir/quickstart.cpp.o -c /home/vboxuser/LydiaSyft/examples/01_quickstart/quickstart.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/01_quickstart/CMakeFiles/quickstart_example.dir/quickstart.cpp.o"
+	cd /home/stella/LydiaSyft/build/examples/01_quickstart && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/01_quickstart/CMakeFiles/quickstart_example.dir/quickstart.cpp.o -MF CMakeFiles/quickstart_example.dir/quickstart.cpp.o.d -o CMakeFiles/quickstart_example.dir/quickstart.cpp.o -c /home/stella/LydiaSyft/examples/01_quickstart/quickstart.cpp
 
 examples/01_quickstart/CMakeFiles/quickstart_example.dir/quickstart.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/quickstart_example.dir/quickstart.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/examples/01_quickstart && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/examples/01_quickstart/quickstart.cpp > CMakeFiles/quickstart_example.dir/quickstart.cpp.i
+	cd /home/stella/LydiaSyft/build/examples/01_quickstart && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/examples/01_quickstart/quickstart.cpp > CMakeFiles/quickstart_example.dir/quickstart.cpp.i
 
 examples/01_quickstart/CMakeFiles/quickstart_example.dir/quickstart.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/quickstart_example.dir/quickstart.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/examples/01_quickstart && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/examples/01_quickstart/quickstart.cpp -o CMakeFiles/quickstart_example.dir/quickstart.cpp.s
+	cd /home/stella/LydiaSyft/build/examples/01_quickstart && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/examples/01_quickstart/quickstart.cpp -o CMakeFiles/quickstart_example.dir/quickstart.cpp.s
 
 # Object files for target quickstart_example
 quickstart_example_OBJECTS = \
@@ -110,18 +110,18 @@ bin/quickstart_example: /usr/local/lib/libmonabdd.a
 bin/quickstart_example: /usr/local/lib/libmonamem.a
 bin/quickstart_example: _deps/z3-build/libz3.a
 bin/quickstart_example: examples/01_quickstart/CMakeFiles/quickstart_example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/quickstart_example"
-	cd /home/vboxuser/LydiaSyft/build/examples/01_quickstart && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/quickstart_example.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/quickstart_example"
+	cd /home/stella/LydiaSyft/build/examples/01_quickstart && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/quickstart_example.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/01_quickstart/CMakeFiles/quickstart_example.dir/build: bin/quickstart_example
 .PHONY : examples/01_quickstart/CMakeFiles/quickstart_example.dir/build
 
 examples/01_quickstart/CMakeFiles/quickstart_example.dir/clean:
-	cd /home/vboxuser/LydiaSyft/build/examples/01_quickstart && $(CMAKE_COMMAND) -P CMakeFiles/quickstart_example.dir/cmake_clean.cmake
+	cd /home/stella/LydiaSyft/build/examples/01_quickstart && $(CMAKE_COMMAND) -P CMakeFiles/quickstart_example.dir/cmake_clean.cmake
 .PHONY : examples/01_quickstart/CMakeFiles/quickstart_example.dir/clean
 
 examples/01_quickstart/CMakeFiles/quickstart_example.dir/depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/LydiaSyft /home/vboxuser/LydiaSyft/examples/01_quickstart /home/vboxuser/LydiaSyft/build /home/vboxuser/LydiaSyft/build/examples/01_quickstart /home/vboxuser/LydiaSyft/build/examples/01_quickstart/CMakeFiles/quickstart_example.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stella/LydiaSyft /home/stella/LydiaSyft/examples/01_quickstart /home/stella/LydiaSyft/build /home/stella/LydiaSyft/build/examples/01_quickstart /home/stella/LydiaSyft/build/examples/01_quickstart/CMakeFiles/quickstart_example.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : examples/01_quickstart/CMakeFiles/quickstart_example.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/vboxuser/LydiaSyft/build/_deps/z3-subbuild
+# Install script for directory: /home/stella/LydiaSyft/build/_deps/z3-subbuild
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/vboxuser/LydiaSyft/build/_deps/z3-subbuild/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/stella/LydiaSyft/build/_deps/z3-subbuild/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

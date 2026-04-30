@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vboxuser/LydiaSyft
+CMAKE_SOURCE_DIR = /home/stella/LydiaSyft
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vboxuser/LydiaSyft/build
+CMAKE_BINARY_DIR = /home/stella/LydiaSyft/build
 
 # Include any dependencies generated for this target.
 include _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/depend.make
@@ -72,72 +72,72 @@ include _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/flags.make
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_finder.cpp.o: _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/flags.make
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_finder.cpp.o: _deps/z3-src/src/ast/macros/macro_finder.cpp
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_finder.cpp.o: _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_finder.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_finder.cpp.o -MF CMakeFiles/macros.dir/macro_finder.cpp.o.d -o CMakeFiles/macros.dir/macro_finder.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/macros/macro_finder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_finder.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_finder.cpp.o -MF CMakeFiles/macros.dir/macro_finder.cpp.o.d -o CMakeFiles/macros.dir/macro_finder.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/macros/macro_finder.cpp
 
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_finder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/macros.dir/macro_finder.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/macros/macro_finder.cpp > CMakeFiles/macros.dir/macro_finder.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/macros/macro_finder.cpp > CMakeFiles/macros.dir/macro_finder.cpp.i
 
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_finder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/macros.dir/macro_finder.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/macros/macro_finder.cpp -o CMakeFiles/macros.dir/macro_finder.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/macros/macro_finder.cpp -o CMakeFiles/macros.dir/macro_finder.cpp.s
 
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_manager.cpp.o: _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/flags.make
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_manager.cpp.o: _deps/z3-src/src/ast/macros/macro_manager.cpp
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_manager.cpp.o: _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_manager.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_manager.cpp.o -MF CMakeFiles/macros.dir/macro_manager.cpp.o.d -o CMakeFiles/macros.dir/macro_manager.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/macros/macro_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_manager.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_manager.cpp.o -MF CMakeFiles/macros.dir/macro_manager.cpp.o.d -o CMakeFiles/macros.dir/macro_manager.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/macros/macro_manager.cpp
 
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/macros.dir/macro_manager.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/macros/macro_manager.cpp > CMakeFiles/macros.dir/macro_manager.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/macros/macro_manager.cpp > CMakeFiles/macros.dir/macro_manager.cpp.i
 
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/macros.dir/macro_manager.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/macros/macro_manager.cpp -o CMakeFiles/macros.dir/macro_manager.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/macros/macro_manager.cpp -o CMakeFiles/macros.dir/macro_manager.cpp.s
 
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/quantifier_macro_info.cpp.o: _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/flags.make
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/quantifier_macro_info.cpp.o: _deps/z3-src/src/ast/macros/quantifier_macro_info.cpp
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/quantifier_macro_info.cpp.o: _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/quantifier_macro_info.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/quantifier_macro_info.cpp.o -MF CMakeFiles/macros.dir/quantifier_macro_info.cpp.o.d -o CMakeFiles/macros.dir/quantifier_macro_info.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/macros/quantifier_macro_info.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/quantifier_macro_info.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/quantifier_macro_info.cpp.o -MF CMakeFiles/macros.dir/quantifier_macro_info.cpp.o.d -o CMakeFiles/macros.dir/quantifier_macro_info.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/macros/quantifier_macro_info.cpp
 
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/quantifier_macro_info.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/macros.dir/quantifier_macro_info.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/macros/quantifier_macro_info.cpp > CMakeFiles/macros.dir/quantifier_macro_info.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/macros/quantifier_macro_info.cpp > CMakeFiles/macros.dir/quantifier_macro_info.cpp.i
 
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/quantifier_macro_info.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/macros.dir/quantifier_macro_info.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/macros/quantifier_macro_info.cpp -o CMakeFiles/macros.dir/quantifier_macro_info.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/macros/quantifier_macro_info.cpp -o CMakeFiles/macros.dir/quantifier_macro_info.cpp.s
 
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_util.cpp.o: _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/flags.make
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_util.cpp.o: _deps/z3-src/src/ast/macros/macro_util.cpp
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_util.cpp.o: _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_util.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_util.cpp.o -MF CMakeFiles/macros.dir/macro_util.cpp.o.d -o CMakeFiles/macros.dir/macro_util.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/macros/macro_util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_util.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_util.cpp.o -MF CMakeFiles/macros.dir/macro_util.cpp.o.d -o CMakeFiles/macros.dir/macro_util.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/macros/macro_util.cpp
 
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_util.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/macros.dir/macro_util.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/macros/macro_util.cpp > CMakeFiles/macros.dir/macro_util.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/macros/macro_util.cpp > CMakeFiles/macros.dir/macro_util.cpp.i
 
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/macros.dir/macro_util.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/macros/macro_util.cpp -o CMakeFiles/macros.dir/macro_util.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/macros/macro_util.cpp -o CMakeFiles/macros.dir/macro_util.cpp.s
 
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/quasi_macros.cpp.o: _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/flags.make
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/quasi_macros.cpp.o: _deps/z3-src/src/ast/macros/quasi_macros.cpp
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/quasi_macros.cpp.o: _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vboxuser/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/quasi_macros.cpp.o"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/quasi_macros.cpp.o -MF CMakeFiles/macros.dir/quasi_macros.cpp.o.d -o CMakeFiles/macros.dir/quasi_macros.cpp.o -c /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/macros/quasi_macros.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/stella/LydiaSyft/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/quasi_macros.cpp.o"
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/quasi_macros.cpp.o -MF CMakeFiles/macros.dir/quasi_macros.cpp.o.d -o CMakeFiles/macros.dir/quasi_macros.cpp.o -c /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/macros/quasi_macros.cpp
 
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/quasi_macros.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/macros.dir/quasi_macros.cpp.i"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/macros/quasi_macros.cpp > CMakeFiles/macros.dir/quasi_macros.cpp.i
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/macros/quasi_macros.cpp > CMakeFiles/macros.dir/quasi_macros.cpp.i
 
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/quasi_macros.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/macros.dir/quasi_macros.cpp.s"
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/macros/quasi_macros.cpp -o CMakeFiles/macros.dir/quasi_macros.cpp.s
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/macros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/macros/quasi_macros.cpp -o CMakeFiles/macros.dir/quasi_macros.cpp.s
 
 macros: _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_finder.cpp.o
 macros: _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/macro_manager.cpp.o
@@ -152,10 +152,10 @@ _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/build: macros
 .PHONY : _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/build
 
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/clean:
-	cd /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/macros && $(CMAKE_COMMAND) -P CMakeFiles/macros.dir/cmake_clean.cmake
+	cd /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/macros && $(CMAKE_COMMAND) -P CMakeFiles/macros.dir/cmake_clean.cmake
 .PHONY : _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/clean
 
 _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/depend:
-	cd /home/vboxuser/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vboxuser/LydiaSyft /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/ast/macros /home/vboxuser/LydiaSyft/build /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/macros /home/vboxuser/LydiaSyft/build/_deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/stella/LydiaSyft/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/stella/LydiaSyft /home/stella/LydiaSyft/build/_deps/z3-src/src/ast/macros /home/stella/LydiaSyft/build /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/macros /home/stella/LydiaSyft/build/_deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/z3-build/src/ast/macros/CMakeFiles/macros.dir/depend
 

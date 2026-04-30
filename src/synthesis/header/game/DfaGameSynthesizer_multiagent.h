@@ -4,8 +4,8 @@
 #include "Quantification.h"
 #include "automata/SymbolicStateDfa.h"
 #include "Synthesizer.h"
-#include "/home/vboxuser/LydiaSyft/src/synthesis/header/Actor.h"
-#include "Transducer.h"
+#include "Actor.h"
+#include "Transducer_multiagent.h"
 
 namespace Syft {
 
@@ -103,14 +103,15 @@ namespace Syft {
          *
          * \return A winning strategy represented as a transducer.
          */
-    //    std::unique_ptr<Transducer> AbstractSingleStrategy(const SynthesisResult &result) const;
+        std::unique_ptr<Transducer_multiagent> AbstractSingleStrategy(const SynthesisResult &result) const;
 
     private:
-    //    std::unique_ptr<Transducer> abstract_single_strategy(const CUDD::BDD &winning_moves,
-    //                                                         const std::shared_ptr<VarMgr> &var_mgr,
-    //                                                         const std::vector<int> &initial_vector,
-    //                                                         const std::vector<CUDD::BDD> &transition_vector,
-    //                                                         const Actor& starting_actor) const;
+        std::unique_ptr<Transducer_multiagent> abstract_single_strategy(const CUDD::BDD &winning_moves,
+                                                             const std::shared_ptr<VarMgr> &var_mgr,
+                                                             const std::vector<int> &initial_vector,
+                                                             const std::vector<CUDD::BDD> &transition_vector,
+                                                             Actor starting_actor,
+                                                             Actor protagonist_actor) const;
 
         std::unordered_map<int, CUDD::BDD>
         synthesize_strategy(const CUDD::BDD &winning_moves, const std::shared_ptr<VarMgr> &var_mgr) const;

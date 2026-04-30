@@ -1,4 +1,4 @@
-# Install script for directory: /home/vboxuser/LydiaSyft/build/_deps/z3-src/src/parsers/util
+# Install script for directory: /home/stella/LydiaSyft/build/_deps/z3-src/src/parsers/util
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
