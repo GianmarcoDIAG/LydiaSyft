@@ -298,6 +298,10 @@ std::size_t VarMgr::input_variable_count() const {
   return input_variables_.size();
 }
 
+std::size_t VarMgr::environment_variable_count() const {
+  return input_variables_.size();
+}
+
 std::size_t VarMgr::agent_variable_count(std::size_t agent_id) const {
   if (agent_id >= agent_variables_.size()) return 0;
   return agent_variables_[agent_id].size();

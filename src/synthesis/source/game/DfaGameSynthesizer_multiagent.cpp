@@ -37,8 +37,8 @@ namespace Syft {
 
         if (starting_actor_.is_environment()) {
             if (protagonist_actor_.is_environment()) {
-                quantify_independent_variables_ = std::make_unique<Forall>(output_cube);
-                quantify_non_state_variables_ = std::make_unique<Exists>(input_cube);
+                quantify_independent_variables_ = std::make_unique<Forall>(input_cube);
+                quantify_non_state_variables_ = std::make_unique<Exists>(output_cube);
             } else {
                 quantify_independent_variables_ = std::make_unique<NoQuantification>();
                 quantify_non_state_variables_ = std::make_unique<ForallExists>(input_cube,
@@ -47,15 +47,15 @@ namespace Syft {
         } else {
             if (protagonist_actor_.is_environment()) {
                 quantify_independent_variables_ = std::make_unique<NoQuantification>();
-                quantify_non_state_variables_ = std::make_unique<ForallExists>(output_cube,
-                                                                               input_cube);
+                quantify_non_state_variables_ = std::make_unique<ForallExists>(input_cube,
+                                                                               output_cube);
             } else {
                 quantify_independent_variables_ = std::make_unique<Forall>(input_cube);
                 quantify_non_state_variables_ = std::make_unique<Exists>(output_cube);
             }
         }
     }
-
+//-------------------------------OLD
     CUDD::BDD DfaGameSynthesizer_multiagent::preimage(
             const CUDD::BDD &winning_states) const {
         // Transitions that move into a winning state
@@ -69,8 +69,50 @@ namespace Syft {
     CUDD::BDD DfaGameSynthesizer_multiagent::project_into_states(
             const CUDD::BDD &winning_moves) const {
         return quantify_non_state_variables_->apply(winning_moves);
-    }
+    } 
 
+   /*  CUDD::BDD DfaGameSynthesizer_multiagent::preimage(const CUDD::BDD &winning_states) const {
+    CUDD::BDD winning_transitions = winning_states.VectorCompose(transition_vector_);
+    CUDD::BDD input_cube = var_mgr_->cudd_mgr()->bddOne();
+    CUDD::BDD output_cube = var_mgr_->cudd_mgr()->bddOne();
+    if(protagonist_actor_.is_environment()){
+            //the protagonist is env
+            input_cube = var_mgr_->environment_input_cube();
+            output_cube = var_mgr_->environment_output_cube();
+        }else{
+            //the protagonist is an agent
+            std::size_t id = protagonist_actor_.id();
+            input_cube = var_mgr_->agent_input_cube(id);
+            output_cube = var_mgr_->agent_output_cube(id);
+        }
+
+    if (starting_actor_ == protagonist_actor_) {
+        return winning_transitions;
+    } else {
+        return winning_transitions.UnivAbstract(input_cube);
+    }
+}
+
+CUDD::BDD DfaGameSynthesizer_multiagent::project_into_states(const CUDD::BDD &winning_moves) const {
+    CUDD::BDD input_cube = var_mgr_->cudd_mgr()->bddOne();
+    CUDD::BDD output_cube = var_mgr_->cudd_mgr()->bddOne();
+    if(protagonist_actor_.is_environment()){
+            //the protagonist is env
+            input_cube = var_mgr_->environment_input_cube();
+            output_cube = var_mgr_->environment_output_cube();
+        }else{
+            //the protagonist is an agent
+            std::size_t id = protagonist_actor_.id();
+            input_cube = var_mgr_->agent_input_cube(id);
+            output_cube = var_mgr_->agent_output_cube(id);
+        }
+    if (starting_actor_ == protagonist_actor_) {
+        return winning_moves.UnivAbstract(input_cube).ExistAbstract(output_cube);
+    } else {
+        return winning_moves.ExistAbstract(output_cube);
+    }
+}
+ */
     bool DfaGameSynthesizer_multiagent::includes_initial_state(
             const CUDD::BDD &winning_states) const {
         // Need to create a copy if we want to define the function as const, since
@@ -93,8 +135,8 @@ namespace Syft {
             target_cube = var_mgr->agent_output_cube(protagonist_actor_.id());
             target_count = var_mgr->agent_variable_count(protagonist_actor_.id());
         } else {
-            target_cube = var_mgr->environment_input_cube();
-            target_count = var_mgr->input_variable_count();
+            target_cube = var_mgr->environment_output_cube();
+            target_count = var_mgr->environment_variable_count();
         }
 
         if(target_count == 0) return {};   

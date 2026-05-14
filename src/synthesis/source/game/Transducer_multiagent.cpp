@@ -19,26 +19,28 @@ Transducer_multiagent::Transducer_multiagent(const std::shared_ptr<VarMgr>& var_
 {}
 
 void Transducer_multiagent::dump_dot(const std::string& filename) const {
-	std::vector<std::string> actor_labels;
+  //var_mgr_->print_mgr();
+  std::vector<std::string> actor_labels;
+  //std::cout << "Current actor: " << (protagonist_actor_.is_environment() ? "ENV" : "Agent " + std::to_string(protagonist_actor_.id())) << std::endl;
 
-	if (protagonist_actor_.is_environment()) {
-		actor_labels = var_mgr_->input_variable_labels();
-	} else {
-		actor_labels = var_mgr_->agent_variable_labels(protagonist_actor_.id());
-	}
-  std::vector<CUDD::ADD> output_vector;
-  std::vector<std::string> final_labels;
-
-  for(const auto& label : actor_labels){
-    int index = var_mgr_->name_to_variable(label).NodeReadIndex();
-
-    if(output_function_.find(index) != output_function_.end()){
-      output_vector.push_back(output_function_.at(index).Add());
-      final_labels.push_back(label);
-    }
+  if (protagonist_actor_.is_environment()) {
+    actor_labels = var_mgr_->input_variable_labels();
+  } else {
+    actor_labels = var_mgr_->agent_variable_labels(protagonist_actor_.id());
   }
 
-  var_mgr_->dump_dot(output_vector, final_labels, filename);
-}  
+  std::size_t output_count = output_function_.size();
+  std::vector<CUDD::ADD> output_vector(output_count);
+
+  for (std::size_t i = 0; i < output_count; ++i) {
+    std::string label = actor_labels[i];
+    //std::cout << "Label: " << label << std::endl;
+    int index = var_mgr_->name_to_variable(label).NodeReadIndex();
+    //std::cout << "Index: " << index << std::endl;
+    output_vector[i] = output_function_.at(index).Add();
+  }
+
+  var_mgr_->dump_dot(output_vector, actor_labels, filename);
+}   
 
 }

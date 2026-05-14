@@ -21,7 +21,7 @@ namespace Syft {
         while (true) {
             CUDD::BDD new_winning_states, new_winning_moves;
 
-            if (starting_actor_ == protagonist_actor_) {
+            if (starting_actor_.is_agent()){
                 CUDD::BDD quantified_X_transitions_to_winning_states = preimage(winning_states);
                 new_winning_moves = winning_moves |
                                     (state_space_ & (!winning_states) & quantified_X_transitions_to_winning_states);
@@ -39,12 +39,16 @@ namespace Syft {
                 result.realizability = true;
                 result.winning_states = new_winning_states;
                 result.winning_moves = new_winning_moves;
+                result.transducer_multiagent = AbstractSingleStrategy(result);
+                result.transducer = nullptr;
                 return result;
 
             } else if (new_winning_states == winning_states) {
                 result.realizability = false;
                 result.winning_states = new_winning_states;
                 result.winning_moves = new_winning_moves;
+                result.transducer_multiagent = nullptr;
+                result.transducer = nullptr;
                 return result;
             }
 

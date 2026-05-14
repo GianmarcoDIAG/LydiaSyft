@@ -185,6 +185,11 @@ namespace Syft {
         std::size_t input_variable_count() const;
 
         /**
+         * \brief Returns the number of environment variables.
+         */
+        std::size_t environment_variable_count() const;
+
+        /**
          * \brief Returns the number of variables for a given agent.
          */
         std::size_t agent_variable_count(std::size_t agent_id) const;
