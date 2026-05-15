@@ -39,7 +39,7 @@ int main(int argc, char ** argv) {
         std::cout << "Input formula: " << formula_str << std::endl;
         std::stringstream formula_stream(formula_str);
         driver->parse(formula_stream);
-        formulas.push_back(driver->get_result());
+        formulas.push_back(std::dynamic_pointer_cast<const whitemech::lydia::LTLfFormula>(driver->get_result()));
     }
 
     // Build explicit-state DFAs

@@ -154,6 +154,50 @@ namespace Syft {
          */
         static ExplicitStateDfa dfa_complement(ExplicitStateDfa &d);
 
+        //---------------------------------------------------------------------------------------------S
+        //set of functions taken from LydiaSyft Plus tool, to be used for obligation fragment synthesis
+        
+        /**
+         * \brief Get final states.
+         */
+        std::vector<size_t> get_final();
+
+        /**
+         * \brief Get the initial state.
+         */
+        std::size_t get_initial();
+
+        // Obligation-fragment specific conversions that preserve original DFA untouched elsewhere.
+        static ExplicitStateDfa dfa_to_Gdfa_obligation(const ExplicitStateDfa &d);
+        static ExplicitStateDfa dfa_to_Fdfa_obligation(const ExplicitStateDfa &d);
+
+        /**
+         * \brief Minimize a deterministic weak automaton using Löding's O(n log n) algorithm.
+         *
+         * This function implements the algorithm from:
+         * Christof Löding, "Efficient minimization of deterministic weak ω-automata"
+         * Information Processing Letters 79 (2001) 105–109
+         *
+         * A weak automaton is one where each SCC is either entirely accepting or entirely rejecting.
+         * The algorithm:
+         * 1. Computes SCCs and maximal coloring in O(n) time
+         * 2. Normalizes final states based on coloring (even = final)
+         * 3. Applies standard DFA minimization in O(n log n) time
+         *
+         * \param d The weak DFA to be minimized.
+         * \return The minimal weak automaton recognizing the same ω-language.
+         */
+        static ExplicitStateDfa dfa_minimize_weak(const ExplicitStateDfa &d);
+
+        //verificare se servono
+        static ExplicitStateDfa dfa_to_Gdfa(ExplicitStateDfa &d);
+
+        static ExplicitStateDfa dfa_to_Fdfa(ExplicitStateDfa &d);
+        
+        static ExplicitStateDfa dfa_remove_initial_self_loops(ExplicitStateDfa &d);
+
+
+
     private:
         static std::vector<std::string>
         traverse_bdd(CUDD::BDD dd, std::shared_ptr<VarMgr> var_mgr, std::vector<std::string> &names,

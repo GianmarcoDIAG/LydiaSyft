@@ -7,6 +7,8 @@
 #include "game/Transducer_multiagent.h"
 #include <tuple>
 #include <optional>
+#include "lydia/logic/pnf.hpp"
+#include "lydia/logic/pp_pnf.hpp"
 
 
 namespace Syft {
@@ -33,7 +35,13 @@ namespace Syft {
         std::optional<bool> realizability = std::nullopt;
         CUDD::BDD winning_move;
     };
-
+    
+    struct LTLfPlus {
+        std::string color_formula_;
+        std::unordered_map<whitemech::lydia::ltlf_plus_ptr, std::string> formula_to_color_;
+        std::unordered_map<whitemech::lydia::ltlf_plus_ptr, whitemech::lydia::PrefixQuantifier> formula_to_quantification_;
+    };
+ 
 /**
  * \brief Abstract class for synthesizers.
  *

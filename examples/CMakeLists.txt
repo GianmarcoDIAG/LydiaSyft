@@ -9,6 +9,7 @@ add_subdirectory(07_ltlf_synthesis_with_stability_conditions)
 add_subdirectory(08_ltlf_synthesis_with_gr1_env_spec)
 add_subdirectory(09_reachability)
 add_subdirectory(10_buchi_reachability)
+add_subdirectory(11_obligation)
 
 add_custom_target(examples)
 

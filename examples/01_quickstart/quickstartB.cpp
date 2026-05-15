@@ -32,7 +32,7 @@ int main(int argc, char ** argv) {
     for (const auto& formula_str : formula_strs) {
         std::stringstream formula_stream(formula_str);
         driver->parse(formula_stream);
-        formulas.push_back(driver->get_result());
+        formulas.push_back(std::dynamic_pointer_cast<const whitemech::lydia::LTLfFormula>(driver->get_result()));
     }
 
     // Initialize partition and variables

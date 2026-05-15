@@ -462,5 +462,432 @@ namespace Syft {
         return res_dfa;
     }
 
+    //set of functions taken from LydiaSyft Plus tool, to be used for obligation fragment synthesis
+
+    std::vector<size_t> ExplicitStateDfa::get_final() {
+        std::vector<size_t> final_states;
+        DFA *dfa = get_dfa();
+        for (int i = 0; i < dfa->ns; i++){
+            if (dfa->f[i] == 1) {
+                final_states.push_back(i);
+            }
+        }
+        return final_states;
+    }
+
+    std::size_t ExplicitStateDfa::get_initial() {
+        DFA *dfa = get_dfa();
+        return dfa->s;
+    }
+
+    ExplicitStateDfa
+    ExplicitStateDfa::dfa_to_Gdfa_obligation(const ExplicitStateDfa &input) {
+        ExplicitStateDfa d(input);
+        int d_ns = d.get_nb_states();
+        int new_ns = d_ns + 1; // add a fresh initial state
+        int n = d.get_nb_variables();
+        int new_len = d.names.size();
+
+        std::vector<size_t> finals = d.get_final();
+        std::vector<bool> is_final(d_ns, false);
+        for (auto s : finals) {
+            if (s < is_final.size()) {
+                is_final[s] = true;
+            }
+        }
+
+        DFA *a = dfaMinimize(d.dfa_);
+
+        int indices[new_len];
+        for (int i = 0; i < d.indices.size(); ++i) {
+            indices[i] = d.indices[i];
+        }
+
+        dfaSetup(new_ns, new_len, indices);
+
+        std::string statuses;
+        statuses.reserve(new_ns + 1);
+
+        auto collect_transitions = [&](int state_idx, int offset) {
+            std::vector<std::pair<int, std::string>> transitions;
+            paths local_paths = make_paths(a->bddm, a->q[state_idx]);
+            paths iter = local_paths;
+            while (iter) {
+                auto guard = whitemech::lydia::get_path_guard(n, iter->trace);
+                transitions.emplace_back(iter->to + offset, guard);
+                iter = iter->next;
+            }
+            kill_paths(local_paths);
+            return transitions;
+        };
+
+        auto emit_state = [&](const std::vector<std::pair<int, std::string>>& transitions,
+                              int default_target) {
+            dfaAllocExceptions(static_cast<int>(transitions.size()));
+            for (const auto &p : transitions) {
+                std::vector<char> guard(p.second.begin(), p.second.end());
+                guard.push_back('\0');
+                dfaStoreException(p.first, guard.data());
+            }
+            dfaStoreState(default_target);
+        };
+
+        // New non-accepting initial state (index 0) copies behaviour of original initial
+        statuses += '-';
+        auto initial_transitions = collect_transitions(0, 1);
+        int initial_default = initial_transitions.empty() ? 0 : initial_transitions.front().first;
+        emit_state(initial_transitions, initial_default);
+
+        // Remaining states correspond to original ones, shifted by +1
+        for (int i = 0; i < d_ns; ++i) {
+            int new_idx = i + 1;
+            if (is_final[i]) {
+                statuses += '+';
+                auto transitions = collect_transitions(i, 1);
+                int default_target = transitions.empty() ? new_idx : transitions.front().first;
+                emit_state(transitions, default_target);
+            } else {
+                statuses += '-';
+                dfaAllocExceptions(0);
+                dfaStoreState(new_idx);
+            }
+        }
+
+        statuses.push_back('\0');
+        DFA *tmp = dfaBuild(statuses.data());
+        ExplicitStateDfa res(tmp, d.names);
+        return res;
+    }
+
+    ExplicitStateDfa
+    ExplicitStateDfa::dfa_to_Fdfa_obligation(const ExplicitStateDfa &input) {
+        ExplicitStateDfa d(input);
+        int d_ns = d.get_nb_states();
+        int new_ns = d_ns + 1; // add a fresh initial state
+        int n = d.get_nb_variables();
+        int new_len = d.names.size();
+
+        std::vector<size_t> final_states = d.get_final();
+        std::vector<bool> is_final(d_ns, false);
+        for (auto s : final_states) {
+            if (s < is_final.size()) {
+                is_final[s] = true;
+            }
+        }
+
+        DFA *a = dfaMinimize(d.dfa_);
+
+        int indices[new_len];
+        for (int i = 0; i < d.indices.size(); ++i) {
+            indices[i] = d.indices[i];
+        }
+
+        dfaSetup(new_ns, new_len, indices);
+
+        auto collect_transitions = [&](int state_idx, int offset) {
+            std::vector<std::pair<int, std::string>> transitions;
+            paths local_paths = make_paths(a->bddm, a->q[state_idx]);
+            paths iter = local_paths;
+            while (iter) {
+                auto guard = whitemech::lydia::get_path_guard(n, iter->trace);
+                transitions.emplace_back(iter->to + offset, guard);
+                iter = iter->next;
+            }
+            kill_paths(local_paths);
+            return transitions;
+        };
+
+        auto emit_state = [&](const std::vector<std::pair<int, std::string>>& transitions,
+                              int default_target) {
+            dfaAllocExceptions(static_cast<int>(transitions.size()));
+            for (const auto &p : transitions) {
+                std::vector<char> guard(p.second.begin(), p.second.end());
+                guard.push_back('\0');
+                dfaStoreException(p.first, guard.data());
+            }
+            dfaStoreState(default_target);
+        };
+
+        std::string statuses;
+        statuses.reserve(new_ns + 1);
+
+        // New initial state: always rejecting, mimics original initial moves
+        statuses += '-';
+        auto initial_transitions = collect_transitions(0, 1);
+        int initial_default = initial_transitions.empty() ? 0 : initial_transitions.front().first;
+        emit_state(initial_transitions, initial_default);
+
+        for (int i = 0; i < d_ns; ++i) {
+            int new_idx = i + 1;
+            if (is_final[i]) {
+                statuses += '+';
+                dfaAllocExceptions(0);
+                dfaStoreState(new_idx);
+            } else {
+                statuses += '-';
+                auto transitions = collect_transitions(i, 1);
+                int default_target = transitions.empty() ? new_idx : transitions.front().first;
+                emit_state(transitions, default_target);
+            }
+        }
+
+        statuses.push_back('\0');
+        DFA *tmp = dfaBuild(statuses.data());
+        ExplicitStateDfa res(tmp, d.names);
+        return res;
+    }
+
+
+    ExplicitStateDfa
+    ExplicitStateDfa::dfa_to_Gdfa(ExplicitStateDfa &d) {
+        // std::cout << "--------- d:\n";
+        // d.dfa_print();
+        int d_ns = d.get_nb_states();
+        int new_ns = d.get_final().size() + 2; // initial state is "0" and sink state is "new_ns"
+        int n = d.get_nb_variables();
+        int new_len = d.names.size();
+
+        bool safe_states[d_ns];
+        int state_map[d_ns];
+        memset(safe_states, false, sizeof(safe_states));
+        memset(state_map, -1, sizeof(state_map));
+
+        safe_states[0] = true; // we would like to keep initial state
+        for (auto s: d.get_final()) {
+            safe_states[s] = true;
+        }
+
+        int index = 0;
+        for (int i = 0; i < d_ns; i++) {
+            if (!safe_states[i]) continue;
+            state_map[i] = index++;
+        } // relabel all safe states
+
+        DFA *a = d.dfa_;
+        DFA *result;
+        paths state_paths, pp;
+        std::string statuses;
+
+        int indices[new_len];
+        for (int i = 0; i < d.indices.size(); i++) {
+            indices[i] = d.indices[i];
+        }
+
+        dfaSetup(new_ns, new_len, indices);
+
+        for (int i = 0; i < a->ns; i++) {
+            // ignore non-safe_states
+            if (!safe_states[i]) continue;
+            int next_state;
+            std::string next_guard;
+
+            auto transitions = std::vector<std::pair<int, std::string>>();
+            state_paths = pp = make_paths(a->bddm, a->q[i]);
+            while (pp) {
+                auto guard = whitemech::lydia::get_path_guard(n, pp->trace);
+                // ignore non safe_states
+                if (safe_states[pp->to]) {
+                    transitions.emplace_back(pp->to, guard);
+                }
+                pp = pp->next;
+            }
+            if (i == 0) {
+                statuses += "-";
+            } else {
+                statuses += "+";
+            }
+//            statuses += "+";
+            // transitions
+            int nb_transitions = transitions.size();
+            dfaAllocExceptions(nb_transitions);
+            for (const auto &p: transitions) {
+                std::tie(next_state, next_guard) = p;
+                dfaStoreException(state_map[next_state], next_guard.data());
+            }
+            dfaStoreState(new_ns-1);
+            kill_paths(state_paths);
+        }
+
+        statuses += "-";
+        dfaAllocExceptions(0);
+        dfaStoreState(new_ns-1);
+
+        DFA *tmp = dfaBuild(statuses.data());
+        ExplicitStateDfa res1(tmp, d.names);
+
+        // res1.dfa_print();
+        //result = dfaMinimize(tmp);
+        ExplicitStateDfa res(tmp, d.names);
+        // std::cout << "--------- Gd:\n";
+        // res.dfa_print();
+        return res;
+    }
+
+    ExplicitStateDfa
+    ExplicitStateDfa::dfa_to_Fdfa(ExplicitStateDfa &d) {
+        int d_ns = d.get_nb_states();
+        std::vector<size_t> final_states = d.get_final();
+        int n = d.get_nb_variables();
+        int new_len = d.names.size();
+
+//        int state_map[d_ns];
+//        memset(state_map, -1, sizeof(state_map));
+//
+//        int index = 0;
+//        for (int i = 0; i < d_ns; i++) {
+//            state_map[i] = index++;
+//        }
+
+        DFA *a = d.dfa_;
+        DFA *result;
+        paths state_paths, pp;
+        std::string statuses;
+
+        int indices[new_len];
+        for (int i = 0; i < d.indices.size(); i++) {
+            indices[i] = d.indices[i];
+        }
+
+        dfaSetup(d_ns, new_len, indices);
+
+        for (int i = 0; i < a->ns; i++) {
+
+            int next_state;
+            std::string next_guard;
+
+            auto transitions = std::vector<std::pair<int, std::string>>();
+            state_paths = pp = make_paths(a->bddm, a->q[i]);
+            auto it = find(final_states.begin(), final_states.end(), i);
+            while (pp) {
+                auto guard = whitemech::lydia::get_path_guard(n, pp->trace);
+                if (it != final_states.end()) {
+                    transitions.emplace_back(i, guard);
+                } else {
+                    transitions.emplace_back(pp->to, guard);
+                }
+
+                pp = pp->next;
+            }
+            if (it != final_states.end()) {
+                statuses += "+";
+            } else {
+                statuses += "-";
+            }
+
+            // transitions
+            int nb_transitions = transitions.size();
+            dfaAllocExceptions(nb_transitions);
+            for (const auto &p: transitions) {
+                std::tie(next_state, next_guard) = p;
+                dfaStoreException(next_state, next_guard.data());
+            }
+            dfaStoreState(d_ns);
+            kill_paths(state_paths);
+        }
+
+//        statuses += "+";
+//        dfaAllocExceptions(0);
+//        dfaStoreState(d_ns);
+
+        DFA *tmp = dfaBuild(statuses.data());
+        //result = dfaMinimize(tmp);
+        ExplicitStateDfa res(tmp, d.names);
+        return res;
+    }
+
+
+    ExplicitStateDfa
+    ExplicitStateDfa::dfa_remove_initial_self_loops(ExplicitStateDfa &d) {
+        //  std::cout << "--------- remove initial loops:\n";
+        // d.dfa_print();
+        int d_ns = d.get_nb_states();
+        int new_ns = d_ns + 1; // initial state is "0", and new state is new_ns-1
+        int n = d.get_nb_variables();
+        int new_len = d.names.size();
+
+        std::vector<size_t> final_states = d.get_final();
+
+        DFA *a = d.dfa_;
+        DFA *result;
+        paths state_paths, pp;
+        std::string statuses;
+
+        int indices[new_len];
+        for (int i = 0; i < d.indices.size(); i++) {
+            indices[i] = d.indices[i];
+        }
+
+        dfaSetup(new_ns, new_len, indices);
+
+        int next_state;
+        std::string next_guard;
+
+        auto transitions = std::vector<std::pair<int, std::string>>();
+        state_paths = pp = make_paths(a->bddm, a->q[0]);
+        // auto it = find(final_states.begin(), final_states.end(), i);
+
+        while (pp) {
+            auto guard = whitemech::lydia::get_path_guard(n, pp->trace);
+            transitions.emplace_back(pp->to+1, guard);
+            pp = pp->next;
+        }
+        statuses += "+";
+
+        // transitions
+        int nb_transitions = transitions.size();
+        dfaAllocExceptions(nb_transitions);
+        for (const auto &p: transitions) {
+            std::tie(next_state, next_guard) = p;
+            dfaStoreException(next_state, next_guard.data());
+        }
+        dfaStoreState(new_ns);
+        kill_paths(state_paths);
+
+        for (int i = 0; i < a->ns; i++) {
+            int next_state;
+            std::string next_guard;
+
+            auto transitions = std::vector<std::pair<int, std::string>>();
+            state_paths = pp = make_paths(a->bddm, a->q[i]);
+            auto it = find(final_states.begin(), final_states.end(), i);
+
+            while (pp) {
+                auto guard = whitemech::lydia::get_path_guard(n, pp->trace);
+                transitions.emplace_back(pp->to+1, guard);
+
+                pp = pp->next;
+            }
+
+
+
+
+            if (it != final_states.end()) {
+                statuses += "+";
+            } else {
+                statuses += "-";
+            }
+
+            // transitions
+            int nb_transitions = transitions.size();
+            dfaAllocExceptions(nb_transitions);
+            for (const auto &p: transitions) {
+                std::tie(next_state, next_guard) = p;
+                dfaStoreException(next_state, next_guard.data());
+            }
+            dfaStoreState(d_ns);
+            kill_paths(state_paths);
+        }
+
+//        statuses += "+";
+//        dfaAllocExceptions(0);
+//        dfaStoreState(d_ns);
+
+        DFA *tmp = dfaBuild(statuses.data());
+        // result = dfaMinimize(tmp);
+        ExplicitStateDfa res(tmp, d.names);
+        return res;
+    }
+
+
 
 }

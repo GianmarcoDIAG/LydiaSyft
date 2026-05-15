@@ -72,7 +72,8 @@ int main(int argc, char ** argv) {
         auto ltlf_ptr = driver->get_result();
 
         //Explicit DFA
-        Syft::ExplicitStateDfa dfa = Syft::ExplicitStateDfa::dfa_of_formula(*ltlf_ptr);
+        auto ltlf_formula = std::dynamic_pointer_cast<const whitemech::lydia::LTLfFormula>(ltlf_ptr);
+        Syft::ExplicitStateDfa dfa = Syft::ExplicitStateDfa::dfa_of_formula(*ltlf_formula);
         dfa.export_dfa(prefix + ".mona");
         whitemech::lydia::print_mona_dfa(
             dfa.dfa_,
