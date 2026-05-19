@@ -1,8 +1,0 @@
-// automatically generated file.
-#define Z3_MAJOR_VERSION   4
-#define Z3_MINOR_VERSION   8
-#define Z3_BUILD_NUMBER    12
-#define Z3_REVISION_NUMBER 0
-
-#define Z3_FULL_VERSION    "4.8.12.0 3a402ca2c14c3891d24658318406f80ce59b719f z3-4.8.4-5187-g3a402ca2c"
-#define Z3GITHASH 3a402ca2c14c3891d24658318406f80ce59b719f
