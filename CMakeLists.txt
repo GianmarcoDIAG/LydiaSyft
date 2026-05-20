@@ -88,8 +88,8 @@ message(STATUS EXT_LIBRARIES_PATH ${EXT_LIBRARIES_PATH})
 
 add_subdirectory(src)
 
-# if (LYDIASYFT_ENABLE_TESTS)
-  # add_subdirectory(test)
+#if (LYDIASYFT_ENABLE_TESTS)
+   add_subdirectory(test)
 # endif()
 
 # if (LYDIASYFT_ENABLE_EXAMPLES)

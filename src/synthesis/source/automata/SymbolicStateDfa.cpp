@@ -310,5 +310,11 @@ namespace Syft {
         return complement_automaton;
     }
 
+    //TO IMPLEMENT
+    SymbolicStateDfa SymbolicStateDfa::build_CORE(const SymbolicStateDfa &dfa) {
+        SymbolicStateDfa result = dfa;
+        return result;
+    }
+
 }
 

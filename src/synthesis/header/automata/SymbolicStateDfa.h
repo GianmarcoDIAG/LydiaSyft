@@ -7,6 +7,7 @@
 #include <cuddObj.hh>
 
 #include "ExplicitStateDfaAdd.h"
+#include "Synthesizer.h"
 
 namespace Syft {
 
@@ -197,6 +198,17 @@ namespace Syft {
     * \return A symbolic DFA of the complement.
     */
         static SymbolicStateDfa complement(const SymbolicStateDfa dfa);
+    
+        /**
+    * \brief Returns the CORE of a formula.
+    *
+    * \param formula The specification of an actor.
+    * \return A symbolic DWA that accepts the CORE(formula).
+    */ 
+        //static SymbolicStateDfa build_CORE(const LTLfPlus &formula);
+        //Al momento passo un un symbolic dfa
+        static SymbolicStateDfa build_CORE(const SymbolicStateDfa &dfa);
+
     };
 
 }

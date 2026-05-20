@@ -145,5 +145,11 @@ namespace Syft {
     bool Parser::get_sys_first() const{
         return sys_first;
     }
+
+    //backword compatibility 
+    std::vector<std::string> Parser::get_output_variables() const{
+        if(agent_variables.empty()) return {};
+        return agent_variables[0];
+    }
 }
 

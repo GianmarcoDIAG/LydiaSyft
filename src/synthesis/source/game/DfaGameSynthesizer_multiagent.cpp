@@ -71,48 +71,6 @@ namespace Syft {
         return quantify_non_state_variables_->apply(winning_moves);
     } 
 
-   /*  CUDD::BDD DfaGameSynthesizer_multiagent::preimage(const CUDD::BDD &winning_states) const {
-    CUDD::BDD winning_transitions = winning_states.VectorCompose(transition_vector_);
-    CUDD::BDD input_cube = var_mgr_->cudd_mgr()->bddOne();
-    CUDD::BDD output_cube = var_mgr_->cudd_mgr()->bddOne();
-    if(protagonist_actor_.is_environment()){
-            //the protagonist is env
-            input_cube = var_mgr_->environment_input_cube();
-            output_cube = var_mgr_->environment_output_cube();
-        }else{
-            //the protagonist is an agent
-            std::size_t id = protagonist_actor_.id();
-            input_cube = var_mgr_->agent_input_cube(id);
-            output_cube = var_mgr_->agent_output_cube(id);
-        }
-
-    if (starting_actor_ == protagonist_actor_) {
-        return winning_transitions;
-    } else {
-        return winning_transitions.UnivAbstract(input_cube);
-    }
-}
-
-CUDD::BDD DfaGameSynthesizer_multiagent::project_into_states(const CUDD::BDD &winning_moves) const {
-    CUDD::BDD input_cube = var_mgr_->cudd_mgr()->bddOne();
-    CUDD::BDD output_cube = var_mgr_->cudd_mgr()->bddOne();
-    if(protagonist_actor_.is_environment()){
-            //the protagonist is env
-            input_cube = var_mgr_->environment_input_cube();
-            output_cube = var_mgr_->environment_output_cube();
-        }else{
-            //the protagonist is an agent
-            std::size_t id = protagonist_actor_.id();
-            input_cube = var_mgr_->agent_input_cube(id);
-            output_cube = var_mgr_->agent_output_cube(id);
-        }
-    if (starting_actor_ == protagonist_actor_) {
-        return winning_moves.UnivAbstract(input_cube).ExistAbstract(output_cube);
-    } else {
-        return winning_moves.ExistAbstract(output_cube);
-    }
-}
- */
     bool DfaGameSynthesizer_multiagent::includes_initial_state(
             const CUDD::BDD &winning_states) const {
         // Need to create a copy if we want to define the function as const, since

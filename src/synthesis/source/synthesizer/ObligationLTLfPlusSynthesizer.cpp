@@ -396,14 +396,13 @@ namespace Syft {
         }
 
         if (!res.is_symbolic && res.explicit_dfa.has_value()) {
-            static int arena_counter = 0;
-            std::string final_mona_path = "final_dfa_explicit"+std::to_string(arena_counter)+".mona";
+            std::string actor_name = protagonist_actor_.is_environment() ? "env" : "agent" + std::to_string(protagonist_actor_.id());
+            std::string final_mona_path = "final_dfa_explicit_"+ actor_name +".mona";
             whitemech::lydia::print_mona_dfa(
             res.explicit_dfa->dfa_, 
             final_mona_path,
             res.explicit_dfa->get_nb_variables()
             );
-            arena_counter++;
             spdlog::info("[Debug] Final explicit dfa saved in: {}", final_mona_path);
         } else if (res.is_symbolic) {
             spdlog::warn("[Debug] Impossible to print explicit dfa.");
@@ -411,9 +410,9 @@ namespace Syft {
  
         auto symbolic_arena = res.to_symbolic();
         // info_log the number of states we approximated using spdlog
-        spdlog::info("[ObligationFragment] Final arena has approximately {} states, {} bits ",
-                     res.state_count_str(),
-                     symbolic_arena.transition_function().size());
+        //spdlog::info("[ObligationFragment] Final arena has approximately {} states, {} bits ",
+        //             res.state_count_str(),
+        //             symbolic_arena.transition_function().size());
 
         // Always return symbolic representation
                 // Trigger CUDD variable reordering to compact BDDs after product construction
@@ -432,7 +431,7 @@ namespace Syft {
 
         std::string actor_name = protagonist_actor_.is_environment() ? "env" : "agent" + std::to_string(protagonist_actor_.id());
 
-        spdlog::info("[ObligationFragment] Building explicit DFAs for each color...");
+        //spdlog::info("[ObligationFragment] Building explicit DFAs for each color...");
         
         for (const auto& [ltlf_plus_arg, prefix_quantifier] : ltlf_plus_formula_.formula_to_quantification_) {
             whitemech::lydia::ltlf_ptr ltlf_arg = ltlf_plus_arg->ltlf_arg();
@@ -444,7 +443,7 @@ namespace Syft {
                
                 case whitemech::lydia::PrefixQuantifier::Forall: {
                     // Safety property: convert to G(phi) form
-                    spdlog::debug("[ObligationFragment] Applying Forall transformation for color {}", color);
+                    //spdlog::debug("[ObligationFragment] Applying Forall transformation for color {}", color);
                     ExplicitStateDfa trimmed_explicit_dfa = ExplicitStateDfa::dfa_to_Gdfa_obligation(explicit_dfa);
                     //ExplicitStateDfa minised = minimize_if_fewer_bits(std::move(trimmed_explicit_dfa));
                     color_to_explicit_dfa.insert({color, std::move(trimmed_explicit_dfa)});
@@ -454,13 +453,13 @@ namespace Syft {
                         filename,                             // Nome file
                         color_to_explicit_dfa.at(color).get_nb_variables() // Numero variabili
                     );
-                    spdlog::info("[Debug] Exported DFA MONA for color {} in {}", color, filename);
+                    //spdlog::info("[Debug] Exported DFA MONA for color {} in {}", color, filename);
                     
                     break;
                 }
                 case whitemech::lydia::PrefixQuantifier::Exists: {
                     // Guarantee property: convert to F(phi) form
-                    spdlog::debug("[ObligationFragment] Applying Exists transformation for color {}", color);
+                    //spdlog::debug("[ObligationFragment] Applying Exists transformation for color {}", color);
                     Syft::ExplicitStateDfa trimmed_explicit_dfa = Syft::ExplicitStateDfa::dfa_to_Fdfa_obligation(explicit_dfa);
                                         spdlog::debug("[ObligationFragment] Appplied Exists transformation for color {}", color);
                     //Syft::ExplicitStateDfa minised = minimize_if_fewer_bits(std::move(trimmed_explicit_dfa));
@@ -471,7 +470,7 @@ namespace Syft {
                         filename,                             // Nome file
                         color_to_explicit_dfa.at(color).get_nb_variables() // Numero variabili
                     );
-                    spdlog::info("[Debug] Exported DFA MONA for color {} in {}", color, filename);
+                    //spdlog::info("[Debug] Exported DFA MONA for color {} in {}", color, filename);
                     
                     break;
                 }
@@ -482,11 +481,11 @@ namespace Syft {
         }
 
         // Step 2: Build the product arena using hybrid approach (MONA when small, symbolic when large)
-        spdlog::info("[ObligationFragment] Computing product DFA using hybrid approach...");
+        //spdlog::info("[ObligationFragment] Computing product DFA using hybrid approach...");
         SymbolicStateDfa arena = build_arena_from_color_formula_hybrid(
             ltlf_plus_formula_.color_formula_, color_to_explicit_dfa);
         
-        spdlog::info("[ObligationFragment] Final arena DFA created");
+        //spdlog::info("[ObligationFragment] Final arena DFA created");
         // Step 3: Collect final states for debugging (convert individual DFAs just for final state info)
         for (const auto &[color, explicit_dfa] : color_to_explicit_dfa) {
             ExplicitStateDfaAdd add = ExplicitStateDfaAdd::from_dfa_mona(var_mgr_, explicit_dfa);
@@ -499,7 +498,7 @@ namespace Syft {
         
         auto t1 = clock::now();
         auto ms = std::chrono::duration_cast<std::chrono::milliseconds>(t1 - t0).count();
-        spdlog::info("[ObligationFragment] Total DFA construction time: {} ms", ms);
+        //spdlog::info("[ObligationFragment] Total DFA construction time: {} ms", ms);
 
         return std::make_pair(arena, color_to_final_states);
     }

@@ -29,10 +29,23 @@ using namespace whitemech::lydia;
 
 
 int main(int argc, char ** argv) {
+    // 1. Command line arguments check
+    if (argc < 2) {
+        std::cerr << "[ERROR] You must specify the test case directory.\n";
+        std::cerr << "Usage: " << argv[0] << " <test_directory_path>\n";
+        return 1;
+    }
+
     try {
-        std::string root_dir = "/home/stella/LydiaSyft/examples/11_obligation/";
-        std::string part_file = (root_dir + "var.part");
-        InputOutputPartition partition = InputOutputPartition::read_from_file(part_file);
+        // Clean path handling using std::filesystem
+        std::filesystem::path root_dir = argv[1];
+        std::filesystem::path part_file = root_dir / "var.part";
+
+        if (!std::filesystem::exists(part_file)) {
+            throw std::runtime_error("Partition file not found: " + part_file.string());
+        }
+
+        InputOutputPartition partition = InputOutputPartition::read_from_file(part_file.string());
         
         auto input_vars = partition.input_variables;
         auto agent_vars_groups = partition.agent_variables;
@@ -63,9 +76,9 @@ int main(int argc, char ** argv) {
         }
 
         //Formulas
-        std::vector<std::string> formula_files = {root_dir + "env.ltlf"};
+        std::vector<std::filesystem::path> formula_files = { root_dir / "env.ltlf" };
         for (size_t i = 0; i < num_agents; ++i) {
-            formula_files.push_back(root_dir + "agent" + std::to_string(i) + ".ltlf");
+            formula_files.push_back(root_dir / ("agent" + std::to_string(i) + ".ltlf"));
         }
 
         // LTLf+ driver
@@ -75,9 +88,12 @@ int main(int argc, char ** argv) {
         std::vector<SymbolicStateDfa> dfas;
         std::vector<ExplicitStateDfa> explicit_dfas;
         std::size_t i = 0;
-        for (const auto& filename : formula_files) {
-            std::ifstream file(filename);
-            if (!file.is_open()) throw std::runtime_error("Impossible to open file " + filename);
+        for (const auto& filepath : formula_files) {
+            if (!std::filesystem::exists(filepath)) {
+                throw std::runtime_error("Missing formula file: " + filepath.string());
+            }
+
+            std::ifstream file(filepath);
             std::stringstream buffer; buffer << file.rdbuf();
             std::stringstream formula_stream(buffer.str());
             driver->parse(formula_stream);
@@ -103,7 +119,6 @@ int main(int argc, char ** argv) {
             );
 
             //we have to convert  the ltlf plus formula into a dwa through function convert_to_symbolic
-            
             auto [final_dfa, color_to_final_states] = synthesizer.convert_to_symbolic_dfa();
             dfas.push_back(std::move(final_dfa));
            
@@ -113,10 +128,11 @@ int main(int argc, char ** argv) {
         // Build Arena
         SymbolicStateDfa arena = SymbolicStateDfa::product_OR(dfas);
         //save in a dot file the arena
-        arena.dump_dot(root_dir + "arena.dot");
-
-/* 
-        for (size_t i = 0; i < actors.size(); ++i) {  
+        /* std::filesystem::path arena_out = root_dir / "arena.dot";
+        arena.dump_dot(arena_out.string());
+        std::cout << "Arena saved to: " << arena_out.string() << std::endl;
+        */
+        /* for (size_t i = 0; i < actors.size(); ++i) {  
 
 
             // Goal is based on protagonist's formula only
@@ -156,7 +172,7 @@ int main(int argc, char ** argv) {
         } */
 
     } catch (const std::exception& e) {
-        std::cerr << "[FATAL ERROR] " << e.what() << std::endl;
+        std::cerr << "\n[FATAL ERROR] " << e.what() << std::endl;
         return 1;
     }
     return 0;

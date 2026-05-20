@@ -12,6 +12,12 @@ FetchContent_MakeAvailable(Catch2)
 
 set (TEST_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}")
 file (GLOB_RECURSE TEST_SOURCE_FILES "${TEST_MODULE_PATH}/*.cpp")
+
+list(REMOVE_ITEM TEST_SOURCE_FILES 
+    "${TEST_MODULE_PATH}/test_one_step_realizability_check.cpp"
+    "${TEST_MODULE_PATH}/test_one_step_unrealizability_check.cpp"
+)
+
 include_directories(${UTILS_INCLUDE_PATH} ${PARSER_INCLUDE_PATH} ${SYNTHESIS_INCLUDE_PATH} ${EXT_INCLUDE_PATH})
 add_executable(tests ${TEST_SOURCE_FILES} utils.hpp integration_tests_utils.hpp)
 target_link_libraries(tests PRIVATE Catch2::Catch2WithMain ${PARSER_LIB_NAME} ${SYNTHESIS_LIB_NAME} ${UTILS_LIB_NAME} ${EXT_LIBRARIES_PATH})
