@@ -197,7 +197,7 @@ namespace Syft {
         /**
          * \brief Returns the number agents.
          */
-        std::size_t agents_count(std::size_t agent_id) const;
+        std::size_t agents_count() const;
 
         /**
          * \brief Backword compatibility: Returns a BDD formed by the conjunction of all environment variables.
@@ -372,6 +372,13 @@ namespace Syft {
          *
          */
         std::size_t create_complement_state_space(
+                const std::size_t automaton_id);
+        
+        /**
+         * \brief Create the state space when cloning a DFA.
+         *
+         */
+        std::size_t create_clone_state_space(
                 const std::size_t automaton_id);
 
         // Backward compatibility for two-player

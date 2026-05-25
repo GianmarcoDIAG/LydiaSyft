@@ -10,6 +10,7 @@ add_subdirectory(08_ltlf_synthesis_with_gr1_env_spec)
 add_subdirectory(09_reachability)
 add_subdirectory(10_buchi_reachability)
 add_subdirectory(11_obligation)
+add_subdirectory(12_algorithm)
 
 add_custom_target(examples)
 
@@ -24,4 +25,5 @@ add_dependencies(examples
     ltlf_synthesis_with_gr1_env_spec_example
     reachability_example
     buchi_reachability_example
+    algorithm_example
 )

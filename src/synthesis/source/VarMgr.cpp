@@ -196,6 +196,27 @@ std::size_t VarMgr::create_product_state_space(
         return complement_automaton_id;
     }
 
+    std::size_t VarMgr::create_clone_state_space(const std::size_t automaton_id) {
+    std::size_t clone_automaton_id = state_variables_.size();
+
+    state_variables_.emplace_back();
+
+    state_variables_[clone_automaton_id].insert(
+            state_variables_[clone_automaton_id].end(),
+            state_variables_[automaton_id].begin(),
+            state_variables_[automaton_id].end());
+
+    for (const CUDD::BDD& var : state_variables_[automaton_id]) {
+        std::size_t index = var.NodeReadIndex();
+        if (index_to_name_.find(index) != index_to_name_.end()) {
+            index_to_name_[index] = index_to_name_[index]; 
+        }
+    }
+
+    return clone_automaton_id;
+}
+
+    
 CUDD::BDD VarMgr::state_variable(std::size_t automaton_id, std::size_t i)
     const {
   return state_variables_[automaton_id][i];
@@ -307,7 +328,7 @@ std::size_t VarMgr::agent_variable_count(std::size_t agent_id) const {
   return agent_variables_[agent_id].size();
 }
 
-std::size_t VarMgr::agents_count(std::size_t agent_id) const {
+std::size_t VarMgr::agents_count() const {
   return agent_variables_.size();
 }
 

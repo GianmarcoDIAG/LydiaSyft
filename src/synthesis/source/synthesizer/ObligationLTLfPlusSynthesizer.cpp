@@ -403,7 +403,7 @@ namespace Syft {
             final_mona_path,
             res.explicit_dfa->get_nb_variables()
             );
-            spdlog::info("[Debug] Final explicit dfa saved in: {}", final_mona_path);
+            //spdlog::info("[Debug] Final explicit dfa saved in: {}", final_mona_path);
         } else if (res.is_symbolic) {
             spdlog::warn("[Debug] Impossible to print explicit dfa.");
         }

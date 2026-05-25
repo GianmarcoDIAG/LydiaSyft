@@ -200,6 +200,14 @@ namespace Syft {
         static SymbolicStateDfa complement(const SymbolicStateDfa dfa);
     
         /**
+    * \brief Returns the clone of a symbolic DFA.
+    *
+    * \param dfa The DFA to be cloned.
+    * \return A symbolic DFA that is the clone.
+    */
+        static SymbolicStateDfa clone(const SymbolicStateDfa dfa);
+    
+        /**
     * \brief Returns the CORE of a formula.
     *
     * \param formula The specification of an actor.
@@ -207,8 +215,7 @@ namespace Syft {
     */ 
         //static SymbolicStateDfa build_CORE(const LTLfPlus &formula);
         //Al momento passo un un symbolic dfa
-        static SymbolicStateDfa build_CORE(const SymbolicStateDfa &dfa);
-
+        static SymbolicStateDfa get_CORE(const SymbolicStateDfa &dfa, Actor protagonist_actor, Actor starting_actor);
     };
 
 }
