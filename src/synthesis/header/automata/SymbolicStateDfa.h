@@ -200,21 +200,15 @@ namespace Syft {
         static SymbolicStateDfa complement(const SymbolicStateDfa dfa);
     
         /**
-    * \brief Returns the clone of a symbolic DFA.
-    *
-    * \param dfa The DFA to be cloned.
-    * \return A symbolic DFA that is the clone.
-    */
-        static SymbolicStateDfa clone(const SymbolicStateDfa dfa);
-    
+       
         /**
     * \brief Returns the CORE of a formula.
     *
-    * \param formula The specification of an actor.
+    * \param dwa of the specification of an actor.
+    * \param protagonist_actor the protagonist actor for which we want to compute the CORE.
+    * \param starting_actor the starting actor for the game used to compute the winning region.
     * \return A symbolic DWA that accepts the CORE(formula).
     */ 
-        //static SymbolicStateDfa build_CORE(const LTLfPlus &formula);
-        //Al momento passo un un symbolic dfa
         static SymbolicStateDfa get_CORE(const SymbolicStateDfa &dfa, Actor protagonist_actor, Actor starting_actor);
     };
 

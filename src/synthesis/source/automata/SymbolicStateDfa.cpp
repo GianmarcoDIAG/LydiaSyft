@@ -312,24 +312,6 @@ namespace Syft {
         return complement_automaton;
     }
 
-SymbolicStateDfa SymbolicStateDfa::clone(const SymbolicStateDfa dfa) {
-    std::shared_ptr<VarMgr> var_mgr = dfa.var_mgr();
-
-    std::size_t clone_automaton_id = var_mgr->create_clone_state_space(dfa.automaton_id());
-
-    std::vector<int> initial_state = dfa.initial_state();
-    CUDD::BDD final_states = dfa.final_states();
-
-    std::vector<CUDD::BDD> transition_function = dfa.transition_function();
-
-    SymbolicStateDfa clone_automaton(std::move(var_mgr));
-    clone_automaton.automaton_id_ = clone_automaton_id;
-    clone_automaton.initial_state_ = std::move(initial_state);
-    clone_automaton.transition_function_ = std::move(transition_function);
-    clone_automaton.final_states_ = std::move(final_states);
-
-    return clone_automaton;
-}
   
     
 SymbolicStateDfa SymbolicStateDfa::get_CORE(const Syft::SymbolicStateDfa &dfa, Actor protagonist_actor, Actor starting_actor) {
@@ -344,27 +326,21 @@ SymbolicStateDfa SymbolicStateDfa::get_CORE(const Syft::SymbolicStateDfa &dfa, A
     SynthesisResult result = game.run();
     CUDD::BDD winning_region = result.winning_states;
             
-    //STEP 2: clone the original Dfa
-    Syft::SymbolicStateDfa core_dfa = clone(dfa);
-    std::size_t new_id = core_dfa.automaton_id();
-            
-    //STEP 3: add z_sink (and set to 0 for initial state)           
-    std::string sink_name = "z_sink_" + (protagonist_actor.is_environment() ? "env" : "agent_" + std::to_string(protagonist_actor.id()));
+    //STEP 2: create a new dfa with the same values of the original Dfa + STEP 3) create new sink
+    std::string sink_name = "z_sink_" + (protagonist_actor.is_environment() ? "env" : "agent" + std::to_string(protagonist_actor.id()));
+    std::size_t new_id = var_mgr->create_core_state_space(dfa.automaton_id(), sink_name);
     
-    var_mgr->create_named_state_variables({sink_name});
-    CUDD::BDD z_sink = var_mgr->name_to_variable(sink_name);
-    core_dfa.initial_state_.push_back(0);
     
-    core_dfa.transition_function_.push_back(z_sink);
-
+    std::string unique_sink_name = sink_name + "_" + std::to_string(new_id);
+    CUDD::BDD z_sink = var_mgr->name_to_variable(unique_sink_name);  
+    
     //STEP 4:set BDD for z_sinz when actor is an agent
     //STEP 5:set BDD for z_sink when actor is environment
     std::vector<CUDD::BDD> compose_vector = var_mgr->make_compose_vector(
-        new_id, 
-        core_dfa.transition_function_
+        dfa.automaton_id(), 
+        dfa.transition_function_
     );
 
-    //TODO: check if the following is correct, in particular the composition with the transition function of the dfa
     CUDD::BDD next_W = winning_region.VectorCompose(compose_vector);
 
     CUDD::BDD z_sink_bdd;
@@ -377,11 +353,21 @@ SymbolicStateDfa SymbolicStateDfa::get_CORE(const Syft::SymbolicStateDfa &dfa, A
         CUDD::BDD t_Z_Y_X = winning_region * next_W;
         z_sink_bdd = z_sink + (winning_region * !t_Z_Y_X) + (!winning_region);
     }
+
+    std::vector<int> core_initial_state = dfa.initial_state();
+    core_initial_state.push_back(0);
     
-    core_dfa.transition_function_.back() = z_sink_bdd;
+    std::vector<CUDD::BDD> core_transition_function = dfa.transition_function();
+    core_transition_function.push_back(z_sink_bdd);
 
     //STEP 6: Modify final states function
-    core_dfa.final_states_ = dfa.final_states() * winning_region * !z_sink;
+    CUDD::BDD core_final_states = dfa.final_states() * winning_region * !z_sink;
+    
+    SymbolicStateDfa core_dfa(std::move(var_mgr));
+    core_dfa.automaton_id_ = new_id;
+    core_dfa.initial_state_ = std::move(core_initial_state);
+    core_dfa.transition_function_ = std::move(core_transition_function);
+    core_dfa.final_states_ = std::move(core_final_states);
 
     return core_dfa;
 }

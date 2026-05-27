@@ -375,11 +375,11 @@ namespace Syft {
                 const std::size_t automaton_id);
         
         /**
-         * \brief Create the state space when cloning a DFA.
+         * \brief Create the state space when creating the core of a DFA.
          *
          */
-        std::size_t create_clone_state_space(
-                const std::size_t automaton_id);
+        std::size_t create_core_state_space(
+                const std::size_t automaton_id, const std::string& sink_name);
 
         // Backward compatibility for two-player
         void create_output_variables(const std::vector<std::string>& output_vars) {

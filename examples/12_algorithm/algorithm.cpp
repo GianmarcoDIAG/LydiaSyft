@@ -23,30 +23,6 @@
 #include "Utils.h"
 #include "Synthesizer.h"
 
-void safe_dfa_dump(const Syft::SymbolicStateDfa& dfa, const std::string& nome_file) {
-    std::FILE* fp = std::fopen(nome_file.c_str(), "w");
-    if (fp == nullptr) {
-        std::cerr << "[DUMP ERROR] Impossible to open the file: " << nome_file << std::endl;
-        return;
-    }
-
-    const std::vector<CUDD::BDD>& transizioni = dfa.transition_function();
-    
-    std::vector<DdNode*> nodes;
-    for (const auto& bdd : transizioni) {
-        nodes.push_back(bdd.getNode());
-    }
-    nodes.push_back(dfa.final_states().getNode());
-
-    DdManager* mgr = dfa.final_states().manager();
-
-    Cudd_DumpDot(mgr, nodes.size(), nodes.data(), nullptr, nullptr, fp);
-
-    std::fclose(fp);
-    //std::cout << "DFA saved in: " << nome_file << std::endl;
-}
-
-
 
 using namespace Syft;
 using namespace whitemech::lydia;
@@ -142,10 +118,10 @@ int main(int argc, char ** argv) {
            
             ++i;
         }
-        dwas[0].dump_dot("dwa_env.dot");
+        
         //Step 2) From the environment's automata, construct the dwa that accepts CORE_env(phi_env)
+        
         SymbolicStateDfa R_env = SymbolicStateDfa::get_CORE(dwas[0], actors[0], Actor::MainAgent());
-        safe_dfa_dump(R_env, "R_env.dot");
         SymbolicStateDfa R_env_comp = SymbolicStateDfa::complement(R_env);
 
         //Step 3) For each peer agent w
@@ -175,50 +151,34 @@ int main(int argc, char ** argv) {
             R_peers_comp.end()
         );
         vector.push_back(dwas[1]);
-        SymbolicStateDfa dwa_main_agent= SymbolicStateDfa::product_OR(vector);
-        
-        
-        
+        SymbolicStateDfa arena = SymbolicStateDfa::product_OR(vector);
 
-/* 
-        for (size_t i = 0; i < actors.size(); ++i) {  
+        //var_mgr->print_mgr();    
+        
+        CUDD::BDD buchi_condition = arena.final_states();
+        CUDD::BDD space = var_mgr->cudd_mgr()->bddOne();
 
-
-            // Goal is based on protagonist's formula only
-            size_t actor_dfa_index;
-            if (actors[i].is_environment()) {
-                actor_dfa_index = 0;  // ENV formula
-            } else {
-                actor_dfa_index = 1 + actors[i].id();  // Agent i formula
-            }
+        //protagonist actor is Main Agent
+        Actor protagonist_actor = Actor::MainAgent();
+        //we can change the starting actor: now is the MainAgent(), but we can set as starting one also Enviroment() or PeerAgent(id)
+        Actor starting_actor = Actor::MainAgent(); 
+             
             
-            CUDD::BDD buchi_condition = dfas[actor_dfa_index].final_states();
-            //std::cout << "Buchi condition for " << (actors[actor_dfa_index].is_environment() ? "ENV" : "Agent " + std::to_string(actors[actor_dfa_index].id())) << ": " << buchi_condition << std::endl;
-            CUDD::BDD space = var_mgr->cudd_mgr()->bddOne();
+        std::cout << "Protagonist actor: " << (protagonist_actor.is_environment() ? "ENV" : "Agent " + std::to_string(protagonist_actor.id())) << std::endl;
 
-            
-            const Actor& protagonist_actor = actors[i];
-            //we can change the starting actor: now is the MainAgent(), but we can set as starting one also Enviroment() or PeerAgent(id)
-            Actor starting_actor = Actor::MainAgent(); 
+        BuchiReachability_multiagent game(arena, starting_actor, protagonist_actor, buchi_condition, space, num_agents);
+        SynthesisResult result = game.run();
 
-            std::cout << "\n--------------------------------------------" << std::endl;
-            std::cout << "Starting actor: " << (starting_actor.is_environment() ? "ENV" : "Agent " + std::to_string(starting_actor.id())) << std::endl;
-            std::cout << "Protagonist actor: " << (protagonist_actor.is_environment() ? "ENV" : "Agent " + std::to_string(protagonist_actor.id())) << std::endl;
-
-            BuchiReachability_multiagent game(arena, starting_actor, protagonist_actor, buchi_condition, space, num_agents);
-            SynthesisResult result = game.run();
-
-            if (result.realizability) {
-                std::cout << "Result: TRUE " << std::endl;
-                if(result.transducer_multiagent != nullptr){
-                    std::string filename = "winning_strategy_" + (protagonist_actor.is_environment() ? "env" : "agent" + std::to_string(protagonist_actor.id())) + ".dot";
-                    result.transducer_multiagent->dump_dot(filename);
-                    std::cout << "Winning strategy saved to " << filename << std::endl;
-                }
-            } else {
-                std::cout << "Result: FALSE " << std::endl;
+        if (result.realizability) {
+            std::cout << "Result: TRUE " << std::endl;
+            if(result.transducer_multiagent != nullptr){
+                std::string filename = "winning_strategy_" + (protagonist_actor.is_environment() ? "env" : "agent" + std::to_string(protagonist_actor.id())) + ".dot";
+                result.transducer_multiagent->dump_dot(filename);
+                std::cout << "Winning strategy saved to " << filename << std::endl;
             }
-        } */
+        } else {
+            std::cout << "Result: FALSE " << std::endl;
+        }        
 
     } catch (const std::exception& e) {
         std::cerr << "[FATAL ERROR] " << e.what() << std::endl;

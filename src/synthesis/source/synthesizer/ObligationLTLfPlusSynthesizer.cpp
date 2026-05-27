@@ -129,7 +129,7 @@ namespace Syft {
         std::shared_ptr<VarMgr> var_mgr;
         
         // Constructor from explicit DFA
-                                HybridDfa(ExplicitStateDfa e, std::shared_ptr<VarMgr> vm) 
+        HybridDfa(ExplicitStateDfa e, std::shared_ptr<VarMgr> vm) 
                                         : explicit_dfa(std::move(e)), symbolic_dfa(std::nullopt), 
                                             is_symbolic(false), var_mgr(vm) {
                                                 approx_state_count = BigInt(explicit_dfa->get_nb_states());
@@ -395,18 +395,19 @@ namespace Syft {
             throw std::runtime_error("Trailing characters in color formula after parsing");
         }
 
-        if (!res.is_symbolic && res.explicit_dfa.has_value()) {
-            std::string actor_name = protagonist_actor_.is_environment() ? "env" : "agent" + std::to_string(protagonist_actor_.id());
-            std::string final_mona_path = "final_dfa_explicit_"+ actor_name +".mona";
-            whitemech::lydia::print_mona_dfa(
-            res.explicit_dfa->dfa_, 
-            final_mona_path,
-            res.explicit_dfa->get_nb_variables()
-            );
-            //spdlog::info("[Debug] Final explicit dfa saved in: {}", final_mona_path);
-        } else if (res.is_symbolic) {
-            spdlog::warn("[Debug] Impossible to print explicit dfa.");
-        }
+        //save explicit dfa into a mona file
+        // if (!res.is_symbolic && res.explicit_dfa.has_value()) {
+        //     std::string actor_name = protagonist_actor_.is_environment() ? "env" : "agent" + std::to_string(protagonist_actor_.id());
+        //     std::string final_mona_path = "final_dfa_explicit_"+ actor_name +".mona";
+        //     whitemech::lydia::print_mona_dfa(
+        //     res.explicit_dfa->dfa_, 
+        //     final_mona_path,
+        //     res.explicit_dfa->get_nb_variables()
+        //     );
+        //     //spdlog::info("[Debug] Final explicit dfa saved in: {}", final_mona_path);
+        // } else if (res.is_symbolic) {
+        //     spdlog::warn("[Debug] Impossible to print explicit dfa.");
+        // }
  
         auto symbolic_arena = res.to_symbolic();
         // info_log the number of states we approximated using spdlog
@@ -447,12 +448,14 @@ namespace Syft {
                     ExplicitStateDfa trimmed_explicit_dfa = ExplicitStateDfa::dfa_to_Gdfa_obligation(explicit_dfa);
                     //ExplicitStateDfa minised = minimize_if_fewer_bits(std::move(trimmed_explicit_dfa));
                     color_to_explicit_dfa.insert({color, std::move(trimmed_explicit_dfa)});
-                    std::string filename = actor_name + "_color_" + std::to_string(color)  + ".mona";
-                    whitemech::lydia::print_mona_dfa(
-                        color_to_explicit_dfa.at(color).dfa_, // Il puntatore al DFA di MONA
-                        filename,                             // Nome file
-                        color_to_explicit_dfa.at(color).get_nb_variables() // Numero variabili
-                    );
+                    
+                    // Optionally save the explicit DFA for debugging
+                    // std::string filename = actor_name + "_color_" + std::to_string(color)  + ".mona";
+                    // whitemech::lydia::print_mona_dfa(
+                    //     color_to_explicit_dfa.at(color).dfa_, // Il puntatore al DFA di MONA
+                    //     filename,                             // Nome file
+                    //     color_to_explicit_dfa.at(color).get_nb_variables() // Numero variabili
+                    // );
                     //spdlog::info("[Debug] Exported DFA MONA for color {} in {}", color, filename);
                     
                     break;
@@ -464,12 +467,14 @@ namespace Syft {
                                         spdlog::debug("[ObligationFragment] Appplied Exists transformation for color {}", color);
                     //Syft::ExplicitStateDfa minised = minimize_if_fewer_bits(std::move(trimmed_explicit_dfa));
                     color_to_explicit_dfa.insert({color, std::move(trimmed_explicit_dfa)});
-                    std::string filename = actor_name + "_color_" + std::to_string(color)+ ".mona";
-                    whitemech::lydia::print_mona_dfa(
-                        color_to_explicit_dfa.at(color).dfa_, // Il puntatore al DFA di MONA
-                        filename,                             // Nome file
-                        color_to_explicit_dfa.at(color).get_nb_variables() // Numero variabili
-                    );
+
+                    //Optionally save the explicit DFA for debugging
+                    // std::string filename = actor_name + "_color_" + std::to_string(color)+ ".mona";
+                    // whitemech::lydia::print_mona_dfa(
+                    //     color_to_explicit_dfa.at(color).dfa_, // Il puntatore al DFA di MONA
+                    //     filename,                             // Nome file
+                    //     color_to_explicit_dfa.at(color).get_nb_variables() // Numero variabili
+                    // );
                     //spdlog::info("[Debug] Exported DFA MONA for color {} in {}", color, filename);
                     
                     break;
