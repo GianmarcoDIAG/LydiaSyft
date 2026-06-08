@@ -11,6 +11,7 @@ add_subdirectory(09_reachability)
 add_subdirectory(10_buchi_reachability)
 add_subdirectory(11_obligation)
 add_subdirectory(12_algorithm)
+add_subdirectory(12_algorithm_interactive)
 
 add_custom_target(examples)
 
@@ -26,4 +27,5 @@ add_dependencies(examples
     reachability_example
     buchi_reachability_example
     algorithm_example
+    algorithm_interactive_example
 )

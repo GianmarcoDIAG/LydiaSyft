@@ -44,6 +44,16 @@ class Transducer_multiagent {
   std::unordered_map<int, CUDD::BDD> get_output_function() const {
     return output_function_;
   }
+
+  std::vector<CUDD::BDD> get_transition_function() const {
+    return transition_function_;
+  }
+  std::vector<int> get_initial_vector() const {
+    return initial_vector_;
+  }
+  const std::unordered_map<int, CUDD::BDD>& output_function() const {
+    return output_function_;
+  }
 };
 
 }
