@@ -5,6 +5,7 @@
 #include <sstream>
 #include <fstream>
 #include <filesystem>
+#include <iomanip>
 #include "lydia/mona_ext/mona_ext_base.hpp"
 #include <lydia/parser/ltlf/driver.hpp>
 #include "Parser.h"
@@ -178,69 +179,47 @@ int main(int argc, char ** argv) {
                 
                 std::cout << "\n------------------STARTING INTERACTIVE SIMULATION------------------\n";
 
-                std::unordered_map<int, std::string> index_to_name_map = var_mgr->get_index_to_name_map();
-                std::vector<std::string> id_to_var(index_to_name_map.size());
-                for (const auto& [idx, name] : index_to_name_map) {
-                    if (idx >= 0 && static_cast<size_t>(idx) < id_to_var.size()) {
-                        id_to_var[idx] = name;
-                    }
-                }
 
-                auto* strategy = result.transducer_multiagent.get();
-                std::vector<int> current_state_vector = strategy->get_initial_vector();
+                std::unordered_map<int, std::string> id_to_var = var_mgr->get_index_to_name_map();
+
+                CUDD::BDD winning_region = result.winning_states;
+                std::unordered_map<int, CUDD::BDD> output_function; 
+                
+                std::vector<int> state = arena.initial_state();
+        
                 size_t step_counter = 0;
+                //var_mgr->print_mgr();
 
                 while (true) {
                     
                     std::cout << "\n\nSTEP " << step_counter << "\n\n";
 
                     std::cout << "Current state bits: " << std::endl;
-                    for(const auto& bit : current_state_vector){
+                    for(const auto& bit : state){
                         std::cout << bit << " ";
                     }                 
                     std::cout << std::endl;
+
+                    output_function = result.transducer_multiagent.get()->get_output_function(); 
+
                     
-                    std::vector<int> transition(id_to_var.size(), 0);
-
-                    std::vector<int> eval_vector = var_mgr->make_eval_vector(0, current_state_vector);
-                    if (eval_vector.size() < var_mgr->total_variable_count()) {
-                        eval_vector.resize(var_mgr->total_variable_count(), 0);
-                    }
-
-                    for (int i = 0; i < id_to_var.size(); ++i) {
-                        if (id_to_var[i].empty()) continue;
-                        int index = var_mgr->name_to_variable(id_to_var[i]).NodeReadIndex();
-                        if (index < eval_vector.size()) {
-                            eval_vector[index] = 0;
-                        }
-                    }
-
-                    if (buchi_condition.Eval(eval_vector.data()).IsOne()) {
-                        std::cout << "\n[INFO] Main Agent is currently in an accepting state \n";
-                    } else {
-                        std::cout << "\n[INFO] Main Agent is not in an accepting state \n";
-                    }
-
+                    std::vector<int> transition ( id_to_var.size(), 0); 
+                    
+                    std::vector<int> eval_state = var_mgr->make_eval_vector(0, state);
+                    
                     std::cout << "Agent move: " << std::endl;
-                    const auto& output_fn_map = strategy->get_output_function();
-
+                
                     for(int i = 0; i< id_to_var.size(); ++i){
                         std::string var = id_to_var[i];
                         if(var.empty() || !var_mgr->is_agent_variable(var, protagonist_actor.id())) continue;
 
-                        int agent_eval =0;
-                        int index = var_mgr->name_to_variable(var).NodeReadIndex();
-
-                        if(output_fn_map.find(index) != output_fn_map.end()){
-                            if(index < eval_vector.size()){
-                                agent_eval = output_fn_map.at(index).Eval(eval_vector.data()).IsOne() ? 1 : 0;
-                                
-                            }
-                        }
-                        std::cout << "Variable: " << var << " = " << agent_eval << std::endl;
-                        transition[i] = agent_eval;
-                        if(index < eval_vector.size()){
-                            eval_vector[index] = agent_eval;
+                        int agent_eval; 
+                        if(var_mgr->is_agent_variable(var, protagonist_actor.id())){
+                            std::cout << "Variable: " << var;
+                            std::cout << ". Agent Output (0=false, 1=true): ";
+                            agent_eval = output_function[i].Eval(eval_state.data()).IsOne() ? 1 : 0;
+                            std::cout << agent_eval << std::endl;
+                            transition[i] = agent_eval;
                         }
                    }
 
@@ -253,25 +232,13 @@ int main(int argc, char ** argv) {
                             std::string var = id_to_var[i];
                             if (var.empty()) continue;
 
+                            int peer_eval;
                             if (var_mgr->is_agent_variable(var, peer_idx)) {
-                                int peer_eval = -1;
-                                while (peer_eval != 0 && peer_eval != 1) {
-                                    std::cout << "Variable: " << var << ". Peer Input (0=false, 1=true): ";
-                                    std::cin >> peer_eval;
-                                   
-                                    if (std::cin.fail() || (peer_eval != 0 && peer_eval != 1)) {
-                                        std::cin.clear();
-                                        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-                                        std::cout << "Invalid input. Please enter 0 or 1.\n";
-                                        peer_eval = -1;
-                                    }
-                                }
-                                transition[i] = peer_eval;
                                
-                                int index = var_mgr->name_to_variable(var).NodeReadIndex();
-                                if (index < eval_vector.size()) {
-                                    eval_vector[index] = peer_eval;
-                                }
+                                std::cout << "Variable: " << var;
+                                std::cout << ". Peer Agent " << peer_idx << " Output (0=false, 1=true): ";
+                                std::cin >> peer_eval;
+                                transition[i] = peer_eval;
                             }
                         }
                     }
@@ -282,43 +249,51 @@ int main(int argc, char ** argv) {
                         std::string var = id_to_var[i];
                         if (var.empty()) continue;
 
+                        int env_eval;
                         if (var_mgr->is_input_variable(var)) {
-                            int env_eval = -1;
-                            while (env_eval != 0 && env_eval != 1) {
-                                std::cout << "Variable: " << var << ". Env Input (0=false, 1=true): ";
-                                std::cin >> env_eval;
-
-                                if (std::cin.fail() || (env_eval != 0 && env_eval != 1)) {
-                                    std::cin.clear();
-                                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-                                    std::cout << "Invalid input. Please enter 0 or 1.\n";
-                                    env_eval = -1;
-                                }
-                            }
+                            std::cout << "Variable: " << var;
+                            std::cout << ". Environment Input (0=false, 1=true): ";
+                            std::cin >> env_eval;
                             transition[i] = env_eval;
-
-                            int index = var_mgr->name_to_variable(var).NodeReadIndex();
-                            if (index < eval_vector.size()) {
-                                eval_vector[index] = env_eval;
-                            }
                         }
                     }
 
-                    const auto& trans_fn_vector = strategy->get_transition_function();
-                    std::vector<int> next_state_vector(current_state_vector.size(), 0);
+                    std::cout << "Input to transitions: "; 
+                    for(const auto&b : transition) std::cout << b << " ";
+                    std::cout << std::endl;
 
-                    for (size_t bit = 0; bit < trans_fn_vector.size(); ++bit) {
-                        next_state_vector[bit] = trans_fn_vector[bit].Eval(eval_vector.data()).IsOne() ? 1 : 0;
+                    for(int i = 0; i<id_to_var.size(); ++i){
+                        std::string var = id_to_var[i];
+                        if(var.empty()) continue;
+                        int bdd_idx = var_mgr->name_to_variable(id_to_var[i]).NodeReadIndex();
+                        if(bdd_idx < eval_state.size()){
+                            eval_state[bdd_idx] = transition[i];
+                        }
                     }
+                   
+                   int curr_state_var = 0;
+                   
+                   std::vector<int> new_state = state; 
 
+                   for(int i = 0; i < arena.transition_function().size(); ++i){
+                       new_state[curr_state_var] = arena.transition_function()[i].Eval(eval_state.data()).IsOne() ? 1 : 0;
+                       ++curr_state_var;
+                   }
+                   
                     std::cout << "Next state bits: " << std::endl;
-                    for(const auto& bit : next_state_vector){
+                    for(const auto& bit : new_state){
                         std::cout << bit << " ";
                     }
                     std::cout << std::endl;
 
-                    current_state_vector = next_state_vector;
+                    state = new_state;
                     step_counter++;
+
+                    if (buchi_condition.Eval(eval_state.data()).IsOne()) {
+                        std::cout << "\n[INFO] Main Agent is currently in an accepting state \n";
+                    } else {
+                        std::cout << "\n[INFO] Main Agent is not in an accepting state \n";
+                    }
 
                     // char continue_choice;
                     // std::cout << "\nContinue to next step? (y/n): ";

@@ -148,6 +148,7 @@ std::size_t VarMgr::create_named_state_variables(const std::vector<std::string>&
   // then reserves enough memory for all the new variables
   state_variables_.emplace_back();
   state_variables_[automaton_id].reserve(vars.size());
+  int new_state_variable_counter = 0;
 
   for (int i = 0; i < vars.size(); ++i) {
     // Create a new variable if this named variable does not already exist
@@ -157,12 +158,13 @@ std::size_t VarMgr::create_named_state_variables(const std::vector<std::string>&
         state_variables_[automaton_id].push_back(new_state_variable);
         name_to_variable_[vars[i]] = new_state_variable;
         index_to_name_[new_state_variable.NodeReadIndex()] = vars[i]; 
+        new_state_variable_counter++;
     } else { // Else add the existing variable to the state variables of the automaton
       state_variables_[automaton_id].push_back(name_to_variable_[vars[i]]);
     }
   }
 
-  state_variable_count_ += vars.size();
+  state_variable_count_ += new_state_variable_counter;
   return automaton_id;
 }
 
@@ -317,7 +319,7 @@ std::unordered_map<int, std::string> VarMgr::get_index_to_name_map() const {
 }
 
 std::size_t VarMgr::total_variable_count() const {
-  return name_to_variable_.size() + total_state_variable_count();
+  return name_to_variable_.size();
 }
   
 std::size_t VarMgr::total_state_variable_count() const {
