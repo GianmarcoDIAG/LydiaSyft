@@ -397,13 +397,16 @@ namespace Syft {
 
         //save explicit dfa into a mona file
         // if (!res.is_symbolic && res.explicit_dfa.has_value()) {
+            
         //     std::string actor_name = protagonist_actor_.is_environment() ? "env" : "agent" + std::to_string(protagonist_actor_.id());
         //     std::string final_mona_path = "final_dfa_explicit_"+ actor_name +".mona";
         //     whitemech::lydia::print_mona_dfa(
         //     res.explicit_dfa->dfa_, 
         //     final_mona_path,
-        //     res.explicit_dfa->get_nb_variables()
-        //     );
+        //     res.explicit_dfa->get_nb_variables());
+        //     res.explicit_dfa->dfa_print();
+
+            
         //     //spdlog::info("[Debug] Final explicit dfa saved in: {}", final_mona_path);
         // } else if (res.is_symbolic) {
         //     spdlog::warn("[Debug] Impossible to print explicit dfa.");

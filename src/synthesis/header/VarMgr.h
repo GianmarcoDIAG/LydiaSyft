@@ -381,6 +381,14 @@ namespace Syft {
         std::size_t create_core_state_space(
                 const std::size_t automaton_id, const std::string& sink_name);
 
+        /**
+         * \brief Create the non empty space.
+         *
+         */
+        std::size_t create_nonempty_state_space(
+                const std::size_t automaton_id, const std::string& ne_name);
+
+
         // Backward compatibility for two-player
         void create_output_variables(const std::vector<std::string>& output_vars) {
             create_agent_variables(0, output_vars);  // Main agent is index 0

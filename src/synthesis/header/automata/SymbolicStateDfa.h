@@ -210,8 +210,17 @@ namespace Syft {
     * \return A symbolic DWA that accepts the CORE(formula).
     */ 
         static SymbolicStateDfa get_CORE(const SymbolicStateDfa &dfa, Actor protagonist_actor, Actor starting_actor);
+    
+        /**
+    * \brief Returns a dwa.
+    *
+    * \param dwa of the specification of an actor.
+    * \param protagonist_actor the protagonist actor.
+    * \return A symbolic DWA  with a non empty new state variable.
+    */ 
+        static SymbolicStateDfa get_NE(const SymbolicStateDfa &dfa, Actor protagonist_actor);
     };
-
+    
 }
 
 #endif // SYMBOLIC_STATE_DFA_H

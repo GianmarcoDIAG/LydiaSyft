@@ -231,6 +231,41 @@ std::size_t VarMgr::create_product_state_space(
       return core_automaton_id;
 }
 
+
+ std::size_t VarMgr::create_nonempty_state_space(const std::size_t automaton_id, const std::string& ne_name) {
+      std::size_t core_automaton_id = state_variables_.size();
+
+      state_variables_.emplace_back();
+
+      state_variables_[core_automaton_id].insert(
+              state_variables_[core_automaton_id].end(),
+              state_variables_[automaton_id].begin(),
+              state_variables_[automaton_id].end());
+
+      for (const CUDD::BDD& var : state_variables_[automaton_id]) {
+          std::size_t index = var.NodeReadIndex();
+          if (index_to_name_.find(index) != index_to_name_.end()) {
+              index_to_name_[index] = index_to_name_[index]; 
+          }
+      }
+      
+      //Create sink state variable for the core space     
+      std::string unique_ne_name = ne_name + "_" + std::to_string(core_automaton_id);
+
+      // Alloca ed inserisce la nuova variabile di stato (z_sink) per questo core space
+      CUDD::BDD new_state_variable = mgr_->bddNewVarAtLevel(0);
+      state_variables_[core_automaton_id].push_back(new_state_variable);
+      name_to_variable_[unique_ne_name] = new_state_variable;
+      index_to_name_[new_state_variable.NodeReadIndex()] = unique_ne_name;
+
+      // Aggiorna il contatore globale delle variabili del manager
+      state_variable_count_ += 1;
+
+
+      return core_automaton_id;
+}
+
+
     
 CUDD::BDD VarMgr::state_variable(std::size_t automaton_id, std::size_t i)
     const {

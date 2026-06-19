@@ -371,5 +371,33 @@ SymbolicStateDfa SymbolicStateDfa::get_CORE(const Syft::SymbolicStateDfa &dfa, A
 
     return core_dfa;
 }
-    }
+
+SymbolicStateDfa SymbolicStateDfa::get_NE(const Syft::SymbolicStateDfa &dfa, Actor protagonist_actor) {
+    auto var_mgr = dfa.var_mgr();
+    std::string ne_name = "z_ne_" + (protagonist_actor.is_environment() ? "env" : "agent" + std::to_string(protagonist_actor.id()));
+    std::size_t new_id = var_mgr->create_nonempty_state_space(dfa.automaton_id(), ne_name);
+
+    std::string unique_ne_name = ne_name + "_" + std::to_string(new_id);
+    CUDD::BDD ne_sink = var_mgr->name_to_variable(unique_ne_name);  
+
+    std::vector<int> ne_initial_state = dfa.initial_state();
+    ne_initial_state.push_back(0);
+    
+    std::vector<CUDD::BDD> ne_transition_function = dfa.transition_function();
+    ne_transition_function.push_back(var_mgr->cudd_mgr()->bddOne());
+
+    CUDD::BDD ne_final_states = dfa.final_states() * ne_sink;
+
+     
+    SymbolicStateDfa ne_dfa(std::move(var_mgr));
+    ne_dfa.automaton_id_ = new_id;
+    ne_dfa.initial_state_ = std::move(ne_initial_state);
+    ne_dfa.transition_function_ = std::move(ne_transition_function);
+    ne_dfa.final_states_ = std::move(ne_final_states);
+
+    return ne_dfa;  
+
+
+}
+}
 
