@@ -51,7 +51,7 @@ namespace Syft {
     /// reduces the number of bits (ceil(log2(states))).  Otherwise the
     /// minimisation cost is wasted — the symbolic representation would use
     /// the same number of BDD state variables either way.
-    /* static ExplicitStateDfa minimize_if_fewer_bits(ExplicitStateDfa dfa) {
+    static ExplicitStateDfa minimize_if_fewer_bits(ExplicitStateDfa dfa) {
         int old_states = dfa.dfa_->ns;
         int old_bits = bits_needed(old_states);
         ExplicitStateDfa minimised = ExplicitStateDfa::dfa_minimize_weak(dfa);
@@ -65,7 +65,7 @@ namespace Syft {
         spdlog::debug("[ObligationFragment] Minimisation skipped: {} states ({} bits) -> {} states ({} bits), keeping original",
                       old_states, old_bits, new_states, new_bits);
         return dfa;
-    } */
+    } 
 
     ObligationLTLfPlusSynthesizer::ObligationLTLfPlusSynthesizer(
         LTLfPlus ltlf_plus_arg,
@@ -264,13 +264,13 @@ namespace Syft {
                          is_or ? "OR" : "AND",
                          product.dfa_->ns);
 
-            /* if (product.dfa_->ns < minimisation_options_.threshold && minimisation_options_.allow_minimisation) {
+            if (product.dfa_->ns < minimisation_options_.threshold && minimisation_options_.allow_minimisation) {
                 spdlog::debug("[ObligationFragment] Attempting minimisation of {} product ({} states, threshold {})",
                              is_or ? "OR" : "AND",
                              product.dfa_->ns,
                              minimisation_options_.threshold);
                 product = minimize_if_fewer_bits(std::move(product));
-            } */
+            } 
 
             HybridDfa combined(std::move(product), var_mgr_);
             combined.convert_to_symbolic_if_needed(minimisation_options_.symbolic_threshold);
@@ -396,21 +396,21 @@ namespace Syft {
         }
 
         //save explicit dfa into a mona file
-        // if (!res.is_symbolic && res.explicit_dfa.has_value()) {
+        if (!res.is_symbolic && res.explicit_dfa.has_value()) {
             
-        //     std::string actor_name = protagonist_actor_.is_environment() ? "env" : "agent" + std::to_string(protagonist_actor_.id());
-        //     std::string final_mona_path = "final_dfa_explicit_"+ actor_name +".mona";
-        //     whitemech::lydia::print_mona_dfa(
-        //     res.explicit_dfa->dfa_, 
-        //     final_mona_path,
-        //     res.explicit_dfa->get_nb_variables());
-        //     res.explicit_dfa->dfa_print();
+            std::string actor_name = protagonist_actor_.is_environment() ? "env" : "agent" + std::to_string(protagonist_actor_.id());
+            std::string final_mona_path = "final_dfa_explicit_"+ actor_name +".mona";
+            whitemech::lydia::print_mona_dfa(
+            res.explicit_dfa->dfa_, 
+            final_mona_path,
+            res.explicit_dfa->get_nb_variables());
+            res.explicit_dfa->dfa_print();
 
             
-        //     //spdlog::info("[Debug] Final explicit dfa saved in: {}", final_mona_path);
-        // } else if (res.is_symbolic) {
-        //     spdlog::warn("[Debug] Impossible to print explicit dfa.");
-        // }
+            //spdlog::info("[Debug] Final explicit dfa saved in: {}", final_mona_path);
+        } else if (res.is_symbolic) {
+            spdlog::warn("[Debug] Impossible to print explicit dfa.");
+        }
  
         auto symbolic_arena = res.to_symbolic();
         // info_log the number of states we approximated using spdlog
@@ -449,8 +449,8 @@ namespace Syft {
                     // Safety property: convert to G(phi) form
                     //spdlog::debug("[ObligationFragment] Applying Forall transformation for color {}", color);
                     ExplicitStateDfa trimmed_explicit_dfa = ExplicitStateDfa::dfa_to_Gdfa_obligation(explicit_dfa);
-                    //ExplicitStateDfa minised = minimize_if_fewer_bits(std::move(trimmed_explicit_dfa));
-                    color_to_explicit_dfa.insert({color, std::move(trimmed_explicit_dfa)});
+                    ExplicitStateDfa minised = minimize_if_fewer_bits(std::move(trimmed_explicit_dfa));
+                    color_to_explicit_dfa.insert({color, std::move(minised)});
                     
                     // Optionally save the explicit DFA for debugging
                     // std::string filename = actor_name + "_color_" + std::to_string(color)  + ".mona";
@@ -468,8 +468,8 @@ namespace Syft {
                     //spdlog::debug("[ObligationFragment] Applying Exists transformation for color {}", color);
                     Syft::ExplicitStateDfa trimmed_explicit_dfa = Syft::ExplicitStateDfa::dfa_to_Fdfa_obligation(explicit_dfa);
                                         spdlog::debug("[ObligationFragment] Appplied Exists transformation for color {}", color);
-                    //Syft::ExplicitStateDfa minised = minimize_if_fewer_bits(std::move(trimmed_explicit_dfa));
-                    color_to_explicit_dfa.insert({color, std::move(trimmed_explicit_dfa)});
+                    Syft::ExplicitStateDfa minised = minimize_if_fewer_bits(std::move(trimmed_explicit_dfa));
+                    color_to_explicit_dfa.insert({color, std::move(minised)});
 
                     //Optionally save the explicit DFA for debugging
                     // std::string filename = actor_name + "_color_" + std::to_string(color)+ ".mona";

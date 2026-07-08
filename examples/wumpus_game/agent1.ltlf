@@ -1,1 +1,1 @@
-A(G(wat03 || wat13 || wat23 || wat33))
+A(G((wnord || wsud || wovest || west) && (wnord -> (!wsud && !wovest && !west)) && (wsud -> (!wnord && !wovest && !west)) && (wovest -> (!wnord && !wsud && !west)) && (west -> (!wnord && !wsud && !wovest)))) && A(G((wat01 || wat11)))

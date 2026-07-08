@@ -324,8 +324,15 @@ SymbolicStateDfa SymbolicStateDfa::get_CORE(const Syft::SymbolicStateDfa &dfa, A
 
     BuchiReachability_multiagent game(dfa, starting_actor, protagonist_actor, buchi_condition, state_space, num_agents);
     SynthesisResult result = game.run();
+    std::cout << (protagonist_actor.is_agent() ? "Agent core is realizable: " : "Environment core is realizable: ")
+              << result.realizability << std::endl;
     CUDD::BDD winning_region = result.winning_states;
-            
+
+    auto initial_state = dfa.initial_state();
+    
+    //chech if initial state is in winning region
+    std::cout << "initial state of automata non restricted is in winning region? " << (winning_region.Eval(initial_state.data()).IsOne() ? 1 : 0) << std::endl;
+   
     //STEP 2: create a new dfa with the same values of the original Dfa + STEP 3) create new sink
     std::string sink_name = "z_sink_" + (protagonist_actor.is_environment() ? "env" : "agent" + std::to_string(protagonist_actor.id()));
     std::size_t new_id = var_mgr->create_core_state_space(dfa.automaton_id(), sink_name);

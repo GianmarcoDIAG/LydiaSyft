@@ -121,9 +121,9 @@ int main(int argc, char ** argv) {
         
         //Step 2) From the environment's automata, construct the dwa that accepts CORE_env(phi_env)
         
-        SymbolicStateDfa R_env = SymbolicStateDfa::get_CORE(dwas[0], actors[0], Actor::MainAgent());
+        SymbolicStateDfa env_ne = SymbolicStateDfa::get_NE(dwas[0], actors[0]);
+        SymbolicStateDfa R_env = SymbolicStateDfa::get_CORE(env_ne, actors[0], Actor::MainAgent());
         SymbolicStateDfa R_env_comp = SymbolicStateDfa::complement(R_env);
-
         //Step 3) For each peer agent w
         // step 3.1) costruct a new automaton obtained as follows: comp(R_env) U dwa_w
         // step 3.2) construct a new automaton that accepts CORE_w( CORE_env(phi_env) -> phi_w)
@@ -135,7 +135,8 @@ int main(int argc, char ** argv) {
             vector.push_back(dwas[i]);
             vector.push_back(R_env_comp);
             SymbolicStateDfa dwa_prime = SymbolicStateDfa::product_OR(vector);
-            SymbolicStateDfa R_peer = SymbolicStateDfa::get_CORE(dwa_prime, actors[i], Actor::MainAgent());
+            SymbolicStateDfa dwa_prime_ne = SymbolicStateDfa::get_NE(dwas[i], actors[i]);
+            SymbolicStateDfa R_peer = SymbolicStateDfa::get_CORE(dwa_prime_ne, actors[i], Actor::MainAgent());            R_peers.push_back(R_peer);
             R_peers.push_back(R_peer);
 
             SymbolicStateDfa R_peer_comp = SymbolicStateDfa::complement(R_peer);
@@ -151,8 +152,8 @@ int main(int argc, char ** argv) {
             R_peers_comp.end()
         );
         vector.push_back(dwas[1]);
-        SymbolicStateDfa arena = SymbolicStateDfa::product_OR(vector);
-
+        SymbolicStateDfa product_arena = SymbolicStateDfa::product_OR(vector);
+        SymbolicStateDfa arena = SymbolicStateDfa::get_NE(product_arena, Actor::MainAgent());
         //var_mgr->print_mgr();    
         
         CUDD::BDD buchi_condition = arena.final_states();

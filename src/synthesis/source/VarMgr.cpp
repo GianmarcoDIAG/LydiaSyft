@@ -505,7 +505,8 @@ std::vector<std::string> VarMgr::variable_labels() const {
   for (std::size_t id = 0; id < state_variables_.size(); ++id) {
     for (std::size_t i = 0; i < state_variables_[id].size(); ++i) {
       std::size_t index = state_variables_[id][i].NodeReadIndex();
-      labels[index] = "A" + std::to_string(id) + ":Z" + std::to_string(i);
+      // labels[index] = "A" + std::to_string(id) + ":Z" + std::to_string(i);
+      labels[index] = index_to_name_.at(index);
     }
   }
 
@@ -543,7 +544,8 @@ std::vector<std::string> VarMgr::state_variable_labels(
 	std::string id_string = "A" + std::to_string(automaton_id);
 
 	for (std::size_t i = 0; i < state_variables_[automaton_id].size(); ++i) {
-		labels.push_back(id_string + ":Z" + std::to_string(i));
+		// labels.push_back(id_string + ":Z" + std::to_string(i));
+    labels.push_back(index_to_name_.at(state_variables_[automaton_id][i].NodeReadIndex()));
 	}
 
 	return labels;

@@ -111,8 +111,8 @@ int main(int argc, char ** argv) {
                 Actor::MainAgent(),  // starting actor
                 current_actor,   // protagonist actor
                 var_mgr
-            );
-
+            );          
+            
             //we have to convert the ltlf plus formula into a symbolic dwa through function convert_to_symbolic
             auto [final_dwa, color_to_final_states] = synthesizer.convert_to_symbolic_dfa();
             dwas.push_back(std::move(final_dwa));
@@ -122,18 +122,19 @@ int main(int argc, char ** argv) {
         
         //Step 2) From the environment's automata, construct the dwa that accepts CORE_env(phi_env)
         
-        // SymbolicStateDfa R_env = SymbolicStateDfa::get_CORE(dwas[0], actors[0], Actor::MainAgent());
+        //SymbolicStateDfa R_env = SymbolicStateDfa::get_CORE(dwas[0], actors[0], Actor::MainAgent());
         SymbolicStateDfa env_ne = SymbolicStateDfa::get_NE(dwas[0], actors[0]);
         SymbolicStateDfa R_env = SymbolicStateDfa::get_CORE(env_ne, actors[0], Actor::MainAgent());
         SymbolicStateDfa R_env_comp = SymbolicStateDfa::complement(R_env);
         std::cout << "Complement of restricted environment has initial state as accepting: ";
         std::cout << R_env_comp.final_states().Eval(R_env_comp.initial_state().data()).IsOne() << std::endl;
 
+       
         //Step 3) For each peer agent w
         // step 3.1) costruct a new automaton obtained as follows: comp(R_env) U dwa_w
         // step 3.2) construct a new automaton that accepts CORE_w( CORE_env(phi_env) -> phi_w)
 
-        std::vector<SymbolicStateDfa> R_peers;
+        //std::vector<SymbolicStateDfa> R_peers;
         std::vector<SymbolicStateDfa> R_peers_comp;
         for (size_t i = 2; i < actors.size() ; ++i){
             std::vector<SymbolicStateDfa> vector;
@@ -141,12 +142,13 @@ int main(int argc, char ** argv) {
             vector.push_back(R_env_comp);
             SymbolicStateDfa dwa_prime = SymbolicStateDfa::product_OR(vector);
             SymbolicStateDfa dwa_prime_ne = SymbolicStateDfa::get_NE(dwas[i], actors[i]);
-            SymbolicStateDfa R_peer = SymbolicStateDfa::get_CORE(dwa_prime_ne, actors[i], Actor::MainAgent());            R_peers.push_back(R_peer);
+            SymbolicStateDfa R_peer = SymbolicStateDfa::get_CORE(dwa_prime_ne, actors[i], Actor::MainAgent());            
+            //R_peers.push_back(R_peer);
 
             SymbolicStateDfa R_peer_comp = SymbolicStateDfa::complement(R_peer);
             R_peers_comp.push_back(R_peer_comp);
-            std::cout << "Complement of restricted peer has initial state as accepting: ";  
-            std::cout << R_peer_comp.final_states().Eval(R_peer_comp.initial_state().data()).IsOne() << std::endl;
+            // std::cout << "Complement of restricted peer has initial state as accepting: ";  
+            // std::cout << R_peer_comp.final_states().Eval(R_peer_comp.initial_state().data()).IsOne() << std::endl;
         }
 
         //Step 4) Costruct a new dwa for the main agent obtained as follows:  R_env_comp U R_peers_comp U dwa_0
@@ -160,11 +162,17 @@ int main(int argc, char ** argv) {
         vector.push_back(dwas[1]);
                 
         SymbolicStateDfa arena = SymbolicStateDfa::product_OR(vector);
-        SymbolicStateDfa arena_ne = SymbolicStateDfa::get_NE(arena, Actor::MainAgent());
+        std::cout << "arena has initial state accepting? " << arena.final_states().Eval(arena.initial_state().data()).IsOne() << std::endl;
 
-        //var_mgr->print_mgr();    
+        SymbolicStateDfa arena_ne = SymbolicStateDfa::get_NE(arena, Actor::MainAgent());
+        std::cout << "arena_ne has initial state accepting? " << arena_ne.final_states().Eval(arena_ne.initial_state().data()).IsOne() << std::endl;
+
+        var_mgr->print_mgr();    
         
         CUDD::BDD buchi_condition = arena_ne.final_states();
+        //CUDD::BDD buchi_condition = arena.final_states();
+        std::cout << "Final states " << arena_ne.final_states() << std::endl;
+        std::cout << "Final states " << arena.final_states() << std::endl;
         CUDD::BDD space = var_mgr->cudd_mgr()->bddOne();
 
         //protagonist actor is Main Agent
@@ -175,8 +183,13 @@ int main(int argc, char ** argv) {
             
         std::cout << "Protagonist actor: " << (protagonist_actor.is_environment() ? "ENV" : "Agent " + std::to_string(protagonist_actor.id())) << std::endl;
 
+        //BuchiReachability_multiagent game(arena_ne, starting_actor, protagonist_actor, buchi_condition, space, num_agents);
         BuchiReachability_multiagent game(arena_ne, starting_actor, protagonist_actor, buchi_condition, space, num_agents);
         SynthesisResult result = game.run();
+
+        std::cout << "[Main]: result.winning_states: " << result.winning_states << std::endl;
+        std::cout << "[Main]: result.winning_moves: " << result.winning_moves << std::endl;
+
 
         if (result.realizability) {
             std::cout << "Result: TRUE " << std::endl;
@@ -194,9 +207,11 @@ int main(int argc, char ** argv) {
                 std::unordered_map<int, CUDD::BDD> output_function; 
                 
                 std::vector<int> state = arena_ne.initial_state();
+                //std::vector<int> state = arena.initial_state();
         
                 size_t step_counter = 0;
                 std::size_t arena_id = arena_ne.automaton_id();
+                //std::size_t arena_id = arena.automaton_id();
 
                 while (true) {
                     
@@ -210,10 +225,16 @@ int main(int argc, char ** argv) {
                     output_function = result.transducer_multiagent.get()->get_output_function(); 
 
                     
-                    std::vector<int> transition ( id_to_var.size(), 0); 
-                    
+                    // std::vector<int> transition ( id_to_var.size(), 0);
+                    std::vector<int> transition = var_mgr->make_eval_vector(arena_id, state);        
                     std::vector<int> eval_state = var_mgr->make_eval_vector(arena_id, state);
                     
+                    if (buchi_condition.Eval(eval_state.data()).IsOne()) {
+                        std::cout << "\n[INFO] Main Agent is currently in an accepting state \n";
+                    } else {
+                        std::cout << "\n[INFO] Main Agent is not in an accepting state \n";
+                    }
+
                     std::cout << "Agent move: " << std::endl;
                 
                     for(int i = 0; i< id_to_var.size(); ++i){
@@ -277,6 +298,9 @@ int main(int argc, char ** argv) {
                             eval_state[bdd_idx] = transition[i];
                         }
                     }
+
+                    bool is_valid_winning_moves = result.winning_moves.Eval(eval_state.data()).IsOne();
+                    std::cout << "[Interactive debugger] The inserted transition comply with winning_moves?" << (is_valid_winning_moves? "YES": "NO") << std::endl;
                    
                    int curr_state_var = 0;
                    
@@ -299,11 +323,11 @@ int main(int argc, char ** argv) {
                     std::vector<int> eval_state_updated = var_mgr->make_eval_vector(arena_id,state);
 
 
-                    if (buchi_condition.Eval(eval_state_updated.data()).IsOne()) {
-                        std::cout << "\n[INFO] Main Agent is currently in an accepting state \n";
-                    } else {
-                        std::cout << "\n[INFO] Main Agent is not in an accepting state \n";
-                    }
+                    // if (buchi_condition.Eval(eval_state_updated.data()).IsOne()) {
+                    //     std::cout << "\n[INFO] Main Agent is currently in an accepting state \n";
+                    // } else {
+                    //     std::cout << "\n[INFO] Main Agent is not in an accepting state \n";
+                    // }
 
                     // char continue_choice;
                     // std::cout << "\nContinue to next step? (y/n): ";
