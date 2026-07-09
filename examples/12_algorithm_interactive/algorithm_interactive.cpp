@@ -141,7 +141,7 @@ int main(int argc, char ** argv) {
             vector.push_back(dwas[i]);
             vector.push_back(R_env_comp);
             SymbolicStateDfa dwa_prime = SymbolicStateDfa::product_OR(vector);
-            SymbolicStateDfa dwa_prime_ne = SymbolicStateDfa::get_NE(dwas[i], actors[i]);
+            SymbolicStateDfa dwa_prime_ne = SymbolicStateDfa::get_NE(dwa_prime, actors[i]);
             SymbolicStateDfa R_peer = SymbolicStateDfa::get_CORE(dwa_prime_ne, actors[i], Actor::MainAgent());            
             //R_peers.push_back(R_peer);
 
