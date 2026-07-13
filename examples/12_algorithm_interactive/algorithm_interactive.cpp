@@ -126,8 +126,8 @@ int main(int argc, char ** argv) {
         SymbolicStateDfa env_ne = SymbolicStateDfa::get_NE(dwas[0], actors[0]);
         SymbolicStateDfa R_env = SymbolicStateDfa::get_CORE(env_ne, actors[0], Actor::MainAgent());
         SymbolicStateDfa R_env_comp = SymbolicStateDfa::complement(R_env);
-        std::cout << "Complement of restricted environment has initial state as accepting: ";
-        std::cout << R_env_comp.final_states().Eval(R_env_comp.initial_state().data()).IsOne() << std::endl;
+        // std::cout << "Complement of restricted environment has initial state as accepting: ";
+        // std::cout << R_env_comp.final_states().Eval(R_env_comp.initial_state().data()).IsOne() << std::endl;
 
        
         //Step 3) For each peer agent w
@@ -162,17 +162,17 @@ int main(int argc, char ** argv) {
         vector.push_back(dwas[1]);
                 
         SymbolicStateDfa arena = SymbolicStateDfa::product_OR(vector);
-        std::cout << "arena has initial state accepting? " << arena.final_states().Eval(arena.initial_state().data()).IsOne() << std::endl;
+        //std::cout << "arena has initial state accepting? " << arena.final_states().Eval(arena.initial_state().data()).IsOne() << std::endl;
 
         SymbolicStateDfa arena_ne = SymbolicStateDfa::get_NE(arena, Actor::MainAgent());
-        std::cout << "arena_ne has initial state accepting? " << arena_ne.final_states().Eval(arena_ne.initial_state().data()).IsOne() << std::endl;
+        //std::cout << "arena_ne has initial state accepting? " << arena_ne.final_states().Eval(arena_ne.initial_state().data()).IsOne() << std::endl;
 
-        var_mgr->print_mgr();    
+        //var_mgr->print_mgr();    
         
         CUDD::BDD buchi_condition = arena_ne.final_states();
         //CUDD::BDD buchi_condition = arena.final_states();
-        std::cout << "Final states " << arena_ne.final_states() << std::endl;
-        std::cout << "Final states " << arena.final_states() << std::endl;
+        // std::cout << "Final states " << arena_ne.final_states() << std::endl;
+        // std::cout << "Final states " << arena.final_states() << std::endl;
         CUDD::BDD space = var_mgr->cudd_mgr()->bddOne();
 
         //protagonist actor is Main Agent
@@ -187,8 +187,8 @@ int main(int argc, char ** argv) {
         BuchiReachability_multiagent game(arena_ne, starting_actor, protagonist_actor, buchi_condition, space, num_agents);
         SynthesisResult result = game.run();
 
-        std::cout << "[Main]: result.winning_states: " << result.winning_states << std::endl;
-        std::cout << "[Main]: result.winning_moves: " << result.winning_moves << std::endl;
+        //std::cout << "[Main]: result.winning_states: " << result.winning_states << std::endl;
+        //std::cout << "[Main]: result.winning_moves: " << result.winning_moves << std::endl;
 
 
         if (result.realizability) {
@@ -300,7 +300,7 @@ int main(int argc, char ** argv) {
                     }
 
                     bool is_valid_winning_moves = result.winning_moves.Eval(eval_state.data()).IsOne();
-                    std::cout << "[Interactive debugger] The inserted transition comply with winning_moves?" << (is_valid_winning_moves? "YES": "NO") << std::endl;
+                    //std::cout << "[Interactive debugger] The inserted transition comply with winning_moves? " << (is_valid_winning_moves? "YES": "NO") << std::endl;
                    
                    int curr_state_var = 0;
                    

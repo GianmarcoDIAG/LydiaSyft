@@ -404,7 +404,7 @@ namespace Syft {
             res.explicit_dfa->dfa_, 
             final_mona_path,
             res.explicit_dfa->get_nb_variables());
-            res.explicit_dfa->dfa_print();
+            //res.explicit_dfa->dfa_print();
 
             
             //spdlog::info("[Debug] Final explicit dfa saved in: {}", final_mona_path);

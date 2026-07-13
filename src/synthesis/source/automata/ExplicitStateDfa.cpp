@@ -1057,8 +1057,8 @@ namespace Syft {
         DFA* minimized = dfaMinimize(normalized);
         dfaFree(normalized);
         // Log number of states now and before
-        spdlog::info("[ExplicitStateDfa::minise] Number of states before minimization: {}", ns);
-        spdlog::info("[ExplicitStateDfa::minise] Number of states after minimization: {}", minimized->ns);
+        // spdlog::info("[ExplicitStateDfa::minise] Number of states before minimization: {}", ns);
+        // spdlog::info("[ExplicitStateDfa::minise] Number of states after minimization: {}", minimized->ns);
         ExplicitStateDfa result(minimized, d.names);
         return result;
     }

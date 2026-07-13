@@ -331,7 +331,7 @@ SymbolicStateDfa SymbolicStateDfa::get_CORE(const Syft::SymbolicStateDfa &dfa, A
     auto initial_state = dfa.initial_state();
     
     //chech if initial state is in winning region
-    std::cout << "initial state of automata non restricted is in winning region? " << (winning_region.Eval(initial_state.data()).IsOne() ? 1 : 0) << std::endl;
+    //std::cout << "initial state of automata non restricted is in winning region? " << (winning_region.Eval(initial_state.data()).IsOne() ? 1 : 0) << std::endl;
    
     //STEP 2: create a new dfa with the same values of the original Dfa + STEP 3) create new sink
     std::string sink_name = "z_sink_" + (protagonist_actor.is_environment() ? "env" : "agent" + std::to_string(protagonist_actor.id()));
